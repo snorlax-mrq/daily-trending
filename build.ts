@@ -349,12 +349,12 @@ ${leadBlock(leadData, date)}
 ${boardKeys(s).map((k, idx) => renderBoard(k, s.boards[k]!, date, idx, rel)).join("\n")}
 ${footBlock(date, rel)}
 </div>`;
-  const title = `${SITE_NAME} · ${date.replace(/-/g, ".")}`;
-  await Bun.write(join(OUT, "d", `${date}.html`), shell({ rel, title, desc: SITE_DESC, body }));
+  const title = `${SITE_NAME} ${date.replace(/-/g, ".")} · HuggingFace／GitHub／Artificial Analysis`;
+  await Bun.write(join(OUT, "d", `${date}.html`), shell({ rel, title, desc: `${formatZh(date)}。${SITE_DESC}`, body }));
   // 最新一期 = index.html（用相對路徑 ./ 而非 ../）
   if (date === today) {
     const homeBody = body.replaceAll('href="../', 'href="').replaceAll('src="../', 'src="');
-    await Bun.write(join(OUT, "index.html"), shell({ rel: "", title: `${title} · ${SITE_DESC.slice(0, 20)}`, desc: SITE_DESC, body: homeBody }));
+    await Bun.write(join(OUT, "index.html"), shell({ rel: "", title, desc: SITE_DESC, body: homeBody }));
   }
 }
 
