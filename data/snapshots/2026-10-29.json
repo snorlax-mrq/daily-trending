@@ -1,6 +1,6 @@
 {
  "date": "2026-10-29",
- "generatedAt": "2026-10-29T06:41:40.175Z",
+ "generatedAt": "2026-10-29T06:43:50.327Z",
  "boards": {
   "hf": {
    "label": "HuggingFace",
@@ -12,12 +12,12 @@
      "name": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
      "rank": 1,
-     "metric": 886,
+     "metric": 887,
      "kicker": "多模態理解",
      "note": "下載 116.8K · 讚 3.6K · 10/17 發布",
      "stats": {
       "downloads": 116770,
-      "likes": 3629,
+      "likes": 3633,
       "tag": "多模態理解",
       "createdAt": "2026-10-17T02:40:38.000Z"
      }
@@ -57,7 +57,7 @@
      "name": "XHToken/Spark-X2.6-4B",
      "url": "https://huggingface.co/XHToken/Spark-X2.6-4B",
      "rank": 4,
-     "metric": 492,
+     "metric": 491,
      "kicker": "文字生成",
      "note": "下載 8.2K · 讚 877 · 10/19 發布",
      "stats": {
@@ -173,7 +173,7 @@
      "kicker": "TypeScript",
      "note": "Vibe code with pi in a lightweight, real IDE that customises itself around the way you work — The Vibe You Need",
      "stats": {
-      "stars": 5379,
+      "stars": 5380,
       "forks": 273,
       "todayStars": 1068,
       "lang": "TypeScript"
@@ -188,7 +188,7 @@
      "kicker": "—",
      "note": "（無描述）",
      "stats": {
-      "stars": 11429,
+      "stars": 11430,
       "forks": 825,
       "todayStars": 2139,
       "lang": null
@@ -203,7 +203,7 @@
      "kicker": "Shell",
      "note": "An agentic skills framework & software development methodology that works.",
      "stats": {
-      "stars": 307667,
+      "stars": 307668,
       "forks": 27366,
       "todayStars": 1095,
       "lang": "Shell"
@@ -218,7 +218,7 @@
      "kicker": "Python",
      "note": "DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/ .",
      "stats": {
-      "stars": 48563,
+      "stars": 48569,
       "forks": 6018,
       "todayStars": 2371,
       "lang": "Python"
@@ -233,7 +233,7 @@
      "kicker": "Rust",
      "note": "Macro is a unified workspace for teams: email, chat, docs, tasks, agents, calls, and CRM — @-linked together with shared AI memory.",
      "stats": {
-      "stars": 5548,
+      "stars": 5549,
       "forks": 527,
       "todayStars": 117,
       "lang": "Rust"
@@ -248,7 +248,7 @@
      "kicker": "CSS",
      "note": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
      "stats": {
-      "stars": 41062,
+      "stars": 41066,
       "forks": 2133,
       "todayStars": 2110,
       "lang": "CSS"
@@ -263,7 +263,7 @@
      "kicker": "Rust",
      "note": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships.",
      "stats": {
-      "stars": 93439,
+      "stars": 93444,
       "forks": 5516,
       "todayStars": 1472,
       "lang": "Rust"
@@ -308,7 +308,7 @@
      "kicker": "—",
      "note": "LIST OF ALL MY JAILBREAKS",
      "stats": {
-      "stars": 7529,
+      "stars": 7532,
       "forks": 1071,
       "todayStars": 1477,
       "lang": null
@@ -323,8 +323,8 @@
      "kicker": "JavaScript",
      "note": "一个基于 JavaScript 的网盘文件下载地址获取工具。基于【网盘直链下载助手】修改 ，支持 百度网盘 / 阿里云盘 / 中国移动云盘 / 天翼云盘 / 迅雷云盘 / 夸克网盘 / UC网盘 / 123云盘 八大网盘",
      "stats": {
-      "stars": 35492,
-      "forks": 2514,
+      "stars": 35493,
+      "forks": 2515,
       "todayStars": 1616,
       "lang": "JavaScript"
      }
@@ -353,7 +353,7 @@
      "kicker": "Rust",
      "note": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
      "stats": {
-      "stars": 101272,
+      "stars": 101273,
       "forks": 13174,
       "todayStars": 557,
       "lang": "Rust"
@@ -368,7 +368,7 @@
      "kicker": "Jupyter Notebook",
      "note": "One has no future if one couldn't teach themself.",
      "stats": {
-      "stars": 18689,
+      "stars": 18690,
       "forks": 17909,
       "todayStars": 148,
       "lang": "Jupyter Notebook"
