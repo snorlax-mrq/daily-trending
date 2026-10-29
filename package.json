@@ -1,0 +1,18 @@
+{
+  "name": "daily-trending",
+  "version": "1.0.0",
+  "private": true,
+  "description": "三個來源的每日快照：HuggingFace 模型熱度、GitHub 專案熱度、Artificial Analysis 模型評測",
+  "type": "module",
+  "scripts": {
+    "collect": "bun run src/collect.ts",
+    "build": "bun run build.ts",
+    "fonts": "bun run src/subset-fonts.ts",
+    "publish": "bun run src/deploy.ts",
+    "all": "bun run src/collect.ts && bun run build.ts && bun run src/subset-fonts.ts",
+    "import-hf": "bun run src/import-hf-history.ts"
+  },
+  "engines": {
+    "bun": ">=1.2"
+  }
+}

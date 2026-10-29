@@ -1,0 +1,8 @@
+{
+ "by": "編輯",
+ "lead": [
+  "Artificial Analysis 的榜首換人了：<span class=\"em\">Gemini 4 Carbon（High）</span>以 Intelligence Index 59.4 登上第一，把 Claude Opus 5.5 擠到第二。這是 Index v5 上線（10 月 27 日）後的最新排序，而 273 筆條目中只有 77 筆完成評分，接下來幾週的名次還會持續洗牌。",
+  "HuggingFace 這一邊則是一個沒什麼變動的秩序：<span class=\"em\">DeepSeek-V4.1-Flash-1017</span> 連續第 10 天第一。真正在動的是後段，Nanbeige4.3-33B 四天內由第六升到第二，MiniMax-M3.1-Flash 一週內從第十爬到第五，而 flux-3-image-klein-comfy 從第三掉到第九。",
+  "GitHub 是三個榜單裡唯一沒有歷史的：今天第一次記錄，14 筆全部標為新進榜，冠軍是 JetBrains 的 thinkrail（今日新增 1,068 stars）。不過今日 stars 增加最多的其實是第二名的 ai-design-skills（2,139），GitHub 的排序並不是單純按 stars today，這也是本站只照抄官方順序、不自行重排的原因。"
+ ]
+}

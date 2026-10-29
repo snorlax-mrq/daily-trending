@@ -1,0 +1,23 @@
+# 執行產物
+dist/
+.deploy-tmp/
+
+# 相依
+node_modules/
+.bun/
+
+# 設計流程中繼（impeccable 的截圖、comp、build state）
+.impeccable/
+
+# 字型子集的字集快取（每次 build 重算）
+data/.charset.txt
+
+# 環境
+.env
+.env.*
+!.env.example
+
+# 系統與日誌
+*.log
+.DS_Store
+Thumbs.db

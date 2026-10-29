@@ -1,0 +1,153 @@
+{
+ "date": "2026-10-22",
+ "generatedAt": "2026-10-22T00:00:00.000Z",
+ "boards": {
+  "hf": {
+   "label": "HuggingFace",
+   "question": "哪個開源模型正在紅",
+   "source": "huggingface.co/api（trendingScore）",
+   "items": [
+    {
+     "id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+     "name": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+     "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+     "rank": 1,
+     "metric": null,
+     "kicker": "多模態理解",
+     "note": "",
+     "stats": {
+      "downloads": null,
+      "likes": null,
+      "tag": "多模態理解"
+     }
+    },
+    {
+     "id": "black-forest-labs/flux-3-image-klein-comfy",
+     "name": "black-forest-labs/flux-3-image-klein-comfy",
+     "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy",
+     "rank": 2,
+     "metric": null,
+     "kicker": "圖像生成/編輯",
+     "note": "",
+     "stats": {
+      "downloads": null,
+      "likes": null,
+      "tag": "圖像生成/編輯"
+     }
+    },
+    {
+     "id": "meta-models/Muse-Spark-Open-816B-A42B",
+     "name": "meta-models/Muse-Spark-Open-816B-A42B",
+     "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B",
+     "rank": 3,
+     "metric": null,
+     "kicker": "多模態理解",
+     "note": "",
+     "stats": {
+      "downloads": null,
+      "likes": null,
+      "tag": "多模態理解"
+     }
+    },
+    {
+     "id": "fishaudio/drama-3",
+     "name": "fishaudio/drama-3",
+     "url": "https://huggingface.co/fishaudio/drama-3",
+     "rank": 4,
+     "metric": null,
+     "kicker": "語音合成",
+     "note": "",
+     "stats": {
+      "downloads": null,
+      "likes": null,
+      "tag": "語音合成"
+     }
+    },
+    {
+     "id": "black-forest-labs/flux-3-image-klein",
+     "name": "black-forest-labs/flux-3-image-klein",
+     "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein",
+     "rank": 5,
+     "metric": null,
+     "kicker": "圖像生成/編輯",
+     "note": "",
+     "stats": {
+      "downloads": null,
+      "likes": null,
+      "tag": "圖像生成/編輯"
+     }
+    },
+    {
+     "id": "OpenMOSS-Team/MOSS-Image-SFT",
+     "name": "OpenMOSS-Team/MOSS-Image-SFT",
+     "url": "https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT",
+     "rank": 6,
+     "metric": null,
+     "kicker": "文生圖",
+     "note": "",
+     "stats": {
+      "downloads": null,
+      "likes": null,
+      "tag": "文生圖"
+     }
+    },
+    {
+     "id": "OpenMOSS-Team/MOSS-Image-Base",
+     "name": "OpenMOSS-Team/MOSS-Image-Base",
+     "url": "https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base",
+     "rank": 7,
+     "metric": null,
+     "kicker": "文生圖",
+     "note": "",
+     "stats": {
+      "downloads": null,
+      "likes": null,
+      "tag": "文生圖"
+     }
+    },
+    {
+     "id": "Lightricks/LTX-2.5",
+     "name": "Lightricks/LTX-2.5",
+     "url": "https://huggingface.co/Lightricks/LTX-2.5",
+     "rank": 8,
+     "metric": null,
+     "kicker": "圖生影片",
+     "note": "",
+     "stats": {
+      "downloads": null,
+      "likes": null,
+      "tag": "圖生影片"
+     }
+    },
+    {
+     "id": "google/embeddinggemma-2",
+     "name": "google/embeddinggemma-2",
+     "url": "https://huggingface.co/google/embeddinggemma-2",
+     "rank": 9,
+     "metric": null,
+     "kicker": "向量嵌入",
+     "note": "",
+     "stats": {
+      "downloads": null,
+      "likes": null,
+      "tag": "向量嵌入"
+     }
+    },
+    {
+     "id": "jialinyyzz/humanizer",
+     "name": "jialinyyzz/humanizer",
+     "url": "https://huggingface.co/jialinyyzz/humanizer",
+     "rank": 10,
+     "metric": null,
+     "kicker": "文字生成",
+     "note": "",
+     "stats": {
+      "downloads": null,
+      "likes": null,
+      "tag": "文字生成"
+     }
+    }
+   ]
+  }
+ }
+}
