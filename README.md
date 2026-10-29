@@ -36,15 +36,28 @@ data/seen-aa-events.json AA changelog 去重紀錄
 
 ## 每日執行
 
+cron `64c09feacb314d4c`（每天 08:00 Asia/Taipei，沿用原 HF 日報時段）依序：
+
 ```bash
 bun run src/collect.ts      # 1. 抓三個來源 → data/snapshots/YYYY-MM-DD.json
                             # 2. 由 AI 寫 data/headlines/YYYY-MM-DD.json（導讀）
 bun run build.ts            # 3. 產生 dist/
 bun run src/subset-fonts.ts # 4. 中文字型子集（必須在 build 之後）
 bun run src/deploy.ts       # 5. 推 gh-pages（需 GITHUB_TOKEN）
+bun run src/notion-payload.ts  # 6. 快照＋導讀 → data/digest_out/payload_trending_<date>.json
+cd .. && python3 scripts/notion_push.py --push --project trending \
+  --payload data/digest_out/payload_trending_<date>.json   # 7. 寫 Notion（同日舊列自動封存）
 ```
 
 `run.sh` 是 1/3/4 的包裝。
+
+## Notion
+
+`trending` 頁 →「每日榜單」子頁 →「每日整理」DB（一天一列）。
+屬性：`名稱` `日期` `摘要` `主題` `資料來源`(select=trending) `榜首·HF` `榜首·GitHub` `榜首·AA` `新進榜數` `網站`；
+內文：導讀段落 + 三張 table + AA 異動 + 資料限制註記，全部由同一份快照產生，與網站內容一致。
+
+（2026-10-29 前的舊 HF DB 已連內文遷入此 DB 後封存。）
 
 ## 資料模型
 

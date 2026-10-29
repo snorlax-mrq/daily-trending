@@ -10,7 +10,9 @@
     "fonts": "bun run src/subset-fonts.ts",
     "publish": "bun run src/deploy.ts",
     "all": "bun run src/collect.ts && bun run build.ts && bun run src/subset-fonts.ts",
-    "import-hf": "bun run src/import-hf-history.ts"
+    "import-hf": "bun run src/import-hf-history.ts",
+    "notion": "bun run src/notion-payload.ts",
+    "push-notion": "cd .. && python3 scripts/notion_push.py --push --project trending --payload data/digest_out/payload_trending_$(date +%F).json"
   },
   "engines": {
     "bun": ">=1.2"
