@@ -77,7 +77,7 @@ export function buildAaBoard(raw: AaRaw, limit = 10, seenEventIds: Set<string> =
   const hosts = todays.filter((x) => x.type === "hostModelAdded" && x.host?.name !== x.model?.creator?.name);
   const byHost = new Map<string, number>();
   for (const h of hosts) byHost.set(h.host!.name, (byHost.get(h.host!.name) ?? 0) + 1);
-  for (const [host, n] of byHost) events.push({ kind: "上架", text: `${host} 新增 ${n} 個模型上架` });
+  for (const [host, n] of byHost) events.push({ kind: "供應商", text: `${host} 新增 ${n} 個模型上架` });
   for (const m of todays.filter((x) => x.type === "methodologyUpdated")) events.push({ kind: "方法論", text: `${m.title ?? ""}${m.version && !(m.title ?? "").includes(m.version) ? ` v${m.version}` : ""}` });
 
   const total = raw.models.length;

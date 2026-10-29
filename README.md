@@ -44,20 +44,36 @@ bun run src/collect.ts      # 1. 抓三個來源 → data/snapshots/YYYY-MM-DD.j
 bun run build.ts            # 3. 產生 dist/
 bun run src/subset-fonts.ts # 4. 中文字型子集（必須在 build 之後）
 bun run src/deploy.ts       # 5. 推 gh-pages（需 GITHUB_TOKEN）
-bun run src/notion-payload.ts  # 6. 快照＋導讀 → data/digest_out/payload_trending_<date>.json
-cd .. && python3 scripts/notion_push.py --push --project trending \
-  --payload data/digest_out/payload_trending_<date>.json   # 7. 寫 Notion（同日舊列自動封存）
+bun run src/notion-payload.ts --all   # 6. 快照＋導讀 → 三個 payload（hf/gh/aa）
+cd .. && for b in hf gh aa; do
+  python3 scripts/notion_push.py --push --project $b \
+    --payload data/digest_out/payload_trending_${b}_<date>.json
+done                                  # 7. 寫 Notion（同日舊列自動封存）
 ```
 
 `run.sh` 是 1/3/4 的包裝。
 
 ## Notion
 
-`trending` 頁 →「每日榜單」子頁 →「每日整理」DB（一天一列）。
-屬性：`名稱` `日期` `摘要` `主題` `資料來源`(select=trending) `榜首·HF` `榜首·GitHub` `榜首·AA` `新進榜數` `網站`；
-內文：導讀段落 + 三張 table + AA 異動 + 資料限制註記，全部由同一份快照產生，與網站內容一致。
+`trending` 頁 →「每日榜單」子頁 → **三個 DB，一個來源一個**（一天一列）：
 
-（2026-10-29 前的舊 HF DB 已連內文遷入此 DB 後封存。）
+| DB | project | 專屬屬性 |
+|---|---|---|
+| HuggingFace 每日整理 | `hf` | 冠軍模型 · 熱度 · 下載 · 讚 |
+| GitHub 每日整理 | `gh` | 榜首專案 · 今日 stars · 語言 |
+| Artificial Analysis 每日整理 | `aa` | 榜首模型 · II 分數 |
+
+三者共有：`名稱` `日期` `摘要` `主題` `資料來源` `新進榜數` `網站`。
+內文：該榜的導讀段落 + 一張 table + 註記（＋AA 的今日異動），全部由同一份快照產生。
+
+導讀寫在 `data/headlines/<date>.json`，支援分榜：
+```jsonc
+{ "by": "編輯",
+  "lead": ["三段共用敘述（網站用）"],
+  "boards": { "hf": "…", "gh": "…", "aa": "…" } }   // boards 有寫就優先給該 DB 用
+```
+
+（2026-10-29 的舊「單一合併 DB」資料已拆進三個 DB 後封存。）
 
 ## 資料模型
 

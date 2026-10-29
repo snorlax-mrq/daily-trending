@@ -1,6 +1,6 @@
 {
  "date": "2026-10-29",
- "generatedAt": "2026-10-29T03:25:35.558Z",
+ "generatedAt": "2026-10-29T06:41:40.175Z",
  "boards": {
   "hf": {
    "label": "HuggingFace",
@@ -12,12 +12,12 @@
      "name": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
      "rank": 1,
-     "metric": 892,
+     "metric": 886,
      "kicker": "多模態理解",
      "note": "下載 116.8K · 讚 3.6K · 10/17 發布",
      "stats": {
       "downloads": 116770,
-      "likes": 3580,
+      "likes": 3629,
       "tag": "多模態理解",
       "createdAt": "2026-10-17T02:40:38.000Z"
      }
@@ -27,12 +27,12 @@
      "name": "Nanbeige/Nanbeige4.3-33B",
      "url": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B",
      "rank": 2,
-     "metric": 724,
+     "metric": 732,
      "kicker": "文字生成",
-     "note": "下載 7.4K · 讚 734 · 10/24 發布",
+     "note": "下載 7.4K · 讚 742 · 10/24 發布",
      "stats": {
       "downloads": 7412,
-      "likes": 734,
+      "likes": 742,
       "tag": "文字生成",
       "createdAt": "2026-10-24T02:49:18.000Z"
      }
@@ -42,12 +42,12 @@
      "name": "RecursiveSI/flint",
      "url": "https://huggingface.co/RecursiveSI/flint",
      "rank": 3,
-     "metric": 713,
+     "metric": 682,
      "kicker": "文字生成",
      "note": "下載 14K · 讚 1.2K · 10/21 發布",
      "stats": {
       "downloads": 14047,
-      "likes": 1168,
+      "likes": 1209,
       "tag": "文字生成",
       "createdAt": "2026-10-21T14:20:58.000Z"
      }
@@ -57,12 +57,12 @@
      "name": "XHToken/Spark-X2.6-4B",
      "url": "https://huggingface.co/XHToken/Spark-X2.6-4B",
      "rank": 4,
-     "metric": 501,
+     "metric": 492,
      "kicker": "文字生成",
-     "note": "下載 8.2K · 讚 871 · 10/19 發布",
+     "note": "下載 8.2K · 讚 877 · 10/19 發布",
      "stats": {
       "downloads": 8222,
-      "likes": 871,
+      "likes": 877,
       "tag": "文字生成",
       "createdAt": "2026-10-19T03:19:51.000Z"
      }
@@ -72,44 +72,44 @@
      "name": "MiniMaxAI/MiniMax-M3.1-Flash",
      "url": "https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash",
      "rank": 5,
-     "metric": 411,
+     "metric": 414,
      "kicker": "多模態理解",
-     "note": "下載 13.2K · 讚 466 · 10/17 發布",
+     "note": "下載 13.2K · 讚 469 · 10/17 發布",
      "stats": {
       "downloads": 13247,
-      "likes": 466,
+      "likes": 469,
       "tag": "多模態理解",
       "createdAt": "2026-10-17T06:37:50.000Z"
+     }
+    },
+    {
+     "id": "tencent/Hy-SimulMT-30B-A3B-FP8",
+     "name": "tencent/Hy-SimulMT-30B-A3B-FP8",
+     "url": "https://huggingface.co/tencent/Hy-SimulMT-30B-A3B-FP8",
+     "rank": 6,
+     "metric": 414,
+     "kicker": "翻譯",
+     "note": "下載 165 · 讚 421 · 10/22 發布",
+     "stats": {
+      "downloads": 165,
+      "likes": 421,
+      "tag": "翻譯",
+      "createdAt": "2026-10-22T07:29:37.000Z"
      }
     },
     {
      "id": "LiquidAI/LFM3-1.7B",
      "name": "LiquidAI/LFM3-1.7B",
      "url": "https://huggingface.co/LiquidAI/LFM3-1.7B",
-     "rank": 6,
-     "metric": 404,
+     "rank": 7,
+     "metric": 414,
      "kicker": "文字生成",
-     "note": "下載 8.9K · 讚 408 · 10/23 發布",
+     "note": "下載 8.9K · 讚 418 · 10/23 發布",
      "stats": {
       "downloads": 8892,
-      "likes": 408,
+      "likes": 418,
       "tag": "文字生成",
       "createdAt": "2026-10-23T21:35:42.000Z"
-     }
-    },
-    {
-     "id": "Lightricks/LTX-2.5",
-     "name": "Lightricks/LTX-2.5",
-     "url": "https://huggingface.co/Lightricks/LTX-2.5",
-     "rank": 7,
-     "metric": 403,
-     "kicker": "圖生影片",
-     "note": "下載 2.2M · 讚 9.7K · 07/23 發布",
-     "stats": {
-      "downloads": 2234788,
-      "likes": 9743,
-      "tag": "圖生影片",
-      "createdAt": "2026-07-23T07:55:24.000Z"
      }
     },
     {
@@ -117,44 +117,44 @@
      "name": "ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
      "url": "https://huggingface.co/ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
      "rank": 8,
-     "metric": 399,
+     "metric": 403,
      "kicker": "文字生成",
-     "note": "下載 1.4M · 讚 449 · 10/23 發布",
+     "note": "下載 1.4M · 讚 454 · 10/23 發布",
      "stats": {
       "downloads": 1377570,
-      "likes": 449,
+      "likes": 454,
       "tag": "文字生成",
       "createdAt": "2026-10-23T09:43:05.000Z"
+     }
+    },
+    {
+     "id": "Lightricks/LTX-2.5",
+     "name": "Lightricks/LTX-2.5",
+     "url": "https://huggingface.co/Lightricks/LTX-2.5",
+     "rank": 9,
+     "metric": 399,
+     "kicker": "圖生影片",
+     "note": "下載 2.2M · 讚 9.8K · 07/23 發布",
+     "stats": {
+      "downloads": 2234788,
+      "likes": 9755,
+      "tag": "圖生影片",
+      "createdAt": "2026-07-23T07:55:24.000Z"
      }
     },
     {
      "id": "black-forest-labs/flux-3-image-klein-comfy",
      "name": "black-forest-labs/flux-3-image-klein-comfy",
      "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy",
-     "rank": 9,
-     "metric": 388,
+     "rank": 10,
+     "metric": 383,
      "kicker": "圖像生成／編輯",
      "note": "下載 798.9K · 讚 2K · 10/14 發布",
      "stats": {
       "downloads": 798943,
-      "likes": 1969,
+      "likes": 1977,
       "tag": "圖像生成／編輯",
       "createdAt": "2026-10-14T12:00:13.000Z"
-     }
-    },
-    {
-     "id": "tencent/Hy-SimulMT-30B-A3B-FP8",
-     "name": "tencent/Hy-SimulMT-30B-A3B-FP8",
-     "url": "https://huggingface.co/tencent/Hy-SimulMT-30B-A3B-FP8",
-     "rank": 10,
-     "metric": 381,
-     "kicker": "翻譯",
-     "note": "下載 165 · 讚 388 · 10/22 發布",
-     "stats": {
-      "downloads": 165,
-      "likes": 388,
-      "tag": "翻譯",
-      "createdAt": "2026-10-22T07:29:37.000Z"
      }
     }
    ]
@@ -173,8 +173,8 @@
      "kicker": "TypeScript",
      "note": "Vibe code with pi in a lightweight, real IDE that customises itself around the way you work — The Vibe You Need",
      "stats": {
-      "stars": 5215,
-      "forks": 269,
+      "stars": 5379,
+      "forks": 273,
       "todayStars": 1068,
       "lang": "TypeScript"
      }
@@ -188,8 +188,8 @@
      "kicker": "—",
      "note": "（無描述）",
      "stats": {
-      "stars": 11282,
-      "forks": 817,
+      "stars": 11429,
+      "forks": 825,
       "todayStars": 2139,
       "lang": null
      }
@@ -203,8 +203,8 @@
      "kicker": "Shell",
      "note": "An agentic skills framework & software development methodology that works.",
      "stats": {
-      "stars": 307547,
-      "forks": 27352,
+      "stars": 307667,
+      "forks": 27366,
       "todayStars": 1095,
       "lang": "Shell"
      }
@@ -218,8 +218,8 @@
      "kicker": "Python",
      "note": "DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/ .",
      "stats": {
-      "stars": 48254,
-      "forks": 5978,
+      "stars": 48563,
+      "forks": 6018,
       "todayStars": 2371,
       "lang": "Python"
      }
@@ -233,8 +233,8 @@
      "kicker": "Rust",
      "note": "Macro is a unified workspace for teams: email, chat, docs, tasks, agents, calls, and CRM — @-linked together with shared AI memory.",
      "stats": {
-      "stars": 5481,
-      "forks": 522,
+      "stars": 5548,
+      "forks": 527,
       "todayStars": 117,
       "lang": "Rust"
      }
@@ -248,8 +248,8 @@
      "kicker": "CSS",
      "note": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
      "stats": {
-      "stars": 40873,
-      "forks": 2121,
+      "stars": 41062,
+      "forks": 2133,
       "todayStars": 2110,
       "lang": "CSS"
      }
@@ -263,8 +263,8 @@
      "kicker": "Rust",
      "note": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships.",
      "stats": {
-      "stars": 93038,
-      "forks": 5492,
+      "stars": 93439,
+      "forks": 5516,
       "todayStars": 1472,
       "lang": "Rust"
      }
@@ -278,8 +278,8 @@
      "kicker": "TypeScript",
      "note": "Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。",
      "stats": {
-      "stars": 8190,
-      "forks": 959,
+      "stars": 8303,
+      "forks": 972,
       "todayStars": 728,
       "lang": "TypeScript"
      }
@@ -293,8 +293,8 @@
      "kicker": "TypeScript",
      "note": "A local-first desktop workspace for persistent AI teammates. Run Codex, Claude, and Grok with dedicated workspaces, task queues, file sharing, browser control, ",
      "stats": {
-      "stars": 3344,
-      "forks": 319,
+      "stars": 3442,
+      "forks": 330,
       "todayStars": 1054,
       "lang": "TypeScript"
      }
@@ -308,8 +308,8 @@
      "kicker": "—",
      "note": "LIST OF ALL MY JAILBREAKS",
      "stats": {
-      "stars": 7312,
-      "forks": 1046,
+      "stars": 7529,
+      "forks": 1071,
       "todayStars": 1477,
       "lang": null
      }
@@ -323,8 +323,8 @@
      "kicker": "JavaScript",
      "note": "一个基于 JavaScript 的网盘文件下载地址获取工具。基于【网盘直链下载助手】修改 ，支持 百度网盘 / 阿里云盘 / 中国移动云盘 / 天翼云盘 / 迅雷云盘 / 夸克网盘 / UC网盘 / 123云盘 八大网盘",
      "stats": {
-      "stars": 35146,
-      "forks": 2496,
+      "stars": 35492,
+      "forks": 2514,
       "todayStars": 1616,
       "lang": "JavaScript"
      }
@@ -338,8 +338,8 @@
      "kicker": "Shell",
      "note": "A collection of AI agent skills for working with Expo projects and Expo Application Services",
      "stats": {
-      "stars": 3624,
-      "forks": 230,
+      "stars": 3674,
+      "forks": 234,
       "todayStars": 90,
       "lang": "Shell"
      }
@@ -353,8 +353,8 @@
      "kicker": "Rust",
      "note": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
      "stats": {
-      "stars": 101155,
-      "forks": 13166,
+      "stars": 101272,
+      "forks": 13174,
       "todayStars": 557,
       "lang": "Rust"
      }
@@ -368,8 +368,8 @@
      "kicker": "Jupyter Notebook",
      "note": "One has no future if one couldn't teach themself.",
      "stats": {
-      "stars": 18595,
-      "forks": 17898,
+      "stars": 18689,
+      "forks": 17909,
       "todayStars": 148,
       "lang": "Jupyter Notebook"
      }
@@ -391,11 +391,11 @@
      "rank": 1,
      "metric": 59.425738829526,
      "kicker": "Google",
-     "note": "$4 / $20 每百萬 token · 102 tok/s",
+     "note": "$4 / $20 每百萬 token · 100 tok/s",
      "stats": {
       "priceIn": 4,
       "priceOut": 20,
-      "tps": 102,
+      "tps": 100,
       "costPerTask": 7.756,
       "openWeights": 0
      }
@@ -439,11 +439,11 @@
      "rank": 4,
      "metric": 56.8538559596797,
      "kicker": "OpenAI",
-     "note": "$10 / $50 每百萬 token · 76 tok/s",
+     "note": "$10 / $50 每百萬 token · 73 tok/s",
      "stats": {
       "priceIn": 10,
       "priceOut": 50,
-      "tps": 76,
+      "tps": 73,
       "costPerTask": 6.245,
       "openWeights": 0
      }
@@ -455,11 +455,11 @@
      "rank": 5,
      "metric": 55.2557468569681,
      "kicker": "OpenAI",
-     "note": "$10 / $50 每百萬 token · 67 tok/s",
+     "note": "$10 / $50 每百萬 token · 63 tok/s",
      "stats": {
       "priceIn": 10,
       "priceOut": 50,
-      "tps": 67,
+      "tps": 63,
       "costPerTask": 3.659,
       "openWeights": 0
      }
@@ -487,11 +487,11 @@
      "rank": 7,
      "metric": 54.5087338138148,
      "kicker": "OpenAI",
-     "note": "$2 / $10 每百萬 token · 81 tok/s",
+     "note": "$2 / $10 每百萬 token · 79 tok/s",
      "stats": {
       "priceIn": 2,
       "priceOut": 10,
-      "tps": 81,
+      "tps": 79,
       "costPerTask": 1.272,
       "openWeights": 0
      }
@@ -503,11 +503,11 @@
      "rank": 8,
      "metric": 54.24133407109,
      "kicker": "Anthropic",
-     "note": "$2 / $10 每百萬 token · 138 tok/s",
+     "note": "$2 / $10 每百萬 token · 137 tok/s",
      "stats": {
       "priceIn": 2,
       "priceOut": 10,
-      "tps": 138,
+      "tps": 137,
       "costPerTask": 10.021,
       "openWeights": 0
      }
@@ -519,11 +519,11 @@
      "rank": 9,
      "metric": 52.308219253291,
      "kicker": "OpenAI",
-     "note": "$2 / $10 每百萬 token · 73 tok/s",
+     "note": "$2 / $10 每百萬 token · 71 tok/s",
      "stats": {
       "priceIn": 2,
       "priceOut": 10,
-      "tps": 73,
+      "tps": 71,
       "costPerTask": 0.764,
       "openWeights": 0
      }
@@ -535,11 +535,11 @@
      "rank": 10,
      "metric": 51.6859958227294,
      "kicker": "Anthropic",
-     "note": "$4 / $20 每百萬 token · 84 tok/s",
+     "note": "$4 / $20 每百萬 token · 81 tok/s",
      "stats": {
       "priceIn": 4,
       "priceOut": 20,
-      "tps": 84,
+      "tps": 81,
       "costPerTask": 3.465,
       "openWeights": 0
      }
@@ -567,15 +567,15 @@
      "url": "https://artificialanalysis.ai/models/gemini-4-carbon"
     },
     {
-     "kind": "上架",
+     "kind": "供應商",
      "text": "Bitdeer AI 新增 1 個模型上架"
     },
     {
-     "kind": "上架",
+     "kind": "供應商",
      "text": "Modal 新增 1 個模型上架"
     },
     {
-     "kind": "上架",
+     "kind": "供應商",
      "text": "SambaNova 新增 1 個模型上架"
     },
     {

@@ -136,6 +136,10 @@ function themeScript(): string {
   return `<script>(function(){try{var t=localStorage.getItem('dt-theme');if(t!=='dark'&&t!=='light'){t=window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}document.documentElement.dataset.theme=t}catch(e){document.documentElement.dataset.theme='light'}})()</script>`;
 }
 
+function sizeScript(): string {
+  return `<script>(function(){try{var v=localStorage.getItem('dt-size');if(v==='lg'||v==='xl'){document.documentElement.dataset.size=v}}catch(e){}})()</script>`;
+}
+
 function shell(opts: { rel: string; title: string; desc: string; body: string }): string {
   const { rel, title, desc, body } = opts;
   return `<!doctype html>
@@ -152,10 +156,11 @@ function shell(opts: { rel: string; title: string; desc: string; body: string })
 <link rel="icon" href="${rel}assets/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="${rel}assets/site.css">
 ${themeScript()}
+${sizeScript()}
 </head>
 <body>
 ${body}
-<script>(function(){var b=document.querySelector('.theme-btn');if(!b)return;b.addEventListener('click',function(){var d=document.documentElement,n=d.dataset.theme==='dark'?'light':'dark';d.dataset.theme=n;try{localStorage.setItem('dt-theme',n)}catch(e){}});var m=window.matchMedia('(prefers-color-scheme: dark)');m.addEventListener('change',function(e){try{if(localStorage.getItem('dt-theme'))return}catch(x){}document.documentElement.dataset.theme=e.matches?'dark':'light'})})()</script>
+<script>(function(){var S=['','lg','xl'],N=['標準','大','特大'],sb=document.querySelector('.size-btn');if(sb){var lab=sb.querySelector('b');function cur(){var v=document.documentElement.dataset.size||'';var i=S.indexOf(v);return i<0?0:i}function draw(){var i=cur();lab.textContent=N[i];sb.setAttribute('aria-label','目前字級：'+N[i]+'，點一下切換')}draw();sb.addEventListener('click',function(){var i=(cur()+1)%3,n=S[i];if(n){document.documentElement.dataset.size=n}else{delete document.documentElement.dataset.size}try{if(n){localStorage.setItem('dt-size',n)}else{localStorage.removeItem('dt-size')}}catch(e){}draw()})}})();(function(){var b=document.querySelector('.theme-btn');if(!b)return;b.addEventListener('click',function(){var d=document.documentElement,n=d.dataset.theme==='dark'?'light':'dark';d.dataset.theme=n;try{localStorage.setItem('dt-theme',n)}catch(e){}});var m=window.matchMedia('(prefers-color-scheme: dark)');m.addEventListener('change',function(e){try{if(localStorage.getItem('dt-theme'))return}catch(x){}document.documentElement.dataset.theme=e.matches?'dark':'light'})})()</script>
 </body>
 </html>`;
 }
@@ -180,7 +185,10 @@ function masthead(date: string, issue: number, rel: string, opts: { home?: boole
     <a href="${rel}archive.html">存檔</a>
     <span class="rail-spacer"></span>
     ${opts.home === false ? `<a href="${rel}index.html">← 最新一期</a>` : ""}
-    <button class="theme-btn" type="button" aria-label="切換深淺色">深／淺</button>
+    <span class="rail-tools">
+      <button class="size-btn" type="button" aria-label="切換字級（標準／大／特大）">字級 <b>標準</b></button>
+      <button class="theme-btn" type="button" aria-label="切換深淺色">深／淺</button>
+    </span>
   </nav>
 </header>`;
 }
