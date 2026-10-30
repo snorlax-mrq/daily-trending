@@ -18,7 +18,13 @@
      "stats": {
       "downloads": null,
       "likes": null,
-      "tag": "多模態理解"
+      "tag": "多模態理解",
+      "params": 763205315794,
+      "paramsText": "763B",
+      "paramsActive": null,
+      "paramsActiveText": null,
+      "paramsSrc": "safetensors",
+      "paramsBreakdown": "INT8 557B · FP8 204B · BF16 2B · FP32 42.3M"
      }
     },
     {
@@ -32,7 +38,13 @@
      "stats": {
       "downloads": null,
       "likes": null,
-      "tag": "文字生成"
+      "tag": "文字生成",
+      "params": 39785287456,
+      "paramsText": "39.8B",
+      "paramsActive": null,
+      "paramsActiveText": null,
+      "paramsSrc": "safetensors",
+      "paramsBreakdown": "BF16 39.8B"
      }
     },
     {
@@ -46,7 +58,13 @@
      "stats": {
       "downloads": null,
       "likes": null,
-      "tag": "文字生成"
+      "tag": "文字生成",
+      "params": 33118977024,
+      "paramsText": "33.1B",
+      "paramsActive": null,
+      "paramsActiveText": null,
+      "paramsSrc": "safetensors",
+      "paramsBreakdown": "BF16 33.1B"
      }
     },
     {
@@ -60,7 +78,13 @@
      "stats": {
       "downloads": null,
       "likes": null,
-      "tag": "文字生成"
+      "tag": "文字生成",
+      "params": 4112079360,
+      "paramsText": "4.1B",
+      "paramsActive": null,
+      "paramsActiveText": null,
+      "paramsSrc": "safetensors",
+      "paramsBreakdown": "BF16 4.1B"
      }
     },
     {
@@ -74,7 +98,13 @@
      "stats": {
       "downloads": null,
       "likes": null,
-      "tag": "圖像生成/編輯"
+      "tag": "圖像生成/編輯",
+      "params": null,
+      "paramsText": "—",
+      "paramsActive": null,
+      "paramsActiveText": null,
+      "paramsSrc": null,
+      "paramsBreakdown": null
      }
     },
     {
@@ -88,7 +118,13 @@
      "stats": {
       "downloads": null,
       "likes": null,
-      "tag": "圖生影片"
+      "tag": "圖生影片",
+      "params": null,
+      "paramsText": "—",
+      "paramsActive": null,
+      "paramsActiveText": null,
+      "paramsSrc": null,
+      "paramsBreakdown": null
      }
     },
     {
@@ -102,7 +138,13 @@
      "stats": {
       "downloads": null,
       "likes": null,
-      "tag": "多模態理解"
+      "tag": "多模態理解",
+      "params": 220490854016,
+      "paramsText": "220B",
+      "paramsActive": null,
+      "paramsActiveText": null,
+      "paramsSrc": "safetensors",
+      "paramsBreakdown": "UINT8 207B · FP8 10.6B · BF16 3.3B · FP32 46.3M"
      }
     },
     {
@@ -116,7 +158,13 @@
      "stats": {
       "downloads": null,
       "likes": null,
-      "tag": "文字生成"
+      "tag": "文字生成",
+      "params": null,
+      "paramsText": "—",
+      "paramsActive": null,
+      "paramsActiveText": null,
+      "paramsSrc": null,
+      "paramsBreakdown": null
      }
     },
     {
@@ -130,7 +178,13 @@
      "stats": {
       "downloads": null,
       "likes": null,
-      "tag": "多模態理解"
+      "tag": "多模態理解",
+      "params": 27781427952,
+      "paramsText": "27.8B",
+      "paramsActive": null,
+      "paramsActiveText": null,
+      "paramsSrc": "safetensors",
+      "paramsBreakdown": "BF16 27.8B"
      }
     },
     {
@@ -144,9 +198,18 @@
      "stats": {
       "downloads": null,
       "likes": null,
-      "tag": "文生圖"
+      "tag": "文生圖",
+      "params": 5082308624,
+      "paramsText": "5.1B",
+      "paramsActive": null,
+      "paramsActiveText": null,
+      "paramsSrc": "safetensors",
+      "paramsBreakdown": "BF16 5.1B"
      }
     }
+   ],
+   "notes": [
+    "參數取自 repo 的 safetensors 索引（total 為該 repo 全部權重加總，同一 repo 放多種精度會重複計算）；沒有索引的 GGUF／diffusion repo 顯示「—」，避免從檔名亂猜。"
    ]
   }
  }

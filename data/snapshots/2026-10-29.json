@@ -19,7 +19,13 @@
       "downloads": 116770,
       "likes": 3633,
       "tag": "多模態理解",
-      "createdAt": "2026-10-17T02:40:38.000Z"
+      "createdAt": "2026-10-17T02:40:38.000Z",
+      "params": 763205315794,
+      "paramsText": "763B",
+      "paramsActive": null,
+      "paramsActiveText": null,
+      "paramsSrc": "safetensors",
+      "paramsBreakdown": "INT8 557B · FP8 204B · BF16 2B · FP32 42.3M"
      }
     },
     {
@@ -34,7 +40,13 @@
       "downloads": 7412,
       "likes": 742,
       "tag": "文字生成",
-      "createdAt": "2026-10-24T02:49:18.000Z"
+      "createdAt": "2026-10-24T02:49:18.000Z",
+      "params": 33118977024,
+      "paramsText": "33.1B",
+      "paramsActive": null,
+      "paramsActiveText": null,
+      "paramsSrc": "safetensors",
+      "paramsBreakdown": "BF16 33.1B"
      }
     },
     {
@@ -49,7 +61,13 @@
       "downloads": 14047,
       "likes": 1209,
       "tag": "文字生成",
-      "createdAt": "2026-10-21T14:20:58.000Z"
+      "createdAt": "2026-10-21T14:20:58.000Z",
+      "params": 39785287456,
+      "paramsText": "39.8B",
+      "paramsActive": null,
+      "paramsActiveText": null,
+      "paramsSrc": "safetensors",
+      "paramsBreakdown": "BF16 39.8B"
      }
     },
     {
@@ -64,7 +82,13 @@
       "downloads": 8222,
       "likes": 877,
       "tag": "文字生成",
-      "createdAt": "2026-10-19T03:19:51.000Z"
+      "createdAt": "2026-10-19T03:19:51.000Z",
+      "params": 4112079360,
+      "paramsText": "4.1B",
+      "paramsActive": null,
+      "paramsActiveText": null,
+      "paramsSrc": "safetensors",
+      "paramsBreakdown": "BF16 4.1B"
      }
     },
     {
@@ -79,7 +103,13 @@
       "downloads": 13247,
       "likes": 469,
       "tag": "多模態理解",
-      "createdAt": "2026-10-17T06:37:50.000Z"
+      "createdAt": "2026-10-17T06:37:50.000Z",
+      "params": 220490854016,
+      "paramsText": "220B",
+      "paramsActive": null,
+      "paramsActiveText": null,
+      "paramsSrc": "safetensors",
+      "paramsBreakdown": "UINT8 207B · FP8 10.6B · BF16 3.3B · FP32 46.3M"
      }
     },
     {
@@ -94,7 +124,13 @@
       "downloads": 165,
       "likes": 421,
       "tag": "翻譯",
-      "createdAt": "2026-10-22T07:29:37.000Z"
+      "createdAt": "2026-10-22T07:29:37.000Z",
+      "params": 30394794496,
+      "paramsText": "30.4B",
+      "paramsActive": 3000000000,
+      "paramsActiveText": "3B",
+      "paramsSrc": "safetensors",
+      "paramsBreakdown": "FP8 28.7B · BF16 1.7B"
      }
     },
     {
@@ -109,7 +145,13 @@
       "downloads": 8892,
       "likes": 418,
       "tag": "文字生成",
-      "createdAt": "2026-10-23T21:35:42.000Z"
+      "createdAt": "2026-10-23T21:35:42.000Z",
+      "params": 1728801536,
+      "paramsText": "1.7B",
+      "paramsActive": null,
+      "paramsActiveText": null,
+      "paramsSrc": "safetensors",
+      "paramsBreakdown": "BF16 1.7B"
      }
     },
     {
@@ -124,7 +166,13 @@
       "downloads": 1377570,
       "likes": 454,
       "tag": "文字生成",
-      "createdAt": "2026-10-23T09:43:05.000Z"
+      "createdAt": "2026-10-23T09:43:05.000Z",
+      "params": null,
+      "paramsText": "—",
+      "paramsActive": null,
+      "paramsActiveText": null,
+      "paramsSrc": null,
+      "paramsBreakdown": null
      }
     },
     {
@@ -139,7 +187,13 @@
       "downloads": 2234788,
       "likes": 9755,
       "tag": "圖生影片",
-      "createdAt": "2026-07-23T07:55:24.000Z"
+      "createdAt": "2026-07-23T07:55:24.000Z",
+      "params": null,
+      "paramsText": "—",
+      "paramsActive": null,
+      "paramsActiveText": null,
+      "paramsSrc": null,
+      "paramsBreakdown": null
      }
     },
     {
@@ -154,9 +208,18 @@
       "downloads": 798943,
       "likes": 1977,
       "tag": "圖像生成／編輯",
-      "createdAt": "2026-10-14T12:00:13.000Z"
+      "createdAt": "2026-10-14T12:00:13.000Z",
+      "params": null,
+      "paramsText": "—",
+      "paramsActive": null,
+      "paramsActiveText": null,
+      "paramsSrc": null,
+      "paramsBreakdown": null
      }
     }
+   ],
+   "notes": [
+    "參數取自 repo 的 safetensors 索引（total 為該 repo 全部權重加總，同一 repo 放多種精度會重複計算）；沒有索引的 GGUF／diffusion repo 顯示「—」，避免從檔名亂猜。"
    ]
   },
   "gh": {

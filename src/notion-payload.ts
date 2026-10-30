@@ -67,10 +67,21 @@ async function prevBoard(key: string): Promise<Board | null> {
 }
 
 const MARK: Record<BoardKey, { columns: string[]; label: string; extra: string }> = {
-  hf: { columns: ["#", "模型", "熱度", "漲跌", "下載／讚", "發布"], label: "HuggingFace 模型熱度", extra: "下載／讚" },
+  hf: { columns: ["#", "模型", "參數", "熱度", "漲跌", "下載／讚", "發布"], label: "HuggingFace 模型熱度", extra: "參數" },
   gh: { columns: ["#", "專案", "今日 stars", "漲跌", "語言", "總 stars"], label: "GitHub 專案熱度", extra: "語言" },
   aa: { columns: ["#", "模型", "II 分數", "漲跌", "$/M in·out", "tok/s"], label: "Artificial Analysis 模型評測", extra: "$/M" },
 };
+
+/** HF 規格摘要：幾筆查得到參數、冠軍規格一句（餵給導讀與 Notion 內文） */
+function hfSpecBullet(items: Item[]): string {
+  const withParams = items.filter((x) => typeof x.stats?.params === "number");
+  const top = items[0];
+  const detail = typeof top?.stats?.detail === "string" ? top.stats.detail : "";
+  return `參數：${withParams.length}／${items.length} 筆可由 safetensors 索引取得（${withParams
+    .slice(0, 3)
+    .map((x) => `${x.name.split("/").pop()} ${String(x.stats?.paramsText)}`)
+    .join("、")}）；冠軍規格 ${detail || "—"}。`;
+}
 
 async function buildPayload(key: BoardKey, date: string): Promise<{ payload: Record<string, unknown>; out: string } | null> {
   const b = snap!.boards[key];
@@ -95,7 +106,16 @@ async function buildPayload(key: BoardKey, date: string): Promise<{ payload: Rec
   // 表格
   const rows = b.items.map((it) => {
     const d = delta(it);
-    if (key === "hf") return [String(it.rank), it.name, num(it.metric), d, `${num(it.stats?.downloads)}／${num(it.stats?.likes)}`, String(it.kicker ?? "—")];
+    if (key === "hf")
+      return [
+        String(it.rank),
+        it.name,
+        String(it.stats?.paramsText ?? "—"),
+        num(it.metric),
+        d,
+        `${num(it.stats?.downloads)}／${num(it.stats?.likes)}`,
+        it.stats?.createdAt ? String(it.stats.createdAt).slice(5, 10).replace("-", "/") : "—",
+      ];
     if (key === "gh") return [String(it.rank), it.name, num(it.metric), d, String(it.kicker ?? "—"), num(it.stats?.stars)];
     return [String(it.rank), it.name, num(it.metric), d, `$${it.stats?.priceIn ?? "—"}·$${it.stats?.priceOut ?? "—"}`, num(it.stats?.tps)];
   });
@@ -110,6 +130,7 @@ async function buildPayload(key: BoardKey, date: string): Promise<{ payload: Rec
       prev
         ? `今日 ${b.items.length} 筆；新進榜 ${fresh.length} 筆${fresh.length ? `（${fresh.slice(0, 4).map((x) => x.name).join("、")}${fresh.length > 4 ? "…" : ""}）` : ""}。`
         : `今日 ${b.items.length} 筆；本站首次記錄此榜，尚無前一日可比較，明日起才會出現漲跌與新進榜。`,
+      ...(key === "hf" ? [hfSpecBullet(b.items)] : []),
       ...(b.notes ?? []),
     ];
     sections.push({ heading: "註記", bullets });

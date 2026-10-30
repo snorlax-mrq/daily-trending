@@ -7,7 +7,7 @@
 
 | 榜單 | 回答的問題 | 取得方式 |
 |---|---|---|
-| HuggingFace | 哪個開源模型正在紅 | 官方 JSON API（`?sort=trendingScore`） |
+| HuggingFace | 哪個開源模型正在紅 | 官方 JSON API（`?sort=trendingScore`）＋ `expand[]` 帶參數量／授權／語言 |
 | GitHub | 開發者的注意力在哪 | `github.com/trending` HTML 解析（**無官方 API、無歷史**） |
 | Artificial Analysis | 哪個模型真的強、又划算 | Next.js RSC payload（API 需金鑰） |
 
@@ -24,6 +24,7 @@ src/fetch-aa.ts         AA fetcher（RSC）+ 事件去重
 src/collect.ts          三來源並行 → data/snapshots/YYYY-MM-DD.json（唯一真相）
 src/subset-fonts.ts     中文字型子集化（掃 dist 的字集 → Noto Serif TC woff2）
 src/import-hf-history.ts 一次性：把舊的 hf-trending 日報匯入成快照
+src/backfill-hf-params.ts 一次性（可重跑）：回查 HF detail API，補舊快照的參數量
 src/deploy.ts           把 dist/ 推到 gh-pages
 
 build.ts                快照 → 靜態站（index / d/ / board/ / archive）
@@ -53,13 +54,17 @@ done                                  # 7. 寫 Notion（同日舊列自動封存
 
 `run.sh` 是 1/3/4 的包裝。
 
+`src/backfill-hf-params.ts` 不是每日流程的一部分，只在「榜單多了新欄位、要回填歷史」時跑：
+`bun run src/backfill-hf-params.ts [--date YYYY-MM-DD] [--dry]`。它只補會隨時間失效的數字（目前是參數量），
+授權／語言這類「抓取當下」的狀態不回填，避免偽造歷史。
+
 ## Notion
 
 `trending` 頁 →「每日榜單」子頁 → **三個 DB，一個來源一個**（一天一列）：
 
 | DB | project | 專屬屬性 |
 |---|---|---|
-| HuggingFace 每日整理 | `hf` | 冠軍模型 · 熱度 · 下載 · 讚 |
+| HuggingFace 每日整理 | `hf` | 冠軍模型 · 熱度 · 下載 · 讚（表格含參數、發布日） |
 | GitHub 每日整理 | `gh` | 榜首專案 · 今日 stars · 語言 |
 | Artificial Analysis 每日整理 | `aa` | 榜首模型 · II 分數 |
 
@@ -86,6 +91,12 @@ done                                  # 7. 寫 Notion（同日舊列自動封存
     "hf": { "label": "HuggingFace", "question": "…", "source": "…",
             "items": [{ "id", "name", "url", "rank", "metric",
                         "kicker", "note", "stats" }],
+            // stats 是 loose bag，榜單自己決定要塞什麼。hf 目前有：
+            // downloads / downloadsAllTime / likes / tag / pipeline / library
+            // createdAt / lastModified
+            // params / paramsText / paramsActive / paramsActiveText / paramsSrc(safetensors|name)
+            // paramsBreakdown / license / langs / quant / baseModel / detail
+            // detail 是一行式規格摘要（參數＋精度＋授權＋語言＋基底），給 tooltip 與 Notion 用
             "notes": ["讀者必須知道的資料限制"],
             "error": "抓取失敗時的訊息" },
     "gh": { … }, "aa": { …, "events": [{ "kind", "text", "url" }] } } }
@@ -107,6 +118,10 @@ orphan commit 推上去，`dist/.nojekyll` 已含在產物裡）。原始碼在 
 
 ## 已知限制
 
+- 參數量取自 repo 的 `safetensors.total`，是「該 repo 全部權重加總」——同一個 repo 放 bf16＋fp8 兩份就會重複計算；
+  MoE 的「啟用參數」只有檔名有寫（`35B-A3B`）才抓得到，且只寫進 `stats` 與 tooltip，不進表格。
+  沒有索引的 GGUF／diffusion repo 一律印「—」，不從檔名回推（`-E4B-4GB` 這種寫法很容易誤判）。
+  **上下文長度（`max_position_embeddings`）不在 list 回傳的 `config` 裡**，要嘛逐筆抓 `config.json`，目前不做。
 - GitHub trending 每日筆數不固定（實測 11–25 筆），排序不是 `stars today`。
 - AA Intelligence Index 2026-10-27 換到 v5，273 筆條目只有 77 筆完成評分，遷移期名次會劇烈變動。
 - AA changelog 保留約 13 天，用 `data/seen-aa-events.json` 去重，避免同一件事連日重報。

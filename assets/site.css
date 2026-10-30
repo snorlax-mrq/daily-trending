@@ -211,6 +211,10 @@ a { color: inherit; text-decoration: none; }
 .col-delta { width: 4.4em; }
 .col-spark { width: 8em; }
 .col-note { width: auto; }
+.col-params { width: 4.8em; }
+/* HF 多一欄「參數」，名稱欄讓一點寬度出來 */
+.quotes-hf .col-name { width: 31%; }
+.quotes-hf .col-note { width: auto; }
 .quotes-series .col-name { width: 40%; }
 .quotes-series .col-value { width: 6.5em; }
 .quotes-series .col-spark { width: 15em; }
@@ -243,6 +247,12 @@ a { color: inherit; text-decoration: none; }
   display: block; font-family: var(--f-cjk); font-size: 0.7812rem; color: var(--ink-3);
   letter-spacing: .04em; margin-top: 2px;
 }
+.c-params {
+  font-family: var(--f-num); font-weight: 600; font-size: 1rem; line-height: 1.15;
+  font-variant-numeric: tabular-nums; white-space: nowrap; color: var(--ink-2);
+  letter-spacing: .01em; text-align: right;
+}
+.c-params[title] { cursor: help; border-bottom: 1px dotted var(--rule-2); }
 .c-value {
   font-family: var(--f-num); font-weight: 700; font-size: 1.125rem; line-height: 1.1;
   font-variant-numeric: tabular-nums; white-space: nowrap;
@@ -393,6 +403,18 @@ a { color: inherit; text-decoration: none; }
   .c-kind { grid-area: kind; margin-top: 1px; }
   .c-value { grid-area: value; text-align: right; font-size: 1.0312rem; }
   .c-delta { grid-area: delta; text-align: right; width: auto; font-size: 0.8438rem; }
+  /* HF：參數在手機上換成獨立一行（帶「參數」小標），不擠名稱欄 */
+  .quotes-hf tbody tr {
+    grid-template-areas: "rank name value" "rank kind delta" "params params params" "note note note" "spark spark spark";
+  }
+  .c-params {
+    grid-area: params; text-align: left; font-size: 0.8125rem; color: var(--ink-3);
+    margin-top: 2px; border-bottom: none;
+  }
+  .c-params::before {
+    content: "參數"; font-family: var(--f-cjk); font-weight: 400; letter-spacing: .06em;
+    margin-right: 6px;
+  }
   .c-note { grid-area: note; max-width: none; margin-top: 3px; }
   .clamp2 { max-width: none; }
   .c-spark { grid-area: spark; width: 100%; margin-top: 8px; }

@@ -213,6 +213,13 @@ function deltaCell(key: string, id: string, rank: number, date: string): string 
   return `<td class="c-delta r flat">＝</td>`;
 }
 
+/** 只有 HF 有參數欄；舊快照沒有這個 stat，就印「—」 */
+function paramsCell(it: Item): string {
+  const txt = typeof it.stats?.paramsText === "string" ? it.stats.paramsText : "—";
+  const detail = typeof it.stats?.detail === "string" ? it.stats.detail : "";
+  return `<td class="c-params"${detail ? ` title="${esc(`${it.id}｜${detail}`)}"` : ""}>${esc(txt)}</td>`;
+}
+
 function valueCell(it: Item): string {
   if (it.metric === null) return `<td class="c-value r">—</td>`;
   const v = it.metric >= 1000 ? Math.round(it.metric).toLocaleString("en-US") : fmtNum(it.metric, it.metric < 100 ? 1 : 0);
@@ -253,6 +260,7 @@ function renderBoard(key: string, b: Board, date: string, idx: number, rel: stri
       return `<tr>
   <td class="c-rank">${String(it.rank).padStart(2, "0")}</td>
   <td class="c-name"><a href="${it.url}">${esc(it.name)}</a><span class="c-kind">${esc(it.kicker)}</span></td>
+  ${key === "hf" ? paramsCell(it) : ""}
   ${valueCell(it)}
   ${withHistory ? deltaCell(key, it.id, it.rank, date) : ""}
   ${withHistory ? `<td class="c-spark" data-label="近 ${seriesLen} 日名次">${sp}${form}</td>` : ""}
@@ -274,9 +282,9 @@ function renderBoard(key: string, b: Board, date: string, idx: number, rel: stri
     : "";
 
   return `<section class="board" id="${key}">${head}
-<table class="quotes">
-  <colgroup><col class="col-rank"><col class="col-name"><col class="col-value">${withHistory ? '<col class="col-delta"><col class="col-spark">' : ""}<col class="col-note"></colgroup>
-  <thead><tr><th>名次</th><th>名稱</th><th class="r">${slabel}</th>${withHistory ? `<th class="r">漲跌</th><th class="th-spark">近 ${seriesLen} 日名次</th>` : ""}<th>備註</th></tr></thead>
+<table class="quotes quotes-${key}">
+  <colgroup><col class="col-rank"><col class="col-name">${key === "hf" ? '<col class="col-params">' : ""}<col class="col-value">${withHistory ? '<col class="col-delta"><col class="col-spark">' : ""}<col class="col-note"></colgroup>
+  <thead><tr><th>名次</th><th>名稱</th>${key === "hf" ? '<th class="r">參數</th>' : ""}<th class="r">${slabel}</th>${withHistory ? `<th class="r">漲跌</th><th class="th-spark">近 ${seriesLen} 日名次</th>` : ""}<th>備註</th></tr></thead>
   <tbody>
 ${rows}
   </tbody>

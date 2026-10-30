@@ -1,0 +1,13 @@
+{
+ "by": "編輯",
+ "lead": [
+  "今天的重點是名次的搬風。HuggingFace 前十有兩筆被換掉，GitHub 的榜首換人，由第四名跳上第一的 <span class=\"em\">HKUDS/DeepTutor</span> 接手，而 Artificial Analysis 是唯一沒有動的榜，前十名與分數和昨天一模一樣。",
+  "HuggingFace 的 <span class=\"em\">DeepSeek-V4.1-Flash-1017</span> 以熱度 867 連續第 11 天居首，但比昨天的 887 略降。真正在動的是中段：LiquidAI/LFM3-1.7B 由第七升到第三，ISTA-DASLab 的 DeepSeek GGUF 量化版由第八升到第五，XHToken/Spark-X2.6-4B 則從第四退到第九。新進榜兩筆都不是文字生成模型，nvidia 的 Nemotron-3.5-Transcribe-30B-A4B 直接進第六（下載 4.3K、讚 428），百度 Unlimited-OCR-2 進第八（下載 18.1K）；被擠出前十的是 MiniMax-M3.1-Flash 與 tencent/Hy-SimulMT-30B-A3B-FP8。",
+  "GitHub 今天只取 11 筆（昨天 14 筆），四筆新面孔全部繞著 agent 打轉：OpenMausBot 以第五進榜（今日新增 1,199 stars），CopilotKit/OpenBot 第九，claude-mem 第八，Claude-Code-Game-Studios 第十一。值得一提的是 impeccable 今日新增 2,870 stars 為全榜最多，名次卻只排第三，trending 的排序並不是單純看今日 stars。Artificial Analysis 這邊，<span class=\"em\">Gemini 4 Carbon（High）</span> 以 II 59.4 續居首位，前十名分數一字未改；今日異動是 Mistral Large 4 的 High 與 Medium 兩個版本完成評分，II 分別為 26.0 與 23.0，與第十名的 51.7 還有一大段距離。"
+ ],
+ "boards": {
+  "hf": "DeepSeek-V4.1-Flash-1017 熱度 867 連續第 11 天居首，較昨天 887 略降。LiquidAI/LFM3-1.7B 由第七升到第三，ISTA-DASLab 的 GGUF 版第八升第五，Spark-X2.6-4B 由第四退到第九；新進榜兩筆為 nvidia Nemotron-Transcribe 與百度 OCR。",
+  "gh": "今天 11 筆，比昨天少 3 筆，榜首換成 HKUDS/DeepTutor（今日 +1,930 stars、累積 50,804），thinkrail 退到第四。新面孔 OpenMausBot 進第五；impeccable 今日 2,870 stars 全榜最多卻只排第三。",
+  "aa": "前十名與分數和昨天完全一致，Gemini 4 Carbon（High）以 II 59.4 續居首位。今日異動是 Mistral Large 4 兩個版本完成評分，II 為 26.0 與 23.0，另 Systalyze 有 2 個模型上架。"
+ }
+}
