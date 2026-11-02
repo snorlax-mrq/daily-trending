@@ -100,6 +100,8 @@ const HF_MODEL: Record<string, unknown> = {
   生效參數: num(),
   精度: select(),
   基底模型: rich(),
+  參數組成: rich(),
+  發布時間: rich(),
   發布日: date(),
   首次收錄: date(),
   最近在榜: date(),
@@ -153,6 +155,7 @@ const OBS: Record<string, unknown> = {
   "tok/s": num(),
   任務成本: num(),
   規格更新: date(),
+  修改時間: rich(),
   ...(hfId.startsWith("dry-") ? {} : { "HF 模型": rel(hfId, "觀測") }),
   ...(ghId.startsWith("dry-") ? {} : { "GitHub 專案": rel(ghId, "觀測") }),
   ...(aaId.startsWith("dry-") ? {} : { "AA 模型": rel(aaId, "觀測") }),
@@ -192,5 +195,21 @@ if (!dry) {
 } else {
   console.log("\n（dry run，未寫入）");
 }
+// ── 6：既有的三個「日報」DB 補一個 榜單中繼 屬性（放 notes／events／generatedAt 這種非項目資料）──
+for (const proj of ["hf", "gh", "aa"]) {
+  const f = join(ROOT, "..", "data", `notion_${proj}.json`);
+  if (!existsSync(f)) continue;
+  const { db } = JSON.parse(await Bun.file(f).text()) as { db: string };
+  const def = await api("GET", `/databases/${db}`);
+  if (def.properties?.["榜單中繼"]) continue;
+  if (dry) {
+    console.log(`[dry] 日報 ${proj} 會補 榜單中繼`);
+    continue;
+  }
+  await api("PATCH", `/databases/${db}`, { properties: { 榜單中繼: { rich_text: {} } } });
+  console.log(`＋日報 ${proj} 補屬性 榜單中繼`);
+  await sleep();
+}
+
 // data/notion_items_db.json 只在 setup 時寫；之後 notion-items / notion-export 直接讀
 if (dry && existsSync(IDS_FILE)) console.log(`現有 ${IDS_FILE}:`, await Bun.file(IDS_FILE).text());

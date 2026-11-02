@@ -30,33 +30,63 @@ src/deploy.ts           把 dist/ 推到 gh-pages
 build.ts                快照 → 靜態站（index / d/ / board/ / archive）
 assets/site.css         全部樣式（無框架）
 assets/fonts/           Archivo Narrow（拉丁、窄體數字）、Source Serif 4
-data/snapshots/         每日快照（唯一真相，要進 git）
+data/snapshots/         每日快照（要進 git）
 data/headlines/         每日導讀（AI 撰寫，要進 git）
 data/seen-aa-events.json AA changelog 去重紀錄
+data/notion_items_db.json   Notion 4 個 DB 的 id（notion-db.ts 產生）
+data/notion_entities.json   實體 → Notion page id 快取
+data/notion_obs.json        觀測 → Notion page id 快取
+NOTION.md               Notion 資料模型與同步規則（上游設計）
 ```
+
+**唯一真相已經搬到 Notion**（見 `NOTION.md`）：`data/snapshots/` 是 `src/notion-export.ts`
+從 Notion 匯出的產物，同時保留為離線 fallback。每日流程會寫進 Notion、再從 Notion 匯出回寫，
+所以「在 Notion 改的東西」才活得下來。
 
 ## 每日執行
 
 cron `64c09feacb314d4c`（每天 08:00 Asia/Taipei，沿用原 HF 日報時段）依序：
 
 ```bash
+# A. 抓資料
 bun run src/collect.ts      # 1. 抓三個來源 → data/snapshots/YYYY-MM-DD.json
                             # 2. 由 AI 寫 data/headlines/YYYY-MM-DD.json（導讀）
-bun run build.ts            # 3. 產生 dist/
-bun run src/subset-fonts.ts # 4. 中文字型子集（必須在 build 之後）
-bun run src/deploy.ts       # 5. 推 gh-pages（需 GITHUB_TOKEN）
-bun run src/notion-payload.ts --all   # 6. 快照＋導讀 → 三個 payload（hf/gh/aa）
+
+# B. 進 Notion（上游）
+bun run src/notion-items.ts   # 3. 實體 ×3 ＋ 每日名次（upsert，重跑不重複）
+bun run src/notion-relay.ts   # 4. notes／events／長版導讀 → 日報的「榜單中繼」
+bun run src/notion-export.ts --write  # 5. 以 Notion 為準回寫 JSON（正常應印「✓ 完全一致」）
+
+# C. 建站
+bun run build.ts            # 6. dist/
+bun run src/subset-fonts.ts # 7. 中文字型子集（必須在 build 之後）
+bun run src/deploy.ts       # 8. 推 gh-pages（需 GITHUB_TOKEN）
+
+# D. 日報（--in-place：人工導讀不被覆蓋）
+bun run src/notion-payload.ts --all   # 9. 快照＋導讀 → 三個 payload
 cd .. && for b in hf gh aa; do
   python3 scripts/notion_push.py --push --project $b \
-    --payload data/digest_out/payload_trending_${b}_<date>.json
-done                                  # 7. 寫 Notion（同日舊列自動封存）
+    --payload data/digest_out/payload_trending_${b}_<date>.json --in-place
+done                                  # 10. 就地更新三個日報列
 ```
 
-`run.sh` 是 1/3/4 的包裝。
+`run.sh` 是 1/3 的包裝。第 5 步的 `--write` 有安全閘：匯出的項目數比本機少就拒絕覆寫
+（代表 Notion 沒寫完），寧可留著舊 JSON 也不要上一個缺資料的站。
 
-`src/backfill-hf-params.ts` 不是每日流程的一部分，只在「榜單多了新欄位、要回填歷史」時跑：
-`bun run src/backfill-hf-params.ts [--date YYYY-MM-DD] [--dry]`。它只補會隨時間失效的數字（目前是參數量），
-授權／語言這類「抓取當下」的狀態不回填，避免偽造歷史。
+`--in-place` 只重建「生成區塊」，`導讀（編輯）` 底下的段落是人工區，原封不動。
+要連人工區一起覆蓋時加 `--force-human`。
+
+### 一次性工具（不在每日流程）
+
+| 指令 | 用途 |
+|---|---|
+| `bun run src/notion-db.ts` | 建立／補齊 4 個 Notion DB（可重跑） |
+| `bun run src/notion-dedupe.ts` | 清掉「每日名次」的重複列（中斷造成的） |
+| `bun run src/backfill-hf-params.ts` | 補舊快照的參數量（只補會失效的數字，不推測歷史） |
+| `bun run src/backfill-hf-spec.ts [--refill]` | 補舊快照的 license／langs／quant／baseModel／createdAt／library（還查得到才補，查不到留 null） |
+
+`backfill-hf-params.ts` 只補會隨時間失效的數字（目前是參數量），授權／語言這類「抓取當下」的狀態不回填，
+避免偽造歷史；`backfill-hf-spec.ts` 相反，只補「不隨時間改變」的規格，且以 HF 現在還查得到為準。
 
 ## Notion
 

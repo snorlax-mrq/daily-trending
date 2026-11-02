@@ -14,7 +14,7 @@
      "rank": 1,
      "metric": null,
      "kicker": "多模態理解",
-     "note": "",
+     "note": "10/17 發布",
      "stats": {
       "downloads": null,
       "likes": null,
@@ -30,8 +30,8 @@
       "quant": "fp8",
       "baseModel": null,
       "pipeline": "image-text-to-text",
-      "library": null,
-      "createdAt": null,
+      "library": "transformers",
+      "createdAt": "2026-10-17T02:40:38.000Z",
       "lastModified": null,
       "downloadsAllTime": null,
       "detail": "總 763B（safetensors） · INT8 557B · FP8 204B · BF16 2B · FP32 42.3M · fp8 · MIT"
@@ -44,7 +44,7 @@
      "rank": 2,
      "metric": null,
      "kicker": "圖像生成/編輯",
-     "note": "",
+     "note": "10/14 發布",
      "stats": {
       "downloads": null,
       "likes": null,
@@ -60,8 +60,8 @@
       "quant": null,
       "baseModel": "black-forest-labs/flux-3-image-klein",
       "pipeline": "image-to-image",
-      "library": null,
-      "createdAt": null,
+      "library": "diffusion-single-file",
+      "createdAt": "2026-10-14T12:00:13.000Z",
       "lastModified": null,
       "downloadsAllTime": null,
       "detail": "自訂 · 1 語（英） · 基底 black-forest-labs/flux-3-image-klein"
@@ -74,7 +74,7 @@
      "rank": 3,
      "metric": null,
      "kicker": "文生圖",
-     "note": "",
+     "note": "10/11 發布",
      "stats": {
       "downloads": null,
       "likes": null,
@@ -90,8 +90,8 @@
       "quant": null,
       "baseModel": "OpenMOSS-Team/MOSS-Image-Base",
       "pipeline": "text-to-image",
-      "library": null,
-      "createdAt": null,
+      "library": "diffusers",
+      "createdAt": "2026-10-11T07:01:17.000Z",
       "lastModified": null,
       "downloadsAllTime": null,
       "detail": "總 5.1B（safetensors） · BF16 5.1B · Apache-2.0 · 2 語（英・中） · 基底 OpenMOSS-Team/MOSS-Image-Base"
@@ -104,7 +104,7 @@
      "rank": 4,
      "metric": null,
      "kicker": "文字生成",
-     "note": "",
+     "note": "10/21 發布",
      "stats": {
       "downloads": null,
       "likes": null,
@@ -120,8 +120,8 @@
       "quant": null,
       "baseModel": null,
       "pipeline": "text-generation",
-      "library": null,
-      "createdAt": null,
+      "library": "transformers",
+      "createdAt": "2026-10-21T14:20:58.000Z",
       "lastModified": null,
       "downloadsAllTime": null,
       "detail": "總 39.8B（safetensors） · BF16 39.8B · Apache-2.0"
@@ -134,7 +134,7 @@
      "rank": 5,
      "metric": null,
      "kicker": "文生圖",
-     "note": "",
+     "note": "10/11 發布",
      "stats": {
       "downloads": null,
       "likes": null,
@@ -150,8 +150,8 @@
       "quant": null,
       "baseModel": null,
       "pipeline": "text-to-image",
-      "library": null,
-      "createdAt": null,
+      "library": "diffusers",
+      "createdAt": "2026-10-11T06:49:17.000Z",
       "lastModified": null,
       "downloadsAllTime": null,
       "detail": "總 5.1B（safetensors） · BF16 5.1B · Apache-2.0 · 2 語（英・中）"
@@ -164,7 +164,7 @@
      "rank": 6,
      "metric": null,
      "kicker": "語音合成",
-     "note": "",
+     "note": "10/01 發布",
      "stats": {
       "downloads": null,
       "likes": null,
@@ -181,7 +181,7 @@
       "baseModel": null,
       "pipeline": "text-to-speech",
       "library": null,
-      "createdAt": null,
+      "createdAt": "2026-10-01T04:34:57.000Z",
       "lastModified": null,
       "downloadsAllTime": null,
       "detail": "總 35.9B（safetensors） · FP8 32.2B · BF16 3.7B · 自訂 · 69 語（中・英・日・韓・西・葡…）"
@@ -194,7 +194,7 @@
      "rank": 7,
      "metric": null,
      "kicker": "圖生影片",
-     "note": "",
+     "note": "07/23 發布",
      "stats": {
       "downloads": null,
       "likes": null,
@@ -210,8 +210,8 @@
       "quant": null,
       "baseModel": null,
       "pipeline": "image-to-video",
-      "library": null,
-      "createdAt": null,
+      "library": "diffusion-single-file",
+      "createdAt": "2026-07-23T07:55:24.000Z",
       "lastModified": null,
       "downloadsAllTime": null,
       "detail": "自訂 · 9 語（英・德・西・法・日・韓…）"
@@ -224,7 +224,7 @@
      "rank": 8,
      "metric": null,
      "kicker": "多模態理解",
-     "note": "",
+     "note": "09/15 發布",
      "stats": {
       "downloads": null,
       "likes": null,
@@ -240,8 +240,8 @@
       "quant": null,
       "baseModel": null,
       "pipeline": "image-text-to-text",
-      "library": null,
-      "createdAt": null,
+      "library": "transformers",
+      "createdAt": "2026-09-15T19:23:19.000Z",
       "lastModified": null,
       "downloadsAllTime": null,
       "detail": "總 822B（safetensors）／啟用 42B · BF16 822B · FP32 130M · 自訂 · 1 語（英）"
@@ -254,7 +254,7 @@
      "rank": 9,
      "metric": null,
      "kicker": "圖像生成/編輯",
-     "note": "",
+     "note": "10/13 發布",
      "stats": {
       "downloads": null,
       "likes": null,
@@ -270,8 +270,8 @@
       "quant": null,
       "baseModel": null,
       "pipeline": "image-to-image",
-      "library": null,
-      "createdAt": null,
+      "library": "diffusers",
+      "createdAt": "2026-10-13T10:58:40.000Z",
       "lastModified": null,
       "downloadsAllTime": null,
       "detail": "總 5.5B（safetensors） · BF16 5.5B · 自訂 · 1 語（英）"
@@ -284,7 +284,7 @@
      "rank": 10,
      "metric": null,
      "kicker": "向量嵌入",
-     "note": "",
+     "note": "09/14 發布",
      "stats": {
       "downloads": null,
       "likes": null,
@@ -300,8 +300,8 @@
       "quant": null,
       "baseModel": null,
       "pipeline": "feature-extraction",
-      "library": null,
-      "createdAt": null,
+      "library": "transformers",
+      "createdAt": "2026-09-14T14:53:42.000Z",
       "lastModified": null,
       "downloadsAllTime": null,
       "detail": "總 744M（safetensors） · BF16 744M · Apache-2.0"

@@ -189,6 +189,15 @@ async function buildPayload(key: BoardKey, date: string): Promise<{ payload: Rec
 
   for (const k of Object.keys(props_extra)) if (props_extra[k] === undefined) delete props_extra[k];
 
+  // 榜單層級的機器資料（notes／events／generatedAt／長版導讀）放日報列的 JSON 屬性：
+  // 它們不是「項目」，不進每日名次 DB；匯出時靠這份還原 Board 的非 items 欄位。
+  const relay = JSON.stringify({
+    generatedAt: snap.generatedAt,
+    notes: b.notes,
+    events: b.events,
+    headlines: { by: headline?.by ?? "編輯", lead: headline?.lead ?? [], boards: headline?.boards },
+  });
+
   const payload = {
     date,
     title,
@@ -196,6 +205,7 @@ async function buildPayload(key: BoardKey, date: string): Promise<{ payload: Rec
     url,
     props: {
       summary,
+      榜單中繼: relay,
       topics: [MARK[key].label],
       source: key === "hf" ? "HF API" : key === "gh" ? "GitHub trending" : "artificialanalysis.ai",
       url,

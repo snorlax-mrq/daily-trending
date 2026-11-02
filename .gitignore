@@ -21,3 +21,5 @@ data/.charset.txt
 *.log
 .DS_Store
 Thumbs.db
+# Notion 匯出的中間產物（比對用，不進 git）
+data/notion-export/

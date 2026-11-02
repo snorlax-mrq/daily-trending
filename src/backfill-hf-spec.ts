@@ -15,6 +15,8 @@ const argDate = (() => {
   return i > 0 ? process.argv[i + 1] : undefined;
 })();
 const dry = process.argv.includes("--dry");
+// --refill：重查 createdAt／library 這類「不隨時間改變」但第一輪漏抓的欄位
+const refill = process.argv.includes("--refill");
 const CONCURRENCY = 4;
 
 const dates = listSnapshots().map((f) => f.replace(/\.json$/, "")).filter((d) => !argDate || d === argDate);
@@ -24,7 +26,9 @@ const targets: Target[] = [];
 for (const date of dates) {
   const s = await readSnapshot(date);
   for (const [index, it] of (s?.boards?.hf?.items ?? []).entries()) {
-    if (it.stats && "license" in it.stats) continue; // 已補過（含確定查不到的 null）
+    if (refill) {
+      if (it.stats?.createdAt && it.stats?.library) continue;
+    } else if (it.stats && "license" in it.stats) continue; // 已補過（含確定查不到的 null）
     targets.push({ date, index, id: it.id });
   }
 }
@@ -33,7 +37,8 @@ if (!targets.length) process.exit(0);
 
 const detailUrl = (id: string) => {
   const q = new URLSearchParams();
-  for (const f of ["safetensors", "tags", "pipeline_tag"]) q.append("expand[]", f);
+  // createdAt／library_name 也要 expand，否則 detail API 不會回傳（第一輪就漏了這兩個）
+  for (const f of ["safetensors", "tags", "pipeline_tag", "createdAt", "library_name"]) q.append("expand[]", f);
   return `https://huggingface.co/api/models/${id}?${q.toString()}`;
 };
 
@@ -99,8 +104,13 @@ for (const [date, list] of byDate) {
     if (!it) continue;
     const f = fills.get(t.id) ?? MISSING;
     const stats = it.stats ?? {};
-    // 只補缺的鍵
-    for (const [k, v] of Object.entries(f)) if (!(k in stats)) (stats as Record<string, unknown>)[k] = v;
+    // 只補缺的鍵；createdAt／library 是「不隨時間改變」的值，null 也允許補（第一輪漏抓）
+    const STABLE = new Set(["createdAt", "library"]);
+    for (const [k, v] of Object.entries(f)) {
+      const missing = !(k in stats);
+      const blankStable = STABLE.has(k) && (stats as Record<string, unknown>)[k] == null;
+      if (missing || blankStable) (stats as Record<string, unknown>)[k] = v;
+    }
     stats.detail = composeDetail({
       paramsText: (stats.paramsText as string) ?? null,
       paramsActiveText: (stats.paramsActiveText as string) ?? null,

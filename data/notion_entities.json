@@ -1,0 +1,304 @@
+{
+ "hf": {
+  "deepseek-ai/DeepSeek-V4.1-Flash-1017": {
+   "page": "40cb8a3a-65b7-8124-a6de-d2e08732a600",
+   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"deepseek-ai/DeepSeek-V4.1-Flash-1017\"}}]},\"網址\":{\"url\":\"https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017\"},\"Pipeline\":{\"select\":{\"name\":\"image-text-to-text\"}},\"Library\":{\"select\":{\"name\":\"transformers\"}},\"授權\":{\"select\":{\"name\":\"MIT\"}},\"參數\":{\"number\":763205315794},\"參數來源\":{\"select\":{\"name\":\"safetensors\"}},\"生效參數\":{\"number\":null},\"精度\":{\"select\":{\"name\":\"fp8\"}},\"參數組成\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"INT8 557B · FP8 204B · BF16 2B · FP32 42.3M\"}}]},\"發布時間\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"2026-10-17T02:40:38.000Z\"}}]},\"發布日\":{\"date\":{\"start\":\"2026-10-17\"}},\"首次收錄\":{\"date\":{\"start\":\"2026-10-20\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-11-02\"}}}"
+  },
+  "black-forest-labs/flux-3-image-klein-comfy": {
+   "page": "40cb8a3a-65b7-81f1-837c-db9bf0c51f82",
+   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"black-forest-labs/flux-3-image-klein-comfy\"}}]},\"網址\":{\"url\":\"https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy\"},\"Pipeline\":{\"select\":{\"name\":\"image-to-image\"}},\"Library\":{\"select\":{\"name\":\"diffusion-single-file\"}},\"授權\":{\"select\":{\"name\":\"自訂\"}},\"語言\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"en\"}}]},\"參數\":{\"number\":null},\"參數來源\":{\"select\":null},\"生效參數\":{\"number\":null},\"精度\":{\"select\":null},\"基底模型\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"black-forest-labs/flux-3-image-klein\"}}]},\"參數組成\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"\"}}]},\"發布時間\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"2026-10-14T12:00:13.000Z\"}}]},\"發布日\":{\"date\":{\"start\":\"2026-10-14\"}},\"首次收錄\":{\"date\":{\"start\":\"2026-10-20\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-10-31\"}}}"
+  },
+  "fishaudio/drama-3": {
+   "page": "40cb8a3a-65b7-81a3-a450-e869dfc4cdc9",
+   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"fishaudio/drama-3\"}}]},\"網址\":{\"url\":\"https://huggingface.co/fishaudio/drama-3\"},\"Pipeline\":{\"select\":{\"name\":\"text-to-speech\"}},\"Library\":{\"select\":null},\"授權\":{\"select\":{\"name\":\"自訂\"}},\"語言\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"zh en ja ko es pt ar ru fr de sv it tr no nl cy eu ca da gl ta hu fi pl et hi ur th vi bn yo sl cs sw he ms uk id kk bg lv my tl sk ne fa af el bo hr ro am km is az sq ps mn ml sr te ka pa lt kn si hy mr gu\"}}]},\"參數\":{\"number\":35899643008},\"參數來源\":{\"select\":{\"name\":\"safetensors\"}},\"生效參數\":{\"number\":null},\"精度\":{\"select\":null},\"參數組成\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"FP8 32.2B · BF16 3.7B\"}}]},\"發布時間\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"2026-10-01T04:34:57.000Z\"}}]},\"發布日\":{\"date\":{\"start\":\"2026-10-01\"}},\"首次收錄\":{\"date\":{\"start\":\"2026-10-20\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-10-25\"}}}"
+  },
+  "google/embeddinggemma-2": {
+   "page": "40cb8a3a-65b7-8120-8f6e-f827a1356fc1",
+   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"google/embeddinggemma-2\"}}]},\"網址\":{\"url\":\"https://huggingface.co/google/embeddinggemma-2\"},\"Pipeline\":{\"select\":{\"name\":\"feature-extraction\"}},\"Library\":{\"select\":{\"name\":\"transformers\"}},\"授權\":{\"select\":{\"name\":\"Apache-2.0\"}},\"參數\":{\"number\":744371512},\"參數來源\":{\"select\":{\"name\":\"safetensors\"}},\"生效參數\":{\"number\":null},\"精度\":{\"select\":null},\"參數組成\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"BF16 744M\"}}]},\"發布時間\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"2026-09-14T14:53:42.000Z\"}}]},\"發布日\":{\"date\":{\"start\":\"2026-09-14\"}},\"首次收錄\":{\"date\":{\"start\":\"2026-10-20\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-10-23\"}}}"
+  },
+  "jialinyyzz/humanizer": {
+   "page": "40cb8a3a-65b7-8199-b537-f97e61f6f787",
+   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"jialinyyzz/humanizer\"}}]},\"網址\":{\"url\":\"https://huggingface.co/jialinyyzz/humanizer\"},\"Pipeline\":{\"select\":{\"name\":\"text-generation\"}},\"Library\":{\"select\":{\"name\":\"gguf\"}},\"授權\":{\"select\":{\"name\":\"Apache-2.0\"}},\"語言\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"en zh\"}}]},\"參數\":{\"number\":11959730224},\"參數來源\":{\"select\":{\"name\":\"safetensors\"}},\"生效參數\":{\"number\":null},\"精度\":{\"select\":{\"name\":\"gguf\"}},\"基底模型\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"google/gemma-4-12B\"}}]},\"參數組成\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"BF16 12B\"}}]},\"發布時間\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"2026-09-11T05:00:16.000Z\"}}]},\"發布日\":{\"date\":{\"start\":\"2026-09-11\"}},\"首次收錄\":{\"date\":{\"start\":\"2026-10-20\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-10-22\"}}}"
+  },
+  "meta-models/Muse-Spark-Open-816B-A42B": {
+   "page": "40cb8a3a-65b7-8197-88b0-faefef865ba7",
+   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"meta-models/Muse-Spark-Open-816B-A42B\"}}]},\"網址\":{\"url\":\"https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B\"},\"Pipeline\":{\"select\":{\"name\":\"image-text-to-text\"}},\"Library\":{\"select\":{\"name\":\"transformers\"}},\"授權\":{\"select\":{\"name\":\"自訂\"}},\"語言\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"en\"}}]},\"參數\":{\"number\":822036529664},\"參數來源\":{\"select\":{\"name\":\"safetensors\"}},\"生效參數\":{\"number\":42000000000},\"精度\":{\"select\":null},\"參數組成\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"BF16 822B · FP32 130M\"}}]},\"發布時間\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"2026-09-15T19:23:19.000Z\"}}]},\"發布日\":{\"date\":{\"start\":\"2026-09-15\"}},\"首次收錄\":{\"date\":{\"start\":\"2026-10-20\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-10-23\"}}}"
+  },
+  "LiquidAI/LFM2.5-24B-A2B": {
+   "page": "40cb8a3a-65b7-8197-9df1-c9ecd7b9ce15",
+   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"LiquidAI/LFM2.5-24B-A2B\"}}]},\"網址\":{\"url\":\"https://huggingface.co/LiquidAI/LFM2.5-24B-A2B\"},\"Pipeline\":{\"select\":{\"name\":\"text-generation\"}},\"Library\":{\"select\":{\"name\":\"transformers\"}},\"授權\":{\"select\":{\"name\":\"自訂\"}},\"語言\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"en ar zh fr de ja ko es pt it vi th id hi ru pl\"}}]},\"參數\":{\"number\":23971585280},\"參數來源\":{\"select\":{\"name\":\"safetensors\"}},\"生效參數\":{\"number\":2000000000},\"精度\":{\"select\":null},\"基底模型\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"LiquidAI/LFM2.5-24B-A2B-Base\"}}]},\"參數組成\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"BF16 24B\"}}]},\"發布時間\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"2026-10-12T05:35:46.000Z\"}}]},\"發布日\":{\"date\":{\"start\":\"2026-10-12\"}},\"首次收錄\":{\"date\":{\"start\":\"2026-10-20\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-10-20\"}}}"
+  },
+  "black-forest-labs/flux-3-image-klein": {
+   "page": "40cb8a3a-65b7-8141-bc4d-c650fbb92875",
+   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"black-forest-labs/flux-3-image-klein\"}}]},\"網址\":{\"url\":\"https://huggingface.co/black-forest-labs/flux-3-image-klein\"},\"Pipeline\":{\"select\":{\"name\":\"image-to-image\"}},\"Library\":{\"select\":{\"name\":\"diffusers\"}},\"授權\":{\"select\":{\"name\":\"自訂\"}},\"語言\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"en\"}}]},\"參數\":{\"number\":5548681984},\"參數來源\":{\"select\":{\"name\":\"safetensors\"}},\"生效參數\":{\"number\":null},\"精度\":{\"select\":null},\"參數組成\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"BF16 5.5B\"}}]},\"發布時間\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"2026-10-13T10:58:40.000Z\"}}]},\"發布日\":{\"date\":{\"start\":\"2026-10-13\"}},\"首次收錄\":{\"date\":{\"start\":\"2026-10-20\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-10-23\"}}}"
+  },
+  "OpenMOSS-Team/MOSS-Image-SFT": {
+   "page": "40cb8a3a-65b7-8133-8836-f1d3c13d4eb1",
+   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"OpenMOSS-Team/MOSS-Image-SFT\"}}]},\"網址\":{\"url\":\"https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT\"},\"Pipeline\":{\"select\":{\"name\":\"text-to-image\"}},\"Library\":{\"select\":{\"name\":\"diffusers\"}},\"授權\":{\"select\":{\"name\":\"Apache-2.0\"}},\"語言\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"en zh\"}}]},\"參數\":{\"number\":5082308624},\"參數來源\":{\"select\":{\"name\":\"safetensors\"}},\"生效參數\":{\"number\":null},\"精度\":{\"select\":null},\"基底模型\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"OpenMOSS-Team/MOSS-Image-Base\"}}]},\"參數組成\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"BF16 5.1B\"}}]},\"發布時間\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"2026-10-11T07:01:17.000Z\"}}]},\"發布日\":{\"date\":{\"start\":\"2026-10-11\"}},\"首次收錄\":{\"date\":{\"start\":\"2026-10-20\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-10-27\"}}}"
+  },
+  "Lightricks/LTX-2.5": {
+   "page": "40cb8a3a-65b7-8147-ab89-fc6451d7b9eb",
+   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"Lightricks/LTX-2.5\"}}]},\"網址\":{\"url\":\"https://huggingface.co/Lightricks/LTX-2.5\"},\"Pipeline\":{\"select\":{\"name\":\"image-to-video\"}},\"Library\":{\"select\":{\"name\":\"diffusion-single-file\"}},\"授權\":{\"select\":{\"name\":\"自訂\"}},\"語言\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"en de es fr ja ko zh it pt\"}}]},\"參數\":{\"number\":null},\"參數來源\":{\"select\":null},\"生效參數\":{\"number\":null},\"精度\":{\"select\":null},\"參數組成\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"\"}}]},\"發布時間\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"2026-07-23T07:55:24.000Z\"}}]},\"發布日\":{\"date\":{\"start\":\"2026-07-23\"}},\"首次收錄\":{\"date\":{\"start\":\"2026-10-20\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-11-02\"}}}"
+  },
+  "OpenMOSS-Team/MOSS-Image-Base": {
+   "page": "40cb8a3a-65b7-810a-88bf-e5fab1f85051",
+   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"OpenMOSS-Team/MOSS-Image-Base\"}}]},\"網址\":{\"url\":\"https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base\"},\"Pipeline\":{\"select\":{\"name\":\"text-to-image\"}},\"Library\":{\"select\":{\"name\":\"diffusers\"}},\"授權\":{\"select\":{\"name\":\"Apache-2.0\"}},\"語言\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"en zh\"}}]},\"參數\":{\"number\":5082308624},\"參數來源\":{\"select\":{\"name\":\"safetensors\"}},\"生效參數\":{\"number\":null},\"精度\":{\"select\":null},\"參數組成\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"BF16 5.1B\"}}]},\"發布時間\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"2026-10-11T06:49:17.000Z\"}}]},\"發布日\":{\"date\":{\"start\":\"2026-10-11\"}},\"首次收錄\":{\"date\":{\"start\":\"2026-10-21\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-10-24\"}}}"
+  },
+  "RecursiveSI/flint": {
+   "page": "40cb8a3a-65b7-818d-9de3-e4238f88226a",
+   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"RecursiveSI/flint\"}}]},\"網址\":{\"url\":\"https://huggingface.co/RecursiveSI/flint\"},\"Pipeline\":{\"select\":{\"name\":\"text-generation\"}},\"Library\":{\"select\":{\"name\":\"transformers\"}},\"授權\":{\"select\":{\"name\":\"Apache-2.0\"}},\"參數\":{\"number\":39785287456},\"參數來源\":{\"select\":{\"name\":\"safetensors\"}},\"生效參數\":{\"number\":null},\"精度\":{\"select\":null},\"參數組成\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"BF16 39.8B\"}}]},\"發布時間\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"2026-10-21T14:20:58.000Z\"}}]},\"發布日\":{\"date\":{\"start\":\"2026-10-21\"}},\"首次收錄\":{\"date\":{\"start\":\"2026-10-23\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-11-01\"}}}"
+  },
+  "XHToken/Spark-X2.6-4B": {
+   "page": "40cb8a3a-65b7-811f-9677-de431eeb8fab",
+   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"XHToken/Spark-X2.6-4B\"}}]},\"網址\":{\"url\":\"https://huggingface.co/XHToken/Spark-X2.6-4B\"},\"Pipeline\":{\"select\":{\"name\":\"text-generation\"}},\"Library\":{\"select\":{\"name\":\"transformers\"}},\"授權\":{\"select\":{\"name\":\"Apache-2.0\"}},\"語言\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"en zh\"}}]},\"參數\":{\"number\":4112079360},\"參數來源\":{\"select\":{\"name\":\"safetensors\"}},\"生效參數\":{\"number\":null},\"精度\":{\"select\":null},\"基底模型\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"XHToken/Spark-X2.6-4B-Base\"}}]},\"參數組成\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"BF16 4.1B\"}}]},\"發布時間\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"2026-10-19T03:19:51.000Z\"}}]},\"發布日\":{\"date\":{\"start\":\"2026-10-19\"}},\"首次收錄\":{\"date\":{\"start\":\"2026-10-24\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-11-01\"}}}"
+  },
+  "Comfy-Org/MOSS-Image": {
+   "page": "40cb8a3a-65b7-81b9-8ccc-da9e02782b93",
+   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"Comfy-Org/MOSS-Image\"}}]},\"網址\":{\"url\":\"https://huggingface.co/Comfy-Org/MOSS-Image\"},\"Pipeline\":{\"select\":null},\"Library\":{\"select\":{\"name\":\"diffusion-single-file\"}},\"授權\":{\"select\":{\"name\":\"Apache-2.0\"}},\"參數\":{\"number\":null},\"參數來源\":{\"select\":null},\"生效參數\":{\"number\":null},\"精度\":{\"select\":null},\"基底模型\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"OpenMOSS-Team/MOSS-Image-Base\"}}]},\"參數組成\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"\"}}]},\"發布時間\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"2026-10-16T12:42:32.000Z\"}}]},\"發布日\":{\"date\":{\"start\":\"2026-10-16\"}},\"首次收錄\":{\"date\":{\"start\":\"2026-10-24\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-10-24\"}}}"
+  },
+  "abenzerps/Qwen-Image-2.1-Uncensored-Quantized": {
+   "page": "40cb8a3a-65b7-8197-b7a7-ebd87f8596cd",
+   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"abenzerps/Qwen-Image-2.1-Uncensored-Quantized\"}}]},\"網址\":{\"url\":\"https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-Quantized\"},\"Pipeline\":{\"select\":{\"name\":\"text-to-image\"}},\"Library\":{\"select\":{\"name\":\"gguf\"}},\"授權\":{\"select\":{\"name\":\"自訂\"}},\"參數\":{\"number\":null},\"參數來源\":{\"select\":null},\"生效參數\":{\"number\":null},\"精度\":{\"select\":{\"name\":\"gguf／mlx／fp8\"}},\"基底模型\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"Qwen/Qwen-Image-2.1\"}}]},\"參數組成\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"\"}}]},\"發布時間\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"2026-09-20T15:51:13.000Z\"}}]},\"發布日\":{\"date\":{\"start\":\"2026-09-20\"}},\"首次收錄\":{\"date\":{\"start\":\"2026-10-24\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-10-26\"}}}"
+  },
+  "Qwen/Qwen3.8-27B": {
+   "page": "40cb8a3a-65b7-810d-bd3a-cf8e02158029",
+   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"Qwen/Qwen3.8-27B\"}}]},\"網址\":{\"url\":\"https://huggingface.co/Qwen/Qwen3.8-27B\"},\"Pipeline\":{\"select\":{\"name\":\"image-text-to-text\"}},\"Library\":{\"select\":{\"name\":\"transformers\"}},\"授權\":{\"select\":{\"name\":\"Apache-2.0\"}},\"參數\":{\"number\":27781427952},\"參數來源\":{\"select\":{\"name\":\"safetensors\"}},\"生效參數\":{\"number\":null},\"精度\":{\"select\":null},\"參數組成\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"BF16 27.8B\"}}]},\"發布時間\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"2026-08-05T08:22:59.000Z\"}}]},\"發布日\":{\"date\":{\"start\":\"2026-08-05\"}},\"首次收錄\":{\"date\":{\"start\":\"2026-10-25\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-10-28\"}}}"
+  },
+  "MiniMaxAI/MiniMax-M3.1-Flash": {
+   "page": "40cb8a3a-65b7-8159-ad47-e9982fed7e9f",
+   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"MiniMaxAI/MiniMax-M3.1-Flash\"}}]},\"網址\":{\"url\":\"https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash\"},\"Pipeline\":{\"select\":{\"name\":\"image-text-to-text\"}},\"Library\":{\"select\":{\"name\":\"transformers\"}},\"授權\":{\"select\":{\"name\":\"自訂\"}},\"參數\":{\"number\":220490854016},\"參數來源\":{\"select\":{\"name\":\"safetensors\"}},\"生效參數\":{\"number\":null},\"精度\":{\"select\":{\"name\":\"8-bit\"}},\"參數組成\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"UINT8 207B · FP8 10.6B · BF16 3.3B · FP32 46.3M\"}}]},\"發布時間\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"2026-10-17T06:37:50.000Z\"}}]},\"發布日\":{\"date\":{\"start\":\"2026-10-17\"}},\"首次收錄\":{\"date\":{\"start\":\"2026-10-25\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-10-29\"}}}"
+  },
+  "Nanbeige/Nanbeige4.3-33B": {
+   "page": "40cb8a3a-65b7-8115-bce5-ccf60885caee",
+   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"Nanbeige/Nanbeige4.3-33B\"}}]},\"網址\":{\"url\":\"https://huggingface.co/Nanbeige/Nanbeige4.3-33B\"},\"Pipeline\":{\"select\":{\"name\":\"text-generation\"}},\"Library\":{\"select\":{\"name\":\"transformers\"}},\"授權\":{\"select\":{\"name\":\"Apache-2.0\"}},\"語言\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"en zh\"}}]},\"參數\":{\"number\":33118977024},\"參數來源\":{\"select\":{\"name\":\"safetensors\"}},\"生效參數\":{\"number\":null},\"精度\":{\"select\":null},\"基底模型\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"Nanbeige/Nanbeige4.3-33B-Base\"}}]},\"參數組成\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"BF16 33.1B\"}}]},\"發布時間\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"2026-10-24T02:49:18.000Z\"}}]},\"發布日\":{\"date\":{\"start\":\"2026-10-24\"}},\"首次收錄\":{\"date\":{\"start\":\"2026-10-26\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-11-02\"}}}"
+  },
+  "ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF": {
+   "page": "40cb8a3a-65b7-818d-b142-f63956832753",
+   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF\"}}]},\"網址\":{\"url\":\"https://huggingface.co/ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF\"},\"Pipeline\":{\"select\":{\"name\":\"text-generation\"}},\"Library\":{\"select\":{\"name\":\"gguf\"}},\"授權\":{\"select\":{\"name\":\"MIT\"}},\"參數\":{\"number\":null},\"參數來源\":{\"select\":null},\"生效參數\":{\"number\":null},\"精度\":{\"select\":{\"name\":\"gguf\"}},\"基底模型\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"deepseek-ai/DeepSeek-V4.1-Flash-1017\"}}]},\"參數組成\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"\"}}]},\"發布時間\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"2026-10-23T09:43:05.000Z\"}}]},\"發布日\":{\"date\":{\"start\":\"2026-10-23\"}},\"首次收錄\":{\"date\":{\"start\":\"2026-10-27\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-10-31\"}}}"
+  },
+  "InternScience/Sage-A1.5": {
+   "page": "40cb8a3a-65b7-81f3-826b-cf8dbbd1fc2d",
+   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"InternScience/Sage-A1.5\"}}]},\"網址\":{\"url\":\"https://huggingface.co/InternScience/Sage-A1.5\"},\"Pipeline\":{\"select\":{\"name\":\"text-generation\"}},\"Library\":{\"select\":{\"name\":\"transformers\"}},\"授權\":{\"select\":{\"name\":\"Apache-2.0\"}},\"參數\":{\"number\":35951822704},\"參數來源\":{\"select\":{\"name\":\"safetensors\"}},\"生效參數\":{\"number\":null},\"精度\":{\"select\":null},\"參數組成\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"BF16 36B\"}}]},\"發布時間\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"2026-10-15T08:34:39.000Z\"}}]},\"發布日\":{\"date\":{\"start\":\"2026-10-15\"}},\"首次收錄\":{\"date\":{\"start\":\"2026-10-28\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-10-28\"}}}"
+  },
+  "tencent/Hy-SimulMT-30B-A3B-FP8": {
+   "page": "40cb8a3a-65b7-814e-a97f-fcae39a5c8cb",
+   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"tencent/Hy-SimulMT-30B-A3B-FP8\"}}]},\"網址\":{\"url\":\"https://huggingface.co/tencent/Hy-SimulMT-30B-A3B-FP8\"},\"Pipeline\":{\"select\":{\"name\":\"translation\"}},\"Library\":{\"select\":{\"name\":\"transformers\"}},\"授權\":{\"select\":{\"name\":\"Apache-2.0\"}},\"語言\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"zh en fr pt es ja tr ru ar ko th it de vi ms id tl hi pl cs nl km my fa gu ur te mr he bn ta uk bo kk mn\"}}]},\"參數\":{\"number\":30394794496},\"參數來源\":{\"select\":{\"name\":\"safetensors\"}},\"生效參數\":{\"number\":3000000000},\"精度\":{\"select\":{\"name\":\"fp8\"}},\"參數組成\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"FP8 28.7B · BF16 1.7B\"}}]},\"發布時間\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"2026-10-22T07:29:37.000Z\"}}]},\"發布日\":{\"date\":{\"start\":\"2026-10-22\"}},\"首次收錄\":{\"date\":{\"start\":\"2026-10-29\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-10-29\"}}}"
+  },
+  "LiquidAI/LFM3-1.7B": {
+   "page": "40cb8a3a-65b7-8178-9194-c083ba9b0ca0",
+   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"LiquidAI/LFM3-1.7B\"}}]},\"網址\":{\"url\":\"https://huggingface.co/LiquidAI/LFM3-1.7B\"},\"Pipeline\":{\"select\":{\"name\":\"text-generation\"}},\"Library\":{\"select\":{\"name\":\"transformers\"}},\"授權\":{\"select\":{\"name\":\"自訂\"}},\"語言\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"en ar zh fr de it ja ko pt es vi th id hi ru pl\"}}]},\"參數\":{\"number\":1728801536},\"參數來源\":{\"select\":{\"name\":\"safetensors\"}},\"生效參數\":{\"number\":null},\"精度\":{\"select\":null},\"基底模型\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"LiquidAI/LFM3-1.7B-Base\"}}]},\"參數組成\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"BF16 1.7B\"}}]},\"發布時間\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"2026-10-23T21:35:42.000Z\"}}]},\"發布日\":{\"date\":{\"start\":\"2026-10-23\"}},\"首次收錄\":{\"date\":{\"start\":\"2026-10-29\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-11-02\"}}}"
+  },
+  "nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B": {
+   "page": "40cb8a3a-65b7-818a-a6b0-ed8430ae0027",
+   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B\"}}]},\"網址\":{\"url\":\"https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B\"},\"Pipeline\":{\"select\":{\"name\":\"automatic-speech-recognition\"}},\"Library\":{\"select\":{\"name\":\"nemo\"}},\"授權\":{\"select\":{\"name\":\"自訂\"}},\"語言\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"cs nl en fr de hi it ko pl pt ru sk es bg hr da et fi hu ja lv lt ro sl sv th tr uk ar bn zh el he id mr tl ta te vi\"}}]},\"參數\":{\"number\":33697781029},\"參數來源\":{\"select\":{\"name\":\"safetensors\"}},\"生效參數\":{\"number\":4000000000},\"精度\":{\"select\":null},\"基底模型\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-…\"}}]},\"參數組成\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"BF16 33.6B · FP32 50.3M\"}}]},\"發布時間\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"2026-10-07T22:50:21.000Z\"}}]},\"發布日\":{\"date\":{\"start\":\"2026-10-07\"}},\"首次收錄\":{\"date\":{\"start\":\"2026-10-30\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-11-02\"}}}"
+  },
+  "baidu/Unlimited-OCR-2": {
+   "page": "40cb8a3a-65b7-81eb-a315-c454e365a1e6",
+   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"baidu/Unlimited-OCR-2\"}}]},\"網址\":{\"url\":\"https://huggingface.co/baidu/Unlimited-OCR-2\"},\"Pipeline\":{\"select\":{\"name\":\"image-text-to-text\"}},\"Library\":{\"select\":{\"name\":\"transformers\"}},\"授權\":{\"select\":{\"name\":\"MIT\"}},\"參數\":{\"number\":3343978497},\"參數來源\":{\"select\":{\"name\":\"safetensors\"}},\"生效參數\":{\"number\":null},\"精度\":{\"select\":null},\"參數組成\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"BF16 3.3B\"}}]},\"發布時間\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"2026-10-26T03:57:46.000Z\"}}]},\"發布日\":{\"date\":{\"start\":\"2026-10-26\"}},\"首次收錄\":{\"date\":{\"start\":\"2026-10-30\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-11-02\"}}}"
+  },
+  "mistralai/Mistral-Large-4-1T-A52B": {
+   "page": "40cb8a3a-65b7-815a-b705-c8c08cf27aa8",
+   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"mistralai/Mistral-Large-4-1T-A52B\"}}]},\"網址\":{\"url\":\"https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B\"},\"Pipeline\":{\"select\":{\"name\":\"image-text-to-text\"}},\"Library\":{\"select\":{\"name\":\"transformers\"}},\"授權\":{\"select\":{\"name\":\"自訂\"}},\"語言\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"en fr de es pt it ja ko ru zh ar fa id ms ne pl ro sr sv tr uk vi hi bn bg hr cs da nl et fi el hu ga lv lt sk sl\"}}]},\"參數\":{\"number\":1000000000000},\"參數來源\":{\"select\":{\"name\":\"name\"}},\"生效參數\":{\"number\":52000000000},\"精度\":{\"select\":{\"name\":\"fp8\"}},\"參數組成\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"\"}}]},\"發布時間\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"2026-09-30T18:35:13.000Z\"}}]},\"發布日\":{\"date\":{\"start\":\"2026-09-30\"}},\"首次收錄\":{\"date\":{\"start\":\"2026-10-31\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-11-02\"}}}"
+  },
+  "ccore/Qwen3.5-4B-3D-Coder": {
+   "page": "40cb8a3a-65b7-814d-a7c0-d29880a7f822",
+   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"ccore/Qwen3.5-4B-3D-Coder\"}}]},\"網址\":{\"url\":\"https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder\"},\"Pipeline\":{\"select\":null},\"Library\":{\"select\":null},\"授權\":{\"select\":{\"name\":\"Apache-2.0\"}},\"參數\":{\"number\":4539265536},\"參數來源\":{\"select\":{\"name\":\"safetensors\"}},\"生效參數\":{\"number\":null},\"精度\":{\"select\":{\"name\":\"gguf\"}},\"基底模型\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"Qwen/Qwen3.5-4B\"}}]},\"參數組成\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"FP16 4.5B\"}}]},\"發布時間\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"2026-10-25T05:43:34.000Z\"}}]},\"發布日\":{\"date\":{\"start\":\"2026-10-25\"}},\"首次收錄\":{\"date\":{\"start\":\"2026-11-01\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-11-02\"}}}"
+  },
+  "Pika-Labs/Pika-H3-Flex": {
+   "page": "40cb8a3a-65b7-81f1-9fa3-f161aeb6a331",
+   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"Pika-Labs/Pika-H3-Flex\"}}]},\"網址\":{\"url\":\"https://huggingface.co/Pika-Labs/Pika-H3-Flex\"},\"Pipeline\":{\"select\":{\"name\":\"image-to-video\"}},\"Library\":{\"select\":{\"name\":\"diffusers\"}},\"授權\":{\"select\":{\"name\":\"自訂\"}},\"參數\":{\"number\":33122992896},\"參數來源\":{\"select\":{\"name\":\"safetensors\"}},\"生效參數\":{\"number\":null},\"精度\":{\"select\":null},\"基底模型\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"MiniMaxAI/MiniMax-H3\"}}]},\"參數組成\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"BF16 33.1B · FP32 17.2M\"}}]},\"發布時間\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"2026-10-29T17:08:44.000Z\"}}]},\"發布日\":{\"date\":{\"start\":\"2026-10-29\"}},\"首次收錄\":{\"date\":{\"start\":\"2026-11-02\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-11-02\"}}}"
+  },
+  "speridlabs/idol": {
+   "page": "40cb8a3a-65b7-818c-8081-fcff6e529443",
+   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"speridlabs/idol\"}}]},\"網址\":{\"url\":\"https://huggingface.co/speridlabs/idol\"},\"Pipeline\":{\"select\":{\"name\":\"image-to-3d\"}},\"Library\":{\"select\":{\"name\":\"idol\"}},\"授權\":{\"select\":{\"name\":\"Apache-2.0\"}},\"參數\":{\"number\":null},\"參數來源\":{\"select\":null},\"生效參數\":{\"number\":null},\"精度\":{\"select\":null},\"參數組成\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"\"}}]},\"發布時間\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"2026-10-28T15:55:17.000Z\"}}]},\"發布日\":{\"date\":{\"start\":\"2026-10-28\"}},\"首次收錄\":{\"date\":{\"start\":\"2026-11-02\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-11-02\"}}}"
+  }
+ },
+ "gh": {
+  "JetBrains/thinkrail": {
+   "page": "40cb8a3a-65b7-81a9-953e-e4679b0fb904",
+   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"JetBrains/thinkrail\"}}]},\"網址\":{\"url\":\"https://github.com/JetBrains/thinkrail\"},\"語言\":{\"select\":{\"name\":\"TypeScript\"}},\"描述\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"Vibe code with pi in a lightweight, real IDE that customises itself around the way you work — The Vibe You Need\"}}]},\"首次收錄\":{\"date\":{\"start\":\"2026-10-29\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-10-31\"}}}"
+  },
+  "elayadesign/ai-design-skills": {
+   "page": "40cb8a3a-65b7-8151-9dea-ed6fd3820130",
+   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"elayadesign/ai-design-skills\"}}]},\"網址\":{\"url\":\"https://github.com/elayadesign/ai-design-skills\"},\"語言\":{\"select\":null},\"描述\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"（無描述）\"}}]},\"首次收錄\":{\"date\":{\"start\":\"2026-10-29\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-10-30\"}}}"
+  },
+  "obra/superpowers": {
+   "page": "40cb8a3a-65b7-81a3-8806-cff0fb1a071c",
+   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"obra/superpowers\"}}]},\"網址\":{\"url\":\"https://github.com/obra/superpowers\"},\"語言\":{\"select\":{\"name\":\"Shell\"}},\"描述\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"An agentic skills framework & software development methodology that works.\"}}]},\"首次收錄\":{\"date\":{\"start\":\"2026-10-29\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-11-01\"}}}"
+  },
+  "HKUDS/DeepTutor": {
+   "page": "40cb8a3a-65b7-81d3-a7a4-ff59306a889f",
+   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"HKUDS/DeepTutor\"}}]},\"網址\":{\"url\":\"https://github.com/HKUDS/DeepTutor\"},\"語言\":{\"select\":{\"name\":\"Python\"}},\"描述\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/ .\"}}]},\"首次收錄\":{\"date\":{\"start\":\"2026-10-29\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-11-01\"}}}"
+  },
+  "macro-inc/macro": {
+   "page": "40cb8a3a-65b7-8198-a7ca-f35acf29c494",
+   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"macro-inc/macro\"}}]},\"網址\":{\"url\":\"https://github.com/macro-inc/macro\"},\"語言\":{\"select\":{\"name\":\"Rust\"}},\"描述\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"Macro is a unified workspace for teams: email, chat, docs, tasks, agents, calls, and CRM — @-linked together with shared AI memory.\"}}]},\"首次收錄\":{\"date\":{\"start\":\"2026-10-29\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-10-31\"}}}"
+  },
+  "Nutlope/hallmark": {
+   "page": "40cb8a3a-65b7-8177-984a-d54a36a3ad4d",
+   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"Nutlope/hallmark\"}}]},\"網址\":{\"url\":\"https://github.com/Nutlope/hallmark\"},\"語言\":{\"select\":{\"name\":\"CSS\"}},\"描述\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"Anti-AI-slop design skill for Claude Code, Cursor, and Codex.\"}}]},\"首次收錄\":{\"date\":{\"start\":\"2026-10-29\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-10-29\"}}}"
+  },
+  "pbakaus/impeccable": {
+   "page": "40cb8a3a-65b7-817e-9084-c0ee5dae8b9f",
+   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"pbakaus/impeccable\"}}]},\"網址\":{\"url\":\"https://github.com/pbakaus/impeccable\"},\"語言\":{\"select\":{\"name\":\"Rust\"}},\"描述\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships.\"}}]},\"首次收錄\":{\"date\":{\"start\":\"2026-10-29\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-11-01\"}}}"
+  },
+  "makecindy/cindy": {
+   "page": "40cb8a3a-65b7-816d-af7d-cf264b411783",
+   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"makecindy/cindy\"}}]},\"網址\":{\"url\":\"https://github.com/makecindy/cindy\"},\"語言\":{\"select\":{\"name\":\"TypeScript\"}},\"描述\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。\"}}]},\"首次收錄\":{\"date\":{\"start\":\"2026-10-29\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-10-29\"}}}"
+  },
+  "nightly-labs/openbot": {
+   "page": "40cb8a3a-65b7-816b-b7eb-d0da6d262e62",
+   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"nightly-labs/openbot\"}}]},\"網址\":{\"url\":\"https://github.com/nightly-labs/openbot\"},\"語言\":{\"select\":{\"name\":\"TypeScript\"}},\"描述\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"A local-first desktop workspace for persistent AI teammates. Run Codex, Claude, and Grok with dedicated workspaces, task queues, file sharing, browser control, \"}}]},\"首次收錄\":{\"date\":{\"start\":\"2026-10-29\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-10-30\"}}}"
+  },
+  "togg53192-cmd/jailbreaks": {
+   "page": "40cb8a3a-65b7-8178-a5a1-d3c943b78425",
+   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"togg53192-cmd/jailbreaks\"}}]},\"網址\":{\"url\":\"https://github.com/togg53192-cmd/jailbreaks\"},\"語言\":{\"select\":null},\"描述\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"LIST OF ALL MY JAILBREAKS\"}}]},\"首次收錄\":{\"date\":{\"start\":\"2026-10-29\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-11-02\"}}}"
+  },
+  "hmjz100/LinkSwift": {
+   "page": "40cb8a3a-65b7-8185-968e-daa4dad364c1",
+   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"hmjz100/LinkSwift\"}}]},\"網址\":{\"url\":\"https://github.com/hmjz100/LinkSwift\"},\"語言\":{\"select\":{\"name\":\"JavaScript\"}},\"描述\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"一个基于 JavaScript 的网盘文件下载地址获取工具。基于【网盘直链下载助手】修改 ，支持 百度网盘 / 阿里云盘 / 中国移动云盘 / 天翼云盘 / 迅雷云盘 / 夸克网盘 / UC网盘 / 123云盘 八大网盘\"}}]},\"首次收錄\":{\"date\":{\"start\":\"2026-10-29\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-10-29\"}}}"
+  },
+  "expo/skills": {
+   "page": "40cb8a3a-65b7-81d7-9b91-ee7c5ff7ad7e",
+   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"expo/skills\"}}]},\"網址\":{\"url\":\"https://github.com/expo/skills\"},\"語言\":{\"select\":{\"name\":\"Shell\"}},\"描述\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"A collection of AI agent skills for working with Expo projects and Expo Application Services\"}}]},\"首次收錄\":{\"date\":{\"start\":\"2026-10-29\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-10-31\"}}}"
+  },
+  "ruvnet/RuView": {
+   "page": "40cb8a3a-65b7-81bc-83ab-d299bc3704cc",
+   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"ruvnet/RuView\"}}]},\"網址\":{\"url\":\"https://github.com/ruvnet/RuView\"},\"語言\":{\"select\":{\"name\":\"Rust\"}},\"描述\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.\"}}]},\"首次收錄\":{\"date\":{\"start\":\"2026-10-29\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-10-29\"}}}"
+  },
+  "xiaolai/the-craft-of-selfteaching": {
+   "page": "40cb8a3a-65b7-8176-9c81-e944b15d787c",
+   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"xiaolai/the-craft-of-selfteaching\"}}]},\"網址\":{\"url\":\"https://github.com/xiaolai/the-craft-of-selfteaching\"},\"語言\":{\"select\":{\"name\":\"Jupyter Notebook\"}},\"描述\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"One has no future if one couldn't teach themself.\"}}]},\"首次收錄\":{\"date\":{\"start\":\"2026-10-29\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-10-29\"}}}"
+  },
+  "milind-soni/OpenMausBot": {
+   "page": "40cb8a3a-65b7-8141-9683-ea171e11a7ca",
+   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"milind-soni/OpenMausBot\"}}]},\"網址\":{\"url\":\"https://github.com/milind-soni/OpenMausBot\"},\"語言\":{\"select\":{\"name\":\"TypeScript\"}},\"描述\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"Open-source Grok Bot alternative with a virtual machine that bots can use\"}}]},\"首次收錄\":{\"date\":{\"start\":\"2026-10-30\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-11-02\"}}}"
+  },
+  "thedotmack/claude-mem": {
+   "page": "40cb8a3a-65b7-8148-bbe0-fb807473ab34",
+   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"thedotmack/claude-mem\"}}]},\"網址\":{\"url\":\"https://github.com/thedotmack/claude-mem\"},\"語言\":{\"select\":{\"name\":\"TypeScript\"}},\"描述\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context ba\"}}]},\"首次收錄\":{\"date\":{\"start\":\"2026-10-30\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-11-02\"}}}"
+  },
+  "CopilotKit/OpenBot": {
+   "page": "40cb8a3a-65b7-81e9-a511-f5a331d1be7c",
+   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"CopilotKit/OpenBot\"}}]},\"網址\":{\"url\":\"https://github.com/CopilotKit/OpenBot\"},\"語言\":{\"select\":{\"name\":\"TypeScript\"}},\"描述\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"Open-source AI coworkers that each get a computer of their own: a browser, files and tools, with every action decided before it happens and recorded after. Brin\"}}]},\"首次收錄\":{\"date\":{\"start\":\"2026-10-30\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-11-02\"}}}"
+  },
+  "Donchitos/Claude-Code-Game-Studios": {
+   "page": "40cb8a3a-65b7-819c-b7a8-d841d33e10a8",
+   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"Donchitos/Claude-Code-Game-Studios\"}}]},\"網址\":{\"url\":\"https://github.com/Donchitos/Claude-Code-Game-Studios\"},\"語言\":{\"select\":{\"name\":\"Shell\"}},\"描述\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"Turn Claude Code into a full game dev studio — 49 AI agents, 72 workflow skills, and a complete coordination system mirroring real studio hierarchy.\"}}]},\"首次收錄\":{\"date\":{\"start\":\"2026-10-30\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-11-02\"}}}"
+  },
+  "Renhuai123/ziwei-doushu": {
+   "page": "40cb8a3a-65b7-810c-b534-d1733d11588d",
+   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"Renhuai123/ziwei-doushu\"}}]},\"網址\":{\"url\":\"https://github.com/Renhuai123/ziwei-doushu\"},\"語言\":{\"select\":{\"name\":\"TypeScript\"}},\"描述\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"紫微斗数开源排盘引擎 — 基于倪海厦《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍原文数据\"}}]},\"首次收錄\":{\"date\":{\"start\":\"2026-10-31\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-11-02\"}}}"
+  },
+  "mattpocock/skills": {
+   "page": "40cb8a3a-65b7-81da-8f3b-d40f290ec829",
+   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"mattpocock/skills\"}}]},\"網址\":{\"url\":\"https://github.com/mattpocock/skills\"},\"語言\":{\"select\":{\"name\":\"Shell\"}},\"描述\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"Skills for Real Engineers. Straight from my .agents directory.\"}}]},\"首次收錄\":{\"date\":{\"start\":\"2026-10-31\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-11-01\"}}}"
+  },
+  "pingdotgg/t3code": {
+   "page": "40cb8a3a-65b7-81b1-a23c-dbdb2f592405",
+   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"pingdotgg/t3code\"}}]},\"網址\":{\"url\":\"https://github.com/pingdotgg/t3code\"},\"語言\":{\"select\":{\"name\":\"TypeScript\"}},\"描述\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"（無描述）\"}}]},\"首次收錄\":{\"date\":{\"start\":\"2026-10-31\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-11-02\"}}}"
+  },
+  "anthropics/skills": {
+   "page": "40cb8a3a-65b7-819f-9882-ddbaad3d0f02",
+   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"anthropics/skills\"}}]},\"網址\":{\"url\":\"https://github.com/anthropics/skills\"},\"語言\":{\"select\":{\"name\":\"Python\"}},\"描述\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"Public repository for Agent Skills\"}}]},\"首次收錄\":{\"date\":{\"start\":\"2026-10-31\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-10-31\"}}}"
+  },
+  "lightpanda-io/browser": {
+   "page": "40cb8a3a-65b7-818f-b055-f0cc54003e0f",
+   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"lightpanda-io/browser\"}}]},\"網址\":{\"url\":\"https://github.com/lightpanda-io/browser\"},\"語言\":{\"select\":{\"name\":\"Zig\"}},\"描述\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"Lightpanda: the headless browser designed for AI and automation\"}}]},\"首次收錄\":{\"date\":{\"start\":\"2026-10-31\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-11-02\"}}}"
+  },
+  "Orkas-AI/Orkas": {
+   "page": "40cb8a3a-65b7-8192-bcec-cd9ade39fa47",
+   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"Orkas-AI/Orkas\"}}]},\"網址\":{\"url\":\"https://github.com/Orkas-AI/Orkas\"},\"語言\":{\"select\":{\"name\":\"JavaScript\"}},\"描述\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"Orkas is an open-source (MIT), local-first AI team for your desktop: a Commander turns your goal into to-dos and coordinates 16 built-in specialist agents plus \"}}]},\"首次收錄\":{\"date\":{\"start\":\"2026-11-01\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-11-01\"}}}"
+  },
+  "THU-MAIC/OpenMAIC": {
+   "page": "40cb8a3a-65b7-81aa-a8af-f10e5186e96a",
+   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"THU-MAIC/OpenMAIC\"}}]},\"網址\":{\"url\":\"https://github.com/THU-MAIC/OpenMAIC\"},\"語言\":{\"select\":{\"name\":\"TypeScript\"}},\"描述\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"Open Multi-Agent Interactive Classroom — Get an immersive, multi-agent learning experience in just one click\"}}]},\"首次收錄\":{\"date\":{\"start\":\"2026-11-01\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-11-01\"}}}"
+  },
+  "bregman-arie/devops-exercises": {
+   "page": "40cb8a3a-65b7-81d0-a4b6-d550cb518917",
+   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"bregman-arie/devops-exercises\"}}]},\"網址\":{\"url\":\"https://github.com/bregman-arie/devops-exercises\"},\"語言\":{\"select\":{\"name\":\"Python\"}},\"描述\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"Linux, Jenkins, AWS, SRE, Prometheus, Docker, Python, Ansible, Git, Kubernetes, Terraform, OpenStack, SQL, NoSQL, Azure, GCP, DNS, Elastic, Network, Virtualizat\"}}]},\"首次收錄\":{\"date\":{\"start\":\"2026-11-01\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-11-01\"}}}"
+  },
+  "vorssaint/vorssaint-utils": {
+   "page": "40cb8a3a-65b7-81fd-9c36-db42afd2db75",
+   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"vorssaint/vorssaint-utils\"}}]},\"網址\":{\"url\":\"https://github.com/vorssaint/vorssaint-utils\"},\"語言\":{\"select\":{\"name\":\"Swift\"}},\"描述\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"Free and open-source macOS menu bar toolkit.\"}}]},\"首次收錄\":{\"date\":{\"start\":\"2026-11-01\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-11-01\"}}}"
+  },
+  "shiyu-coder/Kronos": {
+   "page": "40cb8a3a-65b7-81e6-b5c8-ee62dbb3e5a3",
+   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"shiyu-coder/Kronos\"}}]},\"網址\":{\"url\":\"https://github.com/shiyu-coder/Kronos\"},\"語言\":{\"select\":{\"name\":\"Python\"}},\"描述\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"Kronos: A Foundation Model for the Language of Financial Markets\"}}]},\"首次收錄\":{\"date\":{\"start\":\"2026-11-02\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-11-02\"}}}"
+  },
+  "public-apis/public-apis": {
+   "page": "40cb8a3a-65b7-8128-b3b2-f218ad5c6421",
+   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"public-apis/public-apis\"}}]},\"網址\":{\"url\":\"https://github.com/public-apis/public-apis\"},\"語言\":{\"select\":{\"name\":\"Python\"}},\"描述\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"A collective list of free APIs\"}}]},\"首次收錄\":{\"date\":{\"start\":\"2026-11-02\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-11-02\"}}}"
+  },
+  "cjpais/Handy": {
+   "page": "40cb8a3a-65b7-81d4-aad6-dcb816b7f017",
+   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"cjpais/Handy\"}}]},\"網址\":{\"url\":\"https://github.com/cjpais/Handy\"},\"語言\":{\"select\":{\"name\":\"Rust\"}},\"描述\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"A free, open source, and extensible speech-to-text application that works completely offline.\"}}]},\"首次收錄\":{\"date\":{\"start\":\"2026-11-02\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-11-02\"}}}"
+  },
+  "kornia/kornia": {
+   "page": "40cb8a3a-65b7-8136-adc8-f23ac81ed6ac",
+   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"kornia/kornia\"}}]},\"網址\":{\"url\":\"https://github.com/kornia/kornia\"},\"語言\":{\"select\":{\"name\":\"Python\"}},\"描述\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"🐍 Geometric Computer Vision Library for Spatial AI\"}}]},\"首次收錄\":{\"date\":{\"start\":\"2026-11-02\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-11-02\"}}}"
+  },
+  "beenuar/AiSOC": {
+   "page": "40cb8a3a-65b7-8107-a8be-d7f574973a1f",
+   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"beenuar/AiSOC\"}}]},\"網址\":{\"url\":\"https://github.com/beenuar/AiSOC\"},\"語言\":{\"select\":{\"name\":\"Python\"}},\"描述\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"Open-source AI Security Operations Center: alert fusion, LLM-agent triage, MITRE ATT&CK investigation, and a replayable decision ledger for every agent step. Se\"}}]},\"首次收錄\":{\"date\":{\"start\":\"2026-11-02\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-11-02\"}}}"
+  },
+  "anomalyco/hex": {
+   "page": "40cb8a3a-65b7-8133-9e38-d14df2e93753",
+   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"anomalyco/hex\"}}]},\"網址\":{\"url\":\"https://github.com/anomalyco/hex\"},\"語言\":{\"select\":{\"name\":\"Rust\"}},\"描述\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"Local voice dictation for mac, windows and linux\"}}]},\"首次收錄\":{\"date\":{\"start\":\"2026-11-02\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-11-02\"}}}"
+  },
+  "patchy631/ai-engineering-hub": {
+   "page": "40cb8a3a-65b7-8152-9802-e745ba9ceb8f",
+   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"patchy631/ai-engineering-hub\"}}]},\"網址\":{\"url\":\"https://github.com/patchy631/ai-engineering-hub\"},\"語言\":{\"select\":{\"name\":\"Jupyter Notebook\"}},\"描述\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"In-depth tutorials on LLMs, RAGs and real-world AI agent applications.\"}}]},\"首次收錄\":{\"date\":{\"start\":\"2026-11-02\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-11-02\"}}}"
+  },
+  "FlashML-org/FreeToken": {
+   "page": "40cb8a3a-65b7-8115-8c83-e7a9941af0f7",
+   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"FlashML-org/FreeToken\"}}]},\"網址\":{\"url\":\"https://github.com/FlashML-org/FreeToken\"},\"語言\":{\"select\":{\"name\":\"Python\"}},\"描述\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"FreeToken brings datacenter-scale model serving to your desktop. Run massive models locally, fast and efficiently.\"}}]},\"首次收錄\":{\"date\":{\"start\":\"2026-11-02\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-11-02\"}}}"
+  },
+  "hyprwm/Hyprland": {
+   "page": "40cb8a3a-65b7-81ff-8b9e-df9951aae462",
+   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"hyprwm/Hyprland\"}}]},\"網址\":{\"url\":\"https://github.com/hyprwm/Hyprland\"},\"語言\":{\"select\":{\"name\":\"C++\"}},\"描述\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"Hyprland is an independent, highly customizable, dynamic tiling Wayland compositor that doesn't sacrifice on its looks.\"}}]},\"首次收錄\":{\"date\":{\"start\":\"2026-11-02\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-11-02\"}}}"
+  }
+ },
+ "aa": {
+  "gemini-4-carbon": {
+   "page": "40cb8a3a-65b7-81b0-8345-f9be26a2e423",
+   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"gemini-4-carbon\"}}]},\"顯示名稱\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"Gemini 4 Carbon (High)\"}}]},\"網址\":{\"url\":\"https://artificialanalysis.ai/models/gemini-4-carbon\"},\"開發商\":{\"select\":{\"name\":\"Google\"}},\"開放權重\":{\"checkbox\":false},\"首次收錄\":{\"date\":{\"start\":\"2026-10-29\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-11-02\"}}}"
+  },
+  "claude-opus-5-5": {
+   "page": "40cb8a3a-65b7-819a-9564-c60dda9b7bb1",
+   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"claude-opus-5-5\"}}]},\"顯示名稱\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"Claude Opus 5.5 (Max, Default Fallback)\"}}]},\"網址\":{\"url\":\"https://artificialanalysis.ai/models/claude-opus-5-5\"},\"開發商\":{\"select\":{\"name\":\"Anthropic\"}},\"開放權重\":{\"checkbox\":false},\"首次收錄\":{\"date\":{\"start\":\"2026-10-29\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-11-02\"}}}"
+  },
+  "claude-opus-5-5-xhigh": {
+   "page": "40cb8a3a-65b7-8128-aa07-d801fcf4daa4",
+   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"claude-opus-5-5-xhigh\"}}]},\"顯示名稱\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"Claude Opus 5.5 (Xhigh, Default Fallback)\"}}]},\"網址\":{\"url\":\"https://artificialanalysis.ai/models/claude-opus-5-5-xhigh\"},\"開發商\":{\"select\":{\"name\":\"Anthropic\"}},\"開放權重\":{\"checkbox\":false},\"首次收錄\":{\"date\":{\"start\":\"2026-10-29\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-11-02\"}}}"
+  },
+  "gpt-6-astra": {
+   "page": "40cb8a3a-65b7-81a7-a222-f94cf2e66dec",
+   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"gpt-6-astra\"}}]},\"顯示名稱\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"GPT-6 Astra (Max)\"}}]},\"網址\":{\"url\":\"https://artificialanalysis.ai/models/gpt-6-astra\"},\"開發商\":{\"select\":{\"name\":\"OpenAI\"}},\"開放權重\":{\"checkbox\":false},\"首次收錄\":{\"date\":{\"start\":\"2026-10-29\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-11-02\"}}}"
+  },
+  "gpt-6-astra-xhigh": {
+   "page": "40cb8a3a-65b7-81f6-a441-d06a73af4c82",
+   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"gpt-6-astra-xhigh\"}}]},\"顯示名稱\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"GPT-6 Astra (Xhigh)\"}}]},\"網址\":{\"url\":\"https://artificialanalysis.ai/models/gpt-6-astra-xhigh\"},\"開發商\":{\"select\":{\"name\":\"OpenAI\"}},\"開放權重\":{\"checkbox\":false},\"首次收錄\":{\"date\":{\"start\":\"2026-10-29\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-11-02\"}}}"
+  },
+  "gpt-6-astra-high": {
+   "page": "40cb8a3a-65b7-8132-850f-e91d8872b999",
+   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"gpt-6-astra-high\"}}]},\"顯示名稱\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"GPT-6 Astra (High)\"}}]},\"網址\":{\"url\":\"https://artificialanalysis.ai/models/gpt-6-astra-high\"},\"開發商\":{\"select\":{\"name\":\"OpenAI\"}},\"開放權重\":{\"checkbox\":false},\"首次收錄\":{\"date\":{\"start\":\"2026-10-29\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-11-02\"}}}"
+  },
+  "gpt-6-1-sol": {
+   "page": "40cb8a3a-65b7-8177-9ba7-d025d178c335",
+   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"gpt-6-1-sol\"}}]},\"顯示名稱\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"GPT-6.1 Sol (Max)\"}}]},\"網址\":{\"url\":\"https://artificialanalysis.ai/models/gpt-6-1-sol\"},\"開發商\":{\"select\":{\"name\":\"OpenAI\"}},\"開放權重\":{\"checkbox\":false},\"首次收錄\":{\"date\":{\"start\":\"2026-10-29\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-11-02\"}}}"
+  },
+  "claude-sonnet-5-5": {
+   "page": "40cb8a3a-65b7-8100-80f1-d43ffd12396c",
+   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"claude-sonnet-5-5\"}}]},\"顯示名稱\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"Claude Sonnet 5.5 (Max, Default Fallback)\"}}]},\"網址\":{\"url\":\"https://artificialanalysis.ai/models/claude-sonnet-5-5\"},\"開發商\":{\"select\":{\"name\":\"Anthropic\"}},\"開放權重\":{\"checkbox\":false},\"首次收錄\":{\"date\":{\"start\":\"2026-10-29\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-11-02\"}}}"
+  },
+  "gpt-6-1-sol-xhigh": {
+   "page": "40cb8a3a-65b7-8186-84d5-d405a3f13993",
+   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"gpt-6-1-sol-xhigh\"}}]},\"顯示名稱\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"GPT-6.1 Sol (Xhigh)\"}}]},\"網址\":{\"url\":\"https://artificialanalysis.ai/models/gpt-6-1-sol-xhigh\"},\"開發商\":{\"select\":{\"name\":\"OpenAI\"}},\"開放權重\":{\"checkbox\":false},\"首次收錄\":{\"date\":{\"start\":\"2026-10-29\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-11-02\"}}}"
+  },
+  "claude-opus-5-5-high": {
+   "page": "40cb8a3a-65b7-81eb-8785-fa96bf1e2949",
+   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"claude-opus-5-5-high\"}}]},\"顯示名稱\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"Claude Opus 5.5 (High, Default Fallback)\"}}]},\"網址\":{\"url\":\"https://artificialanalysis.ai/models/claude-opus-5-5-high\"},\"開發商\":{\"select\":{\"name\":\"Anthropic\"}},\"開放權重\":{\"checkbox\":false},\"首次收錄\":{\"date\":{\"start\":\"2026-10-29\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-11-02\"}}}"
+  }
+ }
+}
