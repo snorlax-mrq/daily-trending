@@ -1,0 +1,13 @@
+{
+ "by": "編輯",
+ "lead": [
+  "今天最大的變化在 HuggingFace：從 10/20 起連續 12 天居首的 <span class=\"em\">DeepSeek-V4.1-Flash-1017</span> 讓出第一，Nanbeige4.3-33B 以熱度 800 站上榜首。GitHub 的 thedotmack/claude-mem 續坐第一，今日新增 1,723 stars，是昨天 1,140 的約 1.5 倍，全榜唯一突破 1,700；Artificial Analysis 前十名與分數已第四天一字未改。",
+  "HuggingFace 的 DeepSeek-V4.1-Flash-1017 熱度由 887、855 一路降到 749，下載 156.4K、讚 4,103。接手第一的 Nanbeige4.3-33B 是 33.1B、Apache-2.0、中英雙語的模型，下載 13.8K、讚 872，比昨天多 72 個讚。前十有兩筆新面孔：ccore/Qwen3.5-4B-3D-Coder 進第八、XHToken/Spark-X2.6-4B 進第九；<span class=\"em\">ISTA-DASLab 的 DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF</span> 由第七掉出榜外，flux-3-image-klein-comfy 也退出。中段 Mistral-Large-4 升第五、百度 Unlimited-OCR-2 退第六，RecursiveSI/flint 由第九落到第十。",
+  "GitHub 今天取 14 筆，比昨天少 1 筆，新面孔 5 筆、退出 6 筆：mattpocock/skills 由第八升到第二，新進榜的 Donchitos/Claude-Code-Game-Studios 直接站上第三，昨天第二、第三的 OpenMausBot 與 impeccable 退到第六、第七。名次與今日新增 stars 並不同步，第三名的 Game-Studios 為 742，第十一名的 Orkas 卻有 1,044。Artificial Analysis 今天沒有新模型或供應商事件，<span class=\"em\">GPT-6.1 Sol (Xhigh)</span> 以 II 52.3、每次任務 0.76 美元，是前十名裡最省的一個。"
+ ],
+ "boards": {
+  "hf": "榜首換人。Nanbeige4.3-33B 熱度 800 登第一，33.1B、Apache-2.0；DeepSeek-V4.1-Flash-1017 退第二，749。新面孔 Qwen3.5-4B-3D-Coder 第八、Spark-X2.6-4B 第九。",
+  "gh": "今天取 14 筆，少 1 筆，5 進 6 出。claude-mem 續居第一，今日新增 1,723 stars 全榜最多；mattpocock/skills 升第二，Game-Studios 新進第三。",
+  "aa": "前十名與分數從 10/29 起四天未變，今天沒有新模型或供應商事件。Gemini 4 Carbon（High）以 II 59.4 續居首位；第九名 GPT-6.1 Sol (Xhigh) 每次任務 0.76 美元最省。"
+ }
+}

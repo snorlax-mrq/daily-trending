@@ -1,0 +1,13 @@
+{
+ "by": "編輯",
+ "lead": [
+  "三個榜今天的節奏差很多。GitHub 的榜首換人，<span class=\"em\">claude-mem</span> 從第八名直接跳上第一；HuggingFace 前十有四筆名次互換、一進一出；Artificial Analysis 則連續第三天維持同一份排序，前十名與分數一字未改。",
+  "HuggingFace 的 DeepSeek-V4.1-Flash-1017 熱度 810 連續第 12 天居首，比昨天的 855 又低了一截，第二、第三名反倒微升。真正在動的是中段：nvidia 的 Nemotron-Transcribe 由第六升第四，百度 Unlimited-OCR-2 由第七升第五，RecursiveSI/flint 從第四摔到第九，是今天掉最多的；唯一新面孔是 <span class=\"em\">mistralai/Mistral-Large-4-1T-A52B</span> 直接進第六，XHToken/Spark-X2.6-4B 被擠出前十。",
+  "GitHub 今天取 15 筆，比昨天多 4 筆，其中七筆是新面孔。榜首 thedotmack/claude-mem 今日新增 1,140 stars、累積 106,566；昨天榜首 <span class=\"em\">HKUDS/DeepTutor</span> 今日新增 2,282 stars 為全榜最多，名次卻掉到第十，obra/superpowers 也從第二退到第十四。Artificial Analysis 前十名與分數和昨天完全一致，Gemini 4 Carbon（High）以 II 59.4 續居首位，今日異動是 DeepSeek V4.1 Flash 1017（Non-reasoning）完成評分 II 19.0，另有五家供應商新增上架。"
+ ],
+ "boards": {
+  "hf": "DeepSeek-V4.1-Flash-1017 熱度 810 連 12 天居首，較昨天 855 續降。Nemotron-Transcribe 升第四，百度 OCR-2 升第五，flint 由第四掉第九；新面孔 Mistral-Large-4 進第六。",
+  "gh": "今天取 15 筆，比昨天多 4 筆。榜首 thedotmack/claude-mem 由第八升上第一，今日新增 1,140 stars；昨天榜首 HKUDS/DeepTutor 新增 2,282 stars 為全榜最多，卻掉到第十。",
+  "aa": "前十名與分數和昨天完全一致，Gemini 4 Carbon（High）以 II 59.4 續居首位，已連續三天同一份排序。今日異動是 DeepSeek V4.1 Flash 1017 完成評分 II 19.0，另五家供應商新增上架。"
+ }
+}

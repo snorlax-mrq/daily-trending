@@ -1,6 +1,7 @@
 // GitHub Trending — 官方沒有 API，只能解析 HTML（實測不需 UA／不需登入）
 // https://github.com/trending?since=daily
 import { get, type Board, type Item } from "./lib.ts";
+import { ghNote } from "./format.ts";
 
 const URL = "https://github.com/trending?since=daily";
 
@@ -41,7 +42,7 @@ export async function fetchGh(limit = 25): Promise<Board> {
         rank: items.length + 1,
         metric: todayStars,
         kicker: lang ?? "—",
-        note: strip(desc ?? "").slice(0, 160) || "（無描述）",
+        note: ghNote(strip(desc ?? "").slice(0, 160)),
         stats: { stars, forks, todayStars, lang: lang ?? null },
       });
       if (items.length >= limit) break;

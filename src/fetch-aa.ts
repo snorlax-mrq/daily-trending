@@ -2,6 +2,7 @@
 //   /leaderboards/models  → initialModels（分數／價格／速度）
 //   /changelog            → initialData.data（模型收錄、供應商上架、文章、方法論）
 import { get, rscText, sliceArray, type Board, type Item } from "./lib.ts";
+import { aaNote } from "./format.ts";
 
 type Model = {
   slug: string;
@@ -45,22 +46,28 @@ export function buildAaBoard(raw: AaRaw, limit = 10, seenEventIds: Set<string> =
     .filter((m) => !m.deprecated && typeof m.intelligenceIndex === "number")
     .sort((a, b) => (b.intelligenceIndex ?? 0) - (a.intelligenceIndex ?? 0));
 
-  const items: Item[] = scored.slice(0, limit).map((m, i) => ({
+  const items: Item[] = scored.slice(0, limit).map((m, i) => {
+    const priceIn = m.price1mInputTokens ?? null;
+    const priceOut = m.price1mOutputTokens ?? null;
+    const tps = Math.round(m.medianOutputTokensPerSecond ?? 0) || null;
+    const openWeights = m.isOpenWeights ? 1 : 0;
+    return {
     id: m.slug,
     name: m.name,
     url: `https://artificialanalysis.ai/models/${m.slug}`,
     rank: i + 1,
     metric: m.intelligenceIndex ?? null,
     kicker: m.modelCreatorName ?? "—",
-    note: `$${m.price1mInputTokens ?? "—"} / $${m.price1mOutputTokens ?? "—"} 每百萬 token · ${Math.round(m.medianOutputTokensPerSecond ?? 0) || "—"} tok/s${m.isOpenWeights ? " · 開放權重" : ""}`,
+    note: aaNote({ priceIn, priceOut, tps, openWeights }),
     stats: {
-      priceIn: m.price1mInputTokens ?? null,
-      priceOut: m.price1mOutputTokens ?? null,
-      tps: Math.round(m.medianOutputTokensPerSecond ?? 0) || null,
+      priceIn,
+      priceOut,
+      tps,
       costPerTask: typeof m.intelligenceIndexCostPerTask === "number" ? Number(m.intelligenceIndexCostPerTask.toFixed(3)) : null,
-      openWeights: m.isOpenWeights ? 1 : 0,
+      openWeights,
     },
-  }));
+  };
+  });
 
   // 當日事件：AA changelog 保留約 13 天，用 seen id 去重（只報第一次看到的）
   const ldates = [...new Set(raw.changes.map((c) => c.dateLa))].sort().reverse();

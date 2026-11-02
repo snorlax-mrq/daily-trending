@@ -1,0 +1,13 @@
+{
+ "by": "編輯",
+ "lead": [
+  "今天三個榜單同時鬆動。HuggingFace 榜首換回 <span class=\"em\">DeepSeek-V4.1-Flash-1017</span>，熱度 714，只讓出一天就回歸；昨天站上第一的 Nanbeige4.3-33B 熱度由 800 掉到 476，退到第五，而且與第四名同分。GitHub 的 thedotmack/claude-mem 仍坐第一，今日新增 1,526 stars 少於昨天的 1,723，榜單則由 14 筆擴到 17 筆。Artificial Analysis 前十名與分數已連續第五天一字未改。",
+  "HuggingFace 名次進出頻繁。新面孔兩筆：Pika-Labs/Pika-H3-Flex 進第九（熱度 302、33.1B、以 MiniMax-H3 為基底），speridlabs/idol 進第十（289）；昨天第九的 XHToken/Spark-X2.6-4B 與第十的 RecursiveSI/flint 雙雙退出。前三名各升一名，LiquidAI/LFM3-1.7B 以 637 站上第二、NVIDIA Nemotron-3.5-Transcribe-30B-A4B 以 543 站上第三。值得注意的是 <span class=\"em\">Nanbeige4.3-33B</span> 熱度 476 與第四名 Mistral-Large-4-1T-A52B 完全相同，只因排序才分居四、五；冠亞軍的 714 與 637 之間，也是今天唯一還拉開兩位數的差距。",
+  "GitHub 今天取 17 筆，比昨天多 3 筆，11 筆新面孔、8 筆退出：shiyu-coder/Kronos 一進榜就到第三（630），lightpanda-io/browser 由第九升到第二（825）；昨天第二的 mattpocock/skills 與第七的 pbakaus/impeccable 都掉出榜外。名次與單日 stars 明顯不同步，第四名的 <span class=\"em\">pingdotgg/t3code</span> 今日新增 3,094 stars 是全榜最高。Artificial Analysis 今天沒有新模型或供應商事件，榜首 Gemini 4 Carbon（High）II 59.4、每百萬 token 輸入 4 美元輸出 20 美元、85 tok/s；前十最省的仍是第九名 GPT-6.1 Sol (Xhigh)，每次任務 0.76 美元。"
+ ],
+ "boards": {
+  "hf": "榜首換回 DeepSeek-V4.1-Flash-1017，熱度 714；Nanbeige4.3-33B 由 800 掉到 476，退第五。Pika-H3-Flex 第九、idol 第十進榜，Spark-X2.6-4B、flint 退出。",
+  "gh": "榜單擴到 17 筆，11 進 8 出。claude-mem 續居第一，今日新增 1,526 stars 低於昨天 1,723；t3code 以 3,094 排第四，卻是全榜單日最高。Kronos 新進第三，skills 退出。",
+  "aa": "前十名與分數連續第五天一字未改，今天也沒有新模型或供應商事件。Gemini 4 Carbon（High）以 II 59.4 續居首位；第九名 GPT-6.1 Sol (Xhigh) 每次任務 0.76 美元，仍是前十最省。"
+ }
+}
