@@ -259,7 +259,7 @@ function renderBoard(key: string, b: Board, date: string, idx: number, rel: stri
       const form = `<span class="form">${sr.map((r) => `<i class="${r === null ? "miss" : r <= 3 ? "top" : ""}">${r ?? "·"}</i>`).join("")}</span>`;
       return `<tr>
   <td class="c-rank">${String(it.rank).padStart(2, "0")}</td>
-  <td class="c-name"><a href="${it.url}">${esc(it.name)}</a><span class="c-kind">${esc(it.kicker)}</span></td>
+  <td class="c-name"><a href="${it.url}" target="_blank" rel="noopener noreferrer">${esc(it.name)}</a><span class="c-kind">${esc(it.kicker)}</span></td>
   ${key === "hf" ? paramsCell(it) : ""}
   ${valueCell(it)}
   ${withHistory ? deltaCell(key, it.id, it.rank, date) : ""}
@@ -272,7 +272,7 @@ function renderBoard(key: string, b: Board, date: string, idx: number, rel: stri
   const uniqEvents = (b.events ?? []).filter((e, i, arr) => arr.findIndex((x) => x.kind === e.kind && x.text.slice(0, 22) === e.text.slice(0, 22)) === i);
   const events = uniqEvents.length
     ? `<div class="events"><h3>今日異動</h3><ul>${uniqEvents
-        .map((e: { kind: string; text: string; url?: string }) => `<li><span class="k">${esc(e.kind)}</span><span>${e.url ? `<a href="${e.url}">${esc(e.text)}</a>` : esc(e.text)}</span></li>`)
+        .map((e: { kind: string; text: string; url?: string }) => `<li><span class="k">${esc(e.kind)}</span><span>${e.url ? `<a href="${e.url}" target="_blank" rel="noopener noreferrer">${esc(e.text)}</a>` : esc(e.text)}</span></li>`)
         .join("")}</ul></div>`
     : "";
 
@@ -331,9 +331,9 @@ function footBlock(date: string, rel: string): string {
   <div>
     <h4>資料來源</h4>
     <ul>
-      <li><a href="https://huggingface.co/models?sort=trending">HuggingFace</a> · 官方 trendingScore</li>
-      <li><a href="https://github.com/trending">GitHub Trending</a> · HTML 解析，非官方 API</li>
-      <li><a href="https://artificialanalysis.ai/leaderboards/models">Artificial Analysis</a> · Intelligence Index</li>
+      <li><a href="https://huggingface.co/models?sort=trending" target="_blank" rel="noopener noreferrer">HuggingFace</a> · 官方 trendingScore</li>
+      <li><a href="https://github.com/trending" target="_blank" rel="noopener noreferrer">GitHub Trending</a> · HTML 解析，非官方 API</li>
+      <li><a href="https://artificialanalysis.ai/leaderboards/models" target="_blank" rel="noopener noreferrer">Artificial Analysis</a> · Intelligence Index</li>
     </ul>
   </div>
   <div>
@@ -436,7 +436,7 @@ for (const key of allKeys) {
   const rows = entries
     .map(
       (e) => `<tr>
-  <td class="c-name"><a href="https://${key === "hf" ? "huggingface.co/" : key === "gh" ? "github.com/" : "artificialanalysis.ai/models/"}${e.id}">${esc(e.id)}</a></td>
+  <td class="c-name"><a href="https://${key === "hf" ? "huggingface.co/" : key === "gh" ? "github.com/" : "artificialanalysis.ai/models/"}${e.id}" target="_blank" rel="noopener noreferrer">${esc(e.id)}</a></td>
   <td class="c-value r">${e.best}</td>
   <td class="c-value r">${e.days}</td>
   <td class="c-value r">${e.latestRank}</td>
