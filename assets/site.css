@@ -26,6 +26,8 @@
   --f-num: 'Archivo Narrow', 'Helvetica Neue', Arial, sans-serif;
   --f-prose: 'Source Serif 4', 'DT Serif TC', 'Noto Serif TC', Georgia, serif;
   --f-cjk: 'DT Serif TC', 'Noto Serif TC', 'Songti TC', 'Noto Serif CJK TC', 'Source Serif 4', Georgia, serif;
+  /* 另開分頁的小箭頭：用 mask 畫，跟著 currentColor 走，不必進字型子集 */
+  --ext-arrow: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M7 17 17 7M9 7h8v8'/%3E%3C/svg%3E");
   color-scheme: light;
 }
 html[data-theme="dark"] {
@@ -243,6 +245,15 @@ a { color: inherit; text-decoration: none; }
   line-height: 1.3; display: inline-block; border-bottom: 1px solid transparent;
 }
 .c-name a:hover { border-bottom-color: var(--ink-2); }
+/* 站外連結（另開分頁）加一個右上角小箭頭，滑鼠移上去才變明顯 */
+:where(.c-name, .events, .foot) a[target="_blank"]::after {
+  content: ""; display: inline-block; width: .46em; height: .46em; margin-left: .38em;
+  background: currentColor; opacity: .34; transform: translateY(-.14em);
+  transition: opacity .12s ease;
+  -webkit-mask: var(--ext-arrow) center / contain no-repeat;
+  mask: var(--ext-arrow) center / contain no-repeat;
+}
+:where(.c-name, .events, .foot) a[target="_blank"]:hover::after { opacity: .72; }
 .c-kind {
   display: block; font-family: var(--f-cjk); font-size: 0.7812rem; color: var(--ink-3);
   letter-spacing: .04em; margin-top: 2px;
