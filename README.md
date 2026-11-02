@@ -83,6 +83,7 @@ done                                  # 10. 就地更新三個日報列
 | `bun run src/notion-db.ts` | 建立／補齊 4 個 Notion DB（可重跑） |
 | `bun run src/notion-dedupe.ts` | 清掉「每日名次」的重複列（中斷造成的） |
 | `bun run src/notion-views.ts [--verify]` | 建立／補齊 15 個常用視圖（可重跑，同名的跳過）；`--verify` 用查詢 API 核對筆數 |
+| `bun run src/notion-health.ts [--days 7] [--quiet]` | 七項健檢（列數／重複／覆蓋率／中繼／視圖／匯出回歸／快取）；有問題退出碼 1。每週 cron 跑一次 |
 | `bun run src/backfill-hf-params.ts` | 補舊快照的參數量（只補會失效的數字，不推測歷史） |
 | `bun run src/backfill-hf-spec.ts [--refill]` | 補舊快照的 license／langs／quant／baseModel／createdAt／library（還查得到才補，查不到留 null） |
 
