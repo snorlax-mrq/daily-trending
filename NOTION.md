@@ -222,7 +222,49 @@ collect → push items → export → build → subset → deploy
 `createdAt`／`library`／`license`／`langs`／`quant`／`baseModel` 屬於不隨時間改變的規格，
 已用 HF detail API 補齊（22 個模型全部查得到，0 筆留空）。
 
-## 九、未決
+## 九、視圖（`src/notion-views.ts`）
+
+Notion 的視圖是「免費」的：同一張表可以掛多個視圖，各自有不同的篩選、排序、顯示欄位。
+所以「每日名次」不必為了三個榜拆成三張表，靠視圖就能拆。
+
+| 表 | 視圖 | 型別 | 條件 | 筆數（2026-11-02 實測） |
+|---|---|---|---|---|
+| HF 模型 | 參數 100B 以上 | table | 參數 ≥ 1e11，依參數遞減 | 4 |
+| HF 模型 | 授權一覽 | board | 依「授權」分欄，filter bar 有授權 pill | 28 |
+| HF 模型 | 常客（在榜 ≥ 7 天） | table | rollup 在榜天數 ≥ 7 | 7 |
+| GitHub 專案 | 依語言 | board | 依「語言」分欄 | 36 |
+| GitHub 專案 | 在榜最久 | table | 在榜天數 ↓，最高名次 ↑ | 36 |
+| AA 模型 | 開放權重 | table | checkbox = true | **0**（AA 前十目前沒有開放權重模型） |
+| AA 模型 | 依開發商 | board | 依「開發商」分欄 | 10 |
+| 每日名次 | HF 榜 | table | 榜單 = HF，日期 ↓ 名次 ↑ | 140 |
+| 每日名次 | GitHub 榜 | table | 榜單 = GitHub | 71 |
+| 每日名次 | AA 榜 | table | 榜單 = AA | 50 |
+| 每日名次 | 新面孔 | table | 狀態 = 新進 | 80 |
+| 每日名次 | HF 單日熱度排行 | table | 榜單 = HF，指標 ↓，日期 pill | 140 |
+| 每日名次 | GitHub 單日 stars 排行 | table | 榜單 = GitHub，指標 ↓ | 71 |
+| 每日名次 | AA 單日 II 排行 | table | 榜單 = AA，指標 ↓ | 50 |
+| 每日名次 | 每日收錄筆數 | chart | 折線：日期 × count | 261 |
+
+三個榜的筆數（140 + 71 + 50 = 261）與「每日名次」總列數一致，這就是資料完整性的即時檢查。
+
+### 兩個實作細節
+
+1. **視圖 API 需要 `Notion-Version: 2026-03-11`**（data source 概念），
+   與 `notion-items`／`notion-export` 用的 `2022-06-28` 並存，各支程式自己帶版本號。
+   DB id 要先 `GET /databases/{id}` 取 `data_sources[0].id`。
+2. **`group_by` 與圖表軸要吃「屬性 id」不是名稱**，而且 data source 回的 id 是 URL-encoded
+   （`授權`＝`s__q`、`日期`＝`Fsz%3E` → decode 成 `Fsz>`）。腳本會自動查表換掉，
+   寫視圖定義時照樣用中文名稱就好。
+3. **rollup 的篩選要用 `rollup` 鍵**，不是 `number`：
+   `{"property":"在榜天數","rollup":{"number":{"greater_than_or_equal_to":7}}}`。
+
+### 驗證方式
+
+`bun run src/notion-views.ts --verify` 會對每個視圖 `POST /views/{id}/queries`（回 `total_count`），
+把實際筆數抓回來跟預期比對。這比「看起來對」可靠：
+授權一覽 28 筆＝HF 全部模型、依語言 36 筆＝GitHub 全部專案，都跟本機計算的 4／7 一致。
+
+## 十、未決
 
 - 觀測列的保留策略（目前決定永久保留；blocks 撞牆再談 12 個月歸檔）
 - 是否要把 `events`（今日異動）也結構化成獨立 DB（目前存在日報的 JSON 屬性）
