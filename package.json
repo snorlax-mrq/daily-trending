@@ -14,7 +14,8 @@
     "notion": "bun run src/notion-payload.ts --all",
     "push-hf": "cd .. && python3 scripts/notion_push.py --push --project hf --payload data/digest_out/payload_trending_hf_$(date +%F).json",
     "push-gh": "cd .. && python3 scripts/notion_push.py --push --project gh --payload data/digest_out/payload_trending_gh_$(date +%F).json",
-    "push-aa": "cd .. && python3 scripts/notion_push.py --push --project aa --payload data/digest_out/payload_trending_aa_$(date +%F).json"
+    "push-aa": "cd .. && python3 scripts/notion_push.py --push --project aa --payload data/digest_out/payload_trending_aa_$(date +%F).json",
+    "gh-notes": "bun run src/gh-notes.ts --fetch"
   },
   "engines": {
     "bun": ">=1.2"

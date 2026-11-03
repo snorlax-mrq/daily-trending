@@ -324,7 +324,7 @@
      "rank": 1,
      "metric": 1140,
      "kicker": "TypeScript",
-     "note": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context ba",
+     "note": "為 Claude Code 做的跨工作階段記憶：自動記錄每次的工具操作，用 AI 壓成語意摘要，下次開新對話時注入相關脈絡，讓專案知識接得下去。",
      "stats": {
       "stars": 106566,
       "forks": 9379,
@@ -429,7 +429,7 @@
      "rank": 8,
      "metric": 876,
      "kicker": "Shell",
-     "note": "Skills for Real Engineers. Straight from my .agents directory.",
+     "note": "作者日常在用的 agent skills 集合，主張小而可組合、任何模型都能用：相對於 GSD、BMAD、Spec-Kit 那種接管整個流程的做法，這些技能不奪走控制權，方便改成自己的。",
      "stats": {
       "stars": 307619,
       "forks": 25896,
@@ -444,7 +444,7 @@
      "rank": 9,
      "metric": 930,
      "kicker": "TypeScript",
-     "note": "（無描述）",
+     "note": "T3 Code 自稱 agent harness 的控制面：用手機、網頁或桌面版操控本機已裝好的 Claude Code、Codex、Cursor 等 agent；作者強調不賣東西，開源可自行 fork。",
      "stats": {
       "stars": 32956,
       "forks": 8674,
@@ -713,6 +713,9 @@
      }
     }
    ],
+   "notes": [
+    "Artificial Analysis Intelligence Index v5.0 於 2026-10-27 上線：275 筆條目中僅 86 筆已評分，榜單仍在遷移，名次會劇烈變動。"
+   ],
    "events": [
     {
      "kind": "新模型",
@@ -739,9 +742,6 @@
      "kind": "供應商",
      "text": "Inco 新增 1 個模型上架"
     }
-   ],
-   "notes": [
-    "Artificial Analysis Intelligence Index v5.0 於 2026-10-27 上線：275 筆條目中僅 86 筆已評分，榜單仍在遷移，名次會劇烈變動。"
    ]
   }
  }

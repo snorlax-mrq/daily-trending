@@ -324,7 +324,7 @@
      "rank": 1,
      "metric": 1723,
      "kicker": "TypeScript",
-     "note": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context ba",
+     "note": "為 Claude Code 做的跨工作階段記憶：自動記錄每次的工具操作，用 AI 壓成語意摘要，下次開新對話時注入相關脈絡，讓專案知識接得下去。",
      "stats": {
       "stars": 107835,
       "forks": 9462,
@@ -339,7 +339,7 @@
      "rank": 2,
      "metric": 883,
      "kicker": "Shell",
-     "note": "Skills for Real Engineers. Straight from my .agents directory.",
+     "note": "作者日常在用的 agent skills 集合，主張小而可組合、任何模型都能用：相對於 GSD、BMAD、Spec-Kit 那種接管整個流程的做法，這些技能不奪走控制權，方便改成自己的。",
      "stats": {
       "stars": 308353,
       "forks": 25943,
@@ -354,7 +354,7 @@
      "rank": 3,
      "metric": 742,
      "kicker": "Shell",
-     "note": "Turn Claude Code into a full game dev studio — 49 AI agents, 72 workflow skills, and a complete coordination system mirroring real studio hierarchy.",
+     "note": "把單一 Claude Code 工作階段變成遊戲工作室：49 個分層 agent（總監、部門主管、專才）加 74 個技能，各有職責與品質閘門，支援三大引擎，決策仍在你手上。",
      "stats": {
       "stars": 31146,
       "forks": 4264,
@@ -369,7 +369,7 @@
      "rank": 4,
      "metric": 1148,
      "kicker": "TypeScript",
-     "note": "（無描述）",
+     "note": "T3 Code 自稱 agent harness 的控制面：用手機、網頁或桌面版操控本機已裝好的 Claude Code、Codex、Cursor 等 agent；作者強調不賣東西，開源可自行 fork。",
      "stats": {
       "stars": 35500,
       "forks": 8778,
@@ -698,10 +698,10 @@
      }
     }
    ],
-   "events": [],
    "notes": [
     "Artificial Analysis Intelligence Index v5.0 於 2026-10-27 上線：275 筆條目中僅 86 筆已評分，榜單仍在遷移，名次會劇烈變動。"
-   ]
+   ],
+   "events": []
   }
  }
 }

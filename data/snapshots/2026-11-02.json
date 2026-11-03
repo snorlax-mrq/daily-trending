@@ -324,7 +324,7 @@
      "rank": 1,
      "metric": 1526,
      "kicker": "TypeScript",
-     "note": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context ba",
+     "note": "為 Claude Code 做的跨工作階段記憶：自動記錄每次的工具操作，用 AI 壓成語意摘要，下次開新對話時注入相關脈絡，讓專案知識接得下去。",
      "stats": {
       "stars": 109209,
       "forks": 9563,
@@ -354,7 +354,7 @@
      "rank": 3,
      "metric": 630,
      "kicker": "Python",
-     "note": "Kronos: A Foundation Model for the Language of Financial Markets",
+     "note": "金融 K 線的開源基礎模型：先用分詞器把 OHLCV 量化成階層式 token，再以自回歸 Transformer 預訓練，訓練資料來自 45 個以上交易所，論文已被 AAAI 2026 接受。",
      "stats": {
       "stars": 45356,
       "forks": 7498,
@@ -369,7 +369,7 @@
      "rank": 4,
      "metric": 3094,
      "kicker": "TypeScript",
-     "note": "（無描述）",
+     "note": "T3 Code 自稱 agent harness 的控制面：用手機、網頁或桌面版操控本機已裝好的 Claude Code、Codex、Cursor 等 agent；作者強調不賣東西，開源可自行 fork。",
      "stats": {
       "stars": 37911,
       "forks": 8910,
@@ -429,7 +429,7 @@
      "rank": 8,
      "metric": 967,
      "kicker": "Shell",
-     "note": "Turn Claude Code into a full game dev studio — 49 AI agents, 72 workflow skills, and a complete coordination system mirroring real studio hierarchy.",
+     "note": "把單一 Claude Code 工作階段變成遊戲工作室：49 個分層 agent（總監、部門主管、專才）加 74 個技能，各有職責與品質閘門，支援三大引擎，決策仍在你手上。",
      "stats": {
       "stars": 32235,
       "forks": 4396,
@@ -444,7 +444,7 @@
      "rank": 9,
      "metric": 101,
      "kicker": "Python",
-     "note": "🐍 Geometric Computer Vision Library for Spatial AI",
+     "note": "PyTorch 上的可微分電腦視覺函式庫：1200 多個算子，涵蓋相機模型、對極幾何、RANSAC、特徵匹配與色彩轉換，多數 torchvision 沒有；主張同一批可帶不同參數算完。",
      "stats": {
       "stars": 11773,
       "forks": 1465,
@@ -549,7 +549,7 @@
      "rank": 16,
      "metric": 242,
      "kicker": "Python",
-     "note": "FreeToken brings datacenter-scale model serving to your desktop. Run massive models locally, fast and efficiently.",
+     "note": "在個人電腦跑大型 MoE 模型的推理引擎：把 GPU、CPU 與主機記憶體當成單一彈性平台，靠 CPU–GPU 協同與專家快取，宣稱能在消費級硬體跑 290B 以上模型。",
      "stats": {
       "stars": 15381,
       "forks": 1549,
@@ -564,7 +564,7 @@
      "rank": 17,
      "metric": 38,
      "kicker": "C++",
-     "note": "Hyprland is an independent, highly customizable, dynamic tiling Wayland compositor that doesn't sacrifice on its looks.",
+     "note": "獨立的動態平鋪 Wayland compositor，主打外觀：漸層邊框、多種模糊、動畫與陰影都能調；不用 wlroots，內建外掛管理、socket IPC 與逐工作區版面，設定存檔即生效。",
      "stats": {
       "stars": 39355,
       "forks": 2129,

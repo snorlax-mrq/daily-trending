@@ -1,0 +1,13 @@
+{
+ "by": "編輯",
+ "lead": [
+  "今天三個榜單都換了樣子。HuggingFace 榜首回到 <span class=\"em\">LiquidAI/LFM3-1.7B</span>，熱度 744，昨天才讓出的第一名一天就收回來，DeepSeek-V4.1-Flash-1017 以 678 退居第二。GitHub 榜首換成 vercel-labs/agent-desktop，今日新增 2,275 stars，原榜首 claude-mem 退到第二，但單日 1,803 stars 仍高於昨天的 1,526。Artificial Analysis 前十名連續五天一字未改的紀錄結束，Gemini 4 Carbon 一次進兩個變體。",
+  "HuggingFace 的名次進出集中在後半段。Qwen/Qwen3.8-27B 進第十，熱度 291、27.8B 參數、下載 7.9M、讚 19K；前一日第五的 Nanbeige4.3-33B 退出前十。speridlabs/idol 由第十升到第六（395），baidu/Unlimited-OCR-2 由第六升第五（475），前四名只有最上面兩位互換。第七的 Lightricks/LTX-2.5 383 與第八的 ccore/Qwen3.5-4B-3D-Coder 382 <span class=\"em\">只差 1 分</span>。",
+  "GitHub 榜單由 17 筆縮到 15 筆，8 筆新進、10 筆退出：vercel-labs/agent-desktop 一進榜就第一，D4Vinci/Scrapling 進第三，mattpocock/skills 回到第十一（858）。單日 stars 最高的是第七名 <span class=\"em\">pingdotgg/t3code</span>，3,229 顆，比昨天的 3,094 還多，名次卻由第四掉到第七。Artificial Analysis 今天有 4 則新模型事件，Gemini 4 Carbon（Medium）II 57.7 進第三、（Low）53.7 進第十，GPT-6.1 Sol (Xhigh) 與 Claude Opus 5.5 (High) 退出；榜首 Gemini 4 Carbon（High）II 59.4 不動，速度由 85 升到 92 tok/s，前十每次任務最省的是第八名 GPT-6.1 Sol (Max) 的 1.27 美元。"
+ ],
+ "boards": {
+  "hf": "榜首回到 LiquidAI/LFM3-1.7B，熱度 744，DeepSeek-V4.1-Flash-1017 以 678 退第二。Qwen/Qwen3.8-27B 進第十，Nanbeige4.3-33B 退出前十，第七與第八只差 1 分。",
+  "gh": "榜單由 17 筆縮到 15 筆，8 進 10 出。vercel-labs/agent-desktop 一進榜就第一（今日 2,275 stars），claude-mem 退第二。t3code 單日 3,229 為全榜最高，名次卻掉到第七。",
+  "aa": "連續五天不變的前十鬆動：Gemini 4 Carbon（Medium）II 57.7 進第三、（Low）53.7 進第十，GPT-6.1 Sol (Xhigh) 與 Claude Opus 5.5 (High) 退出。榜首 59.4 不動。"
+ }
+}

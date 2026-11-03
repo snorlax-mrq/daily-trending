@@ -22,6 +22,7 @@ src/fetch-hf.ts         HF fetcher
 src/fetch-gh.ts         GitHub fetcher（HTML）
 src/fetch-aa.ts         AA fetcher（RSC）+ 事件去重
 src/collect.ts          三來源並行 → data/snapshots/YYYY-MM-DD.json（唯一真相）
+src/gh-notes.ts         GitHub 榜備註：抓 README → AI 寫台灣繁中描述 → 寫回快照（快取 data/gh-notes-cache.json）
 src/subset-fonts.ts     中文字型子集化（掃 dist 的字集 → Noto Serif TC woff2）
 src/import-hf-history.ts 一次性：把舊的 hf-trending 日報匯入成快照
 src/backfill-hf-params.ts 一次性（可重跑）：回查 HF detail API，補舊快照的參數量
@@ -50,6 +51,8 @@ cron `64c09feacb314d4c`（每天 08:00 Asia/Taipei，沿用原 HF 日報時段�
 ```bash
 # A. 抓資料
 bun run src/collect.ts      # 1. 抓三個來源 → data/snapshots/YYYY-MM-DD.json
+bun run src/gh-notes.ts --fetch   # 1b. GitHub 榜缺中文描述的 repo → 抓 README → data/gh-notes/<date>.todo.md
+                                  #     由 AI 依 todo 寫 data/gh-notes/<date>.json，再 --apply 寫回快照
                             # 2. 由 AI 寫 data/headlines/YYYY-MM-DD.json（導讀）
 
 # B. 進 Notion（上游）
@@ -137,6 +140,20 @@ done                                  # 10. 就地更新三個日報列
 - 漲跌＝與「前一個有該榜的日期」比較；沒有前一日就整欄不印（不製造假訊號）。
 - 走勢＝近 9 個紀錄日的名次（桌機畫線、手機印數字）。
 - 單一來源失敗只讓該榜空白並在頁面標紅，不影響其他榜。
+
+## GitHub 榜的備註（中文、依 README）
+
+GitHub 沒有 API，trending 頁只給得到 repo 的一行英文 about，常常還是空的（顯示「（無描述）」）。
+所以 `gh.note` 不直接用 about，而是走 `src/gh-notes.ts`：
+
+1. `--fetch`：挑出還沒有中文描述的項目，抓 `raw.githubusercontent.com/<repo>/HEAD/README.md`（依序試幾個常見檔名），
+   去掉徽章／HTML／程式碼區塊，遇到安裝或使用章節就停，截到 1,900 字，寫成 `data/gh-notes/<date>.todo.md`。
+2. AI 讀 todo，替每則寫 50–100 字台灣繁中（這專案做什麼＋README 裡最關鍵的差別），存 `data/gh-notes/<date>.json`。
+3. `--apply`：寫回當日快照的 `gh.items[].note`，並更新快取 `data/gh-notes-cache.json`（同一 repo 只寫一次，`--force` 才重寫）。
+
+`note` 會流進 Notion「GitHub 專案」實體表的 `描述`，所以 Notion 與網站看到的是同一句話。
+描述是「這東西是什麼」，不屬於歷史事實，因此在 Notion 改完匯出時，舊日期的同一個 repo 也會跟著換（不是造假數字）。
+`--backfill` 可把快取的中文描述補回所有舊快照；`--status` 看當天還缺幾筆。
 
 ## 新來源要加什麼
 

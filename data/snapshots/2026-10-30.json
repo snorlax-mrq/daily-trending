@@ -429,7 +429,7 @@
      "rank": 8,
      "metric": 336,
      "kicker": "TypeScript",
-     "note": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context ba",
+     "note": "為 Claude Code 做的跨工作階段記憶：自動記錄每次的工具操作，用 AI 壓成語意摘要，下次開新對話時注入相關脈絡，讓專案知識接得下去。",
      "stats": {
       "stars": 105065,
       "forks": 9262,
@@ -474,7 +474,7 @@
      "rank": 11,
      "metric": 353,
      "kicker": "Shell",
-     "note": "Turn Claude Code into a full game dev studio — 49 AI agents, 72 workflow skills, and a complete coordination system mirroring real studio hierarchy.",
+     "note": "把單一 Claude Code 工作階段變成遊戲工作室：49 個分層 agent（總監、部門主管、專才）加 74 個技能，各有職責與品質閘門，支援三大引擎，決策仍在你手上。",
      "stats": {
       "stars": 29604,
       "forks": 4070,
@@ -653,6 +653,9 @@
      }
     }
    ],
+   "notes": [
+    "Artificial Analysis Intelligence Index v5.0 於 2026-10-27 上線：274 筆條目中僅 83 筆已評分，榜單仍在遷移，名次會劇烈變動。"
+   ],
    "events": [
     {
      "kind": "新模型",
@@ -668,9 +671,6 @@
      "kind": "供應商",
      "text": "Systalyze 新增 2 個模型上架"
     }
-   ],
-   "notes": [
-    "Artificial Analysis Intelligence Index v5.0 於 2026-10-27 上線：274 筆條目中僅 83 筆已評分，榜單仍在遷移，名次會劇烈變動。"
    ]
   }
  }

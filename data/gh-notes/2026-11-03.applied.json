@@ -1,0 +1,17 @@
+{
+ "vercel-labs/agent-desktop": "用系統無障礙樹操作桌面應用的 computer use CLI：快照列出可操作元素的 ref，agent 按 ref 動作後再快照確認，不做像素比對；附 C 函式庫，預設 headless 不搶前景。",
+ "thedotmack/claude-mem": "為 Claude Code 做的跨工作階段記憶：自動記錄每次的工具操作，用 AI 壓成語意摘要，下次開新對話時注入相關脈絡，讓專案知識接得下去。",
+ "D4Vinci/Scrapling": "Python 爬蟲框架，把快速請求、隱身瀏覽器、解析與併發抓取收在一套：能處理 Cloudflare Turnstile，支援 CSS／XPath 與自適應元素追蹤，另附 MCP server 給 agent 用。",
+ "hyprwm/Hyprland": "獨立的動態平鋪 Wayland compositor，主打外觀：漸層邊框、多種模糊、動畫與陰影都能調；不用 wlroots，內建外掛管理、socket IPC 與逐工作區版面，設定存檔即生效。",
+ "Donchitos/Claude-Code-Game-Studios": "把單一 Claude Code 工作階段變成遊戲工作室：49 個分層 agent（總監、部門主管、專才）加 74 個技能，各有職責與品質閘門，支援三大引擎，決策仍在你手上。",
+ "FlashML-org/FreeToken": "在個人電腦跑大型 MoE 模型的推理引擎：把 GPU、CPU 與主機記憶體當成單一彈性平台，靠 CPU–GPU 協同與專家快取，宣稱能在消費級硬體跑 290B 以上模型。",
+ "pingdotgg/t3code": "T3 Code 自稱 agent harness 的控制面：用手機、網頁或桌面版操控本機已裝好的 Claude Code、Codex、Cursor 等 agent；作者強調不賣東西，開源可自行 fork。",
+ "shiyu-coder/Kronos": "金融 K 線的開源基礎模型：先用分詞器把 OHLCV 量化成階層式 token，再以自回歸 Transformer 預訓練，訓練資料來自 45 個以上交易所，論文已被 AAAI 2026 接受。",
+ "kornia/kornia": "PyTorch 上的可微分電腦視覺函式庫：1200 多個算子，涵蓋相機模型、對極幾何、RANSAC、特徵匹配與色彩轉換，多數 torchvision 沒有；主張同一批可帶不同參數算完。",
+ "JustVugg/colibri": "純 C、零相依的 MoE 推理引擎：只把當前 token 用到的專家放進記憶體，其餘專家留在硬碟串流讀取，不必 GPU 也能跑數千億參數模型，已支援 13 個引擎。",
+ "mattpocock/skills": "作者日常在用的 agent skills 集合，主張小而可組合、任何模型都能用：相對於 GSD、BMAD、Spec-Kit 那種接管整個流程的做法，這些技能不奪走控制權，方便改成自己的。",
+ "max-sixty/worktrunk": "管 git worktree 的 CLI，為平行跑多個 AI agent 設計：以分支名稱操作、路徑由樣板決定，三個核心指令就把 worktree 用得跟分支一樣簡單。",
+ "paperclipai/paperclip": "管理一整隊 AI agent 的開源平台：「OpenClaw 是員工，Paperclip 是公司」。Node.js 伺服器加 React 儀表板，可指派目標、逐個設定模型與權限，並在同處追蹤任務與成本。",
+ "karpathy/nanochat": "單一 GPU 節點就能跑完的 LLM 訓練教具：程式碼極簡，涵蓋分詞、預訓練、微調、評測到推論；只調一個 --depth 旋鈕就自動配好其他超參數，宣稱約 48 美元練出 GPT-2 等級。",
+ "p-e-w/heretic": "不訓練也能改語言模型行為：以對比範例與評分器做數學導向，可去除拒答（預設）、減少廢話與諂媚、調整情緒傾向；支援多數 dense、MoE 與多模態模型，在自己電腦一個下午跑完。"
+}

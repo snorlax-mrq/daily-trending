@@ -17,9 +17,13 @@
      "note": "下載 116.8K · 讚 3.6K · 10/17 發布",
      "stats": {
       "downloads": 116770,
+      "downloadsAllTime": null,
       "likes": 3633,
       "tag": "多模態理解",
+      "pipeline": "image-text-to-text",
+      "library": "transformers",
       "createdAt": "2026-10-17T02:40:38.000Z",
+      "lastModified": null,
       "params": 763205315794,
       "paramsText": "763B",
       "paramsActive": null,
@@ -30,10 +34,6 @@
       "langs": null,
       "quant": "fp8",
       "baseModel": null,
-      "pipeline": "image-text-to-text",
-      "library": "transformers",
-      "lastModified": null,
-      "downloadsAllTime": null,
       "detail": "總 763B（safetensors） · INT8 557B · FP8 204B · BF16 2B · FP32 42.3M · fp8 · MIT"
      }
     },
@@ -47,9 +47,13 @@
      "note": "下載 7.4K · 讚 742 · 10/24 發布",
      "stats": {
       "downloads": 7412,
+      "downloadsAllTime": null,
       "likes": 742,
       "tag": "文字生成",
+      "pipeline": "text-generation",
+      "library": "transformers",
       "createdAt": "2026-10-24T02:49:18.000Z",
+      "lastModified": null,
       "params": 33118977024,
       "paramsText": "33.1B",
       "paramsActive": null,
@@ -60,10 +64,6 @@
       "langs": "en zh",
       "quant": null,
       "baseModel": "Nanbeige/Nanbeige4.3-33B-Base",
-      "pipeline": "text-generation",
-      "library": "transformers",
-      "lastModified": null,
-      "downloadsAllTime": null,
       "detail": "總 33.1B（safetensors） · BF16 33.1B · Apache-2.0 · 2 語（英・中） · 基底 Nanbeige/Nanbeige4.3-33B-Base"
      }
     },
@@ -77,9 +77,13 @@
      "note": "下載 14K · 讚 1.2K · 10/21 發布",
      "stats": {
       "downloads": 14047,
+      "downloadsAllTime": null,
       "likes": 1209,
       "tag": "文字生成",
+      "pipeline": "text-generation",
+      "library": "transformers",
       "createdAt": "2026-10-21T14:20:58.000Z",
+      "lastModified": null,
       "params": 39785287456,
       "paramsText": "39.8B",
       "paramsActive": null,
@@ -90,10 +94,6 @@
       "langs": null,
       "quant": null,
       "baseModel": null,
-      "pipeline": "text-generation",
-      "library": "transformers",
-      "lastModified": null,
-      "downloadsAllTime": null,
       "detail": "總 39.8B（safetensors） · BF16 39.8B · Apache-2.0"
      }
     },
@@ -107,9 +107,13 @@
      "note": "下載 8.2K · 讚 877 · 10/19 發布",
      "stats": {
       "downloads": 8222,
+      "downloadsAllTime": null,
       "likes": 877,
       "tag": "文字生成",
+      "pipeline": "text-generation",
+      "library": "transformers",
       "createdAt": "2026-10-19T03:19:51.000Z",
+      "lastModified": null,
       "params": 4112079360,
       "paramsText": "4.1B",
       "paramsActive": null,
@@ -120,10 +124,6 @@
       "langs": "en zh",
       "quant": null,
       "baseModel": "XHToken/Spark-X2.6-4B-Base",
-      "pipeline": "text-generation",
-      "library": "transformers",
-      "lastModified": null,
-      "downloadsAllTime": null,
       "detail": "總 4.1B（safetensors） · BF16 4.1B · Apache-2.0 · 2 語（英・中） · 基底 XHToken/Spark-X2.6-4B-Base"
      }
     },
@@ -137,9 +137,13 @@
      "note": "下載 13.2K · 讚 469 · 10/17 發布",
      "stats": {
       "downloads": 13247,
+      "downloadsAllTime": null,
       "likes": 469,
       "tag": "多模態理解",
+      "pipeline": "image-text-to-text",
+      "library": "transformers",
       "createdAt": "2026-10-17T06:37:50.000Z",
+      "lastModified": null,
       "params": 220490854016,
       "paramsText": "220B",
       "paramsActive": null,
@@ -150,10 +154,6 @@
       "langs": null,
       "quant": "8-bit",
       "baseModel": null,
-      "pipeline": "image-text-to-text",
-      "library": "transformers",
-      "lastModified": null,
-      "downloadsAllTime": null,
       "detail": "總 220B（safetensors） · UINT8 207B · FP8 10.6B · BF16 3.3B · FP32 46.3M · 8-bit · 自訂"
      }
     },
@@ -167,9 +167,13 @@
      "note": "下載 165 · 讚 421 · 10/22 發布",
      "stats": {
       "downloads": 165,
+      "downloadsAllTime": null,
       "likes": 421,
       "tag": "翻譯",
+      "pipeline": "translation",
+      "library": "transformers",
       "createdAt": "2026-10-22T07:29:37.000Z",
+      "lastModified": null,
       "params": 30394794496,
       "paramsText": "30.4B",
       "paramsActive": 3000000000,
@@ -180,10 +184,6 @@
       "langs": "zh en fr pt es ja tr ru ar ko th it de vi ms id tl hi pl cs nl km my fa gu ur te mr he bn ta uk bo kk mn",
       "quant": "fp8",
       "baseModel": null,
-      "pipeline": "translation",
-      "library": "transformers",
-      "lastModified": null,
-      "downloadsAllTime": null,
       "detail": "總 30.4B（safetensors）／啟用 3B · FP8 28.7B · BF16 1.7B · fp8 · Apache-2.0 · 35 語（中・英・法・葡・西・日…）"
      }
     },
@@ -197,9 +197,13 @@
      "note": "下載 8.9K · 讚 418 · 10/23 發布",
      "stats": {
       "downloads": 8892,
+      "downloadsAllTime": null,
       "likes": 418,
       "tag": "文字生成",
+      "pipeline": "text-generation",
+      "library": "transformers",
       "createdAt": "2026-10-23T21:35:42.000Z",
+      "lastModified": null,
       "params": 1728801536,
       "paramsText": "1.7B",
       "paramsActive": null,
@@ -210,10 +214,6 @@
       "langs": "en ar zh fr de it ja ko pt es vi th id hi ru pl",
       "quant": null,
       "baseModel": "LiquidAI/LFM3-1.7B-Base",
-      "pipeline": "text-generation",
-      "library": "transformers",
-      "lastModified": null,
-      "downloadsAllTime": null,
       "detail": "總 1.7B（safetensors） · BF16 1.7B · 自訂 · 16 語（英・阿・中・法・德・義…） · 基底 LiquidAI/LFM3-1.7B-Base"
      }
     },
@@ -227,9 +227,13 @@
      "note": "下載 1.4M · 讚 454 · 10/23 發布",
      "stats": {
       "downloads": 1377570,
+      "downloadsAllTime": null,
       "likes": 454,
       "tag": "文字生成",
+      "pipeline": "text-generation",
+      "library": "gguf",
       "createdAt": "2026-10-23T09:43:05.000Z",
+      "lastModified": null,
       "params": null,
       "paramsText": "—",
       "paramsActive": null,
@@ -240,10 +244,6 @@
       "langs": null,
       "quant": "gguf",
       "baseModel": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
-      "pipeline": "text-generation",
-      "library": "gguf",
-      "lastModified": null,
-      "downloadsAllTime": null,
       "detail": "gguf · MIT · 基底 deepseek-ai/DeepSeek-V4.1-Flash-1017"
      }
     },
@@ -257,9 +257,13 @@
      "note": "下載 2.2M · 讚 9.8K · 07/23 發布",
      "stats": {
       "downloads": 2234788,
+      "downloadsAllTime": null,
       "likes": 9755,
       "tag": "圖生影片",
+      "pipeline": "image-to-video",
+      "library": "diffusion-single-file",
       "createdAt": "2026-07-23T07:55:24.000Z",
+      "lastModified": null,
       "params": null,
       "paramsText": "—",
       "paramsActive": null,
@@ -270,10 +274,6 @@
       "langs": "en de es fr ja ko zh it pt",
       "quant": null,
       "baseModel": null,
-      "pipeline": "image-to-video",
-      "library": "diffusion-single-file",
-      "lastModified": null,
-      "downloadsAllTime": null,
       "detail": "自訂 · 9 語（英・德・西・法・日・韓…）"
      }
     },
@@ -287,9 +287,13 @@
      "note": "下載 798.9K · 讚 2K · 10/14 發布",
      "stats": {
       "downloads": 798943,
+      "downloadsAllTime": null,
       "likes": 1977,
       "tag": "圖像生成／編輯",
+      "pipeline": "image-to-image",
+      "library": "diffusion-single-file",
       "createdAt": "2026-10-14T12:00:13.000Z",
+      "lastModified": null,
       "params": null,
       "paramsText": "—",
       "paramsActive": null,
@@ -300,10 +304,6 @@
       "langs": "en",
       "quant": null,
       "baseModel": "black-forest-labs/flux-3-image-klein",
-      "pipeline": "image-to-image",
-      "library": "diffusion-single-file",
-      "lastModified": null,
-      "downloadsAllTime": null,
       "detail": "自訂 · 1 語（英） · 基底 black-forest-labs/flux-3-image-klein"
      }
     }
@@ -698,6 +698,9 @@
      }
     }
    ],
+   "notes": [
+    "Artificial Analysis Intelligence Index v5.0 於 2026-10-27 上線：273 筆條目中僅 77 筆已評分，榜單仍在遷移，名次會劇烈變動。"
+   ],
    "events": [
     {
      "kind": "文章",
@@ -735,9 +738,6 @@
      "kind": "方法論",
      "text": "Artificial Analysis Intelligence Index v5.0"
     }
-   ],
-   "notes": [
-    "Artificial Analysis Intelligence Index v5.0 於 2026-10-27 上線：273 筆條目中僅 77 筆已評分，榜單仍在遷移，名次會劇烈變動。"
    ]
   }
  }
