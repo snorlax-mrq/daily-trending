@@ -444,3 +444,50 @@ a { color: inherit; text-decoration: none; }
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; animation: none !important; }
 }
+/* ── 增速榜（本站自行量測） ─────────────── */
+/* 這一榜不是名次榜，欄位也不同：多了「每日」「Trending」，走勢畫的是總星數 */
+.quotes-growth .col-name { width: 34%; }
+.quotes-growth .col-value { width: 6.2em; }
+.quotes-growth .col-delta { width: 5.2em; }
+.quotes-growth .col-spark { width: 7.4em; }
+.quotes-growth .col-flag { width: 5.4em; }
+.c-flag { white-space: nowrap; }
+.badge-on, .badge-off {
+  display: inline-block; font-family: var(--f-num); font-weight: 700; font-size: 0.6875rem;
+  letter-spacing: .08em; padding: 3px 6px 2px; line-height: 1.1;
+}
+.badge-on { color: var(--paper-3); background: var(--up); }
+.badge-off { color: var(--ink-3); border: 1px solid var(--rule-2); }
+.sub-head {
+  display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap;
+  margin: 26px 0 0; padding-bottom: 6px; border-bottom: 1px solid var(--rule);
+  font-family: var(--f-cjk); font-weight: 600; font-size: 0.9375rem; letter-spacing: .04em;
+}
+.sub-head span {
+  font-family: var(--f-cjk); font-weight: 400; font-size: 0.8125rem;
+  color: var(--ink-3); letter-spacing: .02em;
+}
+.sub-head + .quotes { margin-top: 4px; }
+.growth-alert {
+  margin-top: 18px; padding: 12px 14px; border-left: 3px solid var(--up);
+  background: var(--paper-2); font-family: var(--f-cjk); font-size: 0.8438rem; line-height: 1.75;
+  color: var(--ink-2); max-width: 60em;
+}
+.growth-alert b { display: block; font-weight: 600; color: var(--ink); margin-bottom: 4px; }
+.growth-alert a { border-bottom: 1px solid var(--rule-2); }
+.growth-alert a:hover { border-bottom-color: var(--ink); }
+@media (max-width: 720px) {
+  .badge-on, .badge-off { font-size: 0.625rem; }
+  /* 增速榜欄位比名次榜多，手機改成折行排列（不用 grid-template-areas） */
+  .quotes-growth tbody tr,
+  .quotes-series.quotes-growth tbody tr {
+    display: flex; flex-wrap: wrap; align-items: baseline; gap: 3px 12px;
+  }
+  .quotes-growth .c-rank { width: 2.2em; flex: 0 0 auto; font-size: 1.375rem; }
+  .quotes-growth .c-name { flex: 1 1 60%; min-width: 0; }
+  .quotes-growth .c-flag { flex: 0 0 auto; }
+  .quotes-growth .c-stars, .quotes-growth .c-rate, .quotes-growth .c-delta { flex: 0 0 auto; width: auto; }
+  .quotes-growth .c-stars { font-size: 1.0312rem; }
+  .quotes-growth .c-rate::before { content: "每日 "; font-family: var(--f-cjk); font-size: .7rem; color: var(--ink-3); }
+  .quotes-growth .c-spark { display: none; }
+}

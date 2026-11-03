@@ -1,6 +1,6 @@
 {
  "date": "2026-11-03",
- "generatedAt": "2026-11-03T00:04:42.637Z",
+ "generatedAt": "2026-11-03T05:35:08.259Z",
  "boards": {
   "hf": {
    "label": "HuggingFace",
@@ -12,13 +12,13 @@
      "name": "LiquidAI/LFM3-1.7B",
      "url": "https://huggingface.co/LiquidAI/LFM3-1.7B",
      "rank": 1,
-     "metric": 744,
+     "metric": 777,
      "kicker": "文字生成",
-     "note": "下載 42.4K · 讚 998 · 10/23 發布",
+     "note": "下載 42.4K · 讚 1.2K · 10/23 發布",
      "stats": {
       "downloads": 42384,
       "downloadsAllTime": 42384,
-      "likes": 998,
+      "likes": 1220,
       "tag": "文字生成",
       "pipeline": "text-generation",
       "library": "transformers",
@@ -42,13 +42,13 @@
      "name": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
      "rank": 2,
-     "metric": 678,
+     "metric": 667,
      "kicker": "多模態理解",
      "note": "下載 177K · 讚 4.7K · 10/17 發布",
      "stats": {
       "downloads": 177009,
       "downloadsAllTime": 177009,
-      "likes": 4695,
+      "likes": 4738,
       "tag": "多模態理解",
       "pipeline": "image-text-to-text",
       "library": "transformers",
@@ -72,13 +72,13 @@
      "name": "nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
      "rank": 3,
-     "metric": 607,
+     "metric": 616,
      "kicker": "語音辨識",
-     "note": "下載 32.4K · 讚 681 · 10/07 發布",
+     "note": "下載 32.4K · 讚 693 · 10/07 發布",
      "stats": {
       "downloads": 32439,
       "downloadsAllTime": 32439,
-      "likes": 681,
+      "likes": 693,
       "tag": "語音辨識",
       "pipeline": "automatic-speech-recognition",
       "library": "nemo",
@@ -102,13 +102,13 @@
      "name": "mistralai/Mistral-Large-4-1T-A52B",
      "url": "https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B",
      "rank": 4,
-     "metric": 504,
+     "metric": 509,
      "kicker": "多模態理解",
      "note": "下載 5.5K · 讚 1.5K · 09/30 發布",
      "stats": {
       "downloads": 5500,
       "downloadsAllTime": 5505,
-      "likes": 1500,
+      "likes": 1507,
       "tag": "多模態理解",
       "pipeline": "image-text-to-text",
       "library": "transformers",
@@ -132,13 +132,13 @@
      "name": "baidu/Unlimited-OCR-2",
      "url": "https://huggingface.co/baidu/Unlimited-OCR-2",
      "rank": 5,
-     "metric": 475,
+     "metric": 431,
      "kicker": "多模態理解",
-     "note": "下載 147.6K · 讚 561 · 10/26 發布",
+     "note": "下載 147.6K · 讚 566 · 10/26 發布",
      "stats": {
       "downloads": 147588,
       "downloadsAllTime": 147588,
-      "likes": 561,
+      "likes": 566,
       "tag": "多模態理解",
       "pipeline": "image-text-to-text",
       "library": "transformers",
@@ -162,13 +162,13 @@
      "name": "speridlabs/idol",
      "url": "https://huggingface.co/speridlabs/idol",
      "rank": 6,
-     "metric": 395,
+     "metric": 412,
      "kicker": "3D 生成",
-     "note": "下載 7.8K · 讚 414 · 10/28 發布",
+     "note": "下載 7.8K · 讚 433 · 10/28 發布",
      "stats": {
       "downloads": 7787,
       "downloadsAllTime": 7787,
-      "likes": 414,
+      "likes": 433,
       "tag": "3D 生成",
       "pipeline": "image-to-3d",
       "library": "idol",
@@ -192,13 +192,13 @@
      "name": "Lightricks/LTX-2.5",
      "url": "https://huggingface.co/Lightricks/LTX-2.5",
      "rank": 7,
-     "metric": 383,
+     "metric": 381,
      "kicker": "圖生影片",
      "note": "下載 2.5M · 讚 10.4K · 07/23 發布",
      "stats": {
       "downloads": 2467613,
       "downloadsAllTime": 5552787,
-      "likes": 10360,
+      "likes": 10387,
       "tag": "圖生影片",
       "pipeline": "image-to-video",
       "library": "diffusion-single-file",
@@ -222,13 +222,13 @@
      "name": "ccore/Qwen3.5-4B-3D-Coder",
      "url": "https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder",
      "rank": 8,
-     "metric": 382,
+     "metric": 381,
      "kicker": "其他",
-     "note": "下載 63.5K · 讚 560 · 10/25 發布",
+     "note": "下載 63.5K · 讚 568 · 10/25 發布",
      "stats": {
       "downloads": 63499,
       "downloadsAllTime": 63499,
-      "likes": 560,
+      "likes": 568,
       "tag": "其他",
       "pipeline": null,
       "library": null,
@@ -252,13 +252,13 @@
      "name": "Pika-Labs/Pika-H3-Flex",
      "url": "https://huggingface.co/Pika-Labs/Pika-H3-Flex",
      "rank": 9,
-     "metric": 340,
+     "metric": 346,
      "kicker": "圖生影片",
-     "note": "下載 491 · 讚 359 · 10/29 發布",
+     "note": "下載 491 · 讚 366 · 10/29 發布",
      "stats": {
       "downloads": 491,
       "downloadsAllTime": 491,
-      "likes": 359,
+      "likes": 366,
       "tag": "圖生影片",
       "pipeline": "image-to-video",
       "library": "diffusers",
@@ -278,33 +278,33 @@
      }
     },
     {
-     "id": "Qwen/Qwen3.8-27B",
-     "name": "Qwen/Qwen3.8-27B",
-     "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+     "id": "abenzerps/Qwen-Image-2.1-Uncensored-Quantized",
+     "name": "abenzerps/Qwen-Image-2.1-Uncensored-Quantized",
+     "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-Quantized",
      "rank": 10,
-     "metric": 291,
-     "kicker": "多模態理解",
-     "note": "下載 7.9M · 讚 19K · 08/05 發布",
+     "metric": 292,
+     "kicker": "文生圖",
+     "note": "下載 2.5M · 讚 5.6K · 09/20 發布",
      "stats": {
-      "downloads": 7915637,
-      "downloadsAllTime": 20706092,
-      "likes": 19012,
-      "tag": "多模態理解",
-      "pipeline": "image-text-to-text",
-      "library": "transformers",
-      "createdAt": "2026-08-05T08:22:59.000Z",
-      "lastModified": "2026-08-14T15:00:01.000Z",
-      "params": 27781427952,
-      "paramsText": "27.8B",
+      "downloads": 2516622,
+      "downloadsAllTime": 4060796,
+      "likes": 5566,
+      "tag": "文生圖",
+      "pipeline": "text-to-image",
+      "library": "gguf",
+      "createdAt": "2026-09-20T15:51:13.000Z",
+      "lastModified": "2026-10-12T07:10:55.000Z",
+      "params": null,
+      "paramsText": "—",
       "paramsActive": null,
       "paramsActiveText": null,
-      "paramsSrc": "safetensors",
-      "paramsBreakdown": "BF16 27.8B",
-      "license": "Apache-2.0",
+      "paramsSrc": null,
+      "paramsBreakdown": null,
+      "license": "自訂",
       "langs": null,
-      "quant": null,
-      "baseModel": null,
-      "detail": "總 27.8B（safetensors） · BF16 27.8B · Apache-2.0"
+      "quant": "gguf／mlx／fp8",
+      "baseModel": "Qwen/Qwen-Image-2.1",
+      "detail": "gguf／mlx／fp8 · 自訂 · 基底 Qwen/Qwen-Image-2.1"
      }
     }
    ],
@@ -326,8 +326,8 @@
      "kicker": "Rust",
      "note": "操作桌面應用的 computer use CLI：快照列出可操作元素的 ref，agent 按 ref 動作再快照確認，不做像素比對；Rust 寫成，預設 headless 不搶前景。",
      "stats": {
-      "stars": 9580,
-      "forks": 648,
+      "stars": 10557,
+      "forks": 707,
       "todayStars": 2275,
       "lang": "Rust"
      }
@@ -341,8 +341,8 @@
      "kicker": "TypeScript",
      "note": "為 Claude Code 做的跨工作階段記憶：自動記錄每次的工具操作，用 AI 壓成語意摘要，下次開新對話時注入相關脈絡，讓專案知識接得下去。",
      "stats": {
-      "stars": 110723,
-      "forks": 9652,
+      "stars": 110989,
+      "forks": 9675,
       "todayStars": 1803,
       "lang": "TypeScript"
      }
@@ -356,8 +356,8 @@
      "kicker": "Python",
      "note": "Python 爬蟲框架：快速請求、隱身瀏覽器、解析與併發抓取一套搞定，能處理 Cloudflare，支援 CSS／XPath，另附 MCP server 給 agent。",
      "stats": {
-      "stars": 92812,
-      "forks": 9777,
+      "stars": 93256,
+      "forks": 9809,
       "todayStars": 706,
       "lang": "Python"
      }
@@ -371,8 +371,8 @@
      "kicker": "C++",
      "note": "獨立的動態平鋪 Wayland compositor，主打外觀：漸層邊框、模糊、動畫與陰影都能調；不用 wlroots，內建外掛管理與逐工作區版面。",
      "stats": {
-      "stars": 39912,
-      "forks": 2154,
+      "stars": 40048,
+      "forks": 2159,
       "todayStars": 509,
       "lang": "C++"
      }
@@ -386,8 +386,8 @@
      "kicker": "Shell",
      "note": "把單一 Claude Code 工作階段變成遊戲工作室：49 個分層 agent（總監、部門主管、專才）加 74 個技能，各有職責與品質閘門，支援三大引擎，決策仍在你手上。",
      "stats": {
-      "stars": 33525,
-      "forks": 4516,
+      "stars": 33817,
+      "forks": 4535,
       "todayStars": 1379,
       "lang": "Shell"
      }
@@ -401,8 +401,8 @@
      "kicker": "Python",
      "note": "在個人電腦跑大型 MoE 模型的推理引擎：把 GPU、CPU 與主機記憶體當成單一彈性平台，靠 CPU–GPU 協同與專家快取，宣稱能在消費級硬體跑 290B 以上模型。",
      "stats": {
-      "stars": 16040,
-      "forks": 1581,
+      "stars": 16233,
+      "forks": 1595,
       "todayStars": 653,
       "lang": "Python"
      }
@@ -416,8 +416,8 @@
      "kicker": "TypeScript",
      "note": "T3 Code 是 agent harness 的控制面：用手機、網頁或桌面版操控本機的 Claude Code、Codex 等 agent；作者強調不賣東西，開源可 fork。",
      "stats": {
-      "stars": 41838,
-      "forks": 9090,
+      "stars": 42399,
+      "forks": 9131,
       "todayStars": 3229,
       "lang": "TypeScript"
      }
@@ -431,8 +431,8 @@
      "kicker": "Python",
      "note": "金融 K 線的開源基礎模型：把 OHLCV 量化成階層式 token 再以自回歸 Transformer 預訓練，資料來自 45 個以上交易所，論文已被 AAAI 2026 接受。",
      "stats": {
-      "stars": 46007,
-      "forks": 7585,
+      "stars": 46090,
+      "forks": 7595,
       "todayStars": 857,
       "lang": "Python"
      }
@@ -446,8 +446,8 @@
      "kicker": "Python",
      "note": "PyTorch 的可微分電腦視覺函式庫：1200 多個算子涵蓋相機模型、對極幾何、RANSAC 與特徵匹配，多數 torchvision 沒有；同一批可帶不同參數。",
      "stats": {
-      "stars": 12123,
-      "forks": 1487,
+      "stars": 12205,
+      "forks": 1498,
       "todayStars": 412,
       "lang": "Python"
      }
@@ -461,8 +461,8 @@
      "kicker": "C",
      "note": "純 C、零相依的 MoE 推理引擎：只把當前 token 用到的專家放進記憶體，其餘專家留在硬碟串流讀取，不必 GPU 也能跑數千億參數模型，已支援 13 個引擎。",
      "stats": {
-      "stars": 46516,
-      "forks": 5378,
+      "stars": 46723,
+      "forks": 5394,
       "todayStars": 675,
       "lang": "C"
      }
@@ -476,8 +476,8 @@
      "kicker": "Shell",
      "note": "作者日常在用的 agent skills 集合，主張小而可組合、任何模型都能用：不像 GSD、BMAD、Spec-Kit 接管整個流程，這些技能不奪走控制權。",
      "stats": {
-      "stars": 310208,
-      "forks": 26094,
+      "stars": 310452,
+      "forks": 26113,
       "todayStars": 858,
       "lang": "Shell"
      }
@@ -491,8 +491,8 @@
      "kicker": "Rust",
      "note": "管 git worktree 的 CLI，為平行跑多個 AI agent 設計：以分支名稱操作、路徑由樣板決定，三個核心指令就把 worktree 用得跟分支一樣簡單。",
      "stats": {
-      "stars": 10021,
-      "forks": 360,
+      "stars": 10130,
+      "forks": 366,
       "todayStars": 77,
       "lang": "Rust"
      }
@@ -506,8 +506,8 @@
      "kicker": "TypeScript",
      "note": "管理一整隊 AI agent 的開源平台：「OpenClaw 是員工，Paperclip 是公司」。用儀表板指派目標、逐個設定模型與權限，並追蹤任務與成本。",
      "stats": {
-      "stars": 110380,
-      "forks": 18274,
+      "stars": 110534,
+      "forks": 18297,
       "todayStars": 412,
       "lang": "TypeScript"
      }
@@ -521,8 +521,8 @@
      "kicker": "Python",
      "note": "單一 GPU 節點跑完的 LLM 訓練教具：程式碼極簡，涵蓋分詞、預訓練、微調到推論；只調 --depth 一個旋鈕就自動配好其他超參數。",
      "stats": {
-      "stars": 59875,
-      "forks": 8414,
+      "stars": 60007,
+      "forks": 8419,
       "todayStars": 321,
       "lang": "Python"
      }
@@ -536,15 +536,16 @@
      "kicker": "Python",
      "note": "不訓練也能改語言模型行為：用對比範例與評分器做數學導向，可去除拒答（預設）、減少廢話與諂媚；支援多數 dense、MoE 與多模態模型。",
      "stats": {
-      "stars": 38086,
-      "forks": 4323,
+      "stars": 38231,
+      "forks": 4334,
       "todayStars": 420,
       "lang": "Python"
      }
     }
    ],
    "notes": [
-    "GitHub 依當日熱度決定榜單長度，今天 15 筆（不是固定 25 筆）；「今日新增 stars」是官方未公開算法的數字。"
+    "GitHub 依當日熱度決定榜單長度，今天 15 筆（不是固定 25 筆）。",
+    "「N stars today」是滾動窗估計值，不是當日累計：同一天抓兩次會變少（實測 1,723 → 1,527），而且它與榜單名次無關（六日實測 Spearman −0.07～−0.68）。要比較成長速度，請看下方的「增速」榜（本站自己量）。"
    ]
   },
   "aa": {
@@ -591,11 +592,11 @@
      "rank": 3,
      "metric": 57.7087824022788,
      "kicker": "Google",
-     "note": "$4 / $20 每百萬 token · — tok/s",
+     "note": "$4 / $20 每百萬 token · 60 tok/s",
      "stats": {
       "priceIn": 4,
       "priceOut": 20,
-      "tps": null,
+      "tps": 60,
       "costPerTask": 6.586,
       "openWeights": 0
      }
@@ -713,9 +714,6 @@
      }
     }
    ],
-   "notes": [
-    "Artificial Analysis Intelligence Index v5.0 於 2026-10-27 上線：279 筆條目中僅 91 筆已評分，榜單仍在遷移，名次會劇烈變動。"
-   ],
    "events": [
     {
      "kind": "新模型",
@@ -737,6 +735,9 @@
      "text": "DeepSeek V4.1 Flash 1017 (High)（DeepSeek） · II 29.0",
      "url": "https://artificialanalysis.ai/models/deepseek-v4-1-flash-1017-high"
     }
+   ],
+   "notes": [
+    "Artificial Analysis Intelligence Index v5.0 於 2026-10-27 上線：279 筆條目中僅 91 筆已評分，榜單仍在遷移，名次會劇烈變動。"
    ]
   }
  }

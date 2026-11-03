@@ -48,7 +48,14 @@ export async function fetchGh(limit = 25): Promise<Board> {
       if (items.length >= limit) break;
     }
     if (!items.length) throw new Error("解析後 0 筆");
-    return { ...base, items, notes: [`GitHub 依當日熱度決定榜單長度，今天 ${items.length} 筆（不是固定 25 筆）；「今日新增 stars」是官方未公開算法的數字。`] };
+    return {
+      ...base,
+      items,
+      notes: [
+        `GitHub 依當日熱度決定榜單長度，今天 ${items.length} 筆（不是固定 25 筆）。`,
+        `「N stars today」是滾動窗估計值，不是當日累計：同一天抓兩次會變少（實測 1,723 → 1,527），而且它與榜單名次無關（六日實測 Spearman −0.07～−0.68）。要比較成長速度，請看下方的「增速」榜（本站自己量）。`,
+      ],
+    };
   } catch (e) {
     return { ...base, error: (e as Error).message };
   }

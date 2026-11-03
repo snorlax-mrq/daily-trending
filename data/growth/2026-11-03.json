@@ -1,0 +1,387 @@
+{
+ "date": "2026-11-03",
+ "at": "2026-11-03T05:36:28.458Z",
+ "window": {
+  "from": "2026-10-27",
+  "to": "2026-11-03",
+  "days": 7
+ },
+ "spanDays": 5,
+ "measured": [
+  {
+   "id": "pingdotgg/t3code",
+   "stars": 42399,
+   "forks": 9131,
+   "delta": 9443,
+   "perDay": 3147.7,
+   "span": 3,
+   "trending": true,
+   "created": "2026-02-08T23:46:22Z",
+   "ageDays": 268,
+   "note": "3 日實測（樣本不足 7 日）"
+  },
+  {
+   "id": "thedotmack/claude-mem",
+   "stars": 110989,
+   "forks": 9675,
+   "delta": 5924,
+   "perDay": 1481,
+   "span": 4,
+   "trending": true,
+   "created": "2025-08-31T20:50:03Z",
+   "ageDays": 429,
+   "note": "4 日實測（樣本不足 7 日）"
+  },
+  {
+   "id": "pbakaus/impeccable",
+   "stars": 100697,
+   "forks": 5946,
+   "delta": 7253,
+   "perDay": 1450.6,
+   "span": 5,
+   "trending": false,
+   "created": "2025-11-16T01:52:04Z",
+   "ageDays": 352,
+   "note": "5 日實測（樣本不足 7 日）"
+  },
+  {
+   "id": "togg53192-cmd/jailbreaks",
+   "stars": 13722,
+   "forks": 2075,
+   "delta": 6190,
+   "perDay": 1238,
+   "span": 5,
+   "trending": false,
+   "created": "2026-06-18T18:21:25Z",
+   "ageDays": 138,
+   "note": "5 日實測（樣本不足 7 日）"
+  },
+  {
+   "id": "Orkas-AI/Orkas",
+   "stars": 8512,
+   "forks": 499,
+   "delta": 2386,
+   "perDay": 1193,
+   "span": 2,
+   "trending": false,
+   "created": "2026-04-29T12:19:08Z",
+   "ageDays": 188,
+   "note": "2 日實測（樣本不足 7 日）"
+  },
+  {
+   "id": "HKUDS/DeepTutor",
+   "stars": 54405,
+   "forks": 6656,
+   "delta": 5836,
+   "perDay": 1167.2,
+   "span": 5,
+   "trending": false,
+   "created": "2025-12-28T15:35:54Z",
+   "ageDays": 310,
+   "note": "5 日實測（樣本不足 7 日）"
+  },
+  {
+   "id": "Donchitos/Claude-Code-Game-Studios",
+   "stars": 33817,
+   "forks": 4535,
+   "delta": 4213,
+   "perDay": 1053.3,
+   "span": 4,
+   "trending": true,
+   "created": "2026-02-12T05:21:38Z",
+   "ageDays": 264,
+   "note": "4 日實測（樣本不足 7 日）"
+  },
+  {
+   "id": "public-apis/public-apis",
+   "stars": 495608,
+   "forks": 55330,
+   "delta": 1040,
+   "perDay": 1040,
+   "span": 1,
+   "trending": false,
+   "created": "2016-03-20T23:49:42Z",
+   "ageDays": 3880,
+   "note": "1 日實測（樣本不足 7 日）"
+  },
+  {
+   "id": "Nutlope/hallmark",
+   "stars": 46186,
+   "forks": 2449,
+   "delta": 5120,
+   "perDay": 1024,
+   "span": 5,
+   "trending": false,
+   "created": "2026-04-27T20:47:10Z",
+   "ageDays": 190,
+   "note": "5 日實測（樣本不足 7 日）"
+  },
+  {
+   "id": "mattpocock/skills",
+   "stars": 310452,
+   "forks": 26113,
+   "delta": 2833,
+   "perDay": 944.3,
+   "span": 3,
+   "trending": true,
+   "created": "2026-02-03T11:15:53Z",
+   "ageDays": 273,
+   "note": "3 日實測（樣本不足 7 日）"
+  },
+  {
+   "id": "Renhuai123/ziwei-doushu",
+   "stars": 14227,
+   "forks": 2758,
+   "delta": 2764,
+   "perDay": 921.3,
+   "span": 3,
+   "trending": false,
+   "created": "2026-05-01T05:09:59Z",
+   "ageDays": 186,
+   "note": "3 日實測（樣本不足 7 日）"
+  },
+  {
+   "id": "milind-soni/OpenMausBot",
+   "stars": 11384,
+   "forks": 1558,
+   "delta": 3679,
+   "perDay": 919.8,
+   "span": 4,
+   "trending": false,
+   "created": "2026-08-11T18:58:55Z",
+   "ageDays": 84,
+   "note": "4 日實測（樣本不足 7 日）"
+  }
+ ],
+ "nascent": [
+  {
+   "id": "deepseek-ai/dsh-superagent-prototype",
+   "stars": 14202,
+   "forks": 1519,
+   "delta": null,
+   "perDay": 4734,
+   "span": 0,
+   "trending": false,
+   "created": "2026-10-31T09:32:46Z",
+   "ageDays": 3,
+   "note": "建立 3 天，尚無歷史可差分，以總星數÷年齡估"
+  },
+  {
+   "id": "storytold/craft-anything",
+   "stars": 5053,
+   "forks": 835,
+   "delta": null,
+   "perDay": 1684.3,
+   "span": 0,
+   "trending": false,
+   "created": "2026-10-31T14:50:00Z",
+   "ageDays": 3,
+   "note": "建立 3 天，尚無歷史可差分，以總星數÷年齡估"
+  },
+  {
+   "id": "heydamir/unslop",
+   "stars": 6512,
+   "forks": 332,
+   "delta": null,
+   "perDay": 1302.4,
+   "span": 0,
+   "trending": false,
+   "created": "2026-10-29T15:41:21Z",
+   "ageDays": 5,
+   "note": "建立 5 天，尚無歷史可差分，以總星數÷年齡估"
+  },
+  {
+   "id": "wangzan101/Mika",
+   "stars": 5571,
+   "forks": 1081,
+   "delta": null,
+   "perDay": 1114.2,
+   "span": 0,
+   "trending": false,
+   "created": "2026-10-29T14:34:07Z",
+   "ageDays": 5,
+   "note": "建立 5 天，尚無歷史可差分，以總星數÷年齡估"
+  },
+  {
+   "id": "patch-gg/pixelfx",
+   "stars": 3648,
+   "forks": 495,
+   "delta": null,
+   "perDay": 912,
+   "span": 0,
+   "trending": false,
+   "created": "2026-10-30T06:43:25Z",
+   "ageDays": 4,
+   "note": "建立 4 天，尚無歷史可差分，以總星數÷年齡估"
+  },
+  {
+   "id": "valentderah/totk-pc-recomp",
+   "stars": 4129,
+   "forks": 332,
+   "delta": null,
+   "perDay": 825.8,
+   "span": 0,
+   "trending": false,
+   "created": "2026-10-29T12:32:46Z",
+   "ageDays": 5,
+   "note": "建立 5 天，尚無歷史可差分，以總星數÷年齡估"
+  },
+  {
+   "id": "caru-ini/stack-diagram",
+   "stars": 1277,
+   "forks": 57,
+   "delta": null,
+   "perDay": 638.5,
+   "span": 0,
+   "trending": false,
+   "created": "2026-11-01T05:35:12Z",
+   "ageDays": 2,
+   "note": "建立 2 天，尚無歷史可差分，以總星數÷年齡估"
+  },
+  {
+   "id": "AssassinCreator/steam-stash-value-report-card",
+   "stars": 631,
+   "forks": 55,
+   "delta": null,
+   "perDay": 631,
+   "span": 0,
+   "trending": false,
+   "created": "2026-11-02T00:40:47Z",
+   "ageDays": 1,
+   "note": "建立 1 天，尚無歷史可差分，以總星數÷年齡估"
+  },
+  {
+   "id": "Djihads80/Eglantine",
+   "stars": 2620,
+   "forks": 307,
+   "delta": null,
+   "perDay": 524,
+   "span": 0,
+   "trending": false,
+   "created": "2026-10-29T00:25:18Z",
+   "ageDays": 5,
+   "note": "建立 5 天，尚無歷史可差分，以總星數÷年齡估"
+  },
+  {
+   "id": "Verlintas/NOIR",
+   "stars": 1474,
+   "forks": 103,
+   "delta": null,
+   "perDay": 491.3,
+   "span": 0,
+   "trending": false,
+   "created": "2026-10-31T21:34:39Z",
+   "ageDays": 3,
+   "note": "建立 3 天，尚無歷史可差分，以總星數÷年齡估"
+  },
+  {
+   "id": "paipiange/nvzhuang",
+   "stars": 2063,
+   "forks": 528,
+   "delta": null,
+   "perDay": 412.6,
+   "span": 0,
+   "trending": false,
+   "created": "2026-10-29T06:08:00Z",
+   "ageDays": 5,
+   "note": "建立 5 天，尚無歷史可差分，以總星數÷年齡估"
+  },
+  {
+   "id": "BryceYuuu/RUN",
+   "stars": 1901,
+   "forks": 129,
+   "delta": null,
+   "perDay": 380.2,
+   "span": 0,
+   "trending": false,
+   "created": "2026-10-29T11:28:43Z",
+   "ageDays": 5,
+   "note": "建立 5 天，尚無歷史可差分，以總星數÷年齡估"
+  }
+ ],
+ "alerts": [
+  {
+   "id": "pbakaus/impeccable",
+   "kind": "measured",
+   "perDay": 1450.6,
+   "delta": 7253,
+   "stars": 100697
+  },
+  {
+   "id": "togg53192-cmd/jailbreaks",
+   "kind": "measured",
+   "perDay": 1238,
+   "delta": 6190,
+   "stars": 13722
+  },
+  {
+   "id": "Orkas-AI/Orkas",
+   "kind": "measured",
+   "perDay": 1193,
+   "delta": 2386,
+   "stars": 8512
+  },
+  {
+   "id": "HKUDS/DeepTutor",
+   "kind": "measured",
+   "perDay": 1167.2,
+   "delta": 5836,
+   "stars": 54405
+  },
+  {
+   "id": "public-apis/public-apis",
+   "kind": "measured",
+   "perDay": 1040,
+   "delta": 1040,
+   "stars": 495608
+  },
+  {
+   "id": "Nutlope/hallmark",
+   "kind": "measured",
+   "perDay": 1024,
+   "delta": 5120,
+   "stars": 46186
+  },
+  {
+   "id": "deepseek-ai/dsh-superagent-prototype",
+   "kind": "nascent",
+   "perDay": 4734,
+   "delta": null,
+   "stars": 14202
+  },
+  {
+   "id": "storytold/craft-anything",
+   "kind": "nascent",
+   "perDay": 1684.3,
+   "delta": null,
+   "stars": 5053
+  },
+  {
+   "id": "heydamir/unslop",
+   "kind": "nascent",
+   "perDay": 1302.4,
+   "delta": null,
+   "stars": 6512
+  },
+  {
+   "id": "wangzan101/Mika",
+   "kind": "nascent",
+   "perDay": 1114.2,
+   "delta": null,
+   "stars": 5571
+  },
+  {
+   "id": "patch-gg/pixelfx",
+   "kind": "nascent",
+   "perDay": 912,
+   "delta": null,
+   "stars": 3648
+  }
+ ],
+ "notes": [
+  "本站自己量：對 watchlist 內每個專案每天抓一次總星數（GET /repos/{owner}/{repo}），再以「同一時刻的存量差」算增量，不採用 GitHub Trending 顯示的 stars today。",
+  "今日追蹤 140 個專案，其中 36 個有 2 日以上的實測、76 個樣本不足（以總星數 ÷ 建立天數估計）。",
+  "Trending 每天只收 11–17 席，且名次與 stars today 無關（實測 Spearman −0.07 ~ −0.68）；「不在 trending」不代表沒在長。"
+ ],
+ "watching": 140
+}

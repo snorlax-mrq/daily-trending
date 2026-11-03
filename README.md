@@ -51,6 +51,7 @@ cron `64c09feacb314d4c`（每天 08:00 Asia/Taipei，沿用原 HF 日報時段�
 ```bash
 # A. 抓資料
 bun run src/collect.ts      # 1. 抓三個來源 → data/snapshots/YYYY-MM-DD.json
+                            #    收尾會自動跑 src/watch.ts → data/growth/<date>.json（增速榜；--no-watch 可跳過）
 bun run src/gh-notes.ts --fetch   # 1b. GitHub 榜缺中文描述的 repo → 抓 README → data/gh-notes/<date>.todo.md
                                   #     由 AI 依 todo 寫 data/gh-notes/<date>.json，再 --apply 寫回快照
                             # 2. 由 AI 寫 data/headlines/YYYY-MM-DD.json（導讀）
@@ -89,9 +90,34 @@ done                                  # 10. 就地更新三個日報列
 | `bun run src/notion-health.ts [--days 7] [--quiet]` | 七項健檢（列數／重複／覆蓋率／中繼／視圖／匯出回歸／快取）；有問題退出碼 1。每週 cron 跑一次 |
 | `bun run src/backfill-hf-params.ts` | 補舊快照的參數量（只補會失效的數字，不推測歷史） |
 | `bun run src/backfill-hf-spec.ts [--refill]` | 補舊快照的 license／langs／quant／baseModel／createdAt／library（還查得到才補，查不到留 null） |
+| `bun run src/watch.ts --backfill` | 從既有快照的 `stats.stars` 回填 `data/star-history.jsonl`，並補出每一天的 `data/growth/` |
+| `bun run src/watch.ts --discover` | Search API 撈 7 日內建立、已破 300★ 的新 repo，加進 watchlist |
+| `bun run src/watch.ts --seed` | 一次性建立「≥20000★ 大型專案」的基底宇宙 |
+| `bun run src/watch.ts --report` | 只印增速榜與健檢，不抓網路 |
 
 `backfill-hf-params.ts` 只補會隨時間失效的數字（目前是參數量），授權／語言這類「抓取當下」的狀態不回填，
 避免偽造歷史；`backfill-hf-spec.ts` 相反，只補「不隨時間改變」的規格，且以 HF 現在還查得到為準。
+
+## 增速榜（本站自己量 star 增量）
+
+GitHub Trending 只告訴你「誰紅了」，而且是每天 11–17 席的窄門；它顯示的 `N stars today`
+是滾動窗估計值（同一天抓兩次會變少）、與榜單名次無關（六日實測 Spearman −0.07～−0.68）。
+所以「增速」另成一榜，數字由本站自己量：
+
+```
+data/watchlist.json      追蹤清單（上過 trending 的 ＋ Search API 找到的新秀，最後出現後保留 30 天）
+data/star-history.jsonl  每天每個專案一筆總星數（GET /repos/{owner}/{repo}）
+data/growth/<date>.json  當日算出的增速榜（measured／nascent／alerts）
+```
+
+- **measured**：同一時刻的總星數差 ÷ 實際樣本天數（≥2 日、且 ≥300★、≥2 fork）。
+- **nascent**：建立 45 日內、還沒有歷史可差分的專案，用「總星數 ÷ 建立天數」估計（偏樂觀，但能抓到 trending 完全收不到的一群）。
+- **alerts（每日健檢）**：增速前段班但今天不在 trending 的專案，會印在 `collect.ts` 輸出、也顯示在網站的增速榜下方。
+
+實測案例：`deepseek-ai/dsh-superagent-prototype` 三天 14,000★（約 4,700★/日），
+在 8 份 Wayback trending 快照裡一次都沒出現過。方法與數據見 `../reports/star-increment-vs-trending.md`。
+
+這批資料**不進 Notion**（Notion 是名次榜的星型模型），只做網站與健檢；跑失敗不影響三榜。
 
 ## Notion
 

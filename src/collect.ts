@@ -6,6 +6,7 @@ import { ROOT, today, writeSnapshot, readSnapshot, listSnapshots, type Snapshot 
 import { fetchHf } from "./fetch-hf.ts";
 import { fetchGh } from "./fetch-gh.ts";
 import { fetchAaRaw, buildAaBoard, aaEventIds } from "./fetch-aa.ts";
+import { runWatch } from "./watch.ts";
 
 const SEEN = join(ROOT, "data", "seen-aa-events.json");
 
@@ -62,3 +63,14 @@ for (const [key, b] of Object.entries(boards)) {
 }
 const failed = Object.entries(boards).filter(([, b]) => b.error);
 if (failed.length) console.error(`⚠️ 失敗來源：${failed.map(([k, b]) => `${k}（${b.error}）`).join("、")}`);
+
+// ── 自行量測 star 增量（增速榜的原料）──
+// 放在這裡，run.sh 與每日 cron 都只要跑 collect.ts 就同時更新增速。
+// 它是附加榜：失敗不影響三榜，也不要讓它把收斂搞掉。
+if (!process.argv.includes("--no-watch") && process.env.WATCH_OFF !== "1") {
+  try {
+    await runWatch({ date });
+  } catch (e) {
+    console.error(`⚠️ 增速榜失敗（不影響三榜）：${(e as Error).message}`);
+  }
+}

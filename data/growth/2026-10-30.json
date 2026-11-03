@@ -1,0 +1,104 @@
+{
+ "date": "2026-10-30",
+ "at": "2026-11-03T05:36:28.469Z",
+ "window": {
+  "from": "2026-10-23",
+  "to": "2026-10-30",
+  "days": 7
+ },
+ "spanDays": 1,
+ "measured": [
+  {
+   "id": "pbakaus/impeccable",
+   "stars": 95916,
+   "forks": 5650,
+   "delta": 2472,
+   "perDay": 2472,
+   "span": 1,
+   "trending": true,
+   "created": "2025-11-16T01:52:04Z",
+   "ageDays": 348,
+   "note": "1 日實測（樣本不足 7 日）"
+  },
+  {
+   "id": "HKUDS/DeepTutor",
+   "stars": 50804,
+   "forks": 6244,
+   "delta": 2235,
+   "perDay": 2235,
+   "span": 1,
+   "trending": true,
+   "created": "2025-12-28T15:35:54Z",
+   "ageDays": 306,
+   "note": "1 日實測（樣本不足 7 日）"
+  },
+  {
+   "id": "togg53192-cmd/jailbreaks",
+   "stars": 9561,
+   "forks": 1333,
+   "delta": 2029,
+   "perDay": 2029,
+   "span": 1,
+   "trending": true,
+   "created": "2026-06-18T18:21:25Z",
+   "ageDays": 134,
+   "note": "1 日實測（樣本不足 7 日）"
+  },
+  {
+   "id": "obra/superpowers",
+   "stars": 308857,
+   "forks": 27470,
+   "delta": 1189,
+   "perDay": 1189,
+   "span": 1,
+   "trending": true,
+   "created": "2025-10-09T19:45:18Z",
+   "ageDays": 386,
+   "note": "1 日實測（樣本不足 7 日）"
+  },
+  {
+   "id": "elayadesign/ai-design-skills",
+   "stars": 12491,
+   "forks": 909,
+   "delta": 1061,
+   "perDay": 1061,
+   "span": 1,
+   "trending": true,
+   "created": "2026-07-29T06:43:16Z",
+   "ageDays": 93,
+   "note": "1 日實測（樣本不足 7 日）"
+  },
+  {
+   "id": "JetBrains/thinkrail",
+   "stars": 6198,
+   "forks": 337,
+   "delta": 818,
+   "perDay": 818,
+   "span": 1,
+   "trending": true,
+   "created": "2026-07-08T07:40:43Z",
+   "ageDays": 114,
+   "note": "1 日實測（樣本不足 7 日）"
+  },
+  {
+   "id": "nightly-labs/openbot",
+   "stars": 4036,
+   "forks": 371,
+   "delta": 594,
+   "perDay": 594,
+   "span": 1,
+   "trending": true,
+   "created": "2026-08-12T21:32:03Z",
+   "ageDays": 79,
+   "note": "1 日實測（樣本不足 7 日）"
+  }
+ ],
+ "nascent": [],
+ "alerts": [],
+ "notes": [
+  "本站自己量：對 watchlist 內每個專案每天抓一次總星數（GET /repos/{owner}/{repo}），再以「同一時刻的存量差」算增量，不採用 GitHub Trending 顯示的 stars today。",
+  "今日追蹤 140 個專案，其中 7 個有 2 日以上的實測、0 個樣本不足（以總星數 ÷ 建立天數估計）。",
+  "Trending 每天只收 11–17 席，且名次與 stars today 無關（實測 Spearman −0.07 ~ −0.68）；「不在 trending」不代表沒在長。"
+ ],
+ "watching": 140
+}

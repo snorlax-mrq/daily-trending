@@ -1,0 +1,140 @@
+{
+ "date": "2026-10-31",
+ "at": "2026-11-03T05:36:28.471Z",
+ "window": {
+  "from": "2026-10-24",
+  "to": "2026-10-31",
+  "days": 7
+ },
+ "spanDays": 2,
+ "measured": [
+  {
+   "id": "togg53192-cmd/jailbreaks",
+   "stars": 11420,
+   "forks": 1668,
+   "delta": 3888,
+   "perDay": 1944,
+   "span": 2,
+   "trending": true,
+   "created": "2026-06-18T18:21:25Z",
+   "ageDays": 135,
+   "note": "2 日實測（樣本不足 7 日）"
+  },
+  {
+   "id": "pbakaus/impeccable",
+   "stars": 97297,
+   "forks": 5731,
+   "delta": 3853,
+   "perDay": 1926.5,
+   "span": 2,
+   "trending": true,
+   "created": "2025-11-16T01:52:04Z",
+   "ageDays": 349,
+   "note": "2 日實測（樣本不足 7 日）"
+  },
+  {
+   "id": "HKUDS/DeepTutor",
+   "stars": 51943,
+   "forks": 6365,
+   "delta": 3374,
+   "perDay": 1687,
+   "span": 2,
+   "trending": true,
+   "created": "2025-12-28T15:35:54Z",
+   "ageDays": 307,
+   "note": "2 日實測（樣本不足 7 日）"
+  },
+  {
+   "id": "thedotmack/claude-mem",
+   "stars": 106566,
+   "forks": 9379,
+   "delta": 1501,
+   "perDay": 1501,
+   "span": 1,
+   "trending": true,
+   "created": "2025-08-31T20:50:03Z",
+   "ageDays": 426,
+   "note": "1 日實測（樣本不足 7 日）"
+  },
+  {
+   "id": "milind-soni/OpenMausBot",
+   "stars": 8867,
+   "forks": 1220,
+   "delta": 1162,
+   "perDay": 1162,
+   "span": 1,
+   "trending": true,
+   "created": "2026-08-11T18:58:55Z",
+   "ageDays": 81,
+   "note": "1 日實測（樣本不足 7 日）"
+  },
+  {
+   "id": "obra/superpowers",
+   "stars": 309539,
+   "forks": 27545,
+   "delta": 1871,
+   "perDay": 935.5,
+   "span": 2,
+   "trending": true,
+   "created": "2025-10-09T19:45:18Z",
+   "ageDays": 387,
+   "note": "2 日實測（樣本不足 7 日）"
+  },
+  {
+   "id": "JetBrains/thinkrail",
+   "stars": 6657,
+   "forks": 360,
+   "delta": 1277,
+   "perDay": 638.5,
+   "span": 2,
+   "trending": true,
+   "created": "2026-07-08T07:40:43Z",
+   "ageDays": 115,
+   "note": "2 日實測（樣本不足 7 日）"
+  },
+  {
+   "id": "CopilotKit/OpenBot",
+   "stars": 8898,
+   "forks": 1114,
+   "delta": 567,
+   "perDay": 567,
+   "span": 1,
+   "trending": true,
+   "created": "2026-08-17T00:44:59Z",
+   "ageDays": 75,
+   "note": "1 日實測（樣本不足 7 日）"
+  },
+  {
+   "id": "macro-inc/macro",
+   "stars": 5922,
+   "forks": 541,
+   "delta": 373,
+   "perDay": 186.5,
+   "span": 2,
+   "trending": true,
+   "created": "2025-11-08T15:18:27Z",
+   "ageDays": 357,
+   "note": "2 日實測（樣本不足 7 日）"
+  },
+  {
+   "id": "expo/skills",
+   "stars": 3922,
+   "forks": 247,
+   "delta": 248,
+   "perDay": 124,
+   "span": 2,
+   "trending": true,
+   "created": "2025-11-30T03:57:18Z",
+   "ageDays": 335,
+   "note": "2 日實測（樣本不足 7 日）"
+  }
+ ],
+ "nascent": [],
+ "alerts": [],
+ "notes": [
+  "本站自己量：對 watchlist 內每個專案每天抓一次總星數（GET /repos/{owner}/{repo}），再以「同一時刻的存量差」算增量，不採用 GitHub Trending 顯示的 stars today。",
+  "今日追蹤 140 個專案，其中 10 個有 2 日以上的實測、0 個樣本不足（以總星數 ÷ 建立天數估計）。",
+  "Trending 每天只收 11–17 席，且名次與 stars today 無關（實測 Spearman −0.07 ~ −0.68）；「不在 trending」不代表沒在長。"
+ ],
+ "watching": 140
+}

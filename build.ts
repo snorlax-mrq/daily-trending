@@ -47,6 +47,40 @@ for (const d of dates) {
 
 const boardKeys = (s: Snapshot) => Object.keys(s.boards);
 const fmtNum = (n: number | null | undefined, d = 1) => (typeof n === "number" ? n.toFixed(d) : "—");
+
+// ── 增速（本站自己量，不是 trending 的 stars today）──
+// 來源：src/watch.ts 產出的 data/growth/YYYY-MM-DD.json
+type GrowthItem = {
+  id: string;
+  stars: number;
+  forks?: number;
+  delta: number | null;
+  perDay: number | null;
+  span: number;
+  trending: boolean;
+  created: string | null;
+  ageDays: number | null;
+  note: string;
+};
+type GrowthData = {
+  date: string;
+  at: string;
+  window: { from: string; to: string; days: number };
+  spanDays: number;
+  measured: GrowthItem[];
+  nascent: GrowthItem[];
+  alerts: { id: string; kind: "measured" | "nascent"; perDay: number; delta: number | null; stars: number }[];
+  notes: string[];
+  watching: number;
+};
+const growthCache = new Map<string, GrowthData | null>();
+async function growthOf(d: string): Promise<GrowthData | null> {
+  if (!growthCache.has(d)) {
+    const p = join(ROOT, "data", "growth", `${d}.json`);
+    growthCache.set(d, existsSync(p) ? (JSON.parse(await Bun.file(p).text()) as GrowthData) : null);
+  }
+  return growthCache.get(d) ?? null;
+}
 const esc = (s: string) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 
 /** 取某 item 在 upto 之前（含）連續 N 個有紀錄日的名次序列 */
@@ -295,6 +329,95 @@ ${events}
 </section>`;
 }
 
+// ── 增速榜（自行實測）──
+const starHist = new Map<string, { d: string; s: number }[]>();
+{
+  const hp = join(ROOT, "data", "star-history.jsonl");
+  if (existsSync(hp)) {
+    for (const line of (await Bun.file(hp).text()).split("\n")) {
+      if (!line.trim()) continue;
+      try {
+        const r = JSON.parse(line) as { d: string; id: string; s: number };
+        if (!r.d || !r.id || typeof r.s !== "number") continue;
+        if (!starHist.has(r.id)) starHist.set(r.id, []);
+        starHist.get(r.id)!.push({ d: r.d, s: r.s });
+      } catch {
+        /* 壞行跳過 */
+      }
+    }
+    for (const arr of starHist.values()) arr.sort((a, b) => a.d.localeCompare(b.d));
+  }
+}
+
+function starSeries(id: string, upto: string, n = 8): number[] {
+  const arr = (starHist.get(id) ?? []).filter((r) => r.d <= upto);
+  return arr.slice(-n).map((r) => r.s);
+}
+
+/** 總星數折線（不是名次，所以自己畫） */
+function starSpark(vals: number[], w = 96, h = 24, fallback = "1 日"): string {
+  if (vals.length < 2) return `<span class="first-day">${vals.length ? fallback : "—"}</span>`;
+  const min = Math.min(...vals);
+  const max = Math.max(...vals);
+  const step = w / (vals.length - 1);
+  const y = (v: number) => (max === min ? h / 2 : h - 2 - ((v - min) / (max - min)) * (h - 5));
+  const d = vals.map((v, i) => `${i ? "L" : "M"}${(i * step).toFixed(1)} ${y(v).toFixed(1)}`).join(" ");
+  const lastX = ((vals.length - 1) * step).toFixed(1);
+  return `<svg viewBox="0 0 ${w} ${h}" preserveAspectRatio="none" aria-hidden="true"><path class="axis" d="M0 ${(h - 1).toFixed(1)} H${w}" vector-effect="non-scaling-stroke"/><path class="line growth-l" d="${d}" vector-effect="non-scaling-stroke"/><circle class="dot now" cx="${lastX}" cy="${y(vals[vals.length - 1]!).toFixed(1)}" r="1.6"/></svg>`;
+}
+
+function growthRow(it: GrowthItem, i: number, date: string): string {
+  const created = it.created ? it.created.slice(0, 10).replace(/-/g, "/") : "—";
+  const kicker = it.ageDays !== null ? `建立 ${it.ageDays} 日（${created}）` : `首次記錄 ${created}`;
+  const delta = it.delta === null ? `<span class="flat">—</span>` : `<span class="up">+${it.delta.toLocaleString("en-US")}</span>`;
+  const rate = it.perDay === null ? `<span class="flat">—</span>` : it.perDay.toLocaleString("en-US", { maximumFractionDigits: 0 });
+  const flag = it.trending ? `<span class="badge-on">在榜</span>` : `<span class="badge-off">未上榜</span>`;
+  return `<tr>
+  <td class="c-rank">${String(i + 1).padStart(2, "0")}</td>
+  <td class="c-name"><a href="https://github.com/${it.id}" target="_blank" rel="noopener noreferrer">${esc(it.id)}</a><span class="c-kind">${esc(kicker)}</span></td>
+  <td class="c-value c-stars r">${Math.round(it.stars).toLocaleString("en-US")}</td>
+  <td class="c-delta r">${delta}</td>
+  <td class="c-value c-rate r">${rate}</td>
+  <td class="c-spark" data-label="總星數">${starSpark(starSeries(it.id, date))}</td>
+  <td class="c-flag">${flag}</td>
+</tr>`;
+}
+
+function renderGrowth(g: GrowthData, date: string, rel: string): string {
+  const span = Math.max(1, g.spanDays);
+  const head = `<header class="board-head">
+  <span class="b-numeral">04</span>
+  <h2 class="b-name">增速</h2>
+  <p class="b-question">哪些專案真的在長，而不只是被看見</p>
+  <div class="b-meta"><span class="src">本站自行量測</span><a href="${rel}board/growth.html">時序 →</a></div>
+</header>`;
+
+  const table = (items: GrowthItem[], cap: string) =>
+    items.length
+      ? `<table class="quotes quotes-growth">
+  <colgroup><col class="col-rank"><col class="col-name"><col class="col-value"><col class="col-delta"><col class="col-value"><col class="col-spark"><col class="col-flag"></colgroup>
+  <thead><tr><th>名次</th><th>名稱</th><th class="r">總星數</th><th class="r">近 ${span} 日</th><th class="r">每日</th><th class="th-spark">總星數走勢</th><th>Trending</th></tr></thead>
+  <tbody>${items.map((it, i) => growthRow(it, i, date)).join("")}</tbody>
+</table>
+<p class="legend">${esc(cap)}</p>`
+      : "";
+
+  const alerts = g.alerts.length
+    ? `<div class="growth-alert"><b>今日點名：${g.alerts.length} 個專案在長，但不在 GitHub Trending。</b><span>${g.alerts
+        .slice(0, 6)
+        .map((a) => `<a href="https://github.com/${a.id}" target="_blank" rel="noopener noreferrer">${esc(a.id)}</a>（${Math.round(a.perDay).toLocaleString("en-US")}★/日）`)
+        .join("、")}${g.alerts.length > 6 ? ` 等 ${g.alerts.length} 個` : ""}　Trending 每天只收 11–17 席，沒上榜不代表沒在長。</span></div>`
+    : `<p class="caveat">健檢：今日增速前段班的專案都在 GitHub Trending 上。</p>`;
+
+  return `<section class="board" id="growth">${head}
+<h3 class="sub-head">實測增速<span>同一時刻的總星數差，除以實際樣本天數</span></h3>
+${table(g.measured, `樣本 ${span} 日，${g.watching} 個追蹤專案中有 ${g.measured.length} 個達「2 日以上實測且 ≥300 星」。每日＝區間增量 ÷ 實際天數，不是 trending 的 stars today。`)}
+${g.nascent.length ? `<h3 class="sub-head">新秀<span>樣本不足，以總星數 ÷ 建立天數估計</span></h3>${table(g.nascent, "建立 45 日內、尚無兩日以上歷史可差分的專案。這個數字偏樂觀（早期成長最快），但能補上 trending 完全收不到的一群。")}` : ""}
+${alerts}
+${(g.notes ?? []).length ? `<p class="caveat">${g.notes.map((n) => esc(n)).join("<br>")}</p>` : ""}
+</section>`;
+}
+
 /** 漲跌家數：台灣行情版每天都會印的那一行 */
 function tally(s: Snapshot, date: string): string {
   let up = 0, down = 0, flat = 0, fresh = 0, total = 0;
@@ -334,11 +457,13 @@ function footBlock(date: string, rel: string): string {
       <li><a href="https://huggingface.co/models?sort=trending" target="_blank" rel="noopener noreferrer">HuggingFace</a> · 官方 trendingScore</li>
       <li><a href="https://github.com/trending" target="_blank" rel="noopener noreferrer">GitHub Trending</a> · HTML 解析，非官方 API</li>
       <li><a href="https://artificialanalysis.ai/leaderboards/models" target="_blank" rel="noopener noreferrer">Artificial Analysis</a> · Intelligence Index</li>
+      <li><a href="https://docs.github.com/en/rest/repos/repos" target="_blank" rel="noopener noreferrer">GitHub REST API</a> · 本站自行每日量測總星數（增速榜）</li>
     </ul>
   </div>
   <div>
     <h4>怎麼讀</h4>
     <p>名次為各榜單原始排序。漲跌比較前一個有紀錄的日期；走勢為近九日名次，線在上方代表名次較好。「新」表示本站紀錄中首次出現，不代表該項目當天才發布。</p>
+    <p>增速榜比較不一樣：那是本站每天自己抓 GitHub 總星數算出來的增量，不用 GitHub Trending 顯示的「stars today」（那是滾動窗估計值，同一天抓兩次會不一樣，也和榜單排序無關）。</p>
   </div>
   <div>
     <h4>存檔</h4>
@@ -357,12 +482,14 @@ for (const [i, date] of dates.entries()) {
   const rel = "../";
   const lead = await readLead(date);
   const leadData: Lead = lead ?? { lead: autoLead(date, s) };
+  const growth = await growthOf(date);
   const body = `<div class="wrap">
 ${masthead(date, i + 1, rel, { home: date === today })}
 ${statusBar(s)}
 ${tally(s, date)}
 ${leadBlock(leadData, date)}
 ${boardKeys(s).map((k, idx) => renderBoard(k, s.boards[k]!, date, idx, rel)).join("\n")}
+${growth ? renderGrowth(growth, date, rel) : ""}
 ${footBlock(date, rel)}
 </div>`;
   const title = `${SITE_NAME} ${date.replace(/-/g, ".")} · HuggingFace／GitHub／Artificial Analysis`;
@@ -462,6 +589,72 @@ ${rows}
 ${footBlock(today, "../")}
 </div>`;
   await Bun.write(join(OUT, "board", `${key}.html`), shell({ rel: "../", title: `${sample.label} 時序 · ${SITE_NAME}`, desc: `${sample.label}：${sample.question}。`, body }));
+}
+
+// ── 增速時序頁 ──
+{
+  const gd: { d: string; g: GrowthData }[] = [];
+  for (const d of dates) {
+    const g = await growthOf(d);
+    if (g) gd.push({ d, g });
+  }
+  if (gd.length) {
+    const last = gd[gd.length - 1]!;
+    // 每個專案取「最新一天的數字」＋「出現在幾天」
+    const seen = new Map<string, { it: GrowthItem; kind: "measured" | "nascent"; days: number; first: string; trendingDays: number }>();
+    for (const { d, g } of gd) {
+      for (const [kind, list] of [
+        ["measured", g.measured],
+        ["nascent", g.nascent],
+      ] as const) {
+        for (const it of list) {
+          const cur = seen.get(it.id);
+          if (!cur) seen.set(it.id, { it, kind, days: 1, first: d, trendingDays: it.trending ? 1 : 0 });
+          else {
+            cur.it = it;
+            cur.days++;
+            if (it.trending) cur.trendingDays++;
+          }
+        }
+      }
+    }
+    const rows = [...seen.values()]
+      .sort((a, b) => (b.it.perDay ?? 0) - (a.it.perDay ?? 0))
+      .map((x) => {
+        const it = x.it;
+        const delta = it.delta === null ? `<span class="flat">—</span>` : `<span class="up">+${it.delta.toLocaleString("en-US")}</span>`;
+        return `<tr>
+  <td class="c-name"><a href="https://github.com/${it.id}" target="_blank" rel="noopener noreferrer">${esc(it.id)}</a><span class="c-kind">${x.kind === "measured" ? `實測 ${it.span} 日` : `新秀 ${it.ageDays ?? "?"} 日`}</span></td>
+  <td class="c-value r">${Math.round(it.stars).toLocaleString("en-US")}</td>
+  <td class="c-value r">${it.perDay === null ? "—" : it.perDay.toLocaleString("en-US", { maximumFractionDigits: 0 })}</td>
+  <td class="c-delta r">${delta}</td>
+  <td class="c-flag">${it.trending ? `<span class="badge-on">在榜</span>` : `<span class="badge-off">未上榜</span>`}</td>
+  <td class="c-value r">${x.days}</td>
+  <td class="c-spark">${starSpark(starSeries(it.id, last.d, 12), 120, 24, "—")}</td>
+</tr>`;
+      })
+      .join("\n");
+
+    const body = `<div class="wrap">
+${masthead(today, dates.length, "../", { home: false })}
+<div class="page-head">
+  <h1>增速 · 時序</h1>
+  <p>本站自己每天量一次 GitHub 總星數，再以「同一時刻的存量差」算增量，累計 ${gd.length} 天、追蹤 ${last.g.watching} 個專案。排序為最新一日的每日均速；「Trending」是最新一日是否在 GitHub Trending 上，「進榜天數」是出現在這份增速榜幾天。詳見 <a href="../d/${last.d}.html">最新一期</a>。</p>
+</div>
+<table class="quotes quotes-series">
+  <colgroup><col class="col-name"><col class="col-value"><col class="col-value"><col class="col-delta"><col class="col-value"><col class="col-value"><col class="col-spark"></colgroup>
+  <thead><tr><th>名稱</th><th class="r">總星數</th><th class="r">每日</th><th class="r">近 ${Math.max(1, last.g.spanDays)} 日</th><th>Trending</th><th class="r">進榜天數</th><th class="th-spark">總星數走勢</th></tr></thead>
+  <tbody>
+${rows}
+  </tbody>
+</table>
+${footBlock(today, "../")}
+</div>`;
+    await Bun.write(
+      join(OUT, "board", "growth.html"),
+      shell({ rel: "../", title: `增速時序 · ${SITE_NAME}`, desc: "本站自行每日量測 GitHub 總星數得出的增速排行，與 GitHub Trending 的 stars today 不同。", body }),
+    );
+  }
 }
 
 // ── favicon ──
