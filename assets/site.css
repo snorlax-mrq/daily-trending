@@ -214,6 +214,9 @@ a { color: inherit; text-decoration: none; }
 .col-spark { width: 8em; }
 .col-note { width: auto; }
 .col-params { width: 4.8em; }
+/* GitHub 的備註要放中文摘要（比 HF 的「下載／讚」長很多），名稱欄讓一點寬度出來 */
+.quotes-gh .col-name { width: 30%; }
+.quotes-gh .col-note { width: 36%; }
 /* HF 多一欄「參數」，名稱欄讓一點寬度出來 */
 .quotes-hf .col-name { width: 31%; }
 .quotes-hf .col-note { width: auto; }

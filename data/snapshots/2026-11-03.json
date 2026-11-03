@@ -324,7 +324,7 @@
      "rank": 1,
      "metric": 2275,
      "kicker": "Rust",
-     "note": "用系統無障礙樹操作桌面應用的 computer use CLI：快照列出可操作元素的 ref，agent 按 ref 動作後再快照確認，不做像素比對；附 C 函式庫，預設 headless 不搶前景。",
+     "note": "操作桌面應用的 computer use CLI：快照列出可操作元素的 ref，agent 按 ref 動作再快照確認，不做像素比對；Rust 寫成，預設 headless 不搶前景。",
      "stats": {
       "stars": 9580,
       "forks": 648,
@@ -354,7 +354,7 @@
      "rank": 3,
      "metric": 706,
      "kicker": "Python",
-     "note": "Python 爬蟲框架，把快速請求、隱身瀏覽器、解析與併發抓取收在一套：能處理 Cloudflare Turnstile，支援 CSS／XPath 與自適應元素追蹤，另附 MCP server 給 agent 用。",
+     "note": "Python 爬蟲框架：快速請求、隱身瀏覽器、解析與併發抓取一套搞定，能處理 Cloudflare，支援 CSS／XPath，另附 MCP server 給 agent。",
      "stats": {
       "stars": 92812,
       "forks": 9777,
@@ -369,7 +369,7 @@
      "rank": 4,
      "metric": 509,
      "kicker": "C++",
-     "note": "獨立的動態平鋪 Wayland compositor，主打外觀：漸層邊框、多種模糊、動畫與陰影都能調；不用 wlroots，內建外掛管理、socket IPC 與逐工作區版面，設定存檔即生效。",
+     "note": "獨立的動態平鋪 Wayland compositor，主打外觀：漸層邊框、模糊、動畫與陰影都能調；不用 wlroots，內建外掛管理與逐工作區版面。",
      "stats": {
       "stars": 39912,
       "forks": 2154,
@@ -414,7 +414,7 @@
      "rank": 7,
      "metric": 3229,
      "kicker": "TypeScript",
-     "note": "T3 Code 自稱 agent harness 的控制面：用手機、網頁或桌面版操控本機已裝好的 Claude Code、Codex、Cursor 等 agent；作者強調不賣東西，開源可自行 fork。",
+     "note": "T3 Code 是 agent harness 的控制面：用手機、網頁或桌面版操控本機的 Claude Code、Codex 等 agent；作者強調不賣東西，開源可 fork。",
      "stats": {
       "stars": 41838,
       "forks": 9090,
@@ -429,7 +429,7 @@
      "rank": 8,
      "metric": 857,
      "kicker": "Python",
-     "note": "金融 K 線的開源基礎模型：先用分詞器把 OHLCV 量化成階層式 token，再以自回歸 Transformer 預訓練，訓練資料來自 45 個以上交易所，論文已被 AAAI 2026 接受。",
+     "note": "金融 K 線的開源基礎模型：把 OHLCV 量化成階層式 token 再以自回歸 Transformer 預訓練，資料來自 45 個以上交易所，論文已被 AAAI 2026 接受。",
      "stats": {
       "stars": 46007,
       "forks": 7585,
@@ -444,7 +444,7 @@
      "rank": 9,
      "metric": 412,
      "kicker": "Python",
-     "note": "PyTorch 上的可微分電腦視覺函式庫：1200 多個算子，涵蓋相機模型、對極幾何、RANSAC、特徵匹配與色彩轉換，多數 torchvision 沒有；主張同一批可帶不同參數算完。",
+     "note": "PyTorch 的可微分電腦視覺函式庫：1200 多個算子涵蓋相機模型、對極幾何、RANSAC 與特徵匹配，多數 torchvision 沒有；同一批可帶不同參數。",
      "stats": {
       "stars": 12123,
       "forks": 1487,
@@ -474,7 +474,7 @@
      "rank": 11,
      "metric": 858,
      "kicker": "Shell",
-     "note": "作者日常在用的 agent skills 集合，主張小而可組合、任何模型都能用：相對於 GSD、BMAD、Spec-Kit 那種接管整個流程的做法，這些技能不奪走控制權，方便改成自己的。",
+     "note": "作者日常在用的 agent skills 集合，主張小而可組合、任何模型都能用：不像 GSD、BMAD、Spec-Kit 接管整個流程，這些技能不奪走控制權。",
      "stats": {
       "stars": 310208,
       "forks": 26094,
@@ -504,7 +504,7 @@
      "rank": 13,
      "metric": 412,
      "kicker": "TypeScript",
-     "note": "管理一整隊 AI agent 的開源平台：「OpenClaw 是員工，Paperclip 是公司」。Node.js 伺服器加 React 儀表板，可指派目標、逐個設定模型與權限，並在同處追蹤任務與成本。",
+     "note": "管理一整隊 AI agent 的開源平台：「OpenClaw 是員工，Paperclip 是公司」。用儀表板指派目標、逐個設定模型與權限，並追蹤任務與成本。",
      "stats": {
       "stars": 110380,
       "forks": 18274,
@@ -519,7 +519,7 @@
      "rank": 14,
      "metric": 321,
      "kicker": "Python",
-     "note": "單一 GPU 節點就能跑完的 LLM 訓練教具：程式碼極簡，涵蓋分詞、預訓練、微調、評測到推論；只調一個 --depth 旋鈕就自動配好其他超參數，宣稱約 48 美元練出 GPT-2 等級。",
+     "note": "單一 GPU 節點跑完的 LLM 訓練教具：程式碼極簡，涵蓋分詞、預訓練、微調到推論；只調 --depth 一個旋鈕就自動配好其他超參數。",
      "stats": {
       "stars": 59875,
       "forks": 8414,
@@ -534,7 +534,7 @@
      "rank": 15,
      "metric": 420,
      "kicker": "Python",
-     "note": "不訓練也能改語言模型行為：以對比範例與評分器做數學導向，可去除拒答（預設）、減少廢話與諂媚、調整情緒傾向；支援多數 dense、MoE 與多模態模型，在自己電腦一個下午跑完。",
+     "note": "不訓練也能改語言模型行為：用對比範例與評分器做數學導向，可去除拒答（預設）、減少廢話與諂媚；支援多數 dense、MoE 與多模態模型。",
      "stats": {
       "stars": 38086,
       "forks": 4323,

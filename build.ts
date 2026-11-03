@@ -264,7 +264,7 @@ function renderBoard(key: string, b: Board, date: string, idx: number, rel: stri
   ${valueCell(it)}
   ${withHistory ? deltaCell(key, it.id, it.rank, date) : ""}
   ${withHistory ? `<td class="c-spark" data-label="近 ${seriesLen} 日名次">${sp}${form}</td>` : ""}
-  <td class="c-note"><span class="clamp2">${esc(it.note)}</span></td>
+  <td class="c-note"><span class="clamp2" title="${esc(it.note)}">${esc(it.note)}</span></td>
 </tr>`;
     })
     .join("\n");

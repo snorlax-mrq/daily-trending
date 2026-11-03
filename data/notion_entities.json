@@ -192,11 +192,11 @@
   },
   "mattpocock/skills": {
    "page": "40cb8a3a-65b7-81da-8f3b-d40f290ec829",
-   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"mattpocock/skills\"}}]},\"網址\":{\"url\":\"https://github.com/mattpocock/skills\"},\"語言\":{\"select\":{\"name\":\"Shell\"}},\"描述\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"作者日常在用的 agent skills 集合，主張小而可組合、任何模型都能用：相對於 GSD、BMAD、Spec-Kit 那種接管整個流程的做法，這些技能不奪走控制權，方便改成自己的。\"}}]},\"首次收錄\":{\"date\":{\"start\":\"2026-10-31\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-11-03\"}}}"
+   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"mattpocock/skills\"}}]},\"網址\":{\"url\":\"https://github.com/mattpocock/skills\"},\"語言\":{\"select\":{\"name\":\"Shell\"}},\"描述\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"作者日常在用的 agent skills 集合，主張小而可組合、任何模型都能用：不像 GSD、BMAD、Spec-Kit 接管整個流程，這些技能不奪走控制權。\"}}]},\"首次收錄\":{\"date\":{\"start\":\"2026-10-31\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-11-03\"}}}"
   },
   "pingdotgg/t3code": {
    "page": "40cb8a3a-65b7-81b1-a23c-dbdb2f592405",
-   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"pingdotgg/t3code\"}}]},\"網址\":{\"url\":\"https://github.com/pingdotgg/t3code\"},\"語言\":{\"select\":{\"name\":\"TypeScript\"}},\"描述\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"T3 Code 自稱 agent harness 的控制面：用手機、網頁或桌面版操控本機已裝好的 Claude Code、Codex、Cursor 等 agent；作者強調不賣東西，開源可自行 fork。\"}}]},\"首次收錄\":{\"date\":{\"start\":\"2026-10-31\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-11-03\"}}}"
+   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"pingdotgg/t3code\"}}]},\"網址\":{\"url\":\"https://github.com/pingdotgg/t3code\"},\"語言\":{\"select\":{\"name\":\"TypeScript\"}},\"描述\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"T3 Code 是 agent harness 的控制面：用手機、網頁或桌面版操控本機的 Claude Code、Codex 等 agent；作者強調不賣東西，開源可 fork。\"}}]},\"首次收錄\":{\"date\":{\"start\":\"2026-10-31\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-11-03\"}}}"
   },
   "anthropics/skills": {
    "page": "40cb8a3a-65b7-819f-9882-ddbaad3d0f02",
@@ -224,7 +224,7 @@
   },
   "shiyu-coder/Kronos": {
    "page": "40cb8a3a-65b7-81e6-b5c8-ee62dbb3e5a3",
-   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"shiyu-coder/Kronos\"}}]},\"網址\":{\"url\":\"https://github.com/shiyu-coder/Kronos\"},\"語言\":{\"select\":{\"name\":\"Python\"}},\"描述\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"金融 K 線的開源基礎模型：先用分詞器把 OHLCV 量化成階層式 token，再以自回歸 Transformer 預訓練，訓練資料來自 45 個以上交易所，論文已被 AAAI 2026 接受。\"}}]},\"首次收錄\":{\"date\":{\"start\":\"2026-11-02\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-11-03\"}}}"
+   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"shiyu-coder/Kronos\"}}]},\"網址\":{\"url\":\"https://github.com/shiyu-coder/Kronos\"},\"語言\":{\"select\":{\"name\":\"Python\"}},\"描述\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"金融 K 線的開源基礎模型：把 OHLCV 量化成階層式 token 再以自回歸 Transformer 預訓練，資料來自 45 個以上交易所，論文已被 AAAI 2026 接受。\"}}]},\"首次收錄\":{\"date\":{\"start\":\"2026-11-02\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-11-03\"}}}"
   },
   "public-apis/public-apis": {
    "page": "40cb8a3a-65b7-8128-b3b2-f218ad5c6421",
@@ -236,7 +236,7 @@
   },
   "kornia/kornia": {
    "page": "40cb8a3a-65b7-8136-adc8-f23ac81ed6ac",
-   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"kornia/kornia\"}}]},\"網址\":{\"url\":\"https://github.com/kornia/kornia\"},\"語言\":{\"select\":{\"name\":\"Python\"}},\"描述\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"PyTorch 上的可微分電腦視覺函式庫：1200 多個算子，涵蓋相機模型、對極幾何、RANSAC、特徵匹配與色彩轉換，多數 torchvision 沒有；主張同一批可帶不同參數算完。\"}}]},\"首次收錄\":{\"date\":{\"start\":\"2026-11-02\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-11-03\"}}}"
+   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"kornia/kornia\"}}]},\"網址\":{\"url\":\"https://github.com/kornia/kornia\"},\"語言\":{\"select\":{\"name\":\"Python\"}},\"描述\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"PyTorch 的可微分電腦視覺函式庫：1200 多個算子涵蓋相機模型、對極幾何、RANSAC 與特徵匹配，多數 torchvision 沒有；同一批可帶不同參數。\"}}]},\"首次收錄\":{\"date\":{\"start\":\"2026-11-02\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-11-03\"}}}"
   },
   "beenuar/AiSOC": {
    "page": "40cb8a3a-65b7-8107-a8be-d7f574973a1f",
@@ -256,15 +256,15 @@
   },
   "hyprwm/Hyprland": {
    "page": "40cb8a3a-65b7-81ff-8b9e-df9951aae462",
-   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"hyprwm/Hyprland\"}}]},\"網址\":{\"url\":\"https://github.com/hyprwm/Hyprland\"},\"語言\":{\"select\":{\"name\":\"C++\"}},\"描述\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"獨立的動態平鋪 Wayland compositor，主打外觀：漸層邊框、多種模糊、動畫與陰影都能調；不用 wlroots，內建外掛管理、socket IPC 與逐工作區版面，設定存檔即生效。\"}}]},\"首次收錄\":{\"date\":{\"start\":\"2026-11-02\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-11-03\"}}}"
+   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"hyprwm/Hyprland\"}}]},\"網址\":{\"url\":\"https://github.com/hyprwm/Hyprland\"},\"語言\":{\"select\":{\"name\":\"C++\"}},\"描述\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"獨立的動態平鋪 Wayland compositor，主打外觀：漸層邊框、模糊、動畫與陰影都能調；不用 wlroots，內建外掛管理與逐工作區版面。\"}}]},\"首次收錄\":{\"date\":{\"start\":\"2026-11-02\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-11-03\"}}}"
   },
   "vercel-labs/agent-desktop": {
    "page": "40db8a3a-65b7-816f-bbea-f4838af3142a",
-   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"vercel-labs/agent-desktop\"}}]},\"網址\":{\"url\":\"https://github.com/vercel-labs/agent-desktop\"},\"語言\":{\"select\":{\"name\":\"Rust\"}},\"描述\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"用系統無障礙樹操作桌面應用的 computer use CLI：快照列出可操作元素的 ref，agent 按 ref 動作後再快照確認，不做像素比對；附 C 函式庫，預設 headless 不搶前景。\"}}]},\"首次收錄\":{\"date\":{\"start\":\"2026-11-03\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-11-03\"}}}"
+   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"vercel-labs/agent-desktop\"}}]},\"網址\":{\"url\":\"https://github.com/vercel-labs/agent-desktop\"},\"語言\":{\"select\":{\"name\":\"Rust\"}},\"描述\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"操作桌面應用的 computer use CLI：快照列出可操作元素的 ref，agent 按 ref 動作再快照確認，不做像素比對；Rust 寫成，預設 headless 不搶前景。\"}}]},\"首次收錄\":{\"date\":{\"start\":\"2026-11-03\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-11-03\"}}}"
   },
   "D4Vinci/Scrapling": {
    "page": "40db8a3a-65b7-8181-851d-cfb603287815",
-   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"D4Vinci/Scrapling\"}}]},\"網址\":{\"url\":\"https://github.com/D4Vinci/Scrapling\"},\"語言\":{\"select\":{\"name\":\"Python\"}},\"描述\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"Python 爬蟲框架，把快速請求、隱身瀏覽器、解析與併發抓取收在一套：能處理 Cloudflare Turnstile，支援 CSS／XPath 與自適應元素追蹤，另附 MCP server 給 agent 用。\"}}]},\"首次收錄\":{\"date\":{\"start\":\"2026-11-03\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-11-03\"}}}"
+   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"D4Vinci/Scrapling\"}}]},\"網址\":{\"url\":\"https://github.com/D4Vinci/Scrapling\"},\"語言\":{\"select\":{\"name\":\"Python\"}},\"描述\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"Python 爬蟲框架：快速請求、隱身瀏覽器、解析與併發抓取一套搞定，能處理 Cloudflare，支援 CSS／XPath，另附 MCP server 給 agent。\"}}]},\"首次收錄\":{\"date\":{\"start\":\"2026-11-03\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-11-03\"}}}"
   },
   "JustVugg/colibri": {
    "page": "40db8a3a-65b7-8187-846e-dd10ab57a388",
@@ -276,15 +276,15 @@
   },
   "paperclipai/paperclip": {
    "page": "40db8a3a-65b7-8167-8369-fa346c7ae34b",
-   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"paperclipai/paperclip\"}}]},\"網址\":{\"url\":\"https://github.com/paperclipai/paperclip\"},\"語言\":{\"select\":{\"name\":\"TypeScript\"}},\"描述\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"管理一整隊 AI agent 的開源平台：「OpenClaw 是員工，Paperclip 是公司」。Node.js 伺服器加 React 儀表板，可指派目標、逐個設定模型與權限，並在同處追蹤任務與成本。\"}}]},\"首次收錄\":{\"date\":{\"start\":\"2026-11-03\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-11-03\"}}}"
+   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"paperclipai/paperclip\"}}]},\"網址\":{\"url\":\"https://github.com/paperclipai/paperclip\"},\"語言\":{\"select\":{\"name\":\"TypeScript\"}},\"描述\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"管理一整隊 AI agent 的開源平台：「OpenClaw 是員工，Paperclip 是公司」。用儀表板指派目標、逐個設定模型與權限，並追蹤任務與成本。\"}}]},\"首次收錄\":{\"date\":{\"start\":\"2026-11-03\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-11-03\"}}}"
   },
   "karpathy/nanochat": {
    "page": "40db8a3a-65b7-8150-a105-e7f943b6b7d6",
-   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"karpathy/nanochat\"}}]},\"網址\":{\"url\":\"https://github.com/karpathy/nanochat\"},\"語言\":{\"select\":{\"name\":\"Python\"}},\"描述\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"單一 GPU 節點就能跑完的 LLM 訓練教具：程式碼極簡，涵蓋分詞、預訓練、微調、評測到推論；只調一個 --depth 旋鈕就自動配好其他超參數，宣稱約 48 美元練出 GPT-2 等級。\"}}]},\"首次收錄\":{\"date\":{\"start\":\"2026-11-03\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-11-03\"}}}"
+   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"karpathy/nanochat\"}}]},\"網址\":{\"url\":\"https://github.com/karpathy/nanochat\"},\"語言\":{\"select\":{\"name\":\"Python\"}},\"描述\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"單一 GPU 節點跑完的 LLM 訓練教具：程式碼極簡，涵蓋分詞、預訓練、微調到推論；只調 --depth 一個旋鈕就自動配好其他超參數。\"}}]},\"首次收錄\":{\"date\":{\"start\":\"2026-11-03\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-11-03\"}}}"
   },
   "p-e-w/heretic": {
    "page": "40db8a3a-65b7-8193-a8f1-e69a32079354",
-   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"p-e-w/heretic\"}}]},\"網址\":{\"url\":\"https://github.com/p-e-w/heretic\"},\"語言\":{\"select\":{\"name\":\"Python\"}},\"描述\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"不訓練也能改語言模型行為：以對比範例與評分器做數學導向，可去除拒答（預設）、減少廢話與諂媚、調整情緒傾向；支援多數 dense、MoE 與多模態模型，在自己電腦一個下午跑完。\"}}]},\"首次收錄\":{\"date\":{\"start\":\"2026-11-03\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-11-03\"}}}"
+   "hash": "{\"名稱\":{\"title\":[{\"type\":\"text\",\"text\":{\"content\":\"p-e-w/heretic\"}}]},\"網址\":{\"url\":\"https://github.com/p-e-w/heretic\"},\"語言\":{\"select\":{\"name\":\"Python\"}},\"描述\":{\"rich_text\":[{\"type\":\"text\",\"text\":{\"content\":\"不訓練也能改語言模型行為：用對比範例與評分器做數學導向，可去除拒答（預設）、減少廢話與諂媚；支援多數 dense、MoE 與多模態模型。\"}}]},\"首次收錄\":{\"date\":{\"start\":\"2026-11-03\"}},\"最近在榜\":{\"date\":{\"start\":\"2026-11-03\"}}}"
   }
  },
  "aa": {

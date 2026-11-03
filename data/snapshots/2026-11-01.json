@@ -339,7 +339,7 @@
      "rank": 2,
      "metric": 883,
      "kicker": "Shell",
-     "note": "作者日常在用的 agent skills 集合，主張小而可組合、任何模型都能用：相對於 GSD、BMAD、Spec-Kit 那種接管整個流程的做法，這些技能不奪走控制權，方便改成自己的。",
+     "note": "作者日常在用的 agent skills 集合，主張小而可組合、任何模型都能用：不像 GSD、BMAD、Spec-Kit 接管整個流程，這些技能不奪走控制權。",
      "stats": {
       "stars": 308353,
       "forks": 25943,
@@ -369,7 +369,7 @@
      "rank": 4,
      "metric": 1148,
      "kicker": "TypeScript",
-     "note": "T3 Code 自稱 agent harness 的控制面：用手機、網頁或桌面版操控本機已裝好的 Claude Code、Codex、Cursor 等 agent；作者強調不賣東西，開源可自行 fork。",
+     "note": "T3 Code 是 agent harness 的控制面：用手機、網頁或桌面版操控本機的 Claude Code、Codex 等 agent；作者強調不賣東西，開源可 fork。",
      "stats": {
       "stars": 35500,
       "forks": 8778,

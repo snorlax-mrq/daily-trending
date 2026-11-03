@@ -148,7 +148,7 @@ GitHub 沒有 API，trending 頁只給得到 repo 的一行英文 about，常常
 
 1. `--fetch`：挑出還沒有中文描述的項目，抓 `raw.githubusercontent.com/<repo>/HEAD/README.md`（依序試幾個常見檔名），
    去掉徽章／HTML／程式碼區塊，遇到安裝或使用章節就停，截到 1,900 字，寫成 `data/gh-notes/<date>.todo.md`。
-2. AI 讀 todo，替每則寫 50–100 字台灣繁中（這專案做什麼＋README 裡最關鍵的差別），存 `data/gh-notes/<date>.json`。
+2. AI 讀 todo，替每則寫 50–90 字台灣繁中（這專案做什麼＋README 裡最關鍵的差別），存 `data/gh-notes/<date>.json`。
 3. `--apply`：寫回當日快照的 `gh.items[].note`，並更新快取 `data/gh-notes-cache.json`（同一 repo 只寫一次，`--force` 才重寫）。
 
 `note` 會流進 Notion「GitHub 專案」實體表的 `描述`，所以 Notion 與網站看到的是同一句話。

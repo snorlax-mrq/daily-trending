@@ -354,7 +354,7 @@
      "rank": 3,
      "metric": 630,
      "kicker": "Python",
-     "note": "金融 K 線的開源基礎模型：先用分詞器把 OHLCV 量化成階層式 token，再以自回歸 Transformer 預訓練，訓練資料來自 45 個以上交易所，論文已被 AAAI 2026 接受。",
+     "note": "金融 K 線的開源基礎模型：把 OHLCV 量化成階層式 token 再以自回歸 Transformer 預訓練，資料來自 45 個以上交易所，論文已被 AAAI 2026 接受。",
      "stats": {
       "stars": 45356,
       "forks": 7498,
@@ -369,7 +369,7 @@
      "rank": 4,
      "metric": 3094,
      "kicker": "TypeScript",
-     "note": "T3 Code 自稱 agent harness 的控制面：用手機、網頁或桌面版操控本機已裝好的 Claude Code、Codex、Cursor 等 agent；作者強調不賣東西，開源可自行 fork。",
+     "note": "T3 Code 是 agent harness 的控制面：用手機、網頁或桌面版操控本機的 Claude Code、Codex 等 agent；作者強調不賣東西，開源可 fork。",
      "stats": {
       "stars": 37911,
       "forks": 8910,
@@ -444,7 +444,7 @@
      "rank": 9,
      "metric": 101,
      "kicker": "Python",
-     "note": "PyTorch 上的可微分電腦視覺函式庫：1200 多個算子，涵蓋相機模型、對極幾何、RANSAC、特徵匹配與色彩轉換，多數 torchvision 沒有；主張同一批可帶不同參數算完。",
+     "note": "PyTorch 的可微分電腦視覺函式庫：1200 多個算子涵蓋相機模型、對極幾何、RANSAC 與特徵匹配，多數 torchvision 沒有；同一批可帶不同參數。",
      "stats": {
       "stars": 11773,
       "forks": 1465,
@@ -564,7 +564,7 @@
      "rank": 17,
      "metric": 38,
      "kicker": "C++",
-     "note": "獨立的動態平鋪 Wayland compositor，主打外觀：漸層邊框、多種模糊、動畫與陰影都能調；不用 wlroots，內建外掛管理、socket IPC 與逐工作區版面，設定存檔即生效。",
+     "note": "獨立的動態平鋪 Wayland compositor，主打外觀：漸層邊框、模糊、動畫與陰影都能調；不用 wlroots，內建外掛管理與逐工作區版面。",
      "stats": {
       "stars": 39355,
       "forks": 2129,
