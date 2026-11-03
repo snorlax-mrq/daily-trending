@@ -13,6 +13,66 @@
    "src": "search",
    "created": "2026-10-30T17:00:28Z"
   },
+  "2dust/v2rayN": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2019-07-30T03:47:24Z"
+  },
+  "3b1b/manim": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2015-03-22T18:50:58Z"
+  },
+  "521xueweihan/HelloGitHub": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2016-05-04T06:24:11Z"
+  },
+  "666ghj/MiroFish": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2025-11-26T04:23:02Z"
+  },
+  "996icu/996.ICU": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2019-03-26T07:31:14Z"
+  },
+  "abi/screenshot-to-code": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2023-11-14T17:53:32Z"
+  },
+  "addyosmani/agent-skills": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2026-02-15T20:20:26Z"
+  },
+  "affaan-m/ECC": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2026-01-18T00:51:51Z"
+  },
+  "ai-job-search-dev/ai-job-search": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2026-03-18T14:33:04Z"
+  },
+  "airbnb/javascript": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2012-11-01T23:13:50Z"
+  },
   "alchaincyf/huashu-bird-sticker": {
    "first": "2026-11-03",
    "last": "2026-11-03",
@@ -25,17 +85,77 @@
    "src": "search",
    "created": "2026-10-31T12:09:29Z"
   },
+  "Anduin2017/HowToCook": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2020-02-29T10:43:49Z"
+  },
+  "angular/angular": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2014-09-18T16:12:01Z"
+  },
+  "animate-css/animate.css": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2011-10-12T10:07:38Z"
+  },
   "anomalyco/hex": {
    "first": "2026-11-02",
    "last": "2026-11-03",
    "src": "trending",
    "created": "2026-07-17T23:48:56Z"
   },
+  "anomalyco/opencode": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2025-04-30T20:08:00Z"
+  },
+  "ansible/ansible": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2012-03-06T14:58:02Z"
+  },
+  "ant-design/ant-design": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2015-04-24T15:37:24Z"
+  },
+  "anthropics/claude-code": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2025-02-22T17:41:21Z"
+  },
   "anthropics/skills": {
    "first": "2026-10-31",
    "last": "2026-11-03",
    "src": "trending",
    "created": "2025-09-22T15:53:31Z"
+  },
+  "anuraghazra/github-readme-stats": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2020-07-09T10:34:22Z"
+  },
+  "apache/superset": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2015-07-21T18:55:34Z"
+  },
+  "AppFlowy-IO/AppFlowy": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2021-06-16T12:56:48Z"
   },
   "AquaTradesmanAbide/genesis-miner": {
    "first": "2026-11-03",
@@ -55,6 +175,18 @@
    "src": "search",
    "created": "2026-10-31T19:21:27Z"
   },
+  "Asabeneh/30-Days-Of-Python": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2019-11-19T17:24:16Z"
+  },
+  "asgeirtj/system_prompts_leaks": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2025-05-03T02:43:56Z"
+  },
   "ashayas/icloud-s3": {
    "first": "2026-11-03",
    "last": "2026-11-03",
@@ -66,6 +198,42 @@
    "last": "2026-11-03",
    "src": "search",
    "created": "2026-11-02T00:40:47Z"
+  },
+  "astral-sh/uv": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2023-10-02T20:24:11Z"
+  },
+  "AUTOMATIC1111/stable-diffusion-webui": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2022-08-22T14:05:26Z"
+  },
+  "avelino/awesome-go": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2014-07-06T13:42:15Z"
+  },
+  "awesome-selfhosted/awesome-selfhosted": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2015-06-01T02:33:17Z"
+  },
+  "awesomedata/awesome-public-datasets": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2014-11-20T06:20:50Z"
+  },
+  "axios/axios": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2014-08-18T22:30:27Z"
   },
   "Balanov/baiagent-director": {
    "first": "2026-11-03",
@@ -97,6 +265,24 @@
    "src": "trending",
    "created": "2026-05-02T03:30:19Z"
   },
+  "binary-husky/gpt_academic": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2023-03-20T09:05:13Z"
+  },
+  "binhnguyennus/awesome-scalability": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2017-12-27T03:46:40Z"
+  },
+  "bitcoin/bitcoin": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2010-12-19T15:16:43Z"
+  },
   "brainstormity/LightPost": {
    "first": "2026-11-03",
    "last": "2026-11-03",
@@ -115,11 +301,59 @@
    "src": "search",
    "created": "2026-11-02T10:14:34Z"
   },
+  "browser-use/browser-use": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2024-10-31T16:00:56Z"
+  },
   "BryceYuuu/RUN": {
    "first": "2026-11-03",
    "last": "2026-11-03",
    "src": "search",
    "created": "2026-10-29T11:28:43Z"
+  },
+  "BurntSushi/ripgrep": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2016-03-11T02:02:33Z"
+  },
+  "byoungd/up": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2017-05-30T07:18:52Z"
+  },
+  "ByteByteGoHq/system-design-101": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2023-09-18T20:52:03Z"
+  },
+  "bytedance/deer-flow": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2025-05-07T02:50:19Z"
+  },
+  "caddyserver/caddy": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2015-01-13T19:45:03Z"
+  },
+  "calesthio/OpenMontage": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2026-03-29T15:23:22Z"
+  },
+  "career-ops-hq/career-ops": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2026-04-04T18:21:18Z"
   },
   "caru-ini/stack-diagram": {
    "first": "2026-11-03",
@@ -133,11 +367,89 @@
    "src": "search",
    "created": "2026-10-31T23:46:51Z"
   },
+  "Chalarangelo/30-seconds-of-code": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2017-11-29T17:35:03Z"
+  },
+  "ChatGPTNextWeb/NextChat": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2023-03-10T18:27:54Z"
+  },
+  "cheaper-inference/OmniRoute": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2026-02-13T12:38:31Z"
+  },
+  "chrislgarry/Apollo-11": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2014-04-03T15:45:02Z"
+  },
   "cjpais/Handy": {
    "first": "2026-11-02",
    "last": "2026-11-03",
    "src": "trending",
    "created": "2025-02-13T02:42:29Z"
+  },
+  "clash-verge-rev/clash-verge-rev": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2023-11-21T18:24:03Z"
+  },
+  "cline/cline": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2024-07-06T07:28:10Z"
+  },
+  "code-yeongyu/oh-my-openagent": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2025-12-03T01:40:05Z"
+  },
+  "codecrafters-io/build-your-own-x": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2018-05-09T12:03:18Z"
+  },
+  "coder/code-server": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2019-02-27T16:50:41Z"
+  },
+  "colbymchenry/codegraph": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2026-01-18T21:45:37Z"
+  },
+  "Comfy-Org/ComfyUI": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2023-01-17T03:15:56Z"
+  },
+  "ComposioHQ/awesome-claude-skills": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2025-10-17T07:15:01Z"
+  },
+  "CompVis/stable-diffusion": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2022-08-10T14:36:44Z"
   },
   "CopilotKit/OpenBot": {
    "first": "2026-10-30",
@@ -151,11 +463,47 @@
    "src": "search",
    "created": "2026-10-28T11:31:41Z"
   },
+  "CyC2018/CS-Notes": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2018-02-13T14:56:24Z"
+  },
+  "d2l-ai/d2l-zh": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2017-08-23T04:40:24Z"
+  },
+  "d3/d3": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2010-09-27T17:22:42Z"
+  },
   "D4Vinci/Scrapling": {
    "first": "2026-11-03",
    "last": "2026-11-03",
    "src": "trending",
    "created": "2024-10-13T20:29:53Z"
+  },
+  "dair-ai/Prompt-Engineering-Guide": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2022-12-16T16:04:50Z"
+  },
+  "dani-garcia/vaultwarden": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2018-02-17T22:40:20Z"
+  },
+  "danielmiessler/SecLists": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2012-02-19T01:30:18Z"
   },
   "dankumarlab2090u1/minecraft-hack-menu-2026": {
    "first": "2026-11-03",
@@ -163,11 +511,47 @@
    "src": "search",
    "created": "2026-11-01T15:50:37Z"
   },
+  "datawhalechina/hello-agents": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2025-09-07T09:50:24Z"
+  },
   "davidlopez-x05x8/minecraft-aim-assist": {
    "first": "2026-11-03",
    "last": "2026-11-03",
    "src": "search",
    "created": "2026-11-02T04:19:35Z"
+  },
+  "daytonaio/daytona": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2024-02-06T08:21:20Z"
+  },
+  "debpalash/VoiceStudio": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2026-04-09T21:40:26Z"
+  },
+  "deepseek-ai/deepseek-harness": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2026-08-13T11:56:32Z"
+  },
+  "deepseek-ai/DeepSeek-R1": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2025-01-20T11:57:28Z"
+  },
+  "deepseek-ai/DeepSeek-V3": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2024-12-26T09:52:40Z"
   },
   "deepseek-ai/dsh-superagent-prototype": {
    "first": "2026-11-03",
@@ -175,11 +559,41 @@
    "src": "search",
    "created": "2026-10-31T09:32:46Z"
   },
+  "denoland/deno": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2018-05-15T01:34:26Z"
+  },
+  "Developer-Y/cs-video-courses": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2016-10-21T17:02:11Z"
+  },
+  "DietrichGebert/ponytail": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2026-06-12T00:52:37Z"
+  },
+  "DigitalPlatDev/FreeDomain": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2024-05-30T13:23:00Z"
+  },
   "DistributorKnit/metatrader-5-bot": {
    "first": "2026-11-03",
    "last": "2026-11-03",
    "src": "search",
    "created": "2026-11-02T10:13:33Z"
+  },
+  "django/django": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2012-04-28T02:47:18Z"
   },
   "Djihads80/Eglantine": {
    "first": "2026-11-03",
@@ -187,11 +601,59 @@
    "src": "search",
    "created": "2026-10-29T00:25:18Z"
   },
+  "docling-project/docling": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2024-07-09T07:50:26Z"
+  },
   "Donchitos/Claude-Code-Game-Studios": {
    "first": "2026-10-30",
    "last": "2026-11-03",
    "src": "trending",
    "created": "2026-02-12T05:21:38Z"
+  },
+  "donnemartin/system-design-primer": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2017-02-26T16:15:28Z"
+  },
+  "doocs/advanced-java": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2018-10-06T11:38:30Z"
+  },
+  "DopplerHQ/awesome-interview-questions": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2015-11-28T09:48:17Z"
+  },
+  "earendil-works/pi": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2025-08-09T14:03:50Z"
+  },
+  "EbookFoundation/free-programming-books": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2013-10-11T06:50:37Z"
+  },
+  "Egonex-AI/Understand-Anything": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2026-03-15T02:30:51Z"
+  },
+  "elastic/elasticsearch": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2010-02-08T13:20:56Z"
   },
   "elayadesign/ai-design-skills": {
    "first": "2026-10-29",
@@ -199,11 +661,41 @@
    "src": "trending",
    "created": "2026-07-29T06:43:16Z"
   },
+  "electron/electron": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2013-04-12T01:47:36Z"
+  },
   "elvarofficial/teardown": {
    "first": "2026-11-03",
    "last": "2026-11-03",
    "src": "search",
    "created": "2026-10-30T09:29:01Z"
+  },
+  "enaqx/awesome-react": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2014-08-06T05:31:44Z"
+  },
+  "eternity4719/HowToLiveBetter": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2026-09-07T01:53:36Z"
+  },
+  "Eugeny/tabby": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2016-12-23T09:06:10Z"
+  },
+  "excalidraw/excalidraw": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2020-01-02T01:04:43Z"
   },
   "expo/skills": {
    "first": "2026-10-29",
@@ -211,11 +703,95 @@
    "src": "trending",
    "created": "2025-11-30T03:57:18Z"
   },
+  "expressjs/express": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2009-06-26T18:56:01Z"
+  },
+  "f/prompts.chat": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2022-12-05T13:54:13Z"
+  },
+  "farion1231/cc-switch": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2025-08-04T14:16:16Z"
+  },
+  "fastapi/fastapi": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2018-12-08T08:21:47Z"
+  },
+  "fatedier/frp": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2015-12-21T15:24:59Z"
+  },
+  "fffaraz/awesome-cpp": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2014-07-17T08:51:11Z"
+  },
+  "fighting41love/funNLP": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2018-08-21T11:20:39Z"
+  },
+  "firecrawl/firecrawl": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2024-04-15T21:02:29Z"
+  },
+  "Fission-AI/OpenSpec": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2025-08-05T10:37:45Z"
+  },
   "FlashML-org/FreeToken": {
    "first": "2026-11-02",
    "last": "2026-11-03",
    "src": "trending",
    "created": "2026-07-20T20:44:11Z"
+  },
+  "florinpop17/app-ideas": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2019-02-25T18:36:56Z"
+  },
+  "flutter/flutter": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2015-03-06T22:54:58Z"
+  },
+  "FortAwesome/Font-Awesome": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2012-02-17T14:19:43Z"
+  },
+  "FoundationAgents/MetaGPT": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2023-06-30T09:04:55Z"
+  },
+  "freeCodeCamp/freeCodeCamp": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2014-12-24T17:49:19Z"
   },
   "FrontierHawkStove/atas-trading-bot": {
    "first": "2026-11-03",
@@ -229,11 +805,83 @@
    "src": "search",
    "created": "2026-11-02T10:15:45Z"
   },
+  "garrytan/gstack": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2026-03-11T21:22:45Z"
+  },
+  "Genymobile/scrcpy": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2017-11-21T18:00:27Z"
+  },
+  "getify/You-Dont-Know-JS": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2013-11-16T02:37:24Z"
+  },
   "Gezine/CivSwitch": {
    "first": "2026-11-03",
    "last": "2026-11-03",
    "src": "search",
    "created": "2026-11-01T13:30:59Z"
+  },
+  "ggml-org/llama.cpp": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2023-03-10T18:58:00Z"
+  },
+  "gin-gonic/gin": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2014-06-16T23:57:25Z"
+  },
+  "github/gitignore": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2010-11-08T20:17:14Z"
+  },
+  "github/spec-kit": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2025-08-21T22:54:31Z"
+  },
+  "godotengine/godot": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2014-01-04T16:05:36Z"
+  },
+  "gohugoio/hugo": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2013-07-04T15:26:26Z"
+  },
+  "golang/go": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2014-08-19T04:33:40Z"
+  },
+  "goldbergyoni/nodebestpractices": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2017-09-15T08:33:19Z"
+  },
+  "google-gemini/gemini-cli": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2025-04-17T17:04:31Z"
   },
   "gothamor/gta-vcs-recomp": {
    "first": "2026-11-03",
@@ -247,17 +895,71 @@
    "src": "search",
    "created": "2026-11-02T10:10:11Z"
   },
+  "grafana/grafana": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2013-12-11T15:59:56Z"
+  },
+  "Graphify-Labs/graphify": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2026-04-03T15:49:07Z"
+  },
+  "Hack-with-Github/Awesome-Hacking": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2016-03-30T15:47:10Z"
+  },
+  "hacksider/Deep-Live-Cam": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2023-09-24T13:19:31Z"
+  },
+  "hakimel/reveal.js": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2011-06-07T18:54:22Z"
+  },
   "HandcuffHelper/ads-blocker": {
    "first": "2026-11-03",
    "last": "2026-11-03",
    "src": "search",
    "created": "2026-11-02T10:10:12Z"
   },
+  "harry0703/MoneyPrinterTurbo": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2024-03-11T02:57:34Z"
+  },
+  "headroomlabs-ai/headroom": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2026-01-07T19:58:51Z"
+  },
   "heydamir/unslop": {
    "first": "2026-11-03",
    "last": "2026-11-03",
    "src": "search",
    "created": "2026-10-29T15:41:21Z"
+  },
+  "heygen-com/hyperframes": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2026-03-10T01:51:06Z"
+  },
+  "hiyouga/LlamaFactory": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2023-05-28T10:09:12Z"
   },
   "HKUDS/DeepTutor": {
    "first": "2026-10-29",
@@ -277,17 +979,41 @@
    "src": "search",
    "created": "2026-11-02T10:11:51Z"
   },
+  "home-assistant/core": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2013-09-17T07:29:48Z"
+  },
   "hongye007/open-pose-costume": {
    "first": "2026-11-03",
    "last": "2026-11-03",
    "src": "search",
    "created": "2026-10-29T22:05:35Z"
   },
+  "hoppscotch/hoppscotch": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2019-08-21T13:15:24Z"
+  },
   "HRuiCcc/RuiC-PoseAtlas": {
    "first": "2026-11-03",
    "last": "2026-11-03",
    "src": "search",
    "created": "2026-10-28T07:00:53Z"
+  },
+  "huggingface/transformers": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2018-10-29T13:56:00Z"
+  },
+  "hugohe3/ppt-master": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2025-12-10T06:54:33Z"
   },
   "Humpalumps/Ultra-Water": {
    "first": "2026-11-03",
@@ -307,6 +1033,30 @@
    "src": "search",
    "created": "2026-10-29T17:16:13Z"
   },
+  "iluwatar/java-design-patterns": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2014-08-09T16:45:18Z"
+  },
+  "immich-app/immich": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2022-02-03T15:56:27Z"
+  },
+  "infiniflow/ragflow": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2023-12-12T06:13:13Z"
+  },
+  "iptv-org/iptv": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2018-11-14T22:00:57Z"
+  },
   "JaceThings/DiaTweaks": {
    "first": "2026-11-03",
    "last": "2026-11-03",
@@ -319,11 +1069,35 @@
    "src": "search",
    "created": "2026-10-28T08:58:27Z"
   },
+  "jackfrued/Python-100-Days": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2018-03-01T16:05:52Z"
+  },
+  "jaywcjlove/awesome-mac": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2016-07-17T15:33:47Z"
+  },
+  "jesseduffield/lazygit": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2018-05-19T00:53:06Z"
+  },
   "JetBrains/thinkrail": {
    "first": "2026-10-29",
    "last": "2026-11-03",
    "src": "trending",
    "created": "2026-07-08T07:40:43Z"
+  },
+  "jlevy/the-art-of-command-line": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2015-05-20T15:11:03Z"
   },
   "jmanico/grim-prompter": {
    "first": "2026-11-03",
@@ -337,17 +1111,59 @@
    "src": "search",
    "created": "2026-10-31T01:48:19Z"
   },
+  "josephmisiti/awesome-machine-learning": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2014-07-15T19:11:19Z"
+  },
+  "juliangarnier/anime": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2016-03-13T21:37:45Z"
+  },
+  "JuliusBrussee/caveman": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2026-04-04T10:03:00Z"
+  },
+  "junegunn/fzf": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2013-10-23T16:04:23Z"
+  },
+  "justjavac/free-programming-books-zh_CN": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2013-11-04T01:59:19Z"
+  },
   "JustVugg/colibri": {
    "first": "2026-11-03",
    "last": "2026-11-03",
    "src": "trending",
    "created": "2026-07-01T12:27:49Z"
   },
+  "jwasham/coding-interview-university": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2016-06-06T02:34:12Z"
+  },
   "jyotipmahes/ML-Interview-Prep": {
    "first": "2026-11-03",
    "last": "2026-11-03",
    "src": "search",
    "created": "2026-10-31T21:25:37Z"
+  },
+  "karpathy/autoresearch": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2026-03-06T22:00:43Z"
   },
   "karpathy/nanochat": {
    "first": "2026-11-03",
@@ -361,11 +1177,65 @@
    "src": "search",
    "created": "2026-10-30T07:49:05Z"
   },
+  "koala73/worldmonitor": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2026-01-08T17:26:06Z"
+  },
   "kornia/kornia": {
    "first": "2026-11-02",
    "last": "2026-11-03",
    "src": "trending",
    "created": "2018-08-22T10:31:37Z"
+  },
+  "krahets/hello-algo": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2022-11-04T11:08:34Z"
+  },
+  "kubernetes/kubernetes": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2014-06-06T22:56:04Z"
+  },
+  "labuladong/fucking-algorithm": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2020-02-19T09:01:23Z"
+  },
+  "langchain-ai/langchain": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2022-10-17T02:58:36Z"
+  },
+  "langflow-ai/langflow": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2023-02-08T22:28:03Z"
+  },
+  "langgenius/dify": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2023-04-12T07:40:24Z"
+  },
+  "laravel/laravel": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2011-06-08T03:06:08Z"
+  },
+  "Leonxlnx/taste-skill": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2026-02-19T21:44:05Z"
   },
   "lexifina/global-law": {
    "first": "2026-11-03",
@@ -379,6 +1249,24 @@
    "src": "trending",
    "created": "2023-02-07T15:19:34Z"
   },
+  "lobehub/lobehub": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2023-05-21T07:19:12Z"
+  },
+  "localsend/localsend": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2022-12-16T00:46:07Z"
+  },
+  "louislam/uptime-kuma": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2021-07-03T01:02:42Z"
+  },
   "lovisdotio/video-to-game": {
    "first": "2026-11-03",
    "last": "2026-11-03",
@@ -390,6 +1278,12 @@
    "last": "2026-11-03",
    "src": "trending",
    "created": "2025-11-08T15:18:27Z"
+  },
+  "macrozheng/mall": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2018-04-04T01:11:44Z"
   },
   "makecindy/cindy": {
    "first": "2026-10-29",
@@ -409,6 +1303,12 @@
    "src": "search",
    "created": "2026-10-29T05:20:26Z"
   },
+  "massgravel/Microsoft-Activation-Scripts": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2020-01-12T23:03:34Z"
+  },
   "mattpocock/skills": {
    "first": "2026-10-31",
    "last": "2026-11-03",
@@ -427,11 +1327,83 @@
    "src": "search",
    "created": "2026-11-02T10:35:08Z"
   },
+  "mermaid-js/mermaid": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2014-11-01T23:52:32Z"
+  },
   "MeshBeatDitch/startall-back": {
    "first": "2026-11-03",
    "last": "2026-11-03",
    "src": "search",
    "created": "2026-11-02T10:15:16Z"
+  },
+  "microsoft/ai-agents-for-beginners": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2024-11-28T10:42:52Z"
+  },
+  "microsoft/AI-For-Beginners": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2021-03-03T16:27:36Z"
+  },
+  "microsoft/generative-ai-for-beginners": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2023-06-19T16:28:59Z"
+  },
+  "microsoft/markitdown": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2024-11-13T19:56:40Z"
+  },
+  "microsoft/ML-For-Beginners": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2021-03-03T01:34:05Z"
+  },
+  "microsoft/playwright": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2019-11-15T18:32:42Z"
+  },
+  "microsoft/PowerToys": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2019-05-01T17:44:02Z"
+  },
+  "microsoft/terminal": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2017-08-11T18:38:22Z"
+  },
+  "microsoft/TypeScript": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2014-06-17T15:28:39Z"
+  },
+  "microsoft/vscode": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2015-09-03T20:23:38Z"
+  },
+  "microsoft/Web-Dev-For-Beginners": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2020-11-10T02:44:00Z"
   },
   "milind-soni/OpenMausBot": {
    "first": "2026-10-30",
@@ -445,11 +1417,77 @@
    "src": "search",
    "created": "2026-10-28T02:17:41Z"
   },
+  "MisterBooo/LeetCodeAnimation": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2018-12-06T08:01:22Z"
+  },
+  "mlabonne/llm-course": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2023-06-17T22:16:25Z"
+  },
+  "moby/moby": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2013-01-18T18:10:57Z"
+  },
+  "modelcontextprotocol/servers": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2024-11-19T01:10:17Z"
+  },
+  "morluto/rea": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2026-04-14T00:51:32Z"
+  },
+  "mrdoob/three.js": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2010-03-23T18:58:01Z"
+  },
   "mromidev/claude-animated-shorts": {
    "first": "2026-11-03",
    "last": "2026-11-03",
    "src": "search",
    "created": "2026-11-01T05:50:38Z"
+  },
+  "msitarzewski/agency-agents": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2025-10-13T12:12:29Z"
+  },
+  "mtdvio/every-programmer-should-know": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2017-08-24T13:18:26Z"
+  },
+  "mui/material-ui": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2014-08-18T19:11:54Z"
+  },
+  "multica-ai/andrej-karpathy-skills": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2026-01-27T03:53:13Z"
+  },
+  "MunGell/awesome-for-beginners": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2015-10-24T19:53:36Z"
   },
   "mylea1/phongent": {
    "first": "2026-11-03",
@@ -463,11 +1501,65 @@
    "src": "search",
    "created": "2026-10-30T15:12:35Z"
   },
+  "n8n-io/n8n": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2019-06-22T09:24:21Z"
+  },
+  "NanmiCoder/MediaCrawler": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2023-06-09T12:14:34Z"
+  },
   "nathanliow/atlas-of-physics": {
    "first": "2026-11-03",
    "last": "2026-11-03",
    "src": "search",
    "created": "2026-10-28T22:54:22Z"
+  },
+  "NationalSecurityAgency/ghidra": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2019-03-01T03:27:48Z"
+  },
+  "nektos/act": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2019-01-02T19:53:43Z"
+  },
+  "neovim/neovim": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2014-01-31T13:39:22Z"
+  },
+  "nestjs/nest": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2017-02-04T20:12:52Z"
+  },
+  "netdata/netdata": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2013-06-17T18:39:10Z"
+  },
+  "nextlevelbuilder/ui-ux-pro-max-skill": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2025-11-30T11:36:31Z"
+  },
+  "nexu-io/open-design": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2026-04-28T04:25:20Z"
   },
   "NiazMorshed2007/reanimate": {
    "first": "2026-11-03",
@@ -487,11 +1579,47 @@
    "src": "search",
    "created": "2026-11-01T12:52:02Z"
   },
+  "nilbuild/developer-roadmap": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2017-03-15T13:45:52Z"
+  },
+  "nodejs/node": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2014-11-26T19:57:11Z"
+  },
+  "nomic-ai/gpt4all": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2023-03-27T18:49:32Z"
+  },
+  "NousResearch/hermes-agent": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2025-07-22T22:22:28Z"
+  },
   "Nutlope/hallmark": {
    "first": "2026-10-29",
    "last": "2026-11-03",
    "src": "trending",
    "created": "2026-04-27T20:47:10Z"
+  },
+  "nvbn/thefuck": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2015-04-08T15:08:04Z"
+  },
+  "nvm-sh/nvm": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2010-04-15T17:47:47Z"
   },
   "obra/superpowers": {
    "first": "2026-10-29",
@@ -499,11 +1627,101 @@
    "src": "trending",
    "created": "2025-10-09T19:45:18Z"
   },
+  "obsproject/obs-studio": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2013-10-01T02:40:31Z"
+  },
+  "ocornut/imgui": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2014-07-21T14:29:47Z"
+  },
+  "odysseus-dev/odysseus": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2026-05-31T14:05:51Z"
+  },
+  "ohmyzsh/ohmyzsh": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2009-08-28T18:15:37Z"
+  },
+  "ollama/ollama": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2023-06-26T19:39:32Z"
+  },
   "op7418/dsh-guizang-design": {
    "first": "2026-11-03",
    "last": "2026-11-03",
    "src": "search",
    "created": "2026-10-30T14:45:30Z"
+  },
+  "open-webui/open-webui": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2023-10-06T22:08:27Z"
+  },
+  "openai/codex": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2025-04-13T05:37:54Z"
+  },
+  "openai/openai-cookbook": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2022-03-11T02:08:53Z"
+  },
+  "openai/whisper": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2022-09-16T20:02:54Z"
+  },
+  "openbq-org/OpenBB": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2020-12-20T10:46:38Z"
+  },
+  "openclaw/openclaw": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2025-11-24T10:16:47Z"
+  },
+  "OpenCut-app/OpenCut": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2025-06-22T08:02:17Z"
+  },
+  "opencv/opencv": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2012-07-19T09:40:17Z"
+  },
+  "opendatalab/MinerU": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2024-02-29T08:52:34Z"
+  },
+  "OpenHands/OpenHands": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2024-03-13T03:33:31Z"
   },
   "Orkas-AI/Orkas": {
    "first": "2026-11-01",
@@ -511,11 +1729,29 @@
    "src": "trending",
    "created": "2026-04-29T12:19:08Z"
   },
+  "ossu/computer-science": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2014-05-04T00:18:39Z"
+  },
+  "oven-sh/bun": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2021-04-14T00:48:17Z"
+  },
   "p-e-w/heretic": {
    "first": "2026-11-03",
    "last": "2026-11-03",
    "src": "trending",
    "created": "2025-09-21T05:46:16Z"
+  },
+  "PaddlePaddle/PaddleOCR": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2020-05-08T10:38:16Z"
   },
   "paipiange/nvzhuang": {
    "first": "2026-11-03",
@@ -523,11 +1759,35 @@
    "src": "search",
    "created": "2026-10-29T06:08:00Z"
   },
+  "pallets/flask": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2010-04-06T11:11:59Z"
+  },
+  "PanJiaChen/vue-element-admin": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2017-04-17T03:35:49Z"
+  },
+  "Panniantong/Agent-Reach": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2026-02-24T02:10:24Z"
+  },
   "paperclipai/paperclip": {
    "first": "2026-11-03",
    "last": "2026-11-03",
    "src": "trending",
    "created": "2026-03-02T15:01:51Z"
+  },
+  "papers-we-love/papers-we-love": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2013-12-15T14:31:41Z"
   },
   "parallelpan/hongguo-downloader": {
    "first": "2026-11-03",
@@ -565,11 +1825,29 @@
    "src": "trending",
    "created": "2026-02-08T23:46:22Z"
   },
+  "PKUFlyingPig/cs-self-learning": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2021-10-20T13:43:42Z"
+  },
   "Pluviobyte/douyin-comments": {
    "first": "2026-11-03",
    "last": "2026-11-03",
    "src": "search",
    "created": "2026-10-30T15:47:16Z"
+  },
+  "practical-tutorials/project-based-learning": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2017-04-12T05:07:46Z"
+  },
+  "prakhar1989/awesome-courses": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2014-11-15T18:36:49Z"
   },
   "ProsecutorList/monero-miner": {
    "first": "2026-11-03",
@@ -577,11 +1855,41 @@
    "src": "search",
    "created": "2026-11-02T10:13:48Z"
   },
+  "protocolbuffers/protobuf": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2014-08-26T15:52:15Z"
+  },
   "public-apis/public-apis": {
    "first": "2026-11-02",
    "last": "2026-11-03",
    "src": "trending",
    "created": "2016-03-20T23:49:42Z"
+  },
+  "punkpeye/awesome-mcp-servers": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2024-11-30T04:49:10Z"
+  },
+  "puppeteer/puppeteer": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2017-05-09T22:16:13Z"
+  },
+  "python/cpython": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2017-02-10T19:23:51Z"
+  },
+  "pytorch/pytorch": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2016-08-13T05:26:41Z"
   },
   "QuantumBladesmith/FPS-Optimizer-Universal-Game-Performance-Booster-2026": {
    "first": "2026-11-03",
@@ -595,11 +1903,53 @@
    "src": "search",
    "created": "2026-10-30T03:47:28Z"
   },
+  "rasbt/LLMs-from-scratch": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2023-07-23T18:15:57Z"
+  },
+  "react/create-react-app": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2016-07-17T14:55:11Z"
+  },
+  "react/react": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2013-05-24T16:15:54Z"
+  },
+  "react/react-native": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2015-01-09T18:10:16Z"
+  },
+  "realworld-apps/realworld": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2016-02-26T20:49:53Z"
+  },
+  "redis/redis": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2009-03-21T22:32:25Z"
+  },
   "redjellyfishrampart/Bunny-Hop-Script-Auto-Bhop-Movement-Tool-2026": {
    "first": "2026-11-03",
    "last": "2026-11-03",
    "src": "search",
    "created": "2026-10-31T11:19:19Z"
+  },
+  "remotion-dev/remotion": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2020-06-23T19:49:10Z"
   },
   "Renhuai123/ziwei-doushu": {
    "first": "2026-10-31",
@@ -619,17 +1969,89 @@
    "src": "search",
    "created": "2026-10-29T04:17:30Z"
   },
+  "ripienaar/free-for-dev": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2015-03-18T21:06:26Z"
+  },
   "rivetpelicanstir/total-commander": {
    "first": "2026-11-03",
    "last": "2026-11-03",
    "src": "search",
    "created": "2026-11-02T10:15:22Z"
   },
+  "rohitg00/ai-engineering-from-scratch": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2026-03-18T18:38:02Z"
+  },
+  "rtk-ai/rtk": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2026-01-22T16:54:16Z"
+  },
+  "ruanyf/weekly": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2018-10-13T12:36:07Z"
+  },
+  "rust-lang/rust": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2010-06-16T20:39:03Z"
+  },
+  "rustdesk/rustdesk": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2020-09-28T15:36:08Z"
+  },
+  "ruvnet/ruflo": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2025-06-02T21:24:20Z"
+  },
   "ruvnet/RuView": {
    "first": "2026-10-29",
    "last": "2026-11-03",
    "src": "trending",
    "created": "2025-06-07T04:32:30Z"
+  },
+  "ryanmcdermott/clean-code-javascript": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2016-11-25T22:25:41Z"
+  },
+  "sdmg15/Best-websites-a-programmer-should-visit": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2017-03-05T20:25:17Z"
+  },
+  "shadcn-ui/ui": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2023-01-04T12:43:27Z"
+  },
+  "shareAI-lab/learn-claude-code": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2025-06-29T15:34:15Z"
+  },
+  "sherlock-project/sherlock": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2018-12-24T14:30:48Z"
   },
   "ShineFinancialStrut/game-server-route-racer": {
    "first": "2026-11-03",
@@ -648,6 +2070,24 @@
    "last": "2026-11-03",
    "src": "trending",
    "created": "2025-07-01T02:54:32Z"
+  },
+  "Shubhamsaboo/awesome-llm-apps": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2024-04-29T05:30:25Z"
+  },
+  "Significant-Gravitas/AutoGPT": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2023-03-16T09:21:07Z"
+  },
+  "sindresorhus/awesome": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2014-07-11T13:42:37Z"
   },
   "sleepy-zone/ai-ref-library-cn": {
    "first": "2026-11-03",
@@ -673,6 +2113,12 @@
    "src": "search",
    "created": "2026-10-28T04:29:29Z"
   },
+  "Snailclimb/JavaGuide": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2018-05-07T13:27:00Z"
+  },
   "soimy/c3rb3r-rescue": {
    "first": "2026-11-03",
    "last": "2026-11-03",
@@ -691,11 +2137,35 @@
    "src": "search",
    "created": "2026-11-02T20:58:33Z"
   },
+  "spring-projects/spring-boot": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2012-10-19T15:02:57Z"
+  },
+  "stablyai/orca": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2026-03-17T03:28:57Z"
+  },
   "stalkerswifthub/discord-quest-completer": {
    "first": "2026-11-03",
    "last": "2026-11-03",
    "src": "search",
    "created": "2026-11-02T10:11:47Z"
+  },
+  "Stirling-Tools/Stirling-PDF": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2023-01-27T18:22:42Z"
+  },
+  "storybookjs/storybook": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2016-03-18T04:23:44Z"
   },
   "storytold/craft-anything": {
    "first": "2026-11-03",
@@ -703,17 +2173,65 @@
    "src": "search",
    "created": "2026-10-31T14:50:00Z"
   },
+  "storytold/photocraft": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2026-09-30T13:37:48Z"
+  },
+  "strapi/strapi": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2015-09-30T15:34:48Z"
+  },
   "Streetbratreasure/anyunlock": {
    "first": "2026-11-03",
    "last": "2026-11-03",
    "src": "search",
    "created": "2026-11-02T10:10:15Z"
   },
+  "supabase/supabase": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2019-10-12T05:56:49Z"
+  },
   "superwardenseek/discord-server-raider": {
    "first": "2026-11-03",
    "last": "2026-11-03",
    "src": "search",
    "created": "2026-11-02T10:11:56Z"
+  },
+  "sveltejs/svelte": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2016-11-20T18:13:05Z"
+  },
+  "swiftlang/swift": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2015-10-23T21:15:07Z"
+  },
+  "swisskyrepo/PayloadsAllTheThings": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2016-10-18T07:29:07Z"
+  },
+  "syncthing/syncthing": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2013-11-26T09:48:21Z"
+  },
+  "tailwindlabs/tailwindcss": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2017-10-06T14:59:14Z"
   },
   "tang1693/KIKUmap": {
    "first": "2026-11-03",
@@ -727,11 +2245,59 @@
    "src": "search",
    "created": "2026-11-02T10:13:38Z"
   },
+  "TapXWorld/ChinaTextbook": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2020-01-05T04:11:06Z"
+  },
+  "tauri-apps/tauri": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2019-07-13T09:09:37Z"
+  },
+  "TauricResearch/TradingAgents": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2024-12-28T03:31:08Z"
+  },
   "Tempofaengage/unlocktool": {
    "first": "2026-11-03",
    "last": "2026-11-03",
    "src": "search",
    "created": "2026-11-02T10:15:33Z"
+  },
+  "tensorflow/models": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2016-02-05T01:15:20Z"
+  },
+  "tensorflow/tensorflow": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2015-11-07T01:19:20Z"
+  },
+  "tesseract-ocr/tesseract": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2014-08-12T18:04:59Z"
+  },
+  "TheAlgorithms/Python": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2016-07-16T09:44:01Z"
+  },
+  "thedaviddias/Front-End-Checklist": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2017-10-16T10:12:36Z"
   },
   "thedotmack/claude-mem": {
    "first": "2026-10-30",
@@ -751,11 +2317,101 @@
    "src": "search",
    "created": "2026-10-31T02:54:13Z"
   },
+  "toeverything/AFFiNE": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2022-07-31T18:45:21Z"
+  },
   "togg53192-cmd/jailbreaks": {
    "first": "2026-10-29",
    "last": "2026-11-03",
    "src": "trending",
    "created": "2026-06-18T18:21:25Z"
+  },
+  "tonsky/FiraCode": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2014-11-11T19:32:38Z"
+  },
+  "torvalds/linux": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2011-09-04T22:48:12Z"
+  },
+  "trekhleb/javascript-algorithms": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2018-03-24T07:47:04Z"
+  },
+  "trimstray/the-book-of-secret-knowledge": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2018-06-23T10:43:14Z"
+  },
+  "tt-a1i/archify": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2026-04-15T05:27:37Z"
+  },
+  "tw93/Mole": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2025-09-23T06:38:40Z"
+  },
+  "twbs/bootstrap": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2011-07-29T21:19:00Z"
+  },
+  "twitter/the-algorithm": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2023-03-27T14:57:57Z"
+  },
+  "typicode/json-server": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2013-11-27T13:21:13Z"
+  },
+  "ultraworkers/claw-code": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2026-03-31T08:58:08Z"
+  },
+  "unclecode/crawl4ai": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2024-05-09T09:48:50Z"
+  },
+  "unionlabs/union": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2023-05-16T22:33:39Z"
+  },
+  "unslothai/unsloth": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2023-11-29T16:50:09Z"
+  },
+  "usestrix/strix": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2025-08-05T21:28:30Z"
   },
   "valentderah/totk-pc-recomp": {
    "first": "2026-11-03",
@@ -763,11 +2419,23 @@
    "src": "search",
    "created": "2026-10-29T12:32:46Z"
   },
+  "ventoy/Ventoy": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2020-03-10T15:19:19Z"
+  },
   "vercel-labs/agent-desktop": {
    "first": "2026-11-03",
    "last": "2026-11-03",
    "src": "trending",
    "created": "2026-02-19T18:00:49Z"
+  },
+  "vercel/next.js": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2016-10-05T23:32:51Z"
   },
   "Verlintas/NOIR": {
    "first": "2026-11-03",
@@ -775,11 +2443,47 @@
    "src": "search",
    "created": "2026-10-31T21:34:39Z"
   },
+  "vinta/awesome-python": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2014-06-27T21:00:06Z"
+  },
+  "vitejs/vite": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2020-04-21T05:03:57Z"
+  },
+  "vllm-project/vllm": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2023-02-09T11:23:20Z"
+  },
+  "VoltAgent/awesome-design-md": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2026-03-31T16:37:01Z"
+  },
   "vorssaint/vorssaint-utils": {
    "first": "2026-11-01",
    "last": "2026-11-03",
    "src": "trending",
    "created": "2026-06-12T15:25:43Z"
+  },
+  "vuejs/awesome-vue": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2015-10-20T00:16:14Z"
+  },
+  "vuejs/vue": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2013-07-29T03:24:51Z"
   },
   "wanghao-SunSky/cs329z-chinese": {
    "first": "2026-11-03",
@@ -811,6 +2515,12 @@
    "src": "search",
    "created": "2026-10-29T08:20:20Z"
   },
+  "x1xhlol/system-prompts-and-models-of-ai-tools": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2025-03-05T16:38:29Z"
+  },
   "xiaolai/the-craft-of-selfteaching": {
    "first": "2026-10-29",
    "last": "2026-11-03",
@@ -823,11 +2533,41 @@
    "src": "search",
    "created": "2026-10-29T10:45:47Z"
   },
+  "yangshun/tech-interview-handbook": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2016-07-05T05:00:48Z"
+  },
   "yetone/alma-relay": {
    "first": "2026-11-03",
    "last": "2026-11-03",
    "src": "search",
    "created": "2026-10-31T13:30:34Z"
+  },
+  "yt-dlp/yt-dlp": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2020-10-26T04:22:55Z"
+  },
+  "ytdl-org/youtube-dl": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2010-10-31T14:35:07Z"
+  },
+  "Z4nzu/hackingtool": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2020-04-11T09:21:31Z"
+  },
+  "zed-industries/zed": {
+   "first": "2026-11-03",
+   "last": "2026-11-03",
+   "src": "seed",
+   "created": "2021-02-20T03:01:06Z"
   },
   "zhanghao123vip/ai-manju-skills": {
    "first": "2026-11-03",
