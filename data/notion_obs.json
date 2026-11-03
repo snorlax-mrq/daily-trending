@@ -294,5 +294,6 @@
  "2026-11-03|aa|gpt-6-astra-high": "40db8a3a-65b7-812f-a0ba-cb8d72b75140",
  "2026-11-03|aa|gpt-6-1-sol": "40db8a3a-65b7-81d5-b8d5-c5d4ce31c392",
  "2026-11-03|aa|claude-sonnet-5-5": "40db8a3a-65b7-817f-a4f1-de2efdb297d1",
- "2026-11-03|aa|gemini-4-carbon-low": "40db8a3a-65b7-8132-9c08-fbf3743e3087"
+ "2026-11-03|aa|gemini-4-carbon-low": "40db8a3a-65b7-8132-9c08-fbf3743e3087",
+ "2026-11-03|hf|abenzerps/Qwen-Image-2.1-Uncensored-Quantized": "40db8a3a-65b7-81f6-bdd7-f001999824d7"
 }

@@ -1,6 +1,6 @@
 {
  "date": "2026-11-03",
- "at": "2026-11-03T05:45:31.022Z",
+ "at": "2026-11-03T05:47:18.749Z",
  "window": {
   "from": "2026-10-27",
   "to": "2026-11-03",
@@ -10,10 +10,10 @@
  "measured": [
   {
    "id": "pingdotgg/t3code",
-   "stars": 42407,
-   "forks": 9132,
-   "delta": 9451,
-   "perDay": 3150.3,
+   "stars": 42411,
+   "forks": 9131,
+   "delta": 9455,
+   "perDay": 3151.7,
    "span": 3,
    "trending": true,
    "created": "2026-02-08T23:46:22Z",
@@ -22,10 +22,10 @@
   },
   {
    "id": "thedotmack/claude-mem",
-   "stars": 110995,
+   "stars": 110997,
    "forks": 9677,
-   "delta": 5930,
-   "perDay": 1482.5,
+   "delta": 5932,
+   "perDay": 1483,
    "span": 4,
    "trending": true,
    "created": "2025-08-31T20:50:03Z",
@@ -34,10 +34,10 @@
   },
   {
    "id": "pbakaus/impeccable",
-   "stars": 100702,
-   "forks": 5948,
-   "delta": 7258,
-   "perDay": 1451.6,
+   "stars": 100703,
+   "forks": 5949,
+   "delta": 7259,
+   "perDay": 1451.8,
    "span": 5,
    "trending": false,
    "created": "2025-11-16T01:52:04Z",
@@ -46,10 +46,10 @@
   },
   {
    "id": "togg53192-cmd/jailbreaks",
-   "stars": 13726,
+   "stars": 13727,
    "forks": 2076,
-   "delta": 6194,
-   "perDay": 1238.8,
+   "delta": 6195,
+   "perDay": 1239,
    "span": 5,
    "trending": false,
    "created": "2026-06-18T18:21:25Z",
@@ -58,10 +58,10 @@
   },
   {
    "id": "Orkas-AI/Orkas",
-   "stars": 8577,
+   "stars": 8581,
    "forks": 499,
-   "delta": 2451,
-   "perDay": 1225.5,
+   "delta": 2455,
+   "perDay": 1227.5,
    "span": 2,
    "trending": false,
    "created": "2026-04-29T12:19:08Z",
@@ -82,10 +82,10 @@
   },
   {
    "id": "Donchitos/Claude-Code-Game-Studios",
-   "stars": 33825,
+   "stars": 33826,
    "forks": 4535,
-   "delta": 4221,
-   "perDay": 1055.3,
+   "delta": 4222,
+   "perDay": 1055.5,
    "span": 4,
    "trending": true,
    "created": "2026-02-12T05:21:38Z",
@@ -94,10 +94,10 @@
   },
   {
    "id": "public-apis/public-apis",
-   "stars": 495612,
+   "stars": 495613,
    "forks": 55331,
-   "delta": 1044,
-   "perDay": 1044,
+   "delta": 1045,
+   "perDay": 1045,
    "span": 1,
    "trending": false,
    "created": "2016-03-20T23:49:42Z",
@@ -118,10 +118,10 @@
   },
   {
    "id": "mattpocock/skills",
-   "stars": 310459,
+   "stars": 310461,
    "forks": 26113,
-   "delta": 2840,
-   "perDay": 946.7,
+   "delta": 2842,
+   "perDay": 947.3,
    "span": 3,
    "trending": true,
    "created": "2026-02-03T11:15:53Z",
@@ -156,10 +156,10 @@
  "nascent": [
   {
    "id": "deepseek-ai/dsh-superagent-prototype",
-   "stars": 14233,
+   "stars": 14240,
    "forks": 1522,
    "delta": null,
-   "perDay": 4744.3,
+   "perDay": 4746.7,
    "span": 0,
    "trending": false,
    "created": "2026-10-31T09:32:46Z",
@@ -168,10 +168,10 @@
   },
   {
    "id": "storytold/photocraft",
-   "stars": 76307,
+   "stars": 76308,
    "forks": 13522,
    "delta": null,
-   "perDay": 2244.3,
+   "perDay": 2244.4,
    "span": 0,
    "trending": false,
    "created": "2026-09-30T13:37:48Z",
@@ -180,10 +180,10 @@
   },
   {
    "id": "storytold/craft-anything",
-   "stars": 5071,
+   "stars": 5073,
    "forks": 838,
    "delta": null,
-   "perDay": 1690.3,
+   "perDay": 1691,
    "span": 0,
    "trending": false,
    "created": "2026-10-31T14:50:00Z",
@@ -192,10 +192,10 @@
   },
   {
    "id": "heydamir/unslop",
-   "stars": 6518,
+   "stars": 6521,
    "forks": 332,
    "delta": null,
-   "perDay": 1303.6,
+   "perDay": 1304.2,
    "span": 0,
    "trending": false,
    "created": "2026-10-29T15:41:21Z",
@@ -204,10 +204,10 @@
   },
   {
    "id": "wangzan101/Mika",
-   "stars": 5579,
+   "stars": 5582,
    "forks": 1085,
    "delta": null,
-   "perDay": 1115.8,
+   "perDay": 1116.4,
    "span": 0,
    "trending": false,
    "created": "2026-10-29T14:34:07Z",
@@ -216,10 +216,10 @@
   },
   {
    "id": "patch-gg/pixelfx",
-   "stars": 3651,
+   "stars": 3653,
    "forks": 496,
    "delta": null,
-   "perDay": 912.8,
+   "perDay": 913.3,
    "span": 0,
    "trending": false,
    "created": "2026-10-30T06:43:25Z",
@@ -240,10 +240,10 @@
   },
   {
    "id": "caru-ini/stack-diagram",
-   "stars": 1279,
+   "stars": 1281,
    "forks": 57,
    "delta": null,
-   "perDay": 639.5,
+   "perDay": 640.5,
    "span": 0,
    "trending": false,
    "created": "2026-11-01T05:35:12Z",
@@ -252,10 +252,10 @@
   },
   {
    "id": "AssassinCreator/steam-stash-value-report-card",
-   "stars": 633,
+   "stars": 635,
    "forks": 55,
    "delta": null,
-   "perDay": 633,
+   "perDay": 635,
    "span": 0,
    "trending": false,
    "created": "2026-11-02T00:40:47Z",
@@ -264,10 +264,10 @@
   },
   {
    "id": "Djihads80/Eglantine",
-   "stars": 2624,
+   "stars": 2625,
    "forks": 307,
    "delta": null,
-   "perDay": 524.8,
+   "perDay": 525,
    "span": 0,
    "trending": false,
    "created": "2026-10-29T00:25:18Z",
@@ -276,10 +276,10 @@
   },
   {
    "id": "Verlintas/NOIR",
-   "stars": 1476,
+   "stars": 1477,
    "forks": 103,
    "delta": null,
-   "perDay": 492,
+   "perDay": 492.3,
    "span": 0,
    "trending": false,
    "created": "2026-10-31T21:34:39Z",
@@ -303,23 +303,23 @@
   {
    "id": "pbakaus/impeccable",
    "kind": "measured",
-   "perDay": 1451.6,
-   "delta": 7258,
-   "stars": 100702
+   "perDay": 1451.8,
+   "delta": 7259,
+   "stars": 100703
   },
   {
    "id": "togg53192-cmd/jailbreaks",
    "kind": "measured",
-   "perDay": 1238.8,
-   "delta": 6194,
-   "stars": 13726
+   "perDay": 1239,
+   "delta": 6195,
+   "stars": 13727
   },
   {
    "id": "Orkas-AI/Orkas",
    "kind": "measured",
-   "perDay": 1225.5,
-   "delta": 2451,
-   "stars": 8577
+   "perDay": 1227.5,
+   "delta": 2455,
+   "stars": 8581
   },
   {
    "id": "HKUDS/DeepTutor",
@@ -331,9 +331,9 @@
   {
    "id": "public-apis/public-apis",
    "kind": "measured",
-   "perDay": 1044,
-   "delta": 1044,
-   "stars": 495612
+   "perDay": 1045,
+   "delta": 1045,
+   "stars": 495613
   },
   {
    "id": "Nutlope/hallmark",
@@ -345,37 +345,37 @@
   {
    "id": "deepseek-ai/dsh-superagent-prototype",
    "kind": "nascent",
-   "perDay": 4744.3,
+   "perDay": 4746.7,
    "delta": null,
-   "stars": 14233
+   "stars": 14240
   },
   {
    "id": "storytold/photocraft",
    "kind": "nascent",
-   "perDay": 2244.3,
+   "perDay": 2244.4,
    "delta": null,
-   "stars": 76307
+   "stars": 76308
   },
   {
    "id": "storytold/craft-anything",
    "kind": "nascent",
-   "perDay": 1690.3,
+   "perDay": 1691,
    "delta": null,
-   "stars": 5071
+   "stars": 5073
   },
   {
    "id": "heydamir/unslop",
    "kind": "nascent",
-   "perDay": 1303.6,
+   "perDay": 1304.2,
    "delta": null,
-   "stars": 6518
+   "stars": 6521
   },
   {
    "id": "wangzan101/Mika",
    "kind": "nascent",
-   "perDay": 1115.8,
+   "perDay": 1116.4,
    "delta": null,
-   "stars": 5579
+   "stars": 5582
   }
  ],
  "notes": [

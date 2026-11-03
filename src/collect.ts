@@ -46,6 +46,27 @@ for (const [key, b] of Object.entries(boards)) {
 const snap: Snapshot = { date, generatedAt: new Date().toISOString(), boards };
 const path = await writeSnapshot(snap);
 
+// GitHub 榜的中文備註：用 gh-notes 的快取補回。
+// 沒有這一步，同一天重跑 collect 會把 AI 寫好的中文描述洗回英文 about。
+{
+  const NOTES_CACHE = join(ROOT, "data", "gh-notes-cache.json");
+  if (existsSync(NOTES_CACHE)) {
+    const cache = JSON.parse(await Bun.file(NOTES_CACHE).text()) as Record<string, { zh?: string }>;
+    let applied = 0;
+    for (const it of boards.gh?.items ?? []) {
+      const zh = cache[it.id]?.zh?.trim();
+      if (zh && zh !== it.note) {
+        it.note = zh;
+        applied++;
+      }
+    }
+    if (applied) {
+      await writeSnapshot(snap);
+      console.log(`  gh  備註套用快取 ${applied} 筆（同日重跑不會洗掉中文描述）`);
+    }
+  }
+}
+
 // AA 事件去重：只記錄已回報過的（保留最近 800 筆）
 if (!(aaRaw instanceof Error)) {
   const next = [...new Set([...aaEventIds(aaRaw), ...seen])].slice(0, 800);
