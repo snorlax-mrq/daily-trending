@@ -675,4 +675,5 @@ for (const f of readdirSync(join(ROOT, "assets", "fonts"))) {
 
 await Bun.write(join(OUT, ".nojekyll"), "");
 console.log(`🏗  產生 ${dates.length} 期 → ${OUT}`);
-console.log(`   index.html · archive.html · ${allKeys.length} 個時序頁`);
+const growthPages = dates.filter(() => existsSync(join(OUT, "board", "growth.html"))).length;
+console.log(`   index.html · archive.html · ${allKeys.length} 個榜單時序頁${growthPages ? " ＋ 增速時序頁" : ""}`);
