@@ -489,7 +489,7 @@
      "rank": 12,
      "metric": 1179,
      "kicker": "Rust",
-     "note": "Local voice dictation for mac, windows and linux",
+     "note": "Mac、Windows、Linux 都能用的本地語音聽寫：按住快捷鍵講話、放開就貼進當前應用程式。轉錄全在本機，首次執行只下載一次語音模型，內容不離開電腦。",
      "stats": {
       "stars": 3235,
       "forks": 189,

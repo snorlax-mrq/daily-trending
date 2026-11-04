@@ -93,6 +93,7 @@ done                                  # 10. 就地更新三個日報列
 | `bun run src/watch.ts --backfill` | 從既有快照的 `stats.stars` 回填 `data/star-history.jsonl`，並補出每一天的 `data/growth/` |
 | `bun run src/watch.ts --discover` | Search API 撈 7 日內建立、已破 300★ 的新 repo，加進 watchlist |
 | `bun run src/watch.ts --seed` | 一次性建立「≥20000★ 大型專案」的基底宇宙 |
+| `bun run src/watch.ts --rebuild` | 不連網，用既有 `star-history.jsonl` 重算所有日期的增速檔（改算法後重跑用） |
 | `bun run src/watch.ts --report` | 只印增速榜與健檢，不抓網路 |
 
 `backfill-hf-params.ts` 只補會隨時間失效的數字（目前是參數量），授權／語言這類「抓取當下」的狀態不回填，
@@ -110,9 +111,23 @@ data/star-history.jsonl  每天每個專案一筆總星數（GET /repos/{owner}/
 data/growth/<date>.json  當日算出的增速榜（measured／nascent／alerts）
 ```
 
-- **measured**：同一時刻的總星數差 ÷ 實際樣本天數（≥2 日、且 ≥300★、≥2 fork）。
-- **nascent**：建立 45 日內、還沒有歷史可差分的專案，用「總星數 ÷ 建立天數」估計（偏樂觀，但能抓到 trending 完全收不到的一群）。
-- **alerts（每日健檢）**：增速前段班但今天不在 trending 的專案，會印在 `collect.ts` 輸出、也顯示在網站的增速榜下方。
+分三區，因為樣本長度不同，數字不能互相比大小：
+
+| 區 | 條件 | 算法 | 能不能比 |
+|---|---|---|---|
+| **穩定增速**（measured） | 實際經過 ≥2 日 | 總星數差 ÷ **實際經過天數** | 區內可互比，這是主榜 |
+| **跨夜樣本**（recent） | 隔了一次、未滿 2 日 | 同上，但只有一個區間 | 只看趨勢，別和上表比 |
+| **新秀**（nascent） | 只有一次量測、建立 ≤45 日、≥1000★ | 總星數 ÷ 建立天數 | 偏樂觀，用途是發現 |
+
+過濾：`≥300★` 且 `≥2 fork`（0–1 fork 的高星數專案多半是刷 SEO 的空殼）。
+
+「實際經過天數」用每次量測的時間戳算，不是日期差：快照有時 00:00Z 抓、有時 06:30Z 抓，
+日期差 1 天實際可能只過 0.76 天，用日期差會把日均高估 30% 以上。
+`data/star-history.jsonl` 每筆都帶 `t`（實測時間），`data/growth/<date>.json` 另存 `measuredAt`
+（該日的量測時間；`at` 只是報告產生時間，兩者不可混用）。
+
+**alerts（每日健檢）**：三區各自取前段班、排除今天已在 trending 的，會印在 `collect.ts` 輸出、
+也顯示在網站的增速榜下方。
 
 實測案例：`deepseek-ai/dsh-superagent-prototype` 三天 14,000★（約 4,700★/日），
 在 8 份 Wayback trending 快照裡一次都沒出現過。方法與數據見 `../reports/star-increment-vs-trending.md`。

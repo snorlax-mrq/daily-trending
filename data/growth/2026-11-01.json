@@ -1,140 +1,143 @@
 {
  "date": "2026-11-01",
- "at": "2026-11-03T05:36:28.473Z",
+ "at": "2026-11-04T06:36:32.966Z",
+ "measuredAt": "2026-11-01T00:00:08.367Z",
  "window": {
   "from": "2026-10-25",
   "to": "2026-11-01",
   "days": 7
  },
- "spanDays": 3,
+ "spanDays": 2.7,
  "measured": [
-  {
-   "id": "pingdotgg/t3code",
-   "stars": 35500,
-   "forks": 8778,
-   "delta": 2544,
-   "perDay": 2544,
-   "span": 1,
-   "trending": true,
-   "created": "2026-02-08T23:46:22Z",
-   "ageDays": 266,
-   "note": "1 日實測（樣本不足 7 日）"
-  },
   {
    "id": "pbakaus/impeccable",
    "stars": 98249,
    "forks": 5793,
    "delta": 4805,
-   "perDay": 1601.7,
-   "span": 3,
+   "perDay": 1766.8,
+   "span": 2.7,
    "trending": true,
    "created": "2025-11-16T01:52:04Z",
    "ageDays": 350,
-   "note": "3 日實測（樣本不足 7 日）"
+   "note": "實測 2.7 日（起 2026/10/29）"
   },
   {
    "id": "HKUDS/DeepTutor",
    "stars": 52783,
    "forks": 6461,
    "delta": 4214,
-   "perDay": 1404.7,
-   "span": 3,
+   "perDay": 1549.5,
+   "span": 2.7,
    "trending": true,
    "created": "2025-12-28T15:35:54Z",
    "ageDays": 308,
-   "note": "3 日實測（樣本不足 7 日）"
-  },
-  {
-   "id": "thedotmack/claude-mem",
-   "stars": 107835,
-   "forks": 9462,
-   "delta": 2770,
-   "perDay": 1385,
-   "span": 2,
-   "trending": true,
-   "created": "2025-08-31T20:50:03Z",
-   "ageDays": 427,
-   "note": "2 日實測（樣本不足 7 日）"
-  },
-  {
-   "id": "milind-soni/OpenMausBot",
-   "stars": 9589,
-   "forks": 1326,
-   "delta": 1884,
-   "perDay": 942,
-   "span": 2,
-   "trending": true,
-   "created": "2026-08-11T18:58:55Z",
-   "ageDays": 82,
-   "note": "2 日實測（樣本不足 7 日）"
+   "note": "實測 2.7 日（起 2026/10/29）"
   },
   {
    "id": "obra/superpowers",
    "stars": 310045,
    "forks": 27582,
    "delta": 2377,
-   "perDay": 792.3,
-   "span": 3,
+   "perDay": 874,
+   "span": 2.7,
    "trending": true,
    "created": "2025-10-09T19:45:18Z",
    "ageDays": 388,
-   "note": "3 日實測（樣本不足 7 日）"
+   "note": "實測 2.7 日（起 2026/10/29）"
+  }
+ ],
+ "recent": [
+  {
+   "id": "pingdotgg/t3code",
+   "stars": 35500,
+   "forks": 8778,
+   "delta": 2544,
+   "perDay": 3274.6,
+   "span": 0.8,
+   "trending": true,
+   "created": "2026-02-08T23:46:22Z",
+   "ageDays": 266,
+   "note": "實測 0.8 日（起 2026/10/31）"
+  },
+  {
+   "id": "thedotmack/claude-mem",
+   "stars": 107835,
+   "forks": 9462,
+   "delta": 2770,
+   "perDay": 1622.7,
+   "span": 1.7,
+   "trending": true,
+   "created": "2025-08-31T20:50:03Z",
+   "ageDays": 427,
+   "note": "實測 1.7 日（起 2026/10/30）"
+  },
+  {
+   "id": "milind-soni/OpenMausBot",
+   "stars": 9589,
+   "forks": 1326,
+   "delta": 1884,
+   "perDay": 1103.7,
+   "span": 1.7,
+   "trending": true,
+   "created": "2026-08-11T18:58:55Z",
+   "ageDays": 82,
+   "note": "實測 1.7 日（起 2026/10/30）"
   },
   {
    "id": "Renhuai123/ziwei-doushu",
    "stars": 12255,
    "forks": 2409,
    "delta": 792,
-   "perDay": 792,
-   "span": 1,
+   "perDay": 1019.4,
+   "span": 0.8,
    "trending": true,
    "created": "2026-05-01T05:09:59Z",
    "ageDays": 184,
-   "note": "1 日實測（樣本不足 7 日）"
-  },
-  {
-   "id": "Donchitos/Claude-Code-Game-Studios",
-   "stars": 31146,
-   "forks": 4264,
-   "delta": 1542,
-   "perDay": 771,
-   "span": 2,
-   "trending": true,
-   "created": "2026-02-12T05:21:38Z",
-   "ageDays": 262,
-   "note": "2 日實測（樣本不足 7 日）"
+   "note": "實測 0.8 日（起 2026/10/31）"
   },
   {
    "id": "mattpocock/skills",
    "stars": 308353,
    "forks": 25943,
    "delta": 734,
-   "perDay": 734,
-   "span": 1,
+   "perDay": 944.8,
+   "span": 0.8,
    "trending": true,
    "created": "2026-02-03T11:15:53Z",
    "ageDays": 271,
-   "note": "1 日實測（樣本不足 7 日）"
+   "note": "實測 0.8 日（起 2026/10/31）"
+  },
+  {
+   "id": "Donchitos/Claude-Code-Game-Studios",
+   "stars": 31146,
+   "forks": 4264,
+   "delta": 1542,
+   "perDay": 903.3,
+   "span": 1.7,
+   "trending": true,
+   "created": "2026-02-12T05:21:38Z",
+   "ageDays": 262,
+   "note": "實測 1.7 日（起 2026/10/30）"
   },
   {
    "id": "lightpanda-io/browser",
    "stars": 39230,
    "forks": 1906,
    "delta": 673,
-   "perDay": 673,
-   "span": 1,
+   "perDay": 866.3,
+   "span": 0.8,
    "trending": true,
    "created": "2023-02-07T15:19:34Z",
    "ageDays": 1363,
-   "note": "1 日實測（樣本不足 7 日）"
+   "note": "實測 0.8 日（起 2026/10/31）"
   }
  ],
  "nascent": [],
  "alerts": [],
  "notes": [
-  "本站自己量：對 watchlist 內每個專案每天抓一次總星數（GET /repos/{owner}/{repo}），再以「同一時刻的存量差」算增量，不採用 GitHub Trending 顯示的 stars today。",
-  "今日追蹤 140 個專案，其中 10 個有 2 日以上的實測、0 個樣本不足（以總星數 ÷ 建立天數估計）。",
+  "本站自己量：對 watchlist 內每個專案每天抓一次總星數，以「實際經過時間」的存量差算增量，不採用 GitHub Trending 顯示的 stars today。",
+  "今日追蹤 452 個；3 個有 2 日以上實測（穩定增速）、7 個只有 1 次跨夜樣本、0 個尚無歷史（以總星數 ÷ 建立天數估）。三個分區的數字不能互相比大小。",
   "Trending 每天只收 11–17 席，且名次與 stars today 無關（實測 Spearman −0.07 ~ −0.68）；「不在 trending」不代表沒在長。"
  ],
- "watching": 140
+ "watching": 452
 }

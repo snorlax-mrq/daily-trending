@@ -1,0 +1,13 @@
+{
+ "by": "編輯",
+ "lead": [
+  "今天三個榜單最值得注意的變化都是換位。HuggingFace 榜首 LiquidAI/LFM3-1.7B 守住第一，熱度由 778 掉到 716；GitHub 榜首換人，thedotmack/claude-mem 以單日 1,139 stars 回到第一，把昨天才上位的 vercel-labs/agent-desktop 擠到第二，後者單日 3,791 stars 仍是全榜最高。Artificial Analysis 前十名成員與順序一字未動，但 Intelligence Index 由 v5.0 換成 <span class=\"em\">v5.0.1</span>，十筆分數同步上移 0.05 到 0.7。",
+  "HuggingFace 今天 10 筆，比昨天少一筆，名次進出集中在中後段。前四名只有第二、第三互換：nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B 以 653 升上第二，DeepSeek-V4.1-Flash-1017 由 665 掉到 623 退第三。speridlabs/idol 由第六升第五（484），Lightricks/LTX-2.5 與 ccore/Qwen3.5-4B-3D-Coder 各升一名，第七、第八同為 368。跌幅最大的是 baidu/Unlimited-OCR-2，由第五掉到第九（431 變 292）；新進榜的是第十名 <span class=\"em\">abenzerps/Qwen-Image-2.1-Turbo-Quantized</span>，熱度 290、下載 2.5M、讚 5.6K，昨天並列第十的 Qwen-Image-2.1-Uncensored-Quantized 與 Qwen/Qwen3.8-27B 一起退出。",
+  "GitHub 榜由 15 筆縮到 13 筆，4 筆新進、6 筆退出。名次跳最多的是 <span class=\"em\">max-sixty/worktrunk</span>，由第 12 升到第 3（438），p-e-w/heretic 由第 15 到第 6，JustVugg/colibri 與 mattpocock/skills 也各升六名；D4Vinci/Scrapling 反向由第 3 掉到第 11（1,658）。新進四筆是 spotify/portal-ai-plugins、floci-io/floci、Usagi-org/ai-goofish-monitor 與 anomalyco/hex。Artificial Analysis 前十原封不動，榜首 Gemini 4 Carbon（High）II 60.0，每百萬 token 輸入 4 美元、輸出 20 美元、88 tok/s。"
+ ],
+ "boards": {
+  "hf": "榜首 LFM3-1.7B 守住第一，熱度 716。Nemotron-3.5-Transcribe 653 升第二，DeepSeek-V4.1-Flash-1017 665 退第三，baidu/Unlimited-OCR-2 掉第九。",
+  "gh": "13 筆，4 進 6 出。claude-mem 以單日 1,139 stars 回到第一，agent-desktop 退第二，3,791 仍是全榜最高。worktrunk 由第 12 跳到第 3，新進四筆多為 agent 周邊工具。",
+  "aa": "前十的名次與成員完全沒變，但指數由 v5.0 換到 v5.0.1，十筆分數一起上移 0.05 到 0.7。榜首 Gemini 4 Carbon（High）60.0，第二名 Claude Opus 5.5 59.1，差距不到 1 分。"
+ }
+}

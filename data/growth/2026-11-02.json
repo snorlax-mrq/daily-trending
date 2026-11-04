@@ -1,116 +1,119 @@
 {
  "date": "2026-11-02",
- "at": "2026-11-03T05:36:28.475Z",
+ "at": "2026-11-04T06:36:32.968Z",
+ "measuredAt": "2026-11-02T00:00:05.990Z",
  "window": {
   "from": "2026-10-26",
   "to": "2026-11-02",
   "days": 7
  },
- "spanDays": 4,
+ "spanDays": 3.7,
  "measured": [
-  {
-   "id": "pingdotgg/t3code",
-   "stars": 37911,
-   "forks": 8910,
-   "delta": 4955,
-   "perDay": 2477.5,
-   "span": 2,
-   "trending": true,
-   "created": "2026-02-08T23:46:22Z",
-   "ageDays": 267,
-   "note": "2 日實測（樣本不足 7 日）"
-  },
   {
    "id": "thedotmack/claude-mem",
    "stars": 109209,
    "forks": 9563,
    "delta": 4144,
-   "perDay": 1381.3,
-   "span": 3,
+   "perDay": 1530.9,
+   "span": 2.7,
    "trending": true,
    "created": "2025-08-31T20:50:03Z",
    "ageDays": 428,
-   "note": "3 日實測（樣本不足 7 日）"
+   "note": "實測 2.7 日（起 2026/10/30）"
   },
   {
    "id": "togg53192-cmd/jailbreaks",
    "stars": 12926,
    "forks": 1944,
    "delta": 5394,
-   "perDay": 1348.5,
-   "span": 4,
+   "perDay": 1450.1,
+   "span": 3.7,
    "trending": true,
    "created": "2026-06-18T18:21:25Z",
    "ageDays": 137,
-   "note": "4 日實測（樣本不足 7 日）"
+   "note": "實測 3.7 日（起 2026/10/29）"
   },
   {
    "id": "milind-soni/OpenMausBot",
    "stars": 10497,
    "forks": 1457,
    "delta": 2792,
-   "perDay": 930.7,
-   "span": 3,
+   "perDay": 1031.4,
+   "span": 2.7,
    "trending": true,
    "created": "2026-08-11T18:58:55Z",
    "ageDays": 83,
-   "note": "3 日實測（樣本不足 7 日）"
+   "note": "實測 2.7 日（起 2026/10/30）"
   },
   {
    "id": "Donchitos/Claude-Code-Game-Studios",
    "stars": 32235,
    "forks": 4396,
    "delta": 2631,
-   "perDay": 877,
-   "span": 3,
+   "perDay": 971.9,
+   "span": 2.7,
    "trending": true,
    "created": "2026-02-12T05:21:38Z",
    "ageDays": 263,
-   "note": "3 日實測（樣本不足 7 日）"
-  },
-  {
-   "id": "Renhuai123/ziwei-doushu",
-   "stars": 13073,
-   "forks": 2556,
-   "delta": 1610,
-   "perDay": 805,
-   "span": 2,
-   "trending": true,
-   "created": "2026-05-01T05:09:59Z",
-   "ageDays": 185,
-   "note": "2 日實測（樣本不足 7 日）"
-  },
-  {
-   "id": "lightpanda-io/browser",
-   "stars": 40089,
-   "forks": 1960,
-   "delta": 1532,
-   "perDay": 766,
-   "span": 2,
-   "trending": true,
-   "created": "2023-02-07T15:19:34Z",
-   "ageDays": 1364,
-   "note": "2 日實測（樣本不足 7 日）"
+   "note": "實測 2.7 日（起 2026/10/30）"
   },
   {
    "id": "CopilotKit/OpenBot",
    "stars": 9506,
    "forks": 1189,
    "delta": 1175,
-   "perDay": 391.7,
-   "span": 3,
+   "perDay": 434.1,
+   "span": 2.7,
    "trending": true,
    "created": "2026-08-17T00:44:59Z",
    "ageDays": 77,
-   "note": "3 日實測（樣本不足 7 日）"
+   "note": "實測 2.7 日（起 2026/10/30）"
+  }
+ ],
+ "recent": [
+  {
+   "id": "pingdotgg/t3code",
+   "stars": 37911,
+   "forks": 8910,
+   "delta": 4955,
+   "perDay": 2788.6,
+   "span": 1.8,
+   "trending": true,
+   "created": "2026-02-08T23:46:22Z",
+   "ageDays": 267,
+   "note": "實測 1.8 日（起 2026/10/31）"
+  },
+  {
+   "id": "Renhuai123/ziwei-doushu",
+   "stars": 13073,
+   "forks": 2556,
+   "delta": 1610,
+   "perDay": 906.1,
+   "span": 1.8,
+   "trending": true,
+   "created": "2026-05-01T05:09:59Z",
+   "ageDays": 185,
+   "note": "實測 1.8 日（起 2026/10/31）"
+  },
+  {
+   "id": "lightpanda-io/browser",
+   "stars": 40089,
+   "forks": 1960,
+   "delta": 1532,
+   "perDay": 862.2,
+   "span": 1.8,
+   "trending": true,
+   "created": "2023-02-07T15:19:34Z",
+   "ageDays": 1364,
+   "note": "實測 1.8 日（起 2026/10/31）"
   }
  ],
  "nascent": [],
  "alerts": [],
  "notes": [
-  "本站自己量：對 watchlist 內每個專案每天抓一次總星數（GET /repos/{owner}/{repo}），再以「同一時刻的存量差」算增量，不採用 GitHub Trending 顯示的 stars today。",
-  "今日追蹤 140 個專案，其中 8 個有 2 日以上的實測、0 個樣本不足（以總星數 ÷ 建立天數估計）。",
+  "本站自己量：對 watchlist 內每個專案每天抓一次總星數，以「實際經過時間」的存量差算增量，不採用 GitHub Trending 顯示的 stars today。",
+  "今日追蹤 452 個；5 個有 2 日以上實測（穩定增速）、3 個只有 1 次跨夜樣本、0 個尚無歷史（以總星數 ÷ 建立天數估）。三個分區的數字不能互相比大小。",
   "Trending 每天只收 11–17 席，且名次與 stars today 無關（實測 Spearman −0.07 ~ −0.68）；「不在 trending」不代表沒在長。"
  ],
- "watching": 140
+ "watching": 452
 }

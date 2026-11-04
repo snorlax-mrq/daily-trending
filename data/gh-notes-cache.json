@@ -58,5 +58,21 @@
  "p-e-w/heretic": {
   "zh": "不訓練也能改語言模型行為：用對比範例與評分器做數學導向，可去除拒答（預設）、減少廢話與諂媚；支援多數 dense、MoE 與多模態模型。",
   "at": "2026-11-03"
+ },
+ "spotify/portal-ai-plugins": {
+  "zh": "把 Spotify Portal 接進 Claude Code、Cursor 等 agent：設定 CLI 驗證、搜軟體目錄、產服務簡報。附 shunt 外掛把吃 I/O 的活轉給便宜模型。",
+  "at": "2026-11-04"
+ },
+ "floci-io/floci": {
+  "zh": "免費開源的本地 AWS 模擬器，SDK 與 CLI 指向 localhost:4566 就沿用原流程，不需帳號與 token。原本用 LocalStack 的專案換掉映像檔即可。",
+  "at": "2026-11-04"
+ },
+ "Usagi-org/ai-goofish-monitor": {
+  "zh": "用 Playwright 加 AI 監控閒魚商品，可多任務併發、各自設定關鍵詞與價格，並有 Web 後台管理任務。支援省／市／區篩選與 Cron 定時，通知走 Telegram。",
+  "at": "2026-11-04"
+ },
+ "anomalyco/hex": {
+  "zh": "Mac、Windows、Linux 都能用的本地語音聽寫：按住快捷鍵講話、放開就貼進當前應用程式。轉錄全在本機，首次執行只下載一次語音模型，內容不離開電腦。",
+  "at": "2026-11-04"
  }
 }

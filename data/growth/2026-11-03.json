@@ -1,6 +1,7 @@
 {
  "date": "2026-11-03",
- "at": "2026-11-03T05:47:18.749Z",
+ "at": "2026-11-04T06:36:32.975Z",
+ "measuredAt": "2026-11-03T05:47:18.000Z",
  "window": {
   "from": "2026-10-27",
   "to": "2026-11-03",
@@ -13,144 +14,254 @@
    "stars": 42411,
    "forks": 9131,
    "delta": 9455,
-   "perDay": 3151.7,
+   "perDay": 3132.9,
    "span": 3,
    "trending": true,
    "created": "2026-02-08T23:46:22Z",
    "ageDays": 268,
-   "note": "3 日實測（樣本不足 7 日）"
+   "note": "實測 3 日（起 2026/10/31）"
   },
   {
    "id": "thedotmack/claude-mem",
    "stars": 110997,
    "forks": 9677,
    "delta": 5932,
-   "perDay": 1483,
-   "span": 4,
+   "perDay": 1502.5,
+   "span": 3.9,
    "trending": true,
    "created": "2025-08-31T20:50:03Z",
    "ageDays": 429,
-   "note": "4 日實測（樣本不足 7 日）"
+   "note": "實測 3.9 日（起 2026/10/30）"
   },
   {
    "id": "pbakaus/impeccable",
    "stars": 100703,
    "forks": 5949,
    "delta": 7259,
-   "perDay": 1451.8,
+   "perDay": 1463.3,
    "span": 5,
    "trending": false,
    "created": "2025-11-16T01:52:04Z",
    "ageDays": 352,
-   "note": "5 日實測（樣本不足 7 日）"
+   "note": "實測 5 日（起 2026/10/29）"
   },
   {
    "id": "togg53192-cmd/jailbreaks",
    "stars": 13727,
    "forks": 2076,
    "delta": 6195,
-   "perDay": 1239,
+   "perDay": 1248.8,
    "span": 5,
    "trending": false,
    "created": "2026-06-18T18:21:25Z",
    "ageDays": 138,
-   "note": "5 日實測（樣本不足 7 日）"
-  },
-  {
-   "id": "Orkas-AI/Orkas",
-   "stars": 8581,
-   "forks": 499,
-   "delta": 2455,
-   "perDay": 1227.5,
-   "span": 2,
-   "trending": false,
-   "created": "2026-04-29T12:19:08Z",
-   "ageDays": 188,
-   "note": "2 日實測（樣本不足 7 日）"
+   "note": "實測 5 日（起 2026/10/29）"
   },
   {
    "id": "HKUDS/DeepTutor",
    "stars": 54409,
    "forks": 6656,
    "delta": 5840,
-   "perDay": 1168,
+   "perDay": 1177.2,
    "span": 5,
    "trending": false,
    "created": "2025-12-28T15:35:54Z",
    "ageDays": 310,
-   "note": "5 日實測（樣本不足 7 日）"
+   "note": "實測 5 日（起 2026/10/29）"
+  },
+  {
+   "id": "Orkas-AI/Orkas",
+   "stars": 8581,
+   "forks": 499,
+   "delta": 2455,
+   "perDay": 1095.5,
+   "span": 2.2,
+   "trending": false,
+   "created": "2026-04-29T12:19:08Z",
+   "ageDays": 188,
+   "note": "實測 2.2 日（起 2026/11/01）"
   },
   {
    "id": "Donchitos/Claude-Code-Game-Studios",
    "stars": 33826,
    "forks": 4535,
    "delta": 4222,
-   "perDay": 1055.5,
-   "span": 4,
+   "perDay": 1069.4,
+   "span": 3.9,
    "trending": true,
    "created": "2026-02-12T05:21:38Z",
    "ageDays": 264,
-   "note": "4 日實測（樣本不足 7 日）"
-  },
-  {
-   "id": "public-apis/public-apis",
-   "stars": 495613,
-   "forks": 55331,
-   "delta": 1045,
-   "perDay": 1045,
-   "span": 1,
-   "trending": false,
-   "created": "2016-03-20T23:49:42Z",
-   "ageDays": 3880,
-   "note": "1 日實測（樣本不足 7 日）"
+   "note": "實測 3.9 日（起 2026/10/30）"
   },
   {
    "id": "Nutlope/hallmark",
    "stars": 46189,
    "forks": 2450,
    "delta": 5123,
-   "perDay": 1024.6,
+   "perDay": 1032.7,
    "span": 5,
    "trending": false,
    "created": "2026-04-27T20:47:10Z",
    "ageDays": 190,
-   "note": "5 日實測（樣本不足 7 日）"
+   "note": "實測 5 日（起 2026/10/29）"
   },
   {
    "id": "mattpocock/skills",
    "stars": 310461,
    "forks": 26113,
    "delta": 2842,
-   "perDay": 947.3,
+   "perDay": 941.7,
    "span": 3,
    "trending": true,
    "created": "2026-02-03T11:15:53Z",
    "ageDays": 273,
-   "note": "3 日實測（樣本不足 7 日）"
-  },
-  {
-   "id": "Renhuai123/ziwei-doushu",
-   "stars": 14234,
-   "forks": 2758,
-   "delta": 2771,
-   "perDay": 923.7,
-   "span": 3,
-   "trending": false,
-   "created": "2026-05-01T05:09:59Z",
-   "ageDays": 186,
-   "note": "3 日實測（樣本不足 7 日）"
+   "note": "實測 3 日（起 2026/10/31）"
   },
   {
    "id": "milind-soni/OpenMausBot",
    "stars": 11389,
    "forks": 1558,
    "delta": 3684,
-   "perDay": 921,
-   "span": 4,
+   "perDay": 933.1,
+   "span": 3.9,
    "trending": false,
    "created": "2026-08-11T18:58:55Z",
    "ageDays": 84,
-   "note": "4 日實測（樣本不足 7 日）"
+   "note": "實測 3.9 日（起 2026/10/30）"
+  },
+  {
+   "id": "Renhuai123/ziwei-doushu",
+   "stars": 14234,
+   "forks": 2758,
+   "delta": 2771,
+   "perDay": 918.2,
+   "span": 3,
+   "trending": false,
+   "created": "2026-05-01T05:09:59Z",
+   "ageDays": 186,
+   "note": "實測 3 日（起 2026/10/31）"
+  },
+  {
+   "id": "lightpanda-io/browser",
+   "stars": 41017,
+   "forks": 2009,
+   "delta": 2460,
+   "perDay": 815.1,
+   "span": 3,
+   "trending": false,
+   "created": "2023-02-07T15:19:34Z",
+   "ageDays": 1365,
+   "note": "實測 3 日（起 2026/10/31）"
+  }
+ ],
+ "recent": [
+  {
+   "id": "public-apis/public-apis",
+   "stars": 495613,
+   "forks": 55331,
+   "delta": 1045,
+   "perDay": 842,
+   "span": 1.2,
+   "trending": false,
+   "created": "2016-03-20T23:49:42Z",
+   "ageDays": 3880,
+   "note": "實測 1.2 日（起 2026/11/02）"
+  },
+  {
+   "id": "anomalyco/hex",
+   "stars": 4140,
+   "forks": 245,
+   "delta": 905,
+   "perDay": 729.2,
+   "span": 1.2,
+   "trending": false,
+   "created": "2026-07-17T23:48:56Z",
+   "ageDays": 109,
+   "note": "實測 1.2 日（起 2026/11/02）"
+  },
+  {
+   "id": "FlashML-org/FreeToken",
+   "stars": 16239,
+   "forks": 1596,
+   "delta": 858,
+   "perDay": 691.3,
+   "span": 1.2,
+   "trending": true,
+   "created": "2026-07-20T20:44:11Z",
+   "ageDays": 106,
+   "note": "實測 1.2 日（起 2026/11/02）"
+  },
+  {
+   "id": "patchy631/ai-engineering-hub",
+   "stars": 40980,
+   "forks": 6545,
+   "delta": 779,
+   "perDay": 627.7,
+   "span": 1.2,
+   "trending": false,
+   "created": "2024-10-21T10:43:24Z",
+   "ageDays": 743,
+   "note": "實測 1.2 日（起 2026/11/02）"
+  },
+  {
+   "id": "shiyu-coder/Kronos",
+   "stars": 46092,
+   "forks": 7595,
+   "delta": 736,
+   "perDay": 593,
+   "span": 1.2,
+   "trending": true,
+   "created": "2025-07-01T02:54:32Z",
+   "ageDays": 490,
+   "note": "實測 1.2 日（起 2026/11/02）"
+  },
+  {
+   "id": "hyprwm/Hyprland",
+   "stars": 40054,
+   "forks": 2159,
+   "delta": 699,
+   "perDay": 563.2,
+   "span": 1.2,
+   "trending": true,
+   "created": "2022-03-16T19:49:13Z",
+   "ageDays": 1693,
+   "note": "實測 1.2 日（起 2026/11/02）"
+  },
+  {
+   "id": "cjpais/Handy",
+   "stars": 37197,
+   "forks": 3496,
+   "delta": 677,
+   "perDay": 545.5,
+   "span": 1.2,
+   "trending": false,
+   "created": "2025-02-13T02:42:29Z",
+   "ageDays": 628,
+   "note": "實測 1.2 日（起 2026/11/02）"
+  },
+  {
+   "id": "beenuar/AiSOC",
+   "stars": 6776,
+   "forks": 693,
+   "delta": 578,
+   "perDay": 465.7,
+   "span": 1.2,
+   "trending": false,
+   "created": "2026-05-02T03:30:19Z",
+   "ageDays": 185,
+   "note": "實測 1.2 日（起 2026/11/02）"
+  },
+  {
+   "id": "kornia/kornia",
+   "stars": 12209,
+   "forks": 1498,
+   "delta": 436,
+   "perDay": 351.3,
+   "span": 1.2,
+   "trending": true,
+   "created": "2018-08-22T10:31:37Z",
+   "ageDays": 2995,
+   "note": "實測 1.2 日（起 2026/11/02）"
   }
  ],
  "nascent": [
@@ -251,18 +362,6 @@
    "note": "建立 2 天，尚無歷史可差分，以總星數÷年齡估"
   },
   {
-   "id": "AssassinCreator/steam-stash-value-report-card",
-   "stars": 635,
-   "forks": 55,
-   "delta": null,
-   "perDay": 635,
-   "span": 0,
-   "trending": false,
-   "created": "2026-11-02T00:40:47Z",
-   "ageDays": 1,
-   "note": "建立 1 天，尚無歷史可差分，以總星數÷年齡估"
-  },
-  {
    "id": "Djihads80/Eglantine",
    "stars": 2625,
    "forks": 307,
@@ -297,91 +396,138 @@
    "created": "2026-10-29T06:08:00Z",
    "ageDays": 5,
    "note": "建立 5 天，尚無歷史可差分，以總星數÷年齡估"
+  },
+  {
+   "id": "BryceYuuu/RUN",
+   "stars": 1922,
+   "forks": 131,
+   "delta": null,
+   "perDay": 384.4,
+   "span": 0,
+   "trending": false,
+   "created": "2026-10-29T11:28:43Z",
+   "ageDays": 5,
+   "note": "建立 5 天，尚無歷史可差分，以總星數÷年齡估"
   }
  ],
  "alerts": [
   {
    "id": "pbakaus/impeccable",
    "kind": "measured",
-   "perDay": 1451.8,
+   "perDay": 1463.3,
    "delta": 7259,
-   "stars": 100703
+   "stars": 100703,
+   "span": 5
   },
   {
    "id": "togg53192-cmd/jailbreaks",
    "kind": "measured",
-   "perDay": 1239,
+   "perDay": 1248.8,
    "delta": 6195,
-   "stars": 13727
-  },
-  {
-   "id": "Orkas-AI/Orkas",
-   "kind": "measured",
-   "perDay": 1227.5,
-   "delta": 2455,
-   "stars": 8581
+   "stars": 13727,
+   "span": 5
   },
   {
    "id": "HKUDS/DeepTutor",
    "kind": "measured",
-   "perDay": 1168,
+   "perDay": 1177.2,
    "delta": 5840,
-   "stars": 54409
+   "stars": 54409,
+   "span": 5
   },
   {
-   "id": "public-apis/public-apis",
+   "id": "Orkas-AI/Orkas",
    "kind": "measured",
-   "perDay": 1045,
-   "delta": 1045,
-   "stars": 495613
+   "perDay": 1095.5,
+   "delta": 2455,
+   "stars": 8581,
+   "span": 2.2
   },
   {
    "id": "Nutlope/hallmark",
    "kind": "measured",
-   "perDay": 1024.6,
+   "perDay": 1032.7,
    "delta": 5123,
-   "stars": 46189
+   "stars": 46189,
+   "span": 5
+  },
+  {
+   "id": "milind-soni/OpenMausBot",
+   "kind": "measured",
+   "perDay": 933.1,
+   "delta": 3684,
+   "stars": 11389,
+   "span": 3.9
+  },
+  {
+   "id": "public-apis/public-apis",
+   "kind": "recent",
+   "perDay": 842,
+   "delta": 1045,
+   "stars": 495613,
+   "span": 1.2
+  },
+  {
+   "id": "anomalyco/hex",
+   "kind": "recent",
+   "perDay": 729.2,
+   "delta": 905,
+   "stars": 4140,
+   "span": 1.2
+  },
+  {
+   "id": "patchy631/ai-engineering-hub",
+   "kind": "recent",
+   "perDay": 627.7,
+   "delta": 779,
+   "stars": 40980,
+   "span": 1.2
   },
   {
    "id": "deepseek-ai/dsh-superagent-prototype",
    "kind": "nascent",
    "perDay": 4746.7,
    "delta": null,
-   "stars": 14240
+   "stars": 14240,
+   "span": 0
   },
   {
    "id": "storytold/photocraft",
    "kind": "nascent",
    "perDay": 2244.4,
    "delta": null,
-   "stars": 76308
+   "stars": 76308,
+   "span": 0
   },
   {
    "id": "storytold/craft-anything",
    "kind": "nascent",
    "perDay": 1691,
    "delta": null,
-   "stars": 5073
+   "stars": 5073,
+   "span": 0
   },
   {
    "id": "heydamir/unslop",
    "kind": "nascent",
    "perDay": 1304.2,
    "delta": null,
-   "stars": 6521
+   "stars": 6521,
+   "span": 0
   },
   {
    "id": "wangzan101/Mika",
    "kind": "nascent",
    "perDay": 1116.4,
    "delta": null,
-   "stars": 5582
+   "stars": 5582,
+   "span": 0
   }
  ],
  "notes": [
-  "本站自己量：對 watchlist 內每個專案每天抓一次總星數（GET /repos/{owner}/{repo}），再以「同一時刻的存量差」算增量，不採用 GitHub Trending 顯示的 stars today。",
-  "今日追蹤 430 個專案，其中 36 個有 2 日以上的實測、77 個樣本不足（以總星數 ÷ 建立天數估計）。",
+  "本站自己量：對 watchlist 內每個專案每天抓一次總星數，以「實際經過時間」的存量差算增量，不採用 GitHub Trending 顯示的 stars today。",
+  "今日追蹤 452 個；27 個有 2 日以上實測（穩定增速）、9 個只有 1 次跨夜樣本、18 個尚無歷史（以總星數 ÷ 建立天數估）。三個分區的數字不能互相比大小。",
   "Trending 每天只收 11–17 席，且名次與 stars today 無關（實測 Spearman −0.07 ~ −0.68）；「不在 trending」不代表沒在長。"
  ],
- "watching": 430
+ "watching": 452
 }

@@ -12,7 +12,7 @@
 //   bun run src/watch.ts --report         # 只印報告（不抓網路）
 //   --offline / --dry-run  不寫檔
 import { join } from "node:path";
-import { existsSync, mkdirSync } from "node:fs";
+import { existsSync, mkdirSync, readdirSync } from "node:fs";
 import { ROOT, listSnapshots, readSnapshot, today, type Snapshot } from "./lib.ts";
 
 const DATA = join(ROOT, "data");
@@ -23,9 +23,12 @@ const GROWTH_DIR = join(DATA, "growth");
 const TOKEN = process.env.GITHUB_TOKEN ?? "";
 const KEEP_DAYS = 30; // 最後一次出現後保留幾天
 const MIN_STARS_MEASURED = 300; // 進「已測增速」榜的最低星數，避免 +1 星雜訊
+const MIN_STARS_NASCENT = 1000; // 新秀榜門檻：300-600 星的小專案除以 3 天也是「100/日」，但那不是訊號
 const TOP_N = 12;
 const NASCENT_MAX_AGE = 45; // 幾天內算「新秀」
 const MIN_FORKS = 2; // 0–1 個 fork 的高星數專案多半是刷 SEO 的空殼，不進榜
+/** 「穩定增速」門檻：實際經過 ≥2 日才算，避免一次跨夜的樣本被當成日均 */
+const MIN_SPAN_DAYS = 2;
 const CONCURRENCY = 8;
 
 const argv = process.argv.slice(2);
@@ -38,7 +41,7 @@ const argOf = (f: string) => {
 type Src = "trending" | "search" | "seed";
 type WatchEntry = { first: string; last: string; src: Src; created?: string | null };
 type Watch = { updated: string; repos: Record<string, WatchEntry> };
-type HistRow = { d: string; id: string; s: number; f?: number };
+type HistRow = { d: string; id: string; s: number; f?: number; t?: string };
 
 // ── 日期 ──────────────────────────────────────────
 const dayNum = (d: string) => Date.UTC(+d.slice(0, 4), +d.slice(5, 7) - 1, +d.slice(8, 10)) / 86_400_000;
@@ -246,21 +249,37 @@ export type GrowthItem = {
 };
 export type Growth = {
   date: string;
+  /** 產生這份報告的時間（僅供顯示） */
   at: string;
+  /** 這一天實際量測總星數的時間（算經過時間用，不可用 at 代替） */
+  measuredAt: string;
   window: { from: string; to: string; days: number };
   /** 實際最長樣本天數（回填起點不足 7 日時會小於 window.days） */
   spanDays: number;
-  /** 有 ≥2 天實測的專案，依每日均速排序 */
+  /** 穩定增速：實際經過 ≥2 日 */
   measured: GrowthItem[];
+  /** 只有 1 次跨夜樣本（<2 日），單獨一區免得和穩定組比大小 */
+  recent: GrowthItem[];
   /** 樣本不足、以「總星數 ÷ 年齡」估的新秀 */
   nascent: GrowthItem[];
   /** 健檢：真的在長、但不在今日 trending */
-  alerts: { id: string; kind: "measured" | "nascent"; perDay: number; delta: number | null; stars: number }[];
+  alerts: { id: string; kind: "measured" | "recent" | "nascent"; perDay: number; delta: number | null; stars: number; span: number }[];
   notes: string[];
   watching: number;
 };
 
-function buildGrowth(dateStr: string, w: Watch, hist: HistRow[], trendingIds: Set<string>): Growth {
+/**
+ * 增量一律用「實際經過時間」算，不用日期差。
+ * 快照有時在 00:00Z 抓、有時在 06:30Z 抓，日期差 1 天、實際只過 0.76 天，
+ * 用日期差會把日均高估 30% 以上。
+ */
+function elapsedDays(a?: string, b?: string, fallback = 0): number {
+  if (!a || !b) return fallback;
+  const ms = Date.parse(b) - Date.parse(a);
+  return ms > 0 ? ms / 86_400_000 : fallback;
+}
+
+function buildGrowth(dateStr: string, w: Watch, hist: HistRow[], trendingIds: Set<string>, measuredAt: string): Growth {
   const byRepo = new Map<string, HistRow[]>();
   for (const r of hist) {
     if (r.d > dateStr) continue;
@@ -268,6 +287,7 @@ function buildGrowth(dateStr: string, w: Watch, hist: HistRow[], trendingIds: Se
     byRepo.get(r.id)!.push(r);
   }
   const measured: GrowthItem[] = [];
+  const recent: GrowthItem[] = [];
   const nascent: GrowthItem[] = [];
 
   for (const [id, series] of byRepo) {
@@ -280,42 +300,67 @@ function buildGrowth(dateStr: string, w: Watch, hist: HistRow[], trendingIds: Se
     const ageDays = e?.created ? Math.max(1, daysBetween(dateStr, e.created.slice(0, 10))) : null;
     const inWindow = series.filter((r) => daysBetween(dateStr, r.d) <= 7);
     const first = inWindow[0]!;
-    const span = daysBetween(dateStr, first.d);
+    const span = elapsedDays(first.t ?? first.d, last.t ?? last.d, daysBetween(dateStr, first.d));
     const delta = span > 0 ? last.s - first.s : null;
     const perDay = span > 0 ? Math.round((delta! / span) * 10) / 10 : null;
     if ((last.f ?? 0) < MIN_FORKS) continue; // 過濾刷星空殼（0 fork 卻數百星）
-    const base = { id, stars: last.s, forks: last.f, delta, perDay, span, trending: trendingIds.has(id), created: e?.created ?? null, ageDays };
+    const base = {
+      id,
+      stars: last.s,
+      forks: last.f,
+      delta,
+      perDay,
+      span: Math.round(span * 10) / 10,
+      trending: trendingIds.has(id),
+      created: e?.created ?? null,
+      ageDays,
+    };
 
     if (span > 0) {
       if (last.s < MIN_STARS_MEASURED) continue;
-      measured.push({ ...base, note: `${span} 日實測${span < 7 ? `（樣本不足 7 日）` : ""}` });
-    } else if (ageDays !== null && ageDays <= NASCENT_MAX_AGE) {
+      const item: GrowthItem = { ...base, note: `實測 ${base.span} 日（起 ${first.d.replace(/-/g, "/")}）` };
+      if (span >= MIN_SPAN_DAYS) measured.push(item);
+      else recent.push(item); // 只有一次跨夜樣本：數字是「這段時間的均速」，不是日均
+    } else if (ageDays !== null && ageDays <= NASCENT_MAX_AGE && last.s >= MIN_STARS_NASCENT) {
       const rate = Math.round((last.s / ageDays) * 10) / 10;
       nascent.push({ ...base, perDay: rate, note: `建立 ${ageDays} 天，尚無歷史可差分，以總星數÷年齡估` });
     }
   }
 
-  measured.sort((a, b) => (b.perDay ?? 0) - (a.perDay ?? 0) || b.stars - a.stars);
-  nascent.sort((a, b) => (b.perDay ?? 0) - (a.perDay ?? 0) || b.stars - a.stars);
+  const byRate = (a: GrowthItem, b: GrowthItem) => (b.perDay ?? 0) - (a.perDay ?? 0) || b.stars - a.stars;
+  measured.sort(byRate);
+  recent.sort(byRate);
+  nascent.sort(byRate);
 
-  const topMeasured = measured.slice(0, 10);
-  const topNascent = nascent.slice(0, 5);
-  const alerts: Growth["alerts"] = [
-    ...topMeasured.filter((x) => !x.trending).map((x) => ({ id: x.id, kind: "measured" as const, perDay: x.perDay ?? 0, delta: x.delta, stars: x.stars })),
-    ...topNascent.filter((x) => !x.trending).map((x) => ({ id: x.id, kind: "nascent" as const, perDay: x.perDay ?? 0, delta: x.delta, stars: x.stars })),
+  // 健檢：三種形狀各自取前段班，再排除今天已經在 trending 的
+  const picks: { kind: "measured" | "recent" | "nascent"; list: GrowthItem[] }[] = [
+    { kind: "measured", list: measured.slice(0, 10) },
+    { kind: "recent", list: recent.filter((x) => (x.delta ?? 0) >= 500).slice(0, 5) },
+    { kind: "nascent", list: nascent.filter((x) => x.stars >= 1000).slice(0, 5) },
   ];
+  const seen = new Set<string>();
+  const alerts: Growth["alerts"] = [];
+  for (const { kind, list } of picks) {
+    for (const x of list) {
+      if (x.trending || seen.has(x.id)) continue;
+      seen.add(x.id);
+      alerts.push({ id: x.id, kind, perDay: x.perDay ?? 0, delta: x.delta, stars: x.stars, span: x.span });
+    }
+  }
 
   return {
     date: dateStr,
     at: new Date().toISOString(),
+    measuredAt,
     window: { from: shift(dateStr, -7), to: dateStr, days: 7 },
     spanDays: measured.reduce((m, x) => Math.max(m, x.span), 0),
     measured: measured.slice(0, TOP_N),
+    recent: recent.slice(0, TOP_N),
     nascent: nascent.slice(0, TOP_N),
     alerts,
     notes: [
-      `本站自己量：對 watchlist 內每個專案每天抓一次總星數（GET /repos/{owner}/{repo}），再以「同一時刻的存量差」算增量，不採用 GitHub Trending 顯示的 stars today。`,
-      `今日追蹤 ${Object.keys(w.repos).length} 個專案，其中 ${measured.length} 個有 2 日以上的實測、${nascent.length} 個樣本不足（以總星數 ÷ 建立天數估計）。`,
+      `本站自己量：對 watchlist 內每個專案每天抓一次總星數，以「實際經過時間」的存量差算增量，不採用 GitHub Trending 顯示的 stars today。`,
+      `今日追蹤 ${Object.keys(w.repos).length} 個；${measured.length} 個有 ${MIN_SPAN_DAYS} 日以上實測（穩定增速）、${recent.length} 個只有 1 次跨夜樣本、${nascent.length} 個尚無歷史（以總星數 ÷ 建立天數估）。三個分區的數字不能互相比大小。`,
       `Trending 每天只收 11–17 席，且名次與 stars today 無關（實測 Spearman −0.07 ~ −0.68）；「不在 trending」不代表沒在長。`,
     ],
     watching: Object.keys(w.repos).length,
@@ -323,9 +368,33 @@ function buildGrowth(dateStr: string, w: Watch, hist: HistRow[], trendingIds: Se
 }
 
 // ── 主流程（collect.ts 也會呼叫，所以包成函式）────────
+/** 每個觀測日的實際量測時間：growth 的 measuredAt 優先，其次快照的 generatedAt（絕不用報告產生時間） */
+async function buildTimes(): Promise<Map<string, number>> {
+  const times = new Map<string, number>();
+  for (const f of listSnapshots()) {
+    const d = f.replace(/\.json$/, "");
+    const s = await readSnapshot(d);
+    if (s?.generatedAt) times.set(d, Date.parse(s.generatedAt));
+  }
+  const gp = join(GROWTH_DIR);
+  if (existsSync(gp)) {
+    for (const f of readdirSync(gp)) {
+      const m = f.match(/^(\d{4}-\d{2}-\d{2})\.json$/);
+      if (!m) continue;
+      try {
+        const g = JSON.parse(await Bun.file(join(gp, f)).text()) as { measuredAt?: string };
+        if (g.measuredAt) times.set(m[1]!, Date.parse(g.measuredAt));
+      } catch {
+        /* 壞檔跳過 */
+      }
+    }
+  }
+  return times;
+}
+
 export type WatchOpts = {
   date?: string;
-  mode?: "sync" | "backfill" | "discover" | "report";
+  mode?: "sync" | "backfill" | "discover" | "report" | "rebuild";
   seed?: boolean;
   dryRun?: boolean;
   offline?: boolean;
@@ -334,7 +403,9 @@ export type WatchOpts = {
 
 export async function runWatch(opts: WatchOpts = {}): Promise<{ growth: Growth; ok: number; fail: number; added: number }> {
   const runDate = opts.date ?? date;
-  const mode = opts.mode ?? (flag("--backfill") ? "backfill" : flag("--report") ? "report" : flag("--discover") ? "discover" : "sync");
+  const mode =
+    opts.mode ??
+    (flag("--backfill") ? "backfill" : flag("--report") ? "report" : flag("--rebuild") ? "rebuild" : flag("--discover") ? "discover" : "sync");
   const isDry = opts.dryRun || dry;
   const isOffline = opts.offline || offline;
   const quiet = opts.quiet ?? false;
@@ -361,21 +432,58 @@ export async function runWatch(opts: WatchOpts = {}): Promise<{ growth: Growth; 
   let discovered: string[] = [];
   let seeded = 0;
 
+  // 校正每筆的「實際抓取時間」t。
+  // 規則：值與當日快照相同 → 該筆來自快照（時間＝快照 generatedAt）；
+  //       否則來自當天的直接 API 讀取（時間＝當日 growth.at）。
+  // 沒有 t 的舊資料就是靠這條規則補出來的，之後 sync 會自己寫入精確時間。
+  const times = await buildTimes();
+  const snapTimes = new Map<string, number>();
+  const snapStars = new Map<string, Map<string, number>>();
+  for (const f of listSnapshots()) {
+    const d = f.replace(/\.json$/, "");
+    const s = await readSnapshot(d);
+    if (!s) continue;
+    if (s.generatedAt) snapTimes.set(d, Date.parse(s.generatedAt));
+    const m = new Map<string, number>();
+    for (const it of s.boards?.gh?.items ?? []) {
+      const v = Number(it.stats?.stars ?? 0);
+      if (v) m.set(it.id, v);
+    }
+    snapStars.set(d, m);
+  }
+  let fixed = 0;
+  for (const r of hist) {
+    if (r.t) continue; // 已有實測時間就不動（history 是 t 的唯一真相）
+    const snapVal = snapStars.get(r.d)?.get(r.id);
+    const want = snapVal !== undefined && snapVal === r.s ? snapTimes.get(r.d) : times.get(r.d);
+    if (!want) continue;
+    r.t = new Date(want).toISOString();
+    fixed++;
+  }
+  if (fixed && !isDry) {
+    await saveHist(hist);
+    hist = await loadHist();
+    log(`🕒 校正 ${fixed} 筆抓取時間（每日均值改用實際經過時間計算）`);
+  }
+
   if (mode === "backfill") {
     const before = hist.length;
     for (const f of listSnapshots()) {
       const d = f.replace(/\.json$/, "");
       const s = await readSnapshot(d);
       if (!s) continue;
+      const at = snapTimes.get(d) ?? times.get(d);
       for (const it of s.boards?.gh?.items ?? []) {
         const stars = Number(it.stats?.stars ?? 0);
         if (!stars) continue;
-        hist.push({ d, id: it.id, s: stars, f: Number(it.stats?.forks ?? 0) || undefined });
+        hist.push({ d, id: it.id, s: stars, f: Number(it.stats?.forks ?? 0) || undefined, t: at ? new Date(at).toISOString() : undefined });
       }
     }
     if (!isDry) await saveHist(hist);
     hist = await loadHist();
     log(`↩︎ 回填 ${hist.length - before} 筆歷史（來自 ${listSnapshots().length} 份快照）`);
+  } else if (mode === "rebuild") {
+    log(`🛠  重算增速（不連網，依既有 ${hist.length} 筆歷史）`);
   } else if (mode !== "report" && !isOffline) {
     if (opts.seed ?? flag("--seed")) seeded = await seed(w, runDate);
     discovered = await discover(w, runDate);
@@ -385,7 +493,7 @@ export async function runWatch(opts: WatchOpts = {}): Promise<{ growth: Growth; 
   // 3) 抓當日總星數
   let ok = 0;
   let fail = 0;
-  if (mode !== "report" && !isOffline) {
+  if (mode !== "report" && mode !== "rebuild" && !isOffline) {
     const res = await sync(w, runDate);
     hist.push(...res.rows);
     ok = res.ok;
@@ -398,9 +506,11 @@ export async function runWatch(opts: WatchOpts = {}): Promise<{ growth: Growth; 
   }
 
   // 4) 算增速 + 健檢
-  const growth = buildGrowth(runDate, w, hist, trendingIds);
-  // 回填模式下，把每一份快照日的增速也補出來（時序頁才有歷史）
-  if (mode === "backfill" && !isDry) {
+  // 這一天的量測時間＝今天 sync 的完成時間；回填／重建時用當日快照時間
+  const measuredAt = ok > 0 ? new Date().toISOString() : (snapTimes.get(runDate) ? new Date(snapTimes.get(runDate)!).toISOString() : new Date().toISOString());
+  const growth = buildGrowth(runDate, w, hist, trendingIds, measuredAt);
+  // 回填／重建模式：每一份快照日的增速也重算一次（時序頁才有歷史）
+  if ((mode === "backfill" || mode === "rebuild") && !isDry) {
     mkdirSync(GROWTH_DIR, { recursive: true });
     let emitted = 0;
     for (const f of listSnapshots()) {
@@ -409,12 +519,22 @@ export async function runWatch(opts: WatchOpts = {}): Promise<{ growth: Growth; 
       const snap = await readSnapshot(d);
       if (!snap) continue;
       const ids = new Set((snap.boards?.gh?.items ?? []).map((i) => i.id));
-      const g = buildGrowth(d, w, hist, ids);
-      if (!g.measured.length && !g.nascent.length) continue;
+      let at = snapTimes.get(d);
+      const gp = join(GROWTH_DIR, `${d}.json`);
+      if (existsSync(gp)) {
+        try {
+          const prev = JSON.parse(await Bun.file(gp).text()) as { measuredAt?: string };
+          if (prev.measuredAt) at = Date.parse(prev.measuredAt);
+        } catch {
+          /* 壞檔就用快照時間 */
+        }
+      }
+      const g = buildGrowth(d, w, hist, ids, at ? new Date(at).toISOString() : new Date().toISOString());
+      if (!g.measured.length && !g.recent.length && !g.nascent.length) continue;
       await Bun.write(join(GROWTH_DIR, `${d}.json`), JSON.stringify(g, null, 1) + "\n");
       emitted++;
     }
-    log(`🗂  補出 ${emitted} 天的增速檔`);
+    log(`🗂  重算 ${emitted} 天的增速檔`);
   }
   if (!isDry && mode !== "report") {
     mkdirSync(GROWTH_DIR, { recursive: true });
@@ -428,14 +548,21 @@ export async function runWatch(opts: WatchOpts = {}): Promise<{ growth: Growth; 
   const pad = (s: string | number, n: number) => String(s).padEnd(n);
   const fmt = (n: number) => n.toLocaleString("en-US");
   console.log(`\n=== ${runDate} 增速（自行實測，非 trending 數字）===`);
-  if (growth.measured.length) {
-    console.log(`排 專案                                    總星數   近${growth.spanDays}日+     每日      trending`);
-    growth.measured.slice(0, 12).forEach((x, i) => {
-      console.log(`${pad(i + 1, 2)} ${pad(x.id.length > 40 ? x.id.slice(0, 39) + "…" : x.id, 40)} ${pad(fmt(x.stars), 8)} ${pad(x.delta === null ? "—" : `+${fmt(x.delta)}`, 9)} ${pad(x.perDay === null ? "—" : fmt(x.perDay), 9)}  ${x.trending ? "✓" : "—"}`);
+  const block = (title: string, list: GrowthItem[], limit: number) => {
+    if (!list.length) return;
+    console.log(`\n${title}`);
+    list.slice(0, limit).forEach((x, i) => {
+      const span = `實測 ${x.span} 日`;
+      console.log(
+        `${pad(i + 1, 2)} ${pad(x.id.length > 40 ? x.id.slice(0, 39) + "…" : x.id, 40)} ${pad(fmt(x.stars), 8)} ${pad(x.delta === null ? "—" : `+${fmt(x.delta)}`, 9)} ${pad(x.perDay === null ? "—" : fmt(x.perDay), 9)} ${pad(span, 10)} ${x.trending ? "✓ trending" : "—"}`,
+      );
     });
-  } else {
-    console.log("（還沒有 2 日以上的實測資料，先跑 --backfill 或等明天）");
+  };
+  if (!growth.measured.length && !growth.recent.length && !growth.nascent.length) {
+    console.log("（還沒有資料，先跑 --backfill 或等明天）");
   }
+  block("穩定增速（≥2 日實測）", growth.measured, 12);
+  block("單次跨夜樣本（<2 日，數字別和上表比）", growth.recent, 8);
   if (growth.nascent.length) {
     console.log(`\n新秀（樣本不足，總星數 ÷ 建立天數）`);
     growth.nascent.slice(0, 10).forEach((x, i) => {
@@ -445,7 +572,8 @@ export async function runWatch(opts: WatchOpts = {}): Promise<{ growth: Growth; 
   if (growth.alerts.length) {
     console.log(`\n⚠ 健檢：真的在長、但今日不在 trending（${growth.alerts.length} 筆）`);
     for (const a of growth.alerts) {
-      console.log(`  · ${a.id}  ${a.kind === "measured" ? `近${growth.spanDays}日 +${fmt(a.delta ?? 0)}` : "新秀"}　${fmt(a.perDay)}/day　總 ${fmt(a.stars)}★`);
+      const tag = a.kind === "measured" ? `近${a.span}日 +${fmt(a.delta ?? 0)}` : a.kind === "recent" ? `單日 +${fmt(a.delta ?? 0)}` : "新秀";
+      console.log(`  · ${a.id}  ${tag}　${fmt(a.perDay)}/day　總 ${fmt(a.stars)}★`);
     }
   } else {
     console.log("\n✓ 健檢：增速前段班的專案今天都在 trending 上");

@@ -67,9 +67,10 @@ type GrowthData = {
   at: string;
   window: { from: string; to: string; days: number };
   spanDays: number;
+  measuredAt?: string;
   measured: GrowthItem[];
   nascent: GrowthItem[];
-  alerts: { id: string; kind: "measured" | "nascent"; perDay: number; delta: number | null; stars: number }[];
+  alerts: { id: string; kind: "measured" | "recent" | "nascent"; perDay: number; delta: number | null; stars: number; span?: number }[];
   notes: string[];
   watching: number;
 };
@@ -366,9 +367,14 @@ function starSpark(vals: number[], w = 96, h = 24, fallback = "1 日"): string {
   return `<svg viewBox="0 0 ${w} ${h}" preserveAspectRatio="none" aria-hidden="true"><path class="axis" d="M0 ${(h - 1).toFixed(1)} H${w}" vector-effect="non-scaling-stroke"/><path class="line growth-l" d="${d}" vector-effect="non-scaling-stroke"/><circle class="dot now" cx="${lastX}" cy="${y(vals[vals.length - 1]!).toFixed(1)}" r="1.6"/></svg>`;
 }
 
-function growthRow(it: GrowthItem, i: number, date: string): string {
+function growthRow(it: GrowthItem, i: number, date: string, kind: "measured" | "recent" | "nascent"): string {
   const created = it.created ? it.created.slice(0, 10).replace(/-/g, "/") : "—";
-  const kicker = it.ageDays !== null ? `建立 ${it.ageDays} 日（${created}）` : `首次記錄 ${created}`;
+  const kicker =
+    kind === "nascent"
+      ? it.ageDays !== null
+        ? `建立 ${it.ageDays} 日（${created}）`
+        : `首次記錄 ${created}`
+      : `實測 ${it.span} 日${it.ageDays !== null ? ` · 建立 ${it.ageDays} 日` : ""}`;
   const delta = it.delta === null ? `<span class="flat">—</span>` : `<span class="up">+${it.delta.toLocaleString("en-US")}</span>`;
   const rate = it.perDay === null ? `<span class="flat">—</span>` : it.perDay.toLocaleString("en-US", { maximumFractionDigits: 0 });
   const flag = it.trending ? `<span class="badge-on">在榜</span>` : `<span class="badge-off">未上榜</span>`;
@@ -384,7 +390,6 @@ function growthRow(it: GrowthItem, i: number, date: string): string {
 }
 
 function renderGrowth(g: GrowthData, date: string, rel: string): string {
-  const span = Math.max(1, g.spanDays);
   const head = `<header class="board-head">
   <span class="b-numeral">04</span>
   <h2 class="b-name">增速</h2>
@@ -392,27 +397,31 @@ function renderGrowth(g: GrowthData, date: string, rel: string): string {
   <div class="b-meta"><span class="src">本站自行量測</span><a href="${rel}board/growth.html">時序 →</a></div>
 </header>`;
 
-  const table = (items: GrowthItem[], cap: string) =>
+  const table = (items: GrowthItem[], kind: "measured" | "recent" | "nascent", cap: string) =>
     items.length
       ? `<table class="quotes quotes-growth">
   <colgroup><col class="col-rank"><col class="col-name"><col class="col-value"><col class="col-delta"><col class="col-value"><col class="col-spark"><col class="col-flag"></colgroup>
-  <thead><tr><th>名次</th><th>名稱</th><th class="r">總星數</th><th class="r">近 ${span} 日</th><th class="r">每日</th><th class="th-spark">總星數走勢</th><th>Trending</th></tr></thead>
-  <tbody>${items.map((it, i) => growthRow(it, i, date)).join("")}</tbody>
+  <thead><tr><th>名次</th><th>名稱</th><th class="r">總星數</th><th class="r">增量</th><th class="r">每日</th><th class="th-spark">總星數走勢</th><th>Trending</th></tr></thead>
+  <tbody>${items.map((it, i) => growthRow(it, i, date, kind)).join("")}</tbody>
 </table>
 <p class="legend">${esc(cap)}</p>`
       : "";
 
+  const recent = g.recent ?? [];
   const alerts = g.alerts.length
     ? `<div class="growth-alert"><b>今日點名：${g.alerts.length} 個專案在長，但不在 GitHub Trending。</b><span>${g.alerts
-        .slice(0, 6)
-        .map((a) => `<a href="https://github.com/${a.id}" target="_blank" rel="noopener noreferrer">${esc(a.id)}</a>（${Math.round(a.perDay).toLocaleString("en-US")}★/日）`)
-        .join("、")}${g.alerts.length > 6 ? ` 等 ${g.alerts.length} 個` : ""}　Trending 每天只收 11–17 席，沒上榜不代表沒在長。</span></div>`
+        .map((a) => {
+          const tag = a.kind === "measured" ? `近 ${a.span ?? "?"} 日 +${(a.delta ?? 0).toLocaleString("en-US")}` : a.kind === "recent" ? `跨夜 +${(a.delta ?? 0).toLocaleString("en-US")}` : `${Math.round(a.stars).toLocaleString("en-US")}★ 新秀`;
+          return `<a href="https://github.com/${a.id}" target="_blank" rel="noopener noreferrer">${esc(a.id)}</a>（${tag}，${Math.round(a.perDay).toLocaleString("en-US")}★/日）`;
+        })
+        .join("、")}　Trending 每天只收 11–17 席，沒上榜不代表沒在長。</span></div>`
     : `<p class="caveat">健檢：今日增速前段班的專案都在 GitHub Trending 上。</p>`;
 
   return `<section class="board" id="growth">${head}
-<h3 class="sub-head">實測增速<span>同一時刻的總星數差，除以實際樣本天數</span></h3>
-${table(g.measured, `樣本 ${span} 日，${g.watching} 個追蹤專案中有 ${g.measured.length} 個達「2 日以上實測且 ≥300 星」。每日＝區間增量 ÷ 實際天數，不是 trending 的 stars today。`)}
-${g.nascent.length ? `<h3 class="sub-head">新秀<span>樣本不足，以總星數 ÷ 建立天數估計</span></h3>${table(g.nascent, "建立 45 日內、尚無兩日以上歷史可差分的專案。這個數字偏樂觀（早期成長最快），但能補上 trending 完全收不到的一群。")}` : ""}
+<h3 class="sub-head">穩定增速<span>實際經過 ≥2 日，用兩次量測的總星數差 ÷ 經過天數</span></h3>
+${table(g.measured, "measured", `這是唯一可以互相比較的一區：每筆都至少隔了兩天才再量一次，日均不會被單日爆量放大。`)}
+${recent.length ? `<h3 class="sub-head">跨夜樣本<span>只隔了一次、未滿 2 日，數字只能看趨勢，不要和上表比</span></h3>${table(recent, "recent", "多半是前一天才加入追蹤的專案（含 Search API 找到的新秀）。天數不足時，一天的爆量會直接變成「每日」，所以另外放一區。")}` : ""}
+${g.nascent.length ? `<h3 class="sub-head">新秀<span>還沒有歷史可差分，以總星數 ÷ 建立天數估計</span></h3>${table(g.nascent, "nascent", "建立 45 日內、只有一次量測的專案。這個數字偏樂觀（早期成長最快），用途是發現 trending 完全收不到的一群。")}` : ""}
 ${alerts}
 ${(g.notes ?? []).length ? `<p class="caveat">${g.notes.map((n) => esc(n)).join("<br>")}</p>` : ""}
 </section>`;
@@ -601,10 +610,11 @@ ${footBlock(today, "../")}
   if (gd.length) {
     const last = gd[gd.length - 1]!;
     // 每個專案取「最新一天的數字」＋「出現在幾天」
-    const seen = new Map<string, { it: GrowthItem; kind: "measured" | "nascent"; days: number; first: string; trendingDays: number }>();
+    const seen = new Map<string, { it: GrowthItem; kind: "measured" | "recent" | "nascent"; days: number; first: string; trendingDays: number }>();
     for (const { d, g } of gd) {
       for (const [kind, list] of [
         ["measured", g.measured],
+        ["recent", g.recent ?? []],
         ["nascent", g.nascent],
       ] as const) {
         for (const it of list) {
@@ -624,7 +634,7 @@ ${footBlock(today, "../")}
         const it = x.it;
         const delta = it.delta === null ? `<span class="flat">—</span>` : `<span class="up">+${it.delta.toLocaleString("en-US")}</span>`;
         return `<tr>
-  <td class="c-name"><a href="https://github.com/${it.id}" target="_blank" rel="noopener noreferrer">${esc(it.id)}</a><span class="c-kind">${x.kind === "measured" ? `實測 ${it.span} 日` : `新秀 ${it.ageDays ?? "?"} 日`}</span></td>
+  <td class="c-name"><a href="https://github.com/${it.id}" target="_blank" rel="noopener noreferrer">${esc(it.id)}</a><span class="c-kind">${x.kind === "nascent" ? `新秀 ${it.ageDays ?? "?"} 日` : `實測 ${it.span} 日`}</span></td>
   <td class="c-value r">${Math.round(it.stars).toLocaleString("en-US")}</td>
   <td class="c-value r">${it.perDay === null ? "—" : it.perDay.toLocaleString("en-US", { maximumFractionDigits: 0 })}</td>
   <td class="c-delta r">${delta}</td>
