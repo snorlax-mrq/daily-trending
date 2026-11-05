@@ -56,23 +56,29 @@ bun run src/gh-notes.ts --fetch   # 1b. GitHub 榜缺中文描述的 repo → �
                                   #     由 AI 依 todo 寫 data/gh-notes/<date>.json，再 --apply 寫回快照
                             # 2. 由 AI 寫 data/headlines/YYYY-MM-DD.json（導讀）
 
-# B. 進 Notion（上游）
-bun run src/notion-items.ts   # 3. 實體 ×3 ＋ 每日名次（upsert，重跑不重複）
-bun run src/notion-relay.ts   # 4. notes／events／長版導讀 → 日報的「榜單中繼」
-bun run src/notion-export.ts --write  # 5. 以 Notion 為準回寫 JSON（正常應印「✓ 完全一致」）
-
-# C. 建站
-bun run build.ts            # 6. dist/
-bun run src/subset-fonts.ts # 7. 中文字型子集（必須在 build 之後）
-bun run src/deploy.ts       # 8. 推 gh-pages（需 GITHUB_TOKEN）
-
-# D. 日報（--in-place：人工導讀不被覆蓋）
-bun run src/notion-payload.ts --all   # 9. 快照＋導讀 → 三個 payload
+# B. 先建日報列（順序關鍵！relay 要寫進這三列，沒有列就整段跳過）
+bun run src/notion-payload.ts --all   # 3. 快照＋導讀 → 三個 payload
 cd .. && for b in hf gh aa; do
   python3 scripts/notion_push.py --push --project $b \
     --payload data/digest_out/payload_trending_${b}_<date>.json --in-place
-done                                  # 10. 就地更新三個日報列
+done                                  # 4. 建立（或就地更新）三個日報列
+cd daily-trending
+
+# C. 進 Notion（上游）
+bun run src/notion-items.ts   # 5. 實體 ×3 ＋ 每日名次（upsert，重跑不重複）
+bun run src/notion-relay.ts   # 6. notes／events／長版導讀 → 日報的「榜單中繼」
+bun run src/notion-export.ts --write  # 7. 以 Notion 為準回寫 JSON（正常應印「✓ 完全一致」）
+
+# D. 建站
+bun run build.ts            # 8. dist/
+bun run src/subset-fonts.ts # 9. 中文字型子集（必須在 build 之後）
+bun run src/deploy.ts       # 10. 推 gh-pages（需 GITHUB_TOKEN）
 ```
+
+> **為什麼 B 在 C 前面**：`notion-relay.ts` 是把 notes／events／導讀寫進「當日日報列」，
+> 而日報列是由 `notion_push.py` 建立的。順序顛倒時 relay 會印「找不到日報列，跳過」，
+> 接著 `notion-export --write` 以 Notion 為準，就會把本機的 notes／events／導讀判成差異（2026-11-05 實際踩到）。
+> 若發現「缺日報列 N」，補跑 B 再跑 relay 與 export 即可，本機資料不會被覆寫（安全閘會擋）。
 
 `run.sh` 是 1/3 的包裝。第 5 步的 `--write` 有安全閘：匯出的項目數比本機少就拒絕覆寫
 （代表 Notion 沒寫完），寧可留著舊 JSON 也不要上一個缺資料的站。
