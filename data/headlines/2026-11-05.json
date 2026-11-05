@@ -1,0 +1,13 @@
+{
+ "by": "編輯",
+ "lead": [
+  "今天三榜的變化集中在名次重排。HuggingFace 榜首換人，nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B 熱度由 653 升到 691，把 LiquidAI/LFM3-1.7B（716 掉到 571）擠到第四。GitHub 由 13 筆擴到 16 筆，十筆新進，榜首是首次進榜就拿下的 <span class=\"em\">NVIDIA/auto-ontology</span>。Artificial Analysis 前十的名次與分數一字未動。",
+  "HuggingFace 十筆裡兩筆新進、兩筆退出。第二到第五全部往上挪一格：DeepSeek-V4.1-Flash-1017 由第三到第二（606），speridlabs/idol 由第五升第三（580），Mistral-Large-4-1T-A52B 由第四到第五（557）；下滑最多的是 LiquidAI/LFM3-1.7B，一天掉三名。新進第六的 <span class=\"em\">moonshotai/Kimi-K3.1-Pro</span> 熱度 474、讚 479，下載只有 797；第十名 burner22/numbat 熱度 306、下載 8.1K。退出的兩筆是 baidu/Unlimited-OCR-2 與 abenzerps/Qwen-Image-2.1-Turbo-Quantized。",
+  "GitHub 榜六筆留榜、十筆新進，換血幅度是近期最大。單日 stars 最高的是第六名 <span class=\"em\">vercel-labs/agent-desktop</span> 的 2,470，比昨天的 3,791 少三成五，名次由第二掉到第六；原榜首 thedotmack/claude-mem 也退到第五（1,139）。前十有五筆新面孔，包括 GitHub 官方的 spec-kit 與 Garry Tan 公開的 Claude Code 工作流 gstack。Artificial Analysis 十筆名次與分數連兩天不變，榜首 Gemini 4 Carbon（High）II 60.0，與第二名 Claude Opus 5.5 的 59.1 差不到 1 分。"
+ ],
+ "boards": {
+  "hf": "榜首換成 Nemotron-3.5-Transcribe，熱度 691；LFM3-1.7B 一天由第一掉到第四（716 變 571）。第二到第五全體上移一格，新進第六的 Kimi-K3.1-Pro 熱度 474、讚 479，下載僅 797。",
+  "gh": "16 筆，10 進 7 出，是近期最大換血。榜首 NVIDIA/auto-ontology 首度進榜就有 2,050 顆，單日最高仍是 agent-desktop 的 2,470，但比昨天少三成五、退到第六。",
+  "aa": "前十名順序與分數連兩天不動，榜首 Gemini 4 Carbon（High）60.0 與第二名 Claude Opus 5.5 的 59.1 差不到 1 分，前四名由 Google 與 Anthropic 包辦，第五名起才是 OpenAI。"
+ }
+}

@@ -1,6 +1,6 @@
 {
  "date": "2026-11-03",
- "at": "2026-11-04T06:36:32.975Z",
+ "at": "2026-11-05T04:53:59.763Z",
  "measuredAt": "2026-11-03T05:47:18.000Z",
  "window": {
   "from": "2026-10-27",
@@ -16,10 +16,11 @@
    "delta": 9455,
    "perDay": 3132.9,
    "span": 3,
+   "n": 4,
    "trending": true,
    "created": "2026-02-08T23:46:22Z",
    "ageDays": 268,
-   "note": "實測 3 日（起 2026/10/31）"
+   "note": "實測 3 日 · 4 次（起 2026/10/31）"
   },
   {
    "id": "thedotmack/claude-mem",
@@ -28,10 +29,11 @@
    "delta": 5932,
    "perDay": 1502.5,
    "span": 3.9,
+   "n": 5,
    "trending": true,
    "created": "2025-08-31T20:50:03Z",
    "ageDays": 429,
-   "note": "實測 3.9 日（起 2026/10/30）"
+   "note": "實測 3.9 日 · 5 次（起 2026/10/30）"
   },
   {
    "id": "pbakaus/impeccable",
@@ -40,10 +42,11 @@
    "delta": 7259,
    "perDay": 1463.3,
    "span": 5,
+   "n": 5,
    "trending": false,
    "created": "2025-11-16T01:52:04Z",
    "ageDays": 352,
-   "note": "實測 5 日（起 2026/10/29）"
+   "note": "實測 5 日 · 5 次（起 2026/10/29）"
   },
   {
    "id": "togg53192-cmd/jailbreaks",
@@ -52,10 +55,11 @@
    "delta": 6195,
    "perDay": 1248.8,
    "span": 5,
+   "n": 5,
    "trending": false,
    "created": "2026-06-18T18:21:25Z",
    "ageDays": 138,
-   "note": "實測 5 日（起 2026/10/29）"
+   "note": "實測 5 日 · 5 次（起 2026/10/29）"
   },
   {
    "id": "HKUDS/DeepTutor",
@@ -64,10 +68,11 @@
    "delta": 5840,
    "perDay": 1177.2,
    "span": 5,
+   "n": 5,
    "trending": false,
    "created": "2025-12-28T15:35:54Z",
    "ageDays": 310,
-   "note": "實測 5 日（起 2026/10/29）"
+   "note": "實測 5 日 · 5 次（起 2026/10/29）"
   },
   {
    "id": "Orkas-AI/Orkas",
@@ -76,10 +81,11 @@
    "delta": 2455,
    "perDay": 1095.5,
    "span": 2.2,
+   "n": 2,
    "trending": false,
    "created": "2026-04-29T12:19:08Z",
    "ageDays": 188,
-   "note": "實測 2.2 日（起 2026/11/01）"
+   "note": "實測 2.2 日 · 2 次（起 2026/11/01）"
   },
   {
    "id": "Donchitos/Claude-Code-Game-Studios",
@@ -88,10 +94,11 @@
    "delta": 4222,
    "perDay": 1069.4,
    "span": 3.9,
+   "n": 4,
    "trending": true,
    "created": "2026-02-12T05:21:38Z",
    "ageDays": 264,
-   "note": "實測 3.9 日（起 2026/10/30）"
+   "note": "實測 3.9 日 · 4 次（起 2026/10/30）"
   },
   {
    "id": "Nutlope/hallmark",
@@ -100,10 +107,11 @@
    "delta": 5123,
    "perDay": 1032.7,
    "span": 5,
+   "n": 2,
    "trending": false,
    "created": "2026-04-27T20:47:10Z",
    "ageDays": 190,
-   "note": "實測 5 日（起 2026/10/29）"
+   "note": "實測 5 日 · 2 次（起 2026/10/29）"
   },
   {
    "id": "mattpocock/skills",
@@ -112,10 +120,11 @@
    "delta": 2842,
    "perDay": 941.7,
    "span": 3,
+   "n": 3,
    "trending": true,
    "created": "2026-02-03T11:15:53Z",
    "ageDays": 273,
-   "note": "實測 3 日（起 2026/10/31）"
+   "note": "實測 3 日 · 3 次（起 2026/10/31）"
   },
   {
    "id": "milind-soni/OpenMausBot",
@@ -124,10 +133,11 @@
    "delta": 3684,
    "perDay": 933.1,
    "span": 3.9,
+   "n": 5,
    "trending": false,
    "created": "2026-08-11T18:58:55Z",
    "ageDays": 84,
-   "note": "實測 3.9 日（起 2026/10/30）"
+   "note": "實測 3.9 日 · 5 次（起 2026/10/30）"
   },
   {
    "id": "Renhuai123/ziwei-doushu",
@@ -136,10 +146,11 @@
    "delta": 2771,
    "perDay": 918.2,
    "span": 3,
+   "n": 4,
    "trending": false,
    "created": "2026-05-01T05:09:59Z",
    "ageDays": 186,
-   "note": "實測 3 日（起 2026/10/31）"
+   "note": "實測 3 日 · 4 次（起 2026/10/31）"
   },
   {
    "id": "lightpanda-io/browser",
@@ -148,10 +159,11 @@
    "delta": 2460,
    "perDay": 815.1,
    "span": 3,
+   "n": 4,
    "trending": false,
    "created": "2023-02-07T15:19:34Z",
    "ageDays": 1365,
-   "note": "實測 3 日（起 2026/10/31）"
+   "note": "實測 3 日 · 4 次（起 2026/10/31）"
   }
  ],
  "recent": [
@@ -162,10 +174,11 @@
    "delta": 1045,
    "perDay": 842,
    "span": 1.2,
+   "n": 2,
    "trending": false,
    "created": "2016-03-20T23:49:42Z",
    "ageDays": 3880,
-   "note": "實測 1.2 日（起 2026/11/02）"
+   "note": "實測 1.2 日 · 2 次（起 2026/11/02）"
   },
   {
    "id": "anomalyco/hex",
@@ -174,10 +187,11 @@
    "delta": 905,
    "perDay": 729.2,
    "span": 1.2,
+   "n": 2,
    "trending": false,
    "created": "2026-07-17T23:48:56Z",
    "ageDays": 109,
-   "note": "實測 1.2 日（起 2026/11/02）"
+   "note": "實測 1.2 日 · 2 次（起 2026/11/02）"
   },
   {
    "id": "FlashML-org/FreeToken",
@@ -186,10 +200,11 @@
    "delta": 858,
    "perDay": 691.3,
    "span": 1.2,
+   "n": 2,
    "trending": true,
    "created": "2026-07-20T20:44:11Z",
    "ageDays": 106,
-   "note": "實測 1.2 日（起 2026/11/02）"
+   "note": "實測 1.2 日 · 2 次（起 2026/11/02）"
   },
   {
    "id": "patchy631/ai-engineering-hub",
@@ -198,10 +213,11 @@
    "delta": 779,
    "perDay": 627.7,
    "span": 1.2,
+   "n": 2,
    "trending": false,
    "created": "2024-10-21T10:43:24Z",
    "ageDays": 743,
-   "note": "實測 1.2 日（起 2026/11/02）"
+   "note": "實測 1.2 日 · 2 次（起 2026/11/02）"
   },
   {
    "id": "shiyu-coder/Kronos",
@@ -210,10 +226,11 @@
    "delta": 736,
    "perDay": 593,
    "span": 1.2,
+   "n": 2,
    "trending": true,
    "created": "2025-07-01T02:54:32Z",
    "ageDays": 490,
-   "note": "實測 1.2 日（起 2026/11/02）"
+   "note": "實測 1.2 日 · 2 次（起 2026/11/02）"
   },
   {
    "id": "hyprwm/Hyprland",
@@ -222,10 +239,11 @@
    "delta": 699,
    "perDay": 563.2,
    "span": 1.2,
+   "n": 2,
    "trending": true,
    "created": "2022-03-16T19:49:13Z",
    "ageDays": 1693,
-   "note": "實測 1.2 日（起 2026/11/02）"
+   "note": "實測 1.2 日 · 2 次（起 2026/11/02）"
   },
   {
    "id": "cjpais/Handy",
@@ -234,10 +252,11 @@
    "delta": 677,
    "perDay": 545.5,
    "span": 1.2,
+   "n": 2,
    "trending": false,
    "created": "2025-02-13T02:42:29Z",
    "ageDays": 628,
-   "note": "實測 1.2 日（起 2026/11/02）"
+   "note": "實測 1.2 日 · 2 次（起 2026/11/02）"
   },
   {
    "id": "beenuar/AiSOC",
@@ -246,10 +265,11 @@
    "delta": 578,
    "perDay": 465.7,
    "span": 1.2,
+   "n": 2,
    "trending": false,
    "created": "2026-05-02T03:30:19Z",
    "ageDays": 185,
-   "note": "實測 1.2 日（起 2026/11/02）"
+   "note": "實測 1.2 日 · 2 次（起 2026/11/02）"
   },
   {
    "id": "kornia/kornia",
@@ -258,10 +278,11 @@
    "delta": 436,
    "perDay": 351.3,
    "span": 1.2,
+   "n": 2,
    "trending": true,
    "created": "2018-08-22T10:31:37Z",
    "ageDays": 2995,
-   "note": "實測 1.2 日（起 2026/11/02）"
+   "note": "實測 1.2 日 · 2 次（起 2026/11/02）"
   }
  ],
  "nascent": [
@@ -272,6 +293,7 @@
    "delta": null,
    "perDay": 4746.7,
    "span": 0,
+   "n": 1,
    "trending": false,
    "created": "2026-10-31T09:32:46Z",
    "ageDays": 3,
@@ -284,6 +306,7 @@
    "delta": null,
    "perDay": 2244.4,
    "span": 0,
+   "n": 1,
    "trending": false,
    "created": "2026-09-30T13:37:48Z",
    "ageDays": 34,
@@ -296,6 +319,7 @@
    "delta": null,
    "perDay": 1691,
    "span": 0,
+   "n": 1,
    "trending": false,
    "created": "2026-10-31T14:50:00Z",
    "ageDays": 3,
@@ -308,6 +332,7 @@
    "delta": null,
    "perDay": 1304.2,
    "span": 0,
+   "n": 1,
    "trending": false,
    "created": "2026-10-29T15:41:21Z",
    "ageDays": 5,
@@ -320,6 +345,7 @@
    "delta": null,
    "perDay": 1116.4,
    "span": 0,
+   "n": 1,
    "trending": false,
    "created": "2026-10-29T14:34:07Z",
    "ageDays": 5,
@@ -332,6 +358,7 @@
    "delta": null,
    "perDay": 913.3,
    "span": 0,
+   "n": 1,
    "trending": false,
    "created": "2026-10-30T06:43:25Z",
    "ageDays": 4,
@@ -344,6 +371,7 @@
    "delta": null,
    "perDay": 826.2,
    "span": 0,
+   "n": 1,
    "trending": false,
    "created": "2026-10-29T12:32:46Z",
    "ageDays": 5,
@@ -356,6 +384,7 @@
    "delta": null,
    "perDay": 640.5,
    "span": 0,
+   "n": 1,
    "trending": false,
    "created": "2026-11-01T05:35:12Z",
    "ageDays": 2,
@@ -368,6 +397,7 @@
    "delta": null,
    "perDay": 525,
    "span": 0,
+   "n": 1,
    "trending": false,
    "created": "2026-10-29T00:25:18Z",
    "ageDays": 5,
@@ -380,6 +410,7 @@
    "delta": null,
    "perDay": 492.3,
    "span": 0,
+   "n": 1,
    "trending": false,
    "created": "2026-10-31T21:34:39Z",
    "ageDays": 3,
@@ -392,6 +423,7 @@
    "delta": null,
    "perDay": 412.8,
    "span": 0,
+   "n": 1,
    "trending": false,
    "created": "2026-10-29T06:08:00Z",
    "ageDays": 5,
@@ -404,6 +436,7 @@
    "delta": null,
    "perDay": 384.4,
    "span": 0,
+   "n": 1,
    "trending": false,
    "created": "2026-10-29T11:28:43Z",
    "ageDays": 5,
@@ -526,8 +559,8 @@
  ],
  "notes": [
   "本站自己量：對 watchlist 內每個專案每天抓一次總星數，以「實際經過時間」的存量差算增量，不採用 GitHub Trending 顯示的 stars today。",
-  "今日追蹤 452 個；27 個有 2 日以上實測（穩定增速）、9 個只有 1 次跨夜樣本、18 個尚無歷史（以總星數 ÷ 建立天數估）。三個分區的數字不能互相比大小。",
+  "今日追蹤 486 個；27 個有 2 日以上實測（穩定增速）、9 個只有 1 次跨夜樣本、18 個尚無歷史（以總星數 ÷ 建立天數估）。三個分區的數字不能互相比大小。",
   "Trending 每天只收 11–17 席，且名次與 stars today 無關（實測 Spearman −0.07 ~ −0.68）；「不在 trending」不代表沒在長。"
  ],
- "watching": 452
+ "watching": 486
 }

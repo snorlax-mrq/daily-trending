@@ -1,0 +1,12 @@
+{
+ "NVIDIA/auto-ontology": "NVIDIA 開源的本體層框架，從企業 metadata 生成知識圖譜，讓 agent 透過 MCP、CLI 與 API 取得一致定義，每個答案都附來源脈絡。",
+ "github/spec-kit": "GitHub 官方的規格驅動開發工具箱，替 coding agent 準備現成流程、範本與品質關卡。核心是 SDD，修 bug 與評估則是另外安裝的擴充套件。",
+ "The-PR-Agent/pr-agent": "開源的 AI 程式碼審查 agent，會在 PR 上自動產生評論與建議。它是 Qodo 交給社群維護的舊版專案，聲明與 Qodo 自家付費版不同。",
+ "harry0703/MoneyPrinterTurbo": "輸入主題或關鍵詞就能自動產出短影音的工具，會寫腳本、匹配素材、上字幕配樂再合成高清影片。README 提到由 Kimi K3.1 Pro 直接驅動文案。",
+ "garrytan/gstack": "Garry Tan 公開的 Claude Code 工作流，用 23 個 slash command 讓 agent 扮執行長、設計師與 QA，全為 Markdown。",
+ "FareedKhan-dev/kimi-k3-in-c": "用可攜 C99 寫成的推論引擎，讓 2.78 兆參數的 Kimi K3 在單顆 CPU、8.24 GB 記憶體上跑起來，不需 BLAS、框架或 GPU，但速度很慢。",
+ "JiaFeiMiao-K-Cat/DiscImageStudio": "把圖片轉成符合 CD、DVD 與單層 BD-R 物理層約束的資料，燒錄後盤面會浮現肉眼可見圖案。以 C#／.NET 10 開發，Windows 有圖形介面。",
+ "MichaelCade/90DaysOfDevOps": "從 2022 年每天公開學習整理而成的 DevOps 學習地圖，含 90 天約 11 萬字教材、DevSecOps 篇章與社群場次。內容全用免費與開源工具。",
+ "Thysrael/Horizon": "自架的 AI 新聞雷達，收攏 RSS、Hacker News、Reddit 等來源並去重，產出中英文日報，可用 profile 自訂評分規則，再以 email 派送。",
+ "scenario-labs/skills": "Scenario 的 Agent Skills，教 coding agent 經 MCP 產出圖像、影片與 3D 素材；另一組技能用來驅動 Blender、Unity。"
+}

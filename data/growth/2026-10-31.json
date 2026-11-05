@@ -1,6 +1,6 @@
 {
  "date": "2026-10-31",
- "at": "2026-11-04T06:36:32.963Z",
+ "at": "2026-11-05T04:53:59.752Z",
  "measuredAt": "2026-10-31T05:21:24.593Z",
  "window": {
   "from": "2026-10-24",
@@ -17,10 +17,11 @@
    "delta": 3888,
    "perDay": 2001.3,
    "span": 1.9,
+   "n": 3,
    "trending": true,
    "created": "2026-06-18T18:21:25Z",
    "ageDays": 135,
-   "note": "實測 1.9 日（起 2026/10/29）"
+   "note": "實測 1.9 日 · 3 次（起 2026/10/29）"
   },
   {
    "id": "pbakaus/impeccable",
@@ -29,10 +30,11 @@
    "delta": 3853,
    "perDay": 1983.3,
    "span": 1.9,
+   "n": 3,
    "trending": true,
    "created": "2025-11-16T01:52:04Z",
    "ageDays": 349,
-   "note": "實測 1.9 日（起 2026/10/29）"
+   "note": "實測 1.9 日 · 3 次（起 2026/10/29）"
   },
   {
    "id": "HKUDS/DeepTutor",
@@ -41,10 +43,11 @@
    "delta": 3374,
    "perDay": 1736.7,
    "span": 1.9,
+   "n": 3,
    "trending": true,
    "created": "2025-12-28T15:35:54Z",
    "ageDays": 307,
-   "note": "實測 1.9 日（起 2026/10/29）"
+   "note": "實測 1.9 日 · 3 次（起 2026/10/29）"
   },
   {
    "id": "thedotmack/claude-mem",
@@ -53,10 +56,11 @@
    "delta": 1501,
    "perDay": 1613.8,
    "span": 0.9,
+   "n": 2,
    "trending": true,
    "created": "2025-08-31T20:50:03Z",
    "ageDays": 426,
-   "note": "實測 0.9 日（起 2026/10/30）"
+   "note": "實測 0.9 日 · 2 次（起 2026/10/30）"
   },
   {
    "id": "milind-soni/OpenMausBot",
@@ -65,10 +69,11 @@
    "delta": 1162,
    "perDay": 1249.3,
    "span": 0.9,
+   "n": 2,
    "trending": true,
    "created": "2026-08-11T18:58:55Z",
    "ageDays": 81,
-   "note": "實測 0.9 日（起 2026/10/30）"
+   "note": "實測 0.9 日 · 2 次（起 2026/10/30）"
   },
   {
    "id": "obra/superpowers",
@@ -77,10 +82,11 @@
    "delta": 1871,
    "perDay": 963.1,
    "span": 1.9,
+   "n": 3,
    "trending": true,
    "created": "2025-10-09T19:45:18Z",
    "ageDays": 387,
-   "note": "實測 1.9 日（起 2026/10/29）"
+   "note": "實測 1.9 日 · 3 次（起 2026/10/29）"
   },
   {
    "id": "JetBrains/thinkrail",
@@ -89,10 +95,11 @@
    "delta": 1277,
    "perDay": 657.3,
    "span": 1.9,
+   "n": 3,
    "trending": true,
    "created": "2026-07-08T07:40:43Z",
    "ageDays": 115,
-   "note": "實測 1.9 日（起 2026/10/29）"
+   "note": "實測 1.9 日 · 3 次（起 2026/10/29）"
   },
   {
    "id": "CopilotKit/OpenBot",
@@ -101,10 +108,11 @@
    "delta": 567,
    "perDay": 609.6,
    "span": 0.9,
+   "n": 2,
    "trending": true,
    "created": "2026-08-17T00:44:59Z",
    "ageDays": 75,
-   "note": "實測 0.9 日（起 2026/10/30）"
+   "note": "實測 0.9 日 · 2 次（起 2026/10/30）"
   },
   {
    "id": "macro-inc/macro",
@@ -113,10 +121,11 @@
    "delta": 373,
    "perDay": 192,
    "span": 1.9,
+   "n": 2,
    "trending": true,
    "created": "2025-11-08T15:18:27Z",
    "ageDays": 357,
-   "note": "實測 1.9 日（起 2026/10/29）"
+   "note": "實測 1.9 日 · 2 次（起 2026/10/29）"
   },
   {
    "id": "expo/skills",
@@ -125,18 +134,19 @@
    "delta": 248,
    "perDay": 127.7,
    "span": 1.9,
+   "n": 2,
    "trending": true,
    "created": "2025-11-30T03:57:18Z",
    "ageDays": 335,
-   "note": "實測 1.9 日（起 2026/10/29）"
+   "note": "實測 1.9 日 · 2 次（起 2026/10/29）"
   }
  ],
  "nascent": [],
  "alerts": [],
  "notes": [
   "本站自己量：對 watchlist 內每個專案每天抓一次總星數，以「實際經過時間」的存量差算增量，不採用 GitHub Trending 顯示的 stars today。",
-  "今日追蹤 452 個；0 個有 2 日以上實測（穩定增速）、10 個只有 1 次跨夜樣本、0 個尚無歷史（以總星數 ÷ 建立天數估）。三個分區的數字不能互相比大小。",
+  "今日追蹤 486 個；0 個有 2 日以上實測（穩定增速）、10 個只有 1 次跨夜樣本、0 個尚無歷史（以總星數 ÷ 建立天數估）。三個分區的數字不能互相比大小。",
   "Trending 每天只收 11–17 席，且名次與 stars today 無關（實測 Spearman −0.07 ~ −0.68）；「不在 trending」不代表沒在長。"
  ],
- "watching": 452
+ "watching": 486
 }

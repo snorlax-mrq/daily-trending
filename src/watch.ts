@@ -226,7 +226,8 @@ async function sync(w: Watch, forDate = date): Promise<{ ok: number; fail: strin
     const e = w.repos[id]!;
     e.created = e.created ?? r.created_at;
     if (forDate > e.last) e.last = forDate;
-    return { d: forDate, id, s: r.stargazers_count, f: r.forks_count } satisfies HistRow;
+    // t 必須在抓到的當下寫入：事後補會被報告時間污染
+    return { d: forDate, id, s: r.stargazers_count, f: r.forks_count, t: new Date().toISOString() } satisfies HistRow;
   });
   return { ok, fail, rows: rows.filter((x): x is HistRow => !!x) };
 }
@@ -242,6 +243,8 @@ export type GrowthItem = {
   perDay: number | null;
   /** 實際樣本天數（可能小於 7） */
   span: number;
+  /** 窗口內的量測次數（含今天） */
+  n: number;
   trending: boolean;
   created: string | null;
   ageDays: number | null;
@@ -311,6 +314,7 @@ function buildGrowth(dateStr: string, w: Watch, hist: HistRow[], trendingIds: Se
       delta,
       perDay,
       span: Math.round(span * 10) / 10,
+      n: inWindow.length,
       trending: trendingIds.has(id),
       created: e?.created ?? null,
       ageDays,
@@ -318,7 +322,7 @@ function buildGrowth(dateStr: string, w: Watch, hist: HistRow[], trendingIds: Se
 
     if (span > 0) {
       if (last.s < MIN_STARS_MEASURED) continue;
-      const item: GrowthItem = { ...base, note: `實測 ${base.span} 日（起 ${first.d.replace(/-/g, "/")}）` };
+      const item: GrowthItem = { ...base, note: `實測 ${base.span} 日 · ${base.n} 次（起 ${first.d.replace(/-/g, "/")}）` };
       if (span >= MIN_SPAN_DAYS) measured.push(item);
       else recent.push(item); // 只有一次跨夜樣本：數字是「這段時間的均速」，不是日均
     } else if (ageDays !== null && ageDays <= NASCENT_MAX_AGE && last.s >= MIN_STARS_NASCENT) {
@@ -562,7 +566,7 @@ export async function runWatch(opts: WatchOpts = {}): Promise<{ growth: Growth; 
     console.log("（還沒有資料，先跑 --backfill 或等明天）");
   }
   block("穩定增速（≥2 日實測）", growth.measured, 12);
-  block("單次跨夜樣本（<2 日，數字別和上表比）", growth.recent, 8);
+  block("短期樣本（實測未滿 2 日，數字別和上表比）", growth.recent, 8);
   if (growth.nascent.length) {
     console.log(`\n新秀（樣本不足，總星數 ÷ 建立天數）`);
     growth.nascent.slice(0, 10).forEach((x, i) => {

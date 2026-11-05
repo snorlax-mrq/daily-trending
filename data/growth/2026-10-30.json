@@ -1,6 +1,6 @@
 {
  "date": "2026-10-30",
- "at": "2026-11-04T06:36:32.960Z",
+ "at": "2026-11-05T04:53:59.749Z",
  "measuredAt": "2026-10-30T07:02:03.213Z",
  "window": {
   "from": "2026-10-23",
@@ -17,10 +17,11 @@
    "delta": 2472,
    "perDay": 2441.1,
    "span": 1,
+   "n": 2,
    "trending": true,
    "created": "2025-11-16T01:52:04Z",
    "ageDays": 348,
-   "note": "實測 1 日（起 2026/10/29）"
+   "note": "實測 1 日 · 2 次（起 2026/10/29）"
   },
   {
    "id": "HKUDS/DeepTutor",
@@ -29,10 +30,11 @@
    "delta": 2235,
    "perDay": 2207.1,
    "span": 1,
+   "n": 2,
    "trending": true,
    "created": "2025-12-28T15:35:54Z",
    "ageDays": 306,
-   "note": "實測 1 日（起 2026/10/29）"
+   "note": "實測 1 日 · 2 次（起 2026/10/29）"
   },
   {
    "id": "togg53192-cmd/jailbreaks",
@@ -41,10 +43,11 @@
    "delta": 2029,
    "perDay": 2003.7,
    "span": 1,
+   "n": 2,
    "trending": true,
    "created": "2026-06-18T18:21:25Z",
    "ageDays": 134,
-   "note": "實測 1 日（起 2026/10/29）"
+   "note": "實測 1 日 · 2 次（起 2026/10/29）"
   },
   {
    "id": "obra/superpowers",
@@ -53,10 +56,11 @@
    "delta": 1189,
    "perDay": 1174.1,
    "span": 1,
+   "n": 2,
    "trending": true,
    "created": "2025-10-09T19:45:18Z",
    "ageDays": 386,
-   "note": "實測 1 日（起 2026/10/29）"
+   "note": "實測 1 日 · 2 次（起 2026/10/29）"
   },
   {
    "id": "elayadesign/ai-design-skills",
@@ -65,10 +69,11 @@
    "delta": 1061,
    "perDay": 1047.7,
    "span": 1,
+   "n": 2,
    "trending": true,
    "created": "2026-07-29T06:43:16Z",
    "ageDays": 93,
-   "note": "實測 1 日（起 2026/10/29）"
+   "note": "實測 1 日 · 2 次（起 2026/10/29）"
   },
   {
    "id": "JetBrains/thinkrail",
@@ -77,10 +82,11 @@
    "delta": 818,
    "perDay": 807.8,
    "span": 1,
+   "n": 2,
    "trending": true,
    "created": "2026-07-08T07:40:43Z",
    "ageDays": 114,
-   "note": "實測 1 日（起 2026/10/29）"
+   "note": "實測 1 日 · 2 次（起 2026/10/29）"
   },
   {
    "id": "nightly-labs/openbot",
@@ -89,18 +95,19 @@
    "delta": 594,
    "perDay": 586.6,
    "span": 1,
+   "n": 2,
    "trending": true,
    "created": "2026-08-12T21:32:03Z",
    "ageDays": 79,
-   "note": "實測 1 日（起 2026/10/29）"
+   "note": "實測 1 日 · 2 次（起 2026/10/29）"
   }
  ],
  "nascent": [],
  "alerts": [],
  "notes": [
   "本站自己量：對 watchlist 內每個專案每天抓一次總星數，以「實際經過時間」的存量差算增量，不採用 GitHub Trending 顯示的 stars today。",
-  "今日追蹤 452 個；0 個有 2 日以上實測（穩定增速）、7 個只有 1 次跨夜樣本、0 個尚無歷史（以總星數 ÷ 建立天數估）。三個分區的數字不能互相比大小。",
+  "今日追蹤 486 個；0 個有 2 日以上實測（穩定增速）、7 個只有 1 次跨夜樣本、0 個尚無歷史（以總星數 ÷ 建立天數估）。三個分區的數字不能互相比大小。",
   "Trending 每天只收 11–17 席，且名次與 stars today 無關（實測 Spearman −0.07 ~ −0.68）；「不在 trending」不代表沒在長。"
  ],
- "watching": 452
+ "watching": 486
 }

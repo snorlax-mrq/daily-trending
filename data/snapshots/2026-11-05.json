@@ -1,0 +1,738 @@
+{
+ "date": "2026-11-05",
+ "generatedAt": "2026-11-05T00:07:22.660Z",
+ "boards": {
+  "hf": {
+   "label": "HuggingFace",
+   "question": "哪個開源模型正在紅",
+   "source": "huggingface.co/api（trendingScore）",
+   "items": [
+    {
+     "id": "nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
+     "name": "nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
+     "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
+     "rank": 1,
+     "metric": 691,
+     "kicker": "語音辨識",
+     "note": "下載 44.9K · 讚 1.5K · 10/07 發布",
+     "stats": {
+      "downloads": 44939,
+      "downloadsAllTime": 44939,
+      "likes": 1485,
+      "tag": "語音辨識",
+      "pipeline": "automatic-speech-recognition",
+      "library": "nemo",
+      "createdAt": "2026-10-07T22:50:21.000Z",
+      "lastModified": "2026-10-29T23:04:39.000Z",
+      "params": 33697781029,
+      "paramsText": "33.7B",
+      "paramsActive": 4000000000,
+      "paramsActiveText": "4B",
+      "paramsSrc": "safetensors",
+      "paramsBreakdown": "BF16 33.6B · FP32 50.3M",
+      "license": "自訂",
+      "langs": "cs nl en fr de hi it ko pl pt ru sk es bg hr da et fi hu ja lv lt ro sl sv th tr uk ar bn zh el he id mr tl ta te vi",
+      "quant": null,
+      "baseModel": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-…",
+      "detail": "總 33.7B（safetensors）／啟用 4B · BF16 33.6B · FP32 50.3M · 自訂 · 39 語（cs・荷・英・法・德・印地…） · 基底 nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-…"
+     }
+    },
+    {
+     "id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+     "name": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+     "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+     "rank": 2,
+     "metric": 606,
+     "kicker": "多模態理解",
+     "note": "下載 221.6K · 讚 5.3K · 10/17 發布",
+     "stats": {
+      "downloads": 221621,
+      "downloadsAllTime": 221621,
+      "likes": 5266,
+      "tag": "多模態理解",
+      "pipeline": "image-text-to-text",
+      "library": "transformers",
+      "createdAt": "2026-10-17T02:40:38.000Z",
+      "lastModified": "2026-10-17T05:46:55.000Z",
+      "params": 763205315794,
+      "paramsText": "763B",
+      "paramsActive": null,
+      "paramsActiveText": null,
+      "paramsSrc": "safetensors",
+      "paramsBreakdown": "INT8 557B · FP8 204B · BF16 2B · FP32 42.3M",
+      "license": "MIT",
+      "langs": null,
+      "quant": "fp8",
+      "baseModel": null,
+      "detail": "總 763B（safetensors） · INT8 557B · FP8 204B · BF16 2B · FP32 42.3M · fp8 · MIT"
+     }
+    },
+    {
+     "id": "speridlabs/idol",
+     "name": "speridlabs/idol",
+     "url": "https://huggingface.co/speridlabs/idol",
+     "rank": 3,
+     "metric": 580,
+     "kicker": "3D 生成",
+     "note": "下載 14.6K · 讚 617 · 10/28 發布",
+     "stats": {
+      "downloads": 14613,
+      "downloadsAllTime": 14613,
+      "likes": 617,
+      "tag": "3D 生成",
+      "pipeline": "image-to-3d",
+      "library": "idol",
+      "createdAt": "2026-10-28T15:55:17.000Z",
+      "lastModified": "2026-10-29T18:17:36.000Z",
+      "params": null,
+      "paramsText": "—",
+      "paramsActive": null,
+      "paramsActiveText": null,
+      "paramsSrc": null,
+      "paramsBreakdown": null,
+      "license": "Apache-2.0",
+      "langs": null,
+      "quant": null,
+      "baseModel": null,
+      "detail": "Apache-2.0"
+     }
+    },
+    {
+     "id": "LiquidAI/LFM3-1.7B",
+     "name": "LiquidAI/LFM3-1.7B",
+     "url": "https://huggingface.co/LiquidAI/LFM3-1.7B",
+     "rank": 4,
+     "metric": 571,
+     "kicker": "文字生成",
+     "note": "下載 55K · 讚 1.5K · 10/23 發布",
+     "stats": {
+      "downloads": 54959,
+      "downloadsAllTime": 54959,
+      "likes": 1485,
+      "tag": "文字生成",
+      "pipeline": "text-generation",
+      "library": "transformers",
+      "createdAt": "2026-10-23T21:35:42.000Z",
+      "lastModified": "2026-11-03T18:08:34.000Z",
+      "params": 1728801536,
+      "paramsText": "1.7B",
+      "paramsActive": null,
+      "paramsActiveText": null,
+      "paramsSrc": "safetensors",
+      "paramsBreakdown": "BF16 1.7B",
+      "license": "自訂",
+      "langs": "en ar zh fr de it ja ko pt es vi th id hi ru pl",
+      "quant": null,
+      "baseModel": "LiquidAI/LFM3-1.7B-Base",
+      "detail": "總 1.7B（safetensors） · BF16 1.7B · 自訂 · 16 語（英・阿・中・法・德・義…） · 基底 LiquidAI/LFM3-1.7B-Base"
+     }
+    },
+    {
+     "id": "mistralai/Mistral-Large-4-1T-A52B",
+     "name": "mistralai/Mistral-Large-4-1T-A52B",
+     "url": "https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B",
+     "rank": 5,
+     "metric": 557,
+     "kicker": "多模態理解",
+     "note": "下載 8.2K · 讚 1.6K · 09/30 發布",
+     "stats": {
+      "downloads": 8200,
+      "downloadsAllTime": 8205,
+      "likes": 1589,
+      "tag": "多模態理解",
+      "pipeline": "image-text-to-text",
+      "library": "transformers",
+      "createdAt": "2026-09-30T18:35:13.000Z",
+      "lastModified": "2026-11-02T18:30:59.000Z",
+      "params": 1000000000000,
+      "paramsText": "1T",
+      "paramsActive": 52000000000,
+      "paramsActiveText": "52B",
+      "paramsSrc": "name",
+      "paramsBreakdown": null,
+      "license": "自訂",
+      "langs": "en fr de es pt it ja ko ru zh ar fa id ms ne pl ro sr sv tr uk vi hi bn bg hr cs da nl et fi el hu ga lv lt sk sl",
+      "quant": "fp8",
+      "baseModel": null,
+      "detail": "總 1T（依名稱）／啟用 52B · fp8 · 自訂 · 38 語（英・法・德・西・葡・義…）"
+     }
+    },
+    {
+     "id": "moonshotai/Kimi-K3.1-Pro",
+     "name": "moonshotai/Kimi-K3.1-Pro",
+     "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
+     "rank": 6,
+     "metric": 474,
+     "kicker": "多模態理解",
+     "note": "下載 797 · 讚 482 · 11/02 發布",
+     "stats": {
+      "downloads": 797,
+      "downloadsAllTime": 797,
+      "likes": 482,
+      "tag": "多模態理解",
+      "pipeline": "image-text-to-text",
+      "library": "transformers",
+      "createdAt": "2026-11-02T04:13:51.000Z",
+      "lastModified": "2026-11-02T04:13:51.000Z",
+      "params": 2780110363392,
+      "paramsText": "2.8T",
+      "paramsActive": null,
+      "paramsActiveText": null,
+      "paramsSrc": "safetensors",
+      "paramsBreakdown": "UINT8 2.7T · BF16 57.4B · FP32 11.1M",
+      "license": "自訂",
+      "langs": null,
+      "quant": "8-bit",
+      "baseModel": null,
+      "detail": "總 2.8T（safetensors） · UINT8 2.7T · BF16 57.4B · FP32 11.1M · 8-bit · 自訂"
+     }
+    },
+    {
+     "id": "Pika-Labs/Pika-H3-Flex",
+     "name": "Pika-Labs/Pika-H3-Flex",
+     "url": "https://huggingface.co/Pika-Labs/Pika-H3-Flex",
+     "rank": 7,
+     "metric": 401,
+     "kicker": "圖生影片",
+     "note": "下載 749 · 讚 429 · 10/29 發布",
+     "stats": {
+      "downloads": 749,
+      "downloadsAllTime": 749,
+      "likes": 429,
+      "tag": "圖生影片",
+      "pipeline": "image-to-video",
+      "library": "diffusers",
+      "createdAt": "2026-10-29T17:08:44.000Z",
+      "lastModified": "2026-10-29T23:29:03.000Z",
+      "params": 33122992896,
+      "paramsText": "33.1B",
+      "paramsActive": null,
+      "paramsActiveText": null,
+      "paramsSrc": "safetensors",
+      "paramsBreakdown": "BF16 33.1B · FP32 17.2M",
+      "license": "自訂",
+      "langs": null,
+      "quant": null,
+      "baseModel": "MiniMaxAI/MiniMax-H3",
+      "detail": "總 33.1B（safetensors） · BF16 33.1B · FP32 17.2M · 自訂 · 基底 MiniMaxAI/MiniMax-H3"
+     }
+    },
+    {
+     "id": "Lightricks/LTX-2.5",
+     "name": "Lightricks/LTX-2.5",
+     "url": "https://huggingface.co/Lightricks/LTX-2.5",
+     "rank": 8,
+     "metric": 374,
+     "kicker": "圖生影片",
+     "note": "下載 2.5M · 讚 10.6K · 07/23 發布",
+     "stats": {
+      "downloads": 2493402,
+      "downloadsAllTime": 5759750,
+      "likes": 10616,
+      "tag": "圖生影片",
+      "pipeline": "image-to-video",
+      "library": "diffusion-single-file",
+      "createdAt": "2026-07-23T07:55:24.000Z",
+      "lastModified": "2026-10-11T07:00:53.000Z",
+      "params": null,
+      "paramsText": "—",
+      "paramsActive": null,
+      "paramsActiveText": null,
+      "paramsSrc": null,
+      "paramsBreakdown": null,
+      "license": "自訂",
+      "langs": "en de es fr ja ko zh it pt",
+      "quant": null,
+      "baseModel": null,
+      "detail": "自訂 · 9 語（英・德・西・法・日・韓…）"
+     }
+    },
+    {
+     "id": "ccore/Qwen3.5-4B-3D-Coder",
+     "name": "ccore/Qwen3.5-4B-3D-Coder",
+     "url": "https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder",
+     "rank": 9,
+     "metric": 369,
+     "kicker": "其他",
+     "note": "下載 123.3K · 讚 654 · 10/25 發布",
+     "stats": {
+      "downloads": 123321,
+      "downloadsAllTime": 123321,
+      "likes": 654,
+      "tag": "其他",
+      "pipeline": null,
+      "library": null,
+      "createdAt": "2026-10-25T05:43:34.000Z",
+      "lastModified": "2026-11-03T22:00:05.000Z",
+      "params": 4539265536,
+      "paramsText": "4.5B",
+      "paramsActive": null,
+      "paramsActiveText": null,
+      "paramsSrc": "safetensors",
+      "paramsBreakdown": "FP16 4.5B",
+      "license": "Apache-2.0",
+      "langs": null,
+      "quant": "gguf",
+      "baseModel": "Qwen/Qwen3.5-4B",
+      "detail": "總 4.5B（safetensors） · FP16 4.5B · gguf · Apache-2.0 · 基底 Qwen/Qwen3.5-4B"
+     }
+    },
+    {
+     "id": "burner22/numbat",
+     "name": "burner22/numbat",
+     "url": "https://huggingface.co/burner22/numbat",
+     "rank": 10,
+     "metric": 306,
+     "kicker": "其他",
+     "note": "下載 8.1K · 讚 342 · 10/23 發布",
+     "stats": {
+      "downloads": 8118,
+      "downloadsAllTime": 8118,
+      "likes": 342,
+      "tag": "其他",
+      "pipeline": null,
+      "library": null,
+      "createdAt": "2026-10-23T01:37:02.000Z",
+      "lastModified": "2026-10-24T19:09:00.000Z",
+      "params": 6849378030158,
+      "paramsText": "6.8T",
+      "paramsActive": null,
+      "paramsActiveText": null,
+      "paramsSrc": "safetensors",
+      "paramsBreakdown": "UINT8 13.7T · BF16 16.9B",
+      "license": null,
+      "langs": null,
+      "quant": "8-bit",
+      "baseModel": null,
+      "detail": "總 6.8T（safetensors） · UINT8 13.7T · BF16 16.9B · 8-bit"
+     }
+    }
+   ],
+   "notes": [
+    "參數取自 repo 的 safetensors 索引（total 為該 repo 全部權重加總，同一 repo 放多種精度會重複計算）；沒有索引的 GGUF／diffusion repo 顯示「—」，避免從檔名亂猜。"
+   ]
+  },
+  "gh": {
+   "label": "GitHub",
+   "question": "開發者的注意力在哪",
+   "source": "github.com/trending（HTML）",
+   "items": [
+    {
+     "id": "NVIDIA/auto-ontology",
+     "name": "NVIDIA/auto-ontology",
+     "url": "https://github.com/NVIDIA/auto-ontology",
+     "rank": 1,
+     "metric": 2050,
+     "kicker": "Python",
+     "note": "NVIDIA 開源的本體層框架，從企業 metadata 生成知識圖譜，讓 agent 透過 MCP、CLI 與 API 取得一致定義，每個答案都附來源脈絡。",
+     "stats": {
+      "stars": 4912,
+      "forks": 394,
+      "todayStars": 2050,
+      "lang": "Python"
+     }
+    },
+    {
+     "id": "max-sixty/worktrunk",
+     "name": "max-sixty/worktrunk",
+     "url": "https://github.com/max-sixty/worktrunk",
+     "rank": 2,
+     "metric": 531,
+     "kicker": "Rust",
+     "note": "管 git worktree 的 CLI，為平行跑多個 AI agent 設計：以分支名稱操作、路徑由樣板決定，三個核心指令就把 worktree 用得跟分支一樣簡單。",
+     "stats": {
+      "stars": 11010,
+      "forks": 411,
+      "todayStars": 531,
+      "lang": "Rust"
+     }
+    },
+    {
+     "id": "mattpocock/skills",
+     "name": "mattpocock/skills",
+     "url": "https://github.com/mattpocock/skills",
+     "rank": 3,
+     "metric": 1379,
+     "kicker": "Shell",
+     "note": "作者日常在用的 agent skills 集合，主張小而可組合、任何模型都能用：不像 GSD、BMAD、Spec-Kit 接管整個流程，這些技能不奪走控制權。",
+     "stats": {
+      "stars": 313281,
+      "forks": 26280,
+      "todayStars": 1379,
+      "lang": "Shell"
+     }
+    },
+    {
+     "id": "floci-io/floci",
+     "name": "floci-io/floci",
+     "url": "https://github.com/floci-io/floci",
+     "rank": 4,
+     "metric": 1090,
+     "kicker": "Java",
+     "note": "免費開源的本地 AWS 模擬器，SDK 與 CLI 指向 localhost:4566 就沿用原流程，不需帳號與 token。原本用 LocalStack 的專案換掉映像檔即可。",
+     "stats": {
+      "stars": 29587,
+      "forks": 3274,
+      "todayStars": 1090,
+      "lang": "Java"
+     }
+    },
+    {
+     "id": "thedotmack/claude-mem",
+     "name": "thedotmack/claude-mem",
+     "url": "https://github.com/thedotmack/claude-mem",
+     "rank": 5,
+     "metric": 1172,
+     "kicker": "TypeScript",
+     "note": "為 Claude Code 做的跨工作階段記憶：自動記錄每次的工具操作，用 AI 壓成語意摘要，下次開新對話時注入相關脈絡，讓專案知識接得下去。",
+     "stats": {
+      "stars": 112826,
+      "forks": 9799,
+      "todayStars": 1172,
+      "lang": "TypeScript"
+     }
+    },
+    {
+     "id": "vercel-labs/agent-desktop",
+     "name": "vercel-labs/agent-desktop",
+     "url": "https://github.com/vercel-labs/agent-desktop",
+     "rank": 6,
+     "metric": 2470,
+     "kicker": "Rust",
+     "note": "操作桌面應用的 computer use CLI：快照列出可操作元素的 ref，agent 按 ref 動作再快照確認，不做像素比對；Rust 寫成，預設 headless 不搶前景。",
+     "stats": {
+      "stars": 15035,
+      "forks": 1039,
+      "todayStars": 2470,
+      "lang": "Rust"
+     }
+    },
+    {
+     "id": "github/spec-kit",
+     "name": "github/spec-kit",
+     "url": "https://github.com/github/spec-kit",
+     "rank": 7,
+     "metric": 808,
+     "kicker": "Python",
+     "note": "GitHub 官方的規格驅動開發工具箱，替 coding agent 準備現成流程、範本與品質關卡。核心是 SDD，修 bug 與評估則是另外安裝的擴充套件。",
+     "stats": {
+      "stars": 147290,
+      "forks": 13213,
+      "todayStars": 808,
+      "lang": "Python"
+     }
+    },
+    {
+     "id": "The-PR-Agent/pr-agent",
+     "name": "The-PR-Agent/pr-agent",
+     "url": "https://github.com/The-PR-Agent/pr-agent",
+     "rank": 8,
+     "metric": 280,
+     "kicker": "Python",
+     "note": "開源的 AI 程式碼審查 agent，會在 PR 上自動產生評論與建議。它是 Qodo 交給社群維護的舊版專案，聲明與 Qodo 自家付費版不同。",
+     "stats": {
+      "stars": 14743,
+      "forks": 2093,
+      "todayStars": 280,
+      "lang": "Python"
+     }
+    },
+    {
+     "id": "harry0703/MoneyPrinterTurbo",
+     "name": "harry0703/MoneyPrinterTurbo",
+     "url": "https://github.com/harry0703/MoneyPrinterTurbo",
+     "rank": 9,
+     "metric": 617,
+     "kicker": "Python",
+     "note": "輸入主題或關鍵詞就能自動產出短影音的工具，會寫腳本、匹配素材、上字幕配樂再合成高清影片。README 提到由 Kimi K3.1 Pro 直接驅動文案。",
+     "stats": {
+      "stars": 138932,
+      "forks": 22169,
+      "todayStars": 617,
+      "lang": "Python"
+     }
+    },
+    {
+     "id": "garrytan/gstack",
+     "name": "garrytan/gstack",
+     "url": "https://github.com/garrytan/gstack",
+     "rank": 10,
+     "metric": 290,
+     "kicker": "TypeScript",
+     "note": "Garry Tan 公開的 Claude Code 工作流，用 23 個 slash command 讓 agent 扮執行長、設計師與 QA，全為 Markdown。",
+     "stats": {
+      "stars": 139317,
+      "forks": 20629,
+      "todayStars": 290,
+      "lang": "TypeScript"
+     }
+    },
+    {
+     "id": "FareedKhan-dev/kimi-k3-in-c",
+     "name": "FareedKhan-dev/kimi-k3-in-c",
+     "url": "https://github.com/FareedKhan-dev/kimi-k3-in-c",
+     "rank": 11,
+     "metric": 351,
+     "kicker": "C",
+     "note": "用可攜 C99 寫成的推論引擎，讓 2.78 兆參數的 Kimi K3 在單顆 CPU、8.24 GB 記憶體上跑起來，不需 BLAS、框架或 GPU，但速度很慢。",
+     "stats": {
+      "stars": 10275,
+      "forks": 1627,
+      "todayStars": 351,
+      "lang": "C"
+     }
+    },
+    {
+     "id": "JiaFeiMiao-K-Cat/DiscImageStudio",
+     "name": "JiaFeiMiao-K-Cat/DiscImageStudio",
+     "url": "https://github.com/JiaFeiMiao-K-Cat/DiscImageStudio",
+     "rank": 12,
+     "metric": 1778,
+     "kicker": "C#",
+     "note": "把圖片轉成符合 CD、DVD 與單層 BD-R 物理層約束的資料，燒錄後盤面會浮現肉眼可見圖案。以 C#／.NET 10 開發，Windows 有圖形介面。",
+     "stats": {
+      "stars": 6578,
+      "forks": 234,
+      "todayStars": 1778,
+      "lang": "C#"
+     }
+    },
+    {
+     "id": "MichaelCade/90DaysOfDevOps",
+     "name": "MichaelCade/90DaysOfDevOps",
+     "url": "https://github.com/MichaelCade/90DaysOfDevOps",
+     "rank": 13,
+     "metric": 97,
+     "kicker": "Shell",
+     "note": "從 2022 年每天公開學習整理而成的 DevOps 學習地圖，含 90 天約 11 萬字教材、DevSecOps 篇章與社群場次。內容全用免費與開源工具。",
+     "stats": {
+      "stars": 30403,
+      "forks": 6790,
+      "todayStars": 97,
+      "lang": "Shell"
+     }
+    },
+    {
+     "id": "D4Vinci/Scrapling",
+     "name": "D4Vinci/Scrapling",
+     "url": "https://github.com/D4Vinci/Scrapling",
+     "rank": 14,
+     "metric": 2005,
+     "kicker": "Python",
+     "note": "Python 爬蟲框架：快速請求、隱身瀏覽器、解析與併發抓取一套搞定，能處理 Cloudflare，支援 CSS／XPath，另附 MCP server 給 agent。",
+     "stats": {
+      "stars": 96499,
+      "forks": 10100,
+      "todayStars": 2005,
+      "lang": "Python"
+     }
+    },
+    {
+     "id": "Thysrael/Horizon",
+     "name": "Thysrael/Horizon",
+     "url": "https://github.com/Thysrael/Horizon",
+     "rank": 15,
+     "metric": 121,
+     "kicker": "Python",
+     "note": "自架的 AI 新聞雷達，收攏 RSS、Hacker News、Reddit 等來源並去重，產出中英文日報，可用 profile 自訂評分規則，再以 email 派送。",
+     "stats": {
+      "stars": 12474,
+      "forks": 1817,
+      "todayStars": 121,
+      "lang": "Python"
+     }
+    },
+    {
+     "id": "scenario-labs/skills",
+     "name": "scenario-labs/skills",
+     "url": "https://github.com/scenario-labs/skills",
+     "rank": 16,
+     "metric": 224,
+     "kicker": "Python",
+     "note": "Scenario 的 Agent Skills，教 coding agent 經 MCP 產出圖像、影片與 3D 素材；另一組技能用來驅動 Blender、Unity。",
+     "stats": {
+      "stars": 2415,
+      "forks": 245,
+      "todayStars": 224,
+      "lang": "Python"
+     }
+    }
+   ],
+   "notes": [
+    "GitHub 依當日熱度決定榜單長度，今天 16 筆（不是固定 25 筆）。",
+    "「N stars today」是滾動窗估計值，不是當日累計：同一天抓兩次會變少（實測 1,723 → 1,527），而且它與榜單名次無關（六日實測 Spearman −0.07～−0.68）。要比較成長速度，請看下方的「增速」榜（本站自己量）。"
+   ]
+  },
+  "aa": {
+   "label": "Artificial Analysis",
+   "question": "哪個模型真的強、又划算",
+   "source": "artificialanalysis.ai（Intelligence Index）",
+   "items": [
+    {
+     "id": "gemini-4-carbon",
+     "name": "Gemini 4 Carbon (High)",
+     "url": "https://artificialanalysis.ai/models/gemini-4-carbon",
+     "rank": 1,
+     "metric": 60.025738829526,
+     "kicker": "Google",
+     "note": "$4 / $20 每百萬 token · — tok/s",
+     "stats": {
+      "priceIn": 4,
+      "priceOut": 20,
+      "tps": null,
+      "costPerTask": 7.756,
+      "openWeights": 0
+     }
+    },
+    {
+     "id": "claude-opus-5-5",
+     "name": "Claude Opus 5.5 (Max, Default Fallback)",
+     "url": "https://artificialanalysis.ai/models/claude-opus-5-5",
+     "rank": 2,
+     "metric": 59.1060336078904,
+     "kicker": "Anthropic",
+     "note": "$4 / $20 每百萬 token · — tok/s",
+     "stats": {
+      "priceIn": 4,
+      "priceOut": 20,
+      "tps": null,
+      "costPerTask": 10.036,
+      "openWeights": 0
+     }
+    },
+    {
+     "id": "gemini-4-carbon-medium",
+     "name": "Gemini 4 Carbon (Medium)",
+     "url": "https://artificialanalysis.ai/models/gemini-4-carbon-medium",
+     "rank": 3,
+     "metric": 58.2587824022788,
+     "kicker": "Google",
+     "note": "$4 / $20 每百萬 token · — tok/s",
+     "stats": {
+      "priceIn": 4,
+      "priceOut": 20,
+      "tps": null,
+      "costPerTask": 6.586,
+      "openWeights": 0
+     }
+    },
+    {
+     "id": "claude-opus-5-5-xhigh",
+     "name": "Claude Opus 5.5 (Xhigh, Default Fallback)",
+     "url": "https://artificialanalysis.ai/models/claude-opus-5-5-xhigh",
+     "rank": 4,
+     "metric": 57.4447060170507,
+     "kicker": "Anthropic",
+     "note": "$4 / $20 每百萬 token · — tok/s",
+     "stats": {
+      "priceIn": 4,
+      "priceOut": 20,
+      "tps": null,
+      "costPerTask": 6.047,
+      "openWeights": 0
+     }
+    },
+    {
+     "id": "gpt-6-astra",
+     "name": "GPT-6 Astra (Max)",
+     "url": "https://artificialanalysis.ai/models/gpt-6-astra",
+     "rank": 5,
+     "metric": 56.8538559596797,
+     "kicker": "OpenAI",
+     "note": "$10 / $50 每百萬 token · — tok/s",
+     "stats": {
+      "priceIn": 10,
+      "priceOut": 50,
+      "tps": null,
+      "costPerTask": 6.245,
+      "openWeights": 0
+     }
+    },
+    {
+     "id": "gpt-6-astra-xhigh",
+     "name": "GPT-6 Astra (Xhigh)",
+     "url": "https://artificialanalysis.ai/models/gpt-6-astra-xhigh",
+     "rank": 6,
+     "metric": 55.3057468569681,
+     "kicker": "OpenAI",
+     "note": "$10 / $50 每百萬 token · — tok/s",
+     "stats": {
+      "priceIn": 10,
+      "priceOut": 50,
+      "tps": null,
+      "costPerTask": 3.659,
+      "openWeights": 0
+     }
+    },
+    {
+     "id": "gpt-6-astra-high",
+     "name": "GPT-6 Astra (High)",
+     "url": "https://artificialanalysis.ai/models/gpt-6-astra-high",
+     "rank": 7,
+     "metric": 54.849838322506,
+     "kicker": "OpenAI",
+     "note": "$10 / $50 每百萬 token · — tok/s",
+     "stats": {
+      "priceIn": 10,
+      "priceOut": 50,
+      "tps": null,
+      "costPerTask": 3.239,
+      "openWeights": 0
+     }
+    },
+    {
+     "id": "gpt-6-1-sol",
+     "name": "GPT-6.1 Sol (Max)",
+     "url": "https://artificialanalysis.ai/models/gpt-6-1-sol",
+     "rank": 8,
+     "metric": 54.6087338138148,
+     "kicker": "OpenAI",
+     "note": "$2 / $10 每百萬 token · — tok/s",
+     "stats": {
+      "priceIn": 2,
+      "priceOut": 10,
+      "tps": null,
+      "costPerTask": 1.272,
+      "openWeights": 0
+     }
+    },
+    {
+     "id": "claude-sonnet-5-5",
+     "name": "Claude Sonnet 5.5 (Max, Default Fallback)",
+     "url": "https://artificialanalysis.ai/models/claude-sonnet-5-5",
+     "rank": 9,
+     "metric": 54.54133407109,
+     "kicker": "Anthropic",
+     "note": "$2 / $10 每百萬 token · — tok/s",
+     "stats": {
+      "priceIn": 2,
+      "priceOut": 10,
+      "tps": null,
+      "costPerTask": 10.021,
+      "openWeights": 0
+     }
+    },
+    {
+     "id": "gemini-4-carbon-low",
+     "name": "Gemini 4 Carbon (Low)",
+     "url": "https://artificialanalysis.ai/models/gemini-4-carbon-low",
+     "rank": 10,
+     "metric": 54.2206114502924,
+     "kicker": "Google",
+     "note": "$4 / $20 每百萬 token · — tok/s",
+     "stats": {
+      "priceIn": 4,
+      "priceOut": 20,
+      "tps": null,
+      "costPerTask": 7.187,
+      "openWeights": 0
+     }
+    }
+   ],
+   "notes": [
+    "Artificial Analysis Intelligence Index v5.0 於 2026-10-27 上線：279 筆條目中僅 93 筆已評分，榜單仍在遷移，名次會劇烈變動。"
+   ],
+   "events": []
+  }
+ }
+}

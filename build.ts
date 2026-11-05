@@ -374,7 +374,7 @@ function growthRow(it: GrowthItem, i: number, date: string, kind: "measured" | "
       ? it.ageDays !== null
         ? `建立 ${it.ageDays} 日（${created}）`
         : `首次記錄 ${created}`
-      : `實測 ${it.span} 日${it.ageDays !== null ? ` · 建立 ${it.ageDays} 日` : ""}`;
+      : `實測 ${it.span} 日${it.n ? ` · ${it.n} 次` : ""}${it.ageDays !== null ? ` · 建立 ${it.ageDays} 日` : ""}`;
   const delta = it.delta === null ? `<span class="flat">—</span>` : `<span class="up">+${it.delta.toLocaleString("en-US")}</span>`;
   const rate = it.perDay === null ? `<span class="flat">—</span>` : it.perDay.toLocaleString("en-US", { maximumFractionDigits: 0 });
   const flag = it.trending ? `<span class="badge-on">在榜</span>` : `<span class="badge-off">未上榜</span>`;
@@ -418,9 +418,9 @@ function renderGrowth(g: GrowthData, date: string, rel: string): string {
     : `<p class="caveat">健檢：今日增速前段班的專案都在 GitHub Trending 上。</p>`;
 
   return `<section class="board" id="growth">${head}
-<h3 class="sub-head">穩定增速<span>實際經過 ≥2 日，用兩次量測的總星數差 ÷ 經過天數</span></h3>
+<h3 class="sub-head">穩定增速<span>實際經過 ≥2 日，用兩次量測的總星數差 ÷ 經過天數${g.measured.length ? `（本次 ${g.measured.length} 筆）` : ""}</span></h3>
 ${table(g.measured, "measured", `這是唯一可以互相比較的一區：每筆都至少隔了兩天才再量一次，日均不會被單日爆量放大。`)}
-${recent.length ? `<h3 class="sub-head">跨夜樣本<span>只隔了一次、未滿 2 日，數字只能看趨勢，不要和上表比</span></h3>${table(recent, "recent", "多半是前一天才加入追蹤的專案（含 Search API 找到的新秀）。天數不足時，一天的爆量會直接變成「每日」，所以另外放一區。")}` : ""}
+${recent.length ? `<h3 class="sub-head">短期樣本<span>實測未滿 2 日，只能看趨勢，不要和上表比</span></h3>${table(recent, "recent", `這裡取短期樣本的前 12 名；樣本太短時，一天的爆量會直接變成「每日」（例如剛加入追蹤、只跨了一次夜的專案）。`) }` : ""}
 ${g.nascent.length ? `<h3 class="sub-head">新秀<span>還沒有歷史可差分，以總星數 ÷ 建立天數估計</span></h3>${table(g.nascent, "nascent", "建立 45 日內、只有一次量測的專案。這個數字偏樂觀（早期成長最快），用途是發現 trending 完全收不到的一群。")}` : ""}
 ${alerts}
 ${(g.notes ?? []).length ? `<p class="caveat">${g.notes.map((n) => esc(n)).join("<br>")}</p>` : ""}
