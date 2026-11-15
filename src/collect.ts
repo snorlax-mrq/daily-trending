@@ -2,7 +2,7 @@
 // 用法: bun run src/collect.ts [--date YYYY-MM-DD]
 import { join } from "node:path";
 import { existsSync } from "node:fs";
-import { ROOT, today, writeSnapshot, readSnapshot, listSnapshots, type Snapshot } from "./lib.ts";
+import { ROOT, today, writeSnapshot, readSnapshot, listSnapshots, type Board, type Snapshot } from "./lib.ts";
 import { fetchHf } from "./fetch-hf.ts";
 import { fetchGh } from "./fetch-gh.ts";
 import { fetchAaRaw, buildAaBoard, aaEventIds } from "./fetch-aa.ts";
@@ -16,25 +16,36 @@ const argDate = (() => {
 })();
 const date = argDate ?? today();
 
+// --only hf|gh|aa：只重抓某一榜（同日修復用），其餘沿用同日既有快照，不重測增速榜
+const only = (() => {
+  const i = process.argv.indexOf("--only");
+  return i > 0 ? process.argv[i + 1] : undefined;
+})();
+
 const seen: string[] = existsSync(SEEN) ? (JSON.parse(await Bun.file(SEEN).text()) as { ids: string[] }).ids : [];
 const seenSet = new Set(seen);
 
 // 三來源並行；任一失敗只讓該榜空白，不擋其他榜
+const prior = await readSnapshot(date);
 const [hf, gh, aaRaw] = await Promise.all([
-  fetchHf(10),
-  fetchGh(25),
-  fetchAaRaw().catch((e: Error) => e),
+  only && only !== "hf" ? null : fetchHf(10),
+  only && only !== "gh" ? null : fetchGh(25),
+  only && only !== "aa" ? null : fetchAaRaw().catch((e: Error) => e),
 ]);
 
-const boards: Snapshot["boards"] = { hf, gh };
-if (aaRaw instanceof Error) {
+const stub = (k: "hf" | "gh" | "aa"): Board =>
+  prior?.boards[k] ?? { label: "—", question: "—", source: "—", items: [], error: "本次未收集" };
+
+const boards: Snapshot["boards"] = { hf: hf ?? stub("hf"), gh: gh ?? stub("gh") };
+if (aaRaw === null) {
+  boards.aa = stub("aa");
+} else if (aaRaw instanceof Error) {
   boards.aa = { label: "Artificial Analysis", question: "哪個模型真的強、又划算", source: "artificialanalysis.ai", items: [], error: aaRaw.message };
 } else {
   boards.aa = buildAaBoard(aaRaw, 10, seenSet);
 }
 
 // 同日重跑：新抓的 events 會被 seen 去重清空，保留既有快照裡已記錄的事件（union by text）
-const prior = await readSnapshot(date);
 for (const [key, b] of Object.entries(boards)) {
   const old = prior?.boards?.[key]?.events;
   if (!old?.length) continue;
@@ -68,7 +79,7 @@ const path = await writeSnapshot(snap);
 }
 
 // AA 事件去重：只記錄已回報過的（保留最近 800 筆）
-if (!(aaRaw instanceof Error)) {
+if (aaRaw && !(aaRaw instanceof Error)) {
   const next = [...new Set([...aaEventIds(aaRaw), ...seen])].slice(0, 800);
   await Bun.write(SEEN, JSON.stringify({ ids: next }, null, 1) + "\n");
 }
@@ -88,7 +99,7 @@ if (failed.length) console.error(`⚠️ 失敗來源：${failed.map(([k, b]) =>
 // ── 自行量測 star 增量（增速榜的原料）──
 // 放在這裡，run.sh 與每日 cron 都只要跑 collect.ts 就同時更新增速。
 // 它是附加榜：失敗不影響三榜，也不要讓它把收斂搞掉。
-if (!process.argv.includes("--no-watch") && process.env.WATCH_OFF !== "1") {
+if (!only && !process.argv.includes("--no-watch") && process.env.WATCH_OFF !== "1") {
   try {
     await runWatch({ date });
   } catch (e) {
