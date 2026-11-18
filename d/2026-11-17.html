@@ -1,0 +1,777 @@
+<!doctype html>
+<html lang="zh-Hant-TW" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>每日榜單 2026.11.17 · HuggingFace／GitHub／Artificial Analysis</title>
+<meta name="description" content="2026 年 11 月 17 日 · 星期二。三個來源的每日快照：HuggingFace 模型熱度、GitHub 專案熱度、Artificial Analysis 模型評測。">
+<meta property="og:title" content="每日榜單 2026.11.17 · HuggingFace／GitHub／Artificial Analysis">
+<meta property="og:description" content="2026 年 11 月 17 日 · 星期二。三個來源的每日快照：HuggingFace 模型熱度、GitHub 專案熱度、Artificial Analysis 模型評測。">
+<meta property="og:type" content="website">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/site.css">
+<script>(function(){try{var t=localStorage.getItem('dt-theme');if(t!=='dark'&&t!=='light'){t=window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}document.documentElement.dataset.theme=t}catch(e){document.documentElement.dataset.theme='light'}})()</script>
+<script>(function(){try{var v=localStorage.getItem('dt-size');if(v==='lg'||v==='xl'){document.documentElement.dataset.size=v}}catch(e){}})()</script>
+</head>
+<body>
+<div class="wrap">
+<header class="masthead wrap">
+  <div class="mast-top">
+    <div class="mast-left">
+      <a href="../index.html" class="mast-title">每日榜單</a>
+      <p class="mast-tag"><span>DAILY TRENDING</span><span class="sep">／</span><span>三個來源的每日快照</span></p>
+    </div>
+    <div class="mast-right">
+      <p class="mast-date"><span class="num">11.17</span><small class="num">2026</small></p>
+      <p class="mast-meta">第 29 期 · 星期二</p>
+    </div>
+  </div>
+  <div class="mast-rule"></div>
+  <nav class="rail">
+    <span class="issue">台北時間 · 每日自動記錄</span>
+    <span class="rail-sep">／</span>
+    <a href="../archive.html">存檔</a>
+    <span class="rail-spacer"></span>
+    <a href="../index.html">← 最新一期</a>
+    <span class="rail-tools">
+      <button class="size-btn" type="button" aria-label="切換字級（標準／大／特大）">字級 <b>標準</b></button>
+      <button class="theme-btn" type="button" aria-label="切換深淺色">深／淺</button>
+    </span>
+  </nav>
+</header>
+<div class="status wrap"><span><span class="dot">●</span>HuggingFace <b>10</b> 筆</span><span><span class="dot">●</span>GitHub <b>14</b> 筆</span><span><span class="dot">●</span>Artificial Analysis <b>10</b> 筆</span><span class="when">抓取 08:01 台北時間</span></div>
+<div class="tally wrap"><span class="micro">今日合計 34 筆</span><span class="t up">上漲 <b>5</b></span><span class="tdot">·</span><span class="t down">下跌 <b>4</b></span><span class="tdot">·</span><span class="t">平盤 <b>18</b></span><span class="tdot">·</span><span class="t">新進 <b>7</b></span></div>
+<section class="lead wrap">
+  <div class="lead-kicker"><span class="tag">導讀</span><span class="attr">編輯</span></div>
+  <div class="lead-body"><p>今天三榜的節奏不太對稱。GitHub 榜第 1 換人，由 <span class="em">ag-ui 接手</span>，榜單長度也由 12 筆增為 14 筆；HuggingFace 榜首積分由 4137 掉到 3008.6，卻還是沒有人能超越；Artificial Analysis 前十的名次、分數則原封不動。</p><p>HuggingFace 前十 1 進 1 出：higurashi-ai/Haru-4B 以 386 分新進第 7，把前一日第 6 的 DavidAU Qwen3.8-27B GGUF 擠出榜外，Zyphra/ZONOS3-Mini 順勢由第 7 升到第 6。可比的 9 筆裡有 7 筆分數上揚，MiniMax-H3-Image 以 1152 守住第 2，掉分的除了榜首就是 speridlabs/idol（297 降到 282.5）。</p><p>GitHub 榜今日 14 筆中有 6 筆新面孔，其中 tradermonty/claude-trading-skills 由第 11 升到第 4、NVIDIA/SkillEvaluator 由第 12 升到第 9，是名次跳最多的兩筆；退場的是 LoopForge、ggml、Claude-BugHunter 與 modern-web-guidance-src。Artificial Analysis 前十與昨日完全一致，Claude Fable 5.2 (Max) 以 64.56 居首，事件欄則出現 Qwen4 Max 以 42.9 分新上榜，另有三家供應商與 Alibaba Cloud 各上架一個模型。</p></div>
+</section>
+<section class="board" id="hf"><header class="board-head">
+  <span class="b-numeral">01</span>
+  <h2 class="b-name">HuggingFace</h2>
+  <p class="b-question">哪個開源模型正在紅</p>
+  <div class="b-meta"><span>10 筆</span><a href="../board/hf.html">時序 →</a></div>
+</header>
+<table class="quotes quotes-hf">
+  <colgroup><col class="col-rank"><col class="col-name"><col class="col-params"><col class="col-value"><col class="col-delta"><col class="col-spark"><col class="col-note"></colgroup>
+  <thead><tr><th>名次</th><th>名稱</th><th class="r">參數</th><th class="r">熱度</th><th class="r">漲跌</th><th class="th-spark">近 9 日名次</th><th>備註</th></tr></thead>
+  <tbody>
+<tr>
+  <td class="c-rank">01</td>
+  <td class="c-name"><a href="https://huggingface.co/xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic" target="_blank" rel="noopener noreferrer">xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic</a><span class="c-kind">文字生成</span></td>
+  <td class="c-params" title="xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic｜總 9.4B（safetensors） · BF16 9.4B · Apache-2.0 · 6 語（英・中・韓・日・西・俄） · 基底 Jackrong/DeepSeek-V4-Pro-Qwen3.5-9B">9.4B</td>
+  <td class="c-value r">3,009</td>
+  <td class="c-delta r flat">＝</td>
+  <td class="c-spark" data-label="近 9 日名次"><svg viewBox="0 0 100 26" preserveAspectRatio="none" role="img" aria-label="名次走勢">
+<path class="axis" d="M0 25.0 H100" vector-effect="non-scaling-stroke"/>
+<path class="axis-top" d="M0 1 H100" vector-effect="non-scaling-stroke"/>
+<path class="line" d="M0.0 4.1 L12.5 4.1 L25.0 1.5 L37.5 1.5 L50.0 1.5 L62.5 1.5 L75.0 1.5 L87.5 1.5 L100.0 1.5" vector-effect="non-scaling-stroke"/>
+<circle class="dot first" cx="0.0" cy="4.1" r="1.6"/><circle class="dot now" cx="100.0" cy="1.5" r="1.6"/>
+</svg><span class="form"><i class="top">2</i><i class="top">2</i><i class="top">1</i><i class="top">1</i><i class="top">1</i><i class="top">1</i><i class="top">1</i><i class="top">1</i><i class="top">1</i></span></td>
+  <td class="c-note"><span class="clamp2" title="下載 29.6K · 讚 8.7K · 10/30 發布">下載 29.6K · 讚 8.7K · 10/30 發布</span></td>
+</tr>
+<tr>
+  <td class="c-rank">02</td>
+  <td class="c-name"><a href="https://huggingface.co/MiniMaxAI/MiniMax-H3-Image" target="_blank" rel="noopener noreferrer">MiniMaxAI/MiniMax-H3-Image</a><span class="c-kind">文生圖</span></td>
+  <td class="c-params" title="MiniMaxAI/MiniMax-H3-Image｜自訂 · 1 語（英） · 基底 MiniMaxAI/MiniMax-H3">—</td>
+  <td class="c-value r">1,152</td>
+  <td class="c-delta r flat">＝</td>
+  <td class="c-spark" data-label="近 9 日名次"><svg viewBox="0 0 100 26" preserveAspectRatio="none" role="img" aria-label="名次走勢">
+<path class="axis" d="M0 25.0 H100" vector-effect="non-scaling-stroke"/>
+<path class="axis-top" d="M0 1 H100" vector-effect="non-scaling-stroke"/>
+<path class="line" d="M25.0 16.8 L37.5 4.1 L50.0 4.1 L62.5 4.1 L75.0 4.1 L87.5 4.1 L100.0 4.1" vector-effect="non-scaling-stroke"/>
+<circle class="dot first" cx="25.0" cy="16.8" r="1.6"/><circle class="dot now" cx="100.0" cy="4.1" r="1.6"/>
+</svg><span class="form"><i class="miss">·</i><i class="miss">·</i><i class="">7</i><i class="top">2</i><i class="top">2</i><i class="top">2</i><i class="top">2</i><i class="top">2</i><i class="top">2</i></span></td>
+  <td class="c-note"><span class="clamp2" title="下載 609.1K · 讚 1.3K · 11/03 發布">下載 609.1K · 讚 1.3K · 11/03 發布</span></td>
+</tr>
+<tr>
+  <td class="c-rank">03</td>
+  <td class="c-name"><a href="https://huggingface.co/Qwen/Qwen3.8-27B" target="_blank" rel="noopener noreferrer">Qwen/Qwen3.8-27B</a><span class="c-kind">多模態理解</span></td>
+  <td class="c-params" title="Qwen/Qwen3.8-27B｜總 27.8B（safetensors） · BF16 27.8B · Apache-2.0">27.8B</td>
+  <td class="c-value r">468</td>
+  <td class="c-delta r flat">＝</td>
+  <td class="c-spark" data-label="近 9 日名次"><svg viewBox="0 0 100 26" preserveAspectRatio="none" role="img" aria-label="名次走勢">
+<path class="axis" d="M0 25.0 H100" vector-effect="non-scaling-stroke"/>
+<path class="axis-top" d="M0 1 H100" vector-effect="non-scaling-stroke"/>
+<path class="line" d="M0.0 16.8 L12.5 21.9 L25.0 24.5 L37.5 21.9 L50.0 14.3 L62.5 11.7 L75.0 9.2 L87.5 6.6 L100.0 6.6" vector-effect="non-scaling-stroke"/>
+<circle class="dot first" cx="0.0" cy="16.8" r="1.6"/><circle class="dot now" cx="100.0" cy="6.6" r="1.6"/>
+</svg><span class="form"><i class="">7</i><i class="">9</i><i class="">10</i><i class="">9</i><i class="">6</i><i class="">5</i><i class="">4</i><i class="top">3</i><i class="top">3</i></span></td>
+  <td class="c-note"><span class="clamp2" title="下載 6.8M · 讚 20.3K · 08/05 發布">下載 6.8M · 讚 20.3K · 08/05 發布</span></td>
+</tr>
+<tr>
+  <td class="c-rank">04</td>
+  <td class="c-name"><a href="https://huggingface.co/Lightricks/LTX-2.5" target="_blank" rel="noopener noreferrer">Lightricks/LTX-2.5</a><span class="c-kind">圖生影片</span></td>
+  <td class="c-params" title="Lightricks/LTX-2.5｜自訂 · 9 語（英・德・西・法・日・韓…）">—</td>
+  <td class="c-value r">427</td>
+  <td class="c-delta r flat">＝</td>
+  <td class="c-spark" data-label="近 9 日名次"><svg viewBox="0 0 100 26" preserveAspectRatio="none" role="img" aria-label="名次走勢">
+<path class="axis" d="M0 25.0 H100" vector-effect="non-scaling-stroke"/>
+<path class="axis-top" d="M0 1 H100" vector-effect="non-scaling-stroke"/>
+<path class="line" d="M0.0 14.3 L12.5 11.7 L25.0 11.7 L37.5 14.3 L50.0 11.7 L62.5 9.2 L75.0 6.6 L87.5 9.2 L100.0 9.2" vector-effect="non-scaling-stroke"/>
+<circle class="dot first" cx="0.0" cy="14.3" r="1.6"/><circle class="dot now" cx="100.0" cy="9.2" r="1.6"/>
+</svg><span class="form"><i class="">6</i><i class="">5</i><i class="">5</i><i class="">6</i><i class="">5</i><i class="">4</i><i class="top">3</i><i class="">4</i><i class="">4</i></span></td>
+  <td class="c-note"><span class="clamp2" title="下載 2.8M · 讚 12.2K · 07/23 發布">下載 2.8M · 讚 12.2K · 07/23 發布</span></td>
+</tr>
+<tr>
+  <td class="c-rank">05</td>
+  <td class="c-name"><a href="https://huggingface.co/Comfy-Org/MiniMax-H3-Image" target="_blank" rel="noopener noreferrer">Comfy-Org/MiniMax-H3-Image</a><span class="c-kind">文生圖</span></td>
+  <td class="c-params" title="Comfy-Org/MiniMax-H3-Image｜自訂 · 基底 MiniMaxAI/MiniMax-H3-Image">—</td>
+  <td class="c-value r">411</td>
+  <td class="c-delta r flat">＝</td>
+  <td class="c-spark" data-label="近 9 日名次"><svg viewBox="0 0 100 26" preserveAspectRatio="none" role="img" aria-label="名次走勢">
+<path class="axis" d="M0 25.0 H100" vector-effect="non-scaling-stroke"/>
+<path class="axis-top" d="M0 1 H100" vector-effect="non-scaling-stroke"/>
+<path class="line" d="M50.0 21.9 L62.5 21.9 L75.0 19.4 L87.5 11.7 L100.0 11.7" vector-effect="non-scaling-stroke"/>
+<circle class="dot first" cx="50.0" cy="21.9" r="1.6"/><circle class="dot now" cx="100.0" cy="11.7" r="1.6"/>
+</svg><span class="form"><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="">9</i><i class="">9</i><i class="">8</i><i class="">5</i><i class="">5</i></span></td>
+  <td class="c-note"><span class="clamp2" title="下載 2.3M · 讚 479 · 11/08 發布">下載 2.3M · 讚 479 · 11/08 發布</span></td>
+</tr>
+<tr>
+  <td class="c-rank">06</td>
+  <td class="c-name"><a href="https://huggingface.co/Zyphra/ZONOS3-Mini" target="_blank" rel="noopener noreferrer">Zyphra/ZONOS3-Mini</a><span class="c-kind">語音合成</span></td>
+  <td class="c-params" title="Zyphra/ZONOS3-Mini｜gguf · Apache-2.0 · 42 語（英・法・西・德・義・葡…）">—</td>
+  <td class="c-value r">398</td>
+  <td class="c-delta r up"><span class="arw">▲</span>1</td>
+  <td class="c-spark" data-label="近 9 日名次"><svg viewBox="0 0 100 26" preserveAspectRatio="none" role="img" aria-label="名次走勢">
+<path class="axis" d="M0 25.0 H100" vector-effect="non-scaling-stroke"/>
+<path class="axis-top" d="M0 1 H100" vector-effect="non-scaling-stroke"/>
+<path class="line" d="M62.5 24.5 L75.0 24.5 L87.5 16.8 L100.0 14.3" vector-effect="non-scaling-stroke"/>
+<circle class="dot first" cx="62.5" cy="24.5" r="1.6"/><circle class="dot now" cx="100.0" cy="14.3" r="1.6"/>
+</svg><span class="form"><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="">10</i><i class="">10</i><i class="">7</i><i class="">6</i></span></td>
+  <td class="c-note"><span class="clamp2" title="下載 69.9K · 讚 459 · 11/09 發布">下載 69.9K · 讚 459 · 11/09 發布</span></td>
+</tr>
+<tr>
+  <td class="c-rank">07</td>
+  <td class="c-name"><a href="https://huggingface.co/higurashi-ai/Haru-4B" target="_blank" rel="noopener noreferrer">higurashi-ai/Haru-4B</a><span class="c-kind">audio-to-audio</span></td>
+  <td class="c-params" title="higurashi-ai/Haru-4B｜總 5.3B（safetensors） · BF16 5.3B · Apache-2.0 · 9 語（英・西・葡・德・法・中…）">5.3B</td>
+  <td class="c-value r">386</td>
+  <td class="c-delta r"><span class="debut">新</span></td>
+  <td class="c-spark" data-label="近 9 日名次"><span class="first-day">首日</span><span class="form"><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="">7</i></span></td>
+  <td class="c-note"><span class="clamp2" title="下載 3.4K · 讚 422 · 11/12 發布">下載 3.4K · 讚 422 · 11/12 發布</span></td>
+</tr>
+<tr>
+  <td class="c-rank">08</td>
+  <td class="c-name"><a href="https://huggingface.co/thinkingmachines/Inkling-2-Small" target="_blank" rel="noopener noreferrer">thinkingmachines/Inkling-2-Small</a><span class="c-kind">多模態理解</span></td>
+  <td class="c-params" title="thinkingmachines/Inkling-2-Small｜總 594B（safetensors） · UINT8 489B · FP8 97.8B · BF16 7B · 8-bit · Apache-2.0">594B</td>
+  <td class="c-value r">366</td>
+  <td class="c-delta r flat">＝</td>
+  <td class="c-spark" data-label="近 9 日名次"><svg viewBox="0 0 100 26" preserveAspectRatio="none" role="img" aria-label="名次走勢">
+<path class="axis" d="M0 25.0 H100" vector-effect="non-scaling-stroke"/>
+<path class="axis-top" d="M0 1 H100" vector-effect="non-scaling-stroke"/>
+<path class="line" d="M87.5 19.4 L100.0 19.4" vector-effect="non-scaling-stroke"/>
+<circle class="dot first" cx="87.5" cy="19.4" r="1.6"/><circle class="dot now" cx="100.0" cy="19.4" r="1.6"/>
+</svg><span class="form"><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="">8</i><i class="">8</i></span></td>
+  <td class="c-note"><span class="clamp2" title="下載 16.9K · 讚 406 · 11/04 發布">下載 16.9K · 讚 406 · 11/04 發布</span></td>
+</tr>
+<tr>
+  <td class="c-rank">09</td>
+  <td class="c-name"><a href="https://huggingface.co/unsloth/Qwen3.8-27B-GGUF" target="_blank" rel="noopener noreferrer">unsloth/Qwen3.8-27B-GGUF</a><span class="c-kind">其他</span></td>
+  <td class="c-params" title="unsloth/Qwen3.8-27B-GGUF｜gguf · Apache-2.0 · 基底 Qwen/Qwen3.8-27B">—</td>
+  <td class="c-value r">347</td>
+  <td class="c-delta r flat">＝</td>
+  <td class="c-spark" data-label="近 9 日名次"><svg viewBox="0 0 100 26" preserveAspectRatio="none" role="img" aria-label="名次走勢">
+<path class="axis" d="M0 25.0 H100" vector-effect="non-scaling-stroke"/>
+<path class="axis-top" d="M0 1 H100" vector-effect="non-scaling-stroke"/>
+<path class="line" d="M87.5 21.9 L100.0 21.9" vector-effect="non-scaling-stroke"/>
+<circle class="dot first" cx="87.5" cy="21.9" r="1.6"/><circle class="dot now" cx="100.0" cy="21.9" r="1.6"/>
+</svg><span class="form"><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="">9</i><i class="">9</i></span></td>
+  <td class="c-note"><span class="clamp2" title="下載 6.7M · 讚 6.1K · 08/13 發布">下載 6.7M · 讚 6.1K · 08/13 發布</span></td>
+</tr>
+<tr>
+  <td class="c-rank">10</td>
+  <td class="c-name"><a href="https://huggingface.co/speridlabs/idol" target="_blank" rel="noopener noreferrer">speridlabs/idol</a><span class="c-kind">3D 生成</span></td>
+  <td class="c-params" title="speridlabs/idol｜Apache-2.0">—</td>
+  <td class="c-value r">283</td>
+  <td class="c-delta r flat">＝</td>
+  <td class="c-spark" data-label="近 9 日名次"><svg viewBox="0 0 100 26" preserveAspectRatio="none" role="img" aria-label="名次走勢">
+<path class="axis" d="M0 25.0 H100" vector-effect="non-scaling-stroke"/>
+<path class="axis-top" d="M0 1 H100" vector-effect="non-scaling-stroke"/>
+<path class="line" d="M0.0 1.5 L12.5 1.5 L25.0 4.1 L37.5 6.6 L50.0 9.2 L62.5 14.3 L75.0 14.3 L87.5 24.5 L100.0 24.5" vector-effect="non-scaling-stroke"/>
+<circle class="dot first" cx="0.0" cy="1.5" r="1.6"/><circle class="dot now" cx="100.0" cy="24.5" r="1.6"/>
+</svg><span class="form"><i class="top">1</i><i class="top">1</i><i class="top">2</i><i class="top">3</i><i class="">4</i><i class="">6</i><i class="">6</i><i class="">10</i><i class="">10</i></span></td>
+  <td class="c-note"><span class="clamp2" title="下載 34.8K · 讚 2.4K · 10/28 發布">下載 34.8K · 讚 2.4K · 10/28 發布</span></td>
+</tr>
+  </tbody>
+</table>
+<p class="legend">走勢：近 9 個紀錄日的名次，虛線為第 1 名、實線為第 10 名；只有一天紀錄的項目以單點表示。</p>
+<p class="caveat">參數取自 repo 的 safetensors 索引（total 為該 repo 全部權重加總，同一 repo 放多種精度會重複計算）；沒有索引的 GGUF／diffusion repo 顯示「—」，避免從檔名亂猜。</p>
+
+</section>
+<section class="board" id="gh"><header class="board-head">
+  <span class="b-numeral">02</span>
+  <h2 class="b-name">GitHub</h2>
+  <p class="b-question">開發者的注意力在哪</p>
+  <div class="b-meta"><span>14 筆</span><a href="../board/gh.html">時序 →</a></div>
+</header>
+<table class="quotes quotes-gh">
+  <colgroup><col class="col-rank"><col class="col-name"><col class="col-value"><col class="col-delta"><col class="col-spark"><col class="col-note"></colgroup>
+  <thead><tr><th>名次</th><th>名稱</th><th class="r">今日 stars</th><th class="r">漲跌</th><th class="th-spark">近 9 日名次</th><th>備註</th></tr></thead>
+  <tbody>
+<tr>
+  <td class="c-rank">01</td>
+  <td class="c-name"><a href="https://github.com/ag-ui-protocol/ag-ui" target="_blank" rel="noopener noreferrer">ag-ui-protocol/ag-ui</a><span class="c-kind">TypeScript</span></td>
+  
+  <td class="c-value r">791</td>
+  <td class="c-delta r up"><span class="arw">▲</span>1</td>
+  <td class="c-spark" data-label="近 9 日名次"><svg viewBox="0 0 100 26" preserveAspectRatio="none" role="img" aria-label="名次走勢">
+<path class="axis" d="M0 25.0 H100" vector-effect="non-scaling-stroke"/>
+<path class="axis-top" d="M0 1 H100" vector-effect="non-scaling-stroke"/>
+<path class="line" d="M75.0 13.9 L87.5 3.3 L100.0 1.5" vector-effect="non-scaling-stroke"/>
+<circle class="dot first" cx="75.0" cy="13.9" r="1.6"/><circle class="dot now" cx="100.0" cy="1.5" r="1.6"/>
+</svg><span class="form"><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="">8</i><i class="top">2</i><i class="top">1</i></span></td>
+  <td class="c-note"><span class="clamp2" title="開放、輕量的事件式協定，統一 AI agent 與前端應用的連線方式。agent 後端發出約 16 種標準事件，可走 SSE、WebSocket，與 MCP、A2A 互補。">開放、輕量的事件式協定，統一 AI agent 與前端應用的連線方式。agent 後端發出約 16 種標準事件，可走 SSE、WebSocket，與 MCP、A2A 互補。</span></td>
+</tr>
+<tr>
+  <td class="c-rank">02</td>
+  <td class="c-name"><a href="https://github.com/backnotprop/plannotator" target="_blank" rel="noopener noreferrer">backnotprop/plannotator</a><span class="c-kind">TypeScript</span></td>
+  
+  <td class="c-value r">696</td>
+  <td class="c-delta r up"><span class="arw">▲</span>2</td>
+  <td class="c-spark" data-label="近 9 日名次"><svg viewBox="0 0 100 26" preserveAspectRatio="none" role="img" aria-label="名次走勢">
+<path class="axis" d="M0 25.0 H100" vector-effect="non-scaling-stroke"/>
+<path class="axis-top" d="M0 1 H100" vector-effect="non-scaling-stroke"/>
+<path class="line" d="M62.5 10.3 L75.0 1.5 L87.5 6.8 L100.0 3.3" vector-effect="non-scaling-stroke"/>
+<circle class="dot first" cx="62.5" cy="10.3" r="1.6"/><circle class="dot now" cx="100.0" cy="3.3" r="1.6"/>
+</svg><span class="form"><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="">6</i><i class="top">1</i><i class="">4</i><i class="top">2</i></span></td>
+  <td class="c-note"><span class="clamp2" title="本地瀏覽器上的審閱介面，把 agent 的計畫、HTML 與 diff 標註後回送。靠外掛與 hook 接入 Claude Code、Codex，並支援 Git 與 PR 審查。">本地瀏覽器上的審閱介面，把 agent 的計畫、HTML 與 diff 標註後回送。靠外掛與 hook 接入 Claude Code、Codex，並支援 Git 與 PR 審查。</span></td>
+</tr>
+<tr>
+  <td class="c-rank">03</td>
+  <td class="c-name"><a href="https://github.com/dream-num/univer" target="_blank" rel="noopener noreferrer">dream-num/univer</a><span class="c-kind">TypeScript</span></td>
+  
+  <td class="c-value r">1,828</td>
+  <td class="c-delta r down"><span class="arw">▼</span>2</td>
+  <td class="c-spark" data-label="近 9 日名次"><svg viewBox="0 0 100 26" preserveAspectRatio="none" role="img" aria-label="名次走勢">
+<path class="axis" d="M0 25.0 H100" vector-effect="non-scaling-stroke"/>
+<path class="axis-top" d="M0 1 H100" vector-effect="non-scaling-stroke"/>
+<path class="line" d="M75.0 12.1 L87.5 1.5 L100.0 5.0" vector-effect="non-scaling-stroke"/>
+<circle class="dot first" cx="75.0" cy="12.1" r="1.6"/><circle class="dot now" cx="100.0" cy="5.0" r="1.6"/>
+</svg><span class="form"><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="">7</i><i class="top">1</i><i class="top">3</i></span></td>
+  <td class="c-note"><span class="clamp2" title="TypeScript 寫的 Office SDK，把試算表、文件與 PDF 的編輯嵌進自家產品。拆成 Web、Server、AI 三層，外掛可組成嵌入式編輯器，也能不開介面跑公式。">TypeScript 寫的 Office SDK，把試算表、文件與 PDF 的編輯嵌進自家產品。拆成 Web、Server、AI 三層，外掛可組成嵌入式編輯器，也能不開介面跑公式。</span></td>
+</tr>
+<tr>
+  <td class="c-rank">04</td>
+  <td class="c-name"><a href="https://github.com/tradermonty/claude-trading-skills" target="_blank" rel="noopener noreferrer">tradermonty/claude-trading-skills</a><span class="c-kind">Python</span></td>
+  
+  <td class="c-value r">837</td>
+  <td class="c-delta r up"><span class="arw">▲</span>7</td>
+  <td class="c-spark" data-label="近 9 日名次"><svg viewBox="0 0 100 26" preserveAspectRatio="none" role="img" aria-label="名次走勢">
+<path class="axis" d="M0 25.0 H100" vector-effect="non-scaling-stroke"/>
+<path class="axis-top" d="M0 1 H100" vector-effect="non-scaling-stroke"/>
+<path class="line" d="M62.5 15.7 L75.0 5.0 L87.5 19.2 L100.0 6.8" vector-effect="non-scaling-stroke"/>
+<circle class="dot first" cx="62.5" cy="15.7" r="1.6"/><circle class="dot now" cx="100.0" cy="6.8" r="1.6"/>
+</svg><span class="form"><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="">9</i><i class="top">3</i><i class="">11</i><i class="">4</i></span></td>
+  <td class="c-note"><span class="clamp2" title="給時間有限的個人投資者用的 Claude Skills 工具包，含市場分析、技術圖表、經濟行事曆與選股。重點在建立檢視與風控紀律，不做訊號服務。">給時間有限的個人投資者用的 Claude Skills 工具包，含市場分析、技術圖表、經濟行事曆與選股。重點在建立檢視與風控紀律，不做訊號服務。</span></td>
+</tr>
+<tr>
+  <td class="c-rank">05</td>
+  <td class="c-name"><a href="https://github.com/getarcaneapp/arcane" target="_blank" rel="noopener noreferrer">getarcaneapp/arcane</a><span class="c-kind">Go</span></td>
+  
+  <td class="c-value r">46.0</td>
+  <td class="c-delta r"><span class="debut">新</span></td>
+  <td class="c-spark" data-label="近 9 日名次"><span class="first-day">首日</span><span class="form"><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="">5</i></span></td>
+  <td class="c-note"><span class="clamp2" title="Go 寫的 Docker 管理介面，主打人人可上手。main 已是 v3，2.x 舊版留在 release/2.x.x 分支；功能許願改走 Discussions。">Go 寫的 Docker 管理介面，主打人人可上手。main 已是 v3，2.x 舊版留在 release/2.x.x 分支；功能許願改走 Discussions。</span></td>
+</tr>
+<tr>
+  <td class="c-rank">06</td>
+  <td class="c-name"><a href="https://github.com/DeanChensj/jiangshan-map" target="_blank" rel="noopener noreferrer">DeanChensj/jiangshan-map</a><span class="c-kind">JavaScript</span></td>
+  
+  <td class="c-value r">288</td>
+  <td class="c-delta r"><span class="debut">新</span></td>
+  <td class="c-spark" data-label="近 9 日名次"><span class="first-day">首日</span><span class="form"><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="">6</i></span></td>
+  <td class="c-note"><span class="clamp2" title="中國歷史互動地圖，把戰國（西元前 403 年）到今日的疆域做成可拖曳的時間軸圖集。涵蓋 18 個時期、198 張疆域快照，並收錄古地名沿革、關隘與詩詞地標。">中國歷史互動地圖，把戰國（西元前 403 年）到今日的疆域做成可拖曳的時間軸圖集。涵蓋 18 個時期、198 張疆域快照，並收錄古地名沿革、關隘與詩詞地標。</span></td>
+</tr>
+<tr>
+  <td class="c-rank">07</td>
+  <td class="c-name"><a href="https://github.com/google-labs-code/stitch-skills" target="_blank" rel="noopener noreferrer">google-labs-code/stitch-skills</a><span class="c-kind">TypeScript</span></td>
+  
+  <td class="c-value r">529</td>
+  <td class="c-delta r down"><span class="arw">▼</span>4</td>
+  <td class="c-spark" data-label="近 9 日名次"><svg viewBox="0 0 100 26" preserveAspectRatio="none" role="img" aria-label="名次走勢">
+<path class="axis" d="M0 25.0 H100" vector-effect="non-scaling-stroke"/>
+<path class="axis-top" d="M0 1 H100" vector-effect="non-scaling-stroke"/>
+<path class="line" d="M87.5 5.0 L100.0 12.1" vector-effect="non-scaling-stroke"/>
+<circle class="dot first" cx="87.5" cy="5.0" r="1.6"/><circle class="dot now" cx="100.0" cy="12.1" r="1.6"/>
+</svg><span class="form"><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="top">3</i><i class="">7</i></span></td>
+  <td class="c-note"><span class="clamp2" title="Google Stitch 的 skill 與外掛套件，依 Agent Skills 標準，可掛上 Codex、Claude Code、Cursor；OpenCode 需手動安裝。">Google Stitch 的 skill 與外掛套件，依 Agent Skills 標準，可掛上 Codex、Claude Code、Cursor；OpenCode 需手動安裝。</span></td>
+</tr>
+<tr>
+  <td class="c-rank">08</td>
+  <td class="c-name"><a href="https://github.com/mvanhorn/last30days-skill" target="_blank" rel="noopener noreferrer">mvanhorn/last30days-skill</a><span class="c-kind">Python</span></td>
+  
+  <td class="c-value r">135</td>
+  <td class="c-delta r"><span class="debut">新</span></td>
+  <td class="c-spark" data-label="近 9 日名次"><span class="first-day">首日</span><span class="form"><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="">8</i></span></td>
+  <td class="c-note"><span class="clamp2" title="給 AI agent 的搜尋技能，一次橫跨 Reddit、X、YouTube 與 Polymarket 找資料，再彙整成有出處的摘要。排序看按讚與真實下注金額，不是編輯挑選。">給 AI agent 的搜尋技能，一次橫跨 Reddit、X、YouTube 與 Polymarket 找資料，再彙整成有出處的摘要。排序看按讚與真實下注金額，不是編輯挑選。</span></td>
+</tr>
+<tr>
+  <td class="c-rank">09</td>
+  <td class="c-name"><a href="https://github.com/NVIDIA/SkillEvaluator" target="_blank" rel="noopener noreferrer">NVIDIA/SkillEvaluator</a><span class="c-kind">Python</span></td>
+  
+  <td class="c-value r">873</td>
+  <td class="c-delta r up"><span class="arw">▲</span>3</td>
+  <td class="c-spark" data-label="近 9 日名次"><svg viewBox="0 0 100 26" preserveAspectRatio="none" role="img" aria-label="名次走勢">
+<path class="axis" d="M0 25.0 H100" vector-effect="non-scaling-stroke"/>
+<path class="axis-top" d="M0 1 H100" vector-effect="non-scaling-stroke"/>
+<path class="line" d="M87.5 21.0 L100.0 15.7" vector-effect="non-scaling-stroke"/>
+<circle class="dot first" cx="87.5" cy="21.0" r="1.6"/><circle class="dot now" cx="100.0" cy="15.7" r="1.6"/>
+</svg><span class="form"><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="">12</i><i class="">9</i></span></td>
+  <td class="c-note"><span class="clamp2" title="評估 agent skill 品質的框架：先跑品質檢查，再比較有無 skill 的執行結果差異。屬 NVIDIA Verified Skills 流程，可用 CLI 與 CI。">評估 agent skill 品質的框架：先跑品質檢查，再比較有無 skill 的執行結果差異。屬 NVIDIA Verified Skills 流程，可用 CLI 與 CI。</span></td>
+</tr>
+<tr>
+  <td class="c-rank">10</td>
+  <td class="c-name"><a href="https://github.com/alibaba/open-code-review" target="_blank" rel="noopener noreferrer">alibaba/open-code-review</a><span class="c-kind">Go</span></td>
+  
+  <td class="c-value r">951</td>
+  <td class="c-delta r down"><span class="arw">▼</span>4</td>
+  <td class="c-spark" data-label="近 9 日名次"><svg viewBox="0 0 100 26" preserveAspectRatio="none" role="img" aria-label="名次走勢">
+<path class="axis" d="M0 25.0 H100" vector-effect="non-scaling-stroke"/>
+<path class="axis-top" d="M0 1 H100" vector-effect="non-scaling-stroke"/>
+<path class="line" d="M62.5 1.5 L75.0 8.6 L87.5 10.3 L100.0 17.4" vector-effect="non-scaling-stroke"/>
+<circle class="dot first" cx="62.5" cy="1.5" r="1.6"/><circle class="dot now" cx="100.0" cy="17.4" r="1.6"/>
+</svg><span class="form"><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="top">1</i><i class="">5</i><i class="">6</i><i class="">10</i></span></td>
+  <td class="c-note"><span class="clamp2" title="阿里巴巴開源的 AI 程式碼審查 CLI，讀 Git diff 後交給能呼叫工具的 agent 逐行評論。官方基準稱同模型下精確率勝過通用 agent，token 只約九分之一。">阿里巴巴開源的 AI 程式碼審查 CLI，讀 Git diff 後交給能呼叫工具的 agent 逐行評論。官方基準稱同模型下精確率勝過通用 agent，token 只約九分之一。</span></td>
+</tr>
+<tr>
+  <td class="c-rank">11</td>
+  <td class="c-name"><a href="https://github.com/google-research/paper-orchestra" target="_blank" rel="noopener noreferrer">google-research/paper-orchestra</a><span class="c-kind">Python</span></td>
+  
+  <td class="c-value r">313</td>
+  <td class="c-delta r"><span class="debut">新</span></td>
+  <td class="c-spark" data-label="近 9 日名次"><span class="first-day">首日</span><span class="form"><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="">11</i></span></td>
+  <td class="c-note"><span class="clamp2" title="Google Cloud AI Research 的多代理框架，把想法與實驗紀錄寫成可投稿的 LaTeX 論文。內建大綱、文獻回顧、章節撰寫與繪圖代理，會自動搜尋整合文獻。">Google Cloud AI Research 的多代理框架，把想法與實驗紀錄寫成可投稿的 LaTeX 論文。內建大綱、文獻回顧、章節撰寫與繪圖代理，會自動搜尋整合文獻。</span></td>
+</tr>
+<tr>
+  <td class="c-rank">12</td>
+  <td class="c-name"><a href="https://github.com/ChromeDevTools/chrome-devtools-mcp" target="_blank" rel="noopener noreferrer">ChromeDevTools/chrome-devtools-mcp</a><span class="c-kind">TypeScript</span></td>
+  
+  <td class="c-value r">841</td>
+  <td class="c-delta r down"><span class="arw">▼</span>7</td>
+  <td class="c-spark" data-label="近 9 日名次"><svg viewBox="0 0 100 26" preserveAspectRatio="none" role="img" aria-label="名次走勢">
+<path class="axis" d="M0 25.0 H100" vector-effect="non-scaling-stroke"/>
+<path class="axis-top" d="M0 1 H100" vector-effect="non-scaling-stroke"/>
+<path class="line" d="M62.5 21.0 L75.0 6.8 L87.5 8.6 L100.0 21.0" vector-effect="non-scaling-stroke"/>
+<circle class="dot first" cx="62.5" cy="21.0" r="1.6"/><circle class="dot now" cx="100.0" cy="21.0" r="1.6"/>
+</svg><span class="form"><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="">12</i><i class="">4</i><i class="">5</i><i class="">12</i></span></td>
+  <td class="c-note"><span class="clamp2" title="讓編碼 agent 透過 MCP 或 CLI 操作並檢視真實的 Chrome，可錄效能軌跡、分析網路請求與主控台訊息。底層用 puppeteer 自動等待動作。">讓編碼 agent 透過 MCP 或 CLI 操作並檢視真實的 Chrome，可錄效能軌跡、分析網路請求與主控台訊息。底層用 puppeteer 自動等待動作。</span></td>
+</tr>
+<tr>
+  <td class="c-rank">13</td>
+  <td class="c-name"><a href="https://github.com/sveltejs/svelte" target="_blank" rel="noopener noreferrer">sveltejs/svelte</a><span class="c-kind">JavaScript</span></td>
+  
+  <td class="c-value r">115</td>
+  <td class="c-delta r"><span class="debut">新</span></td>
+  <td class="c-spark" data-label="近 9 日名次"><span class="first-day">首日</span><span class="form"><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="">13</i></span></td>
+  <td class="c-note"><span class="clamp2" title="前端框架 Svelte 的原始碼庫，把宣告式元件編譯成高效率 JavaScript，精準更新 DOM。採 MIT 授權，開發靠志工與 Open Collective 捐款。">前端框架 Svelte 的原始碼庫，把宣告式元件編譯成高效率 JavaScript，精準更新 DOM。採 MIT 授權，開發靠志工與 Open Collective 捐款。</span></td>
+</tr>
+<tr>
+  <td class="c-rank">14</td>
+  <td class="c-name"><a href="https://github.com/kajisho5/ffmpeg-skill" target="_blank" rel="noopener noreferrer">kajisho5/ffmpeg-skill</a><span class="c-kind">Python</span></td>
+  
+  <td class="c-value r">367</td>
+  <td class="c-delta r"><span class="debut">新</span></td>
+  <td class="c-spark" data-label="近 9 日名次"><span class="first-day">首日</span><span class="form"><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="miss">·</i><i class="">14</i></span></td>
+  <td class="c-note"><span class="clamp2" title="讓 coding agent 剪片的 Agent Skill，內含 42 個 FFmpeg 工具與 MCP 介面。全程本機執行、不上傳素材，裝好 python3 即可。">讓 coding agent 剪片的 Agent Skill，內含 42 個 FFmpeg 工具與 MCP 介面。全程本機執行、不上傳素材，裝好 python3 即可。</span></td>
+</tr>
+  </tbody>
+</table>
+<p class="legend">走勢：近 9 個紀錄日的名次，虛線為第 1 名、實線為第 14 名；只有一天紀錄的項目以單點表示。</p>
+<p class="caveat">GitHub 依當日熱度決定榜單長度，今天 14 筆（不是固定 25 筆）。<br>「N stars today」是滾動窗估計值，不是當日累計：同一天抓兩次會變少（實測 1,723 → 1,527），而且它與榜單名次無關（六日實測 Spearman −0.07～−0.68）。要比較成長速度，請看下方的「增速」榜（本站自己量）。</p>
+
+</section>
+<section class="board" id="aa"><header class="board-head">
+  <span class="b-numeral">03</span>
+  <h2 class="b-name">Artificial Analysis</h2>
+  <p class="b-question">哪個模型真的強、又划算</p>
+  <div class="b-meta"><span>10 筆</span><a href="../board/aa.html">時序 →</a></div>
+</header>
+<table class="quotes quotes-aa">
+  <colgroup><col class="col-rank"><col class="col-name"><col class="col-value"><col class="col-delta"><col class="col-spark"><col class="col-note"></colgroup>
+  <thead><tr><th>名次</th><th>名稱</th><th class="r">II 分數</th><th class="r">漲跌</th><th class="th-spark">近 9 日名次</th><th>備註</th></tr></thead>
+  <tbody>
+<tr>
+  <td class="c-rank">01</td>
+  <td class="c-name"><a href="https://artificialanalysis.ai/models/claude-fable-5-2" target="_blank" rel="noopener noreferrer">Claude Fable 5.2 (Max, Default Fallback)</a><span class="c-kind">Anthropic</span></td>
+  
+  <td class="c-value r">64.6</td>
+  <td class="c-delta r flat">＝</td>
+  <td class="c-spark" data-label="近 9 日名次"><svg viewBox="0 0 100 26" preserveAspectRatio="none" role="img" aria-label="名次走勢">
+<path class="axis" d="M0 25.0 H100" vector-effect="non-scaling-stroke"/>
+<path class="axis-top" d="M0 1 H100" vector-effect="non-scaling-stroke"/>
+<path class="line" d="M12.5 1.5 L25.0 1.5 L37.5 1.5 L50.0 1.5 L62.5 1.5 L75.0 1.5 L87.5 1.5 L100.0 1.5" vector-effect="non-scaling-stroke"/>
+<circle class="dot first" cx="12.5" cy="1.5" r="1.6"/><circle class="dot now" cx="100.0" cy="1.5" r="1.6"/>
+</svg><span class="form"><i class="miss">·</i><i class="top">1</i><i class="top">1</i><i class="top">1</i><i class="top">1</i><i class="top">1</i><i class="top">1</i><i class="top">1</i><i class="top">1</i></span></td>
+  <td class="c-note"><span class="clamp2" title="$8 / $40 每百萬 token · 110 tok/s">$8 / $40 每百萬 token · 110 tok/s</span></td>
+</tr>
+<tr>
+  <td class="c-rank">02</td>
+  <td class="c-name"><a href="https://artificialanalysis.ai/models/claude-fable-5-2" target="_blank" rel="noopener noreferrer">Claude Fable 5.2 (Xhigh, Default Fallback)</a><span class="c-kind">Anthropic</span></td>
+  
+  <td class="c-value r">62.2</td>
+  <td class="c-delta r flat">＝</td>
+  <td class="c-spark" data-label="近 9 日名次"><svg viewBox="0 0 100 26" preserveAspectRatio="none" role="img" aria-label="名次走勢">
+<path class="axis" d="M0 25.0 H100" vector-effect="non-scaling-stroke"/>
+<path class="axis-top" d="M0 1 H100" vector-effect="non-scaling-stroke"/>
+<path class="line" d="M12.5 4.1 L25.0 4.1 L37.5 4.1 L50.0 4.1 L62.5 4.1 L75.0 4.1 L87.5 4.1 L100.0 4.1" vector-effect="non-scaling-stroke"/>
+<circle class="dot first" cx="12.5" cy="4.1" r="1.6"/><circle class="dot now" cx="100.0" cy="4.1" r="1.6"/>
+</svg><span class="form"><i class="miss">·</i><i class="top">2</i><i class="top">2</i><i class="top">2</i><i class="top">2</i><i class="top">2</i><i class="top">2</i><i class="top">2</i><i class="top">2</i></span></td>
+  <td class="c-note"><span class="clamp2" title="$8 / $40 每百萬 token · 103 tok/s">$8 / $40 每百萬 token · 103 tok/s</span></td>
+</tr>
+<tr>
+  <td class="c-rank">03</td>
+  <td class="c-name"><a href="https://artificialanalysis.ai/models/claude-fable-5-2" target="_blank" rel="noopener noreferrer">Claude Fable 5.2 (High, Default Fallback)</a><span class="c-kind">Anthropic</span></td>
+  
+  <td class="c-value r">61.8</td>
+  <td class="c-delta r flat">＝</td>
+  <td class="c-spark" data-label="近 9 日名次"><svg viewBox="0 0 100 26" preserveAspectRatio="none" role="img" aria-label="名次走勢">
+<path class="axis" d="M0 25.0 H100" vector-effect="non-scaling-stroke"/>
+<path class="axis-top" d="M0 1 H100" vector-effect="non-scaling-stroke"/>
+<path class="line" d="M12.5 6.6 L25.0 6.6 L37.5 6.6 L50.0 6.6 L62.5 6.6 L75.0 6.6 L87.5 6.6 L100.0 6.6" vector-effect="non-scaling-stroke"/>
+<circle class="dot first" cx="12.5" cy="6.6" r="1.6"/><circle class="dot now" cx="100.0" cy="6.6" r="1.6"/>
+</svg><span class="form"><i class="miss">·</i><i class="top">3</i><i class="top">3</i><i class="top">3</i><i class="top">3</i><i class="top">3</i><i class="top">3</i><i class="top">3</i><i class="top">3</i></span></td>
+  <td class="c-note"><span class="clamp2" title="$8 / $40 每百萬 token · 107 tok/s">$8 / $40 每百萬 token · 107 tok/s</span></td>
+</tr>
+<tr>
+  <td class="c-rank">04</td>
+  <td class="c-name"><a href="https://artificialanalysis.ai/models/gemini-4-carbon" target="_blank" rel="noopener noreferrer">Gemini 4 Carbon (High)</a><span class="c-kind">Google</span></td>
+  
+  <td class="c-value r">60.0</td>
+  <td class="c-delta r flat">＝</td>
+  <td class="c-spark" data-label="近 9 日名次"><svg viewBox="0 0 100 26" preserveAspectRatio="none" role="img" aria-label="名次走勢">
+<path class="axis" d="M0 25.0 H100" vector-effect="non-scaling-stroke"/>
+<path class="axis-top" d="M0 1 H100" vector-effect="non-scaling-stroke"/>
+<path class="line" d="M0.0 1.5 L12.5 9.2 L25.0 9.2 L37.5 9.2 L50.0 9.2 L62.5 9.2 L75.0 9.2 L87.5 9.2 L100.0 9.2" vector-effect="non-scaling-stroke"/>
+<circle class="dot first" cx="0.0" cy="1.5" r="1.6"/><circle class="dot now" cx="100.0" cy="9.2" r="1.6"/>
+</svg><span class="form"><i class="top">1</i><i class="">4</i><i class="">4</i><i class="">4</i><i class="">4</i><i class="">4</i><i class="">4</i><i class="">4</i><i class="">4</i></span></td>
+  <td class="c-note"><span class="clamp2" title="$2 / $10 每百萬 token · 62 tok/s">$2 / $10 每百萬 token · 62 tok/s</span></td>
+</tr>
+<tr>
+  <td class="c-rank">05</td>
+  <td class="c-name"><a href="https://artificialanalysis.ai/models/claude-opus-5-5" target="_blank" rel="noopener noreferrer">Claude Opus 5.5 (Max, Default Fallback)</a><span class="c-kind">Anthropic</span></td>
+  
+  <td class="c-value r">59.1</td>
+  <td class="c-delta r flat">＝</td>
+  <td class="c-spark" data-label="近 9 日名次"><svg viewBox="0 0 100 26" preserveAspectRatio="none" role="img" aria-label="名次走勢">
+<path class="axis" d="M0 25.0 H100" vector-effect="non-scaling-stroke"/>
+<path class="axis-top" d="M0 1 H100" vector-effect="non-scaling-stroke"/>
+<path class="line" d="M0.0 4.1 L12.5 11.7 L25.0 11.7 L37.5 11.7 L50.0 11.7 L62.5 11.7 L75.0 11.7 L87.5 11.7 L100.0 11.7" vector-effect="non-scaling-stroke"/>
+<circle class="dot first" cx="0.0" cy="4.1" r="1.6"/><circle class="dot now" cx="100.0" cy="11.7" r="1.6"/>
+</svg><span class="form"><i class="top">2</i><i class="">5</i><i class="">5</i><i class="">5</i><i class="">5</i><i class="">5</i><i class="">5</i><i class="">5</i><i class="">5</i></span></td>
+  <td class="c-note"><span class="clamp2" title="$4 / $20 每百萬 token · 117 tok/s">$4 / $20 每百萬 token · 117 tok/s</span></td>
+</tr>
+<tr>
+  <td class="c-rank">06</td>
+  <td class="c-name"><a href="https://artificialanalysis.ai/models/gemini-4-carbon" target="_blank" rel="noopener noreferrer">Gemini 4 Carbon (Medium)</a><span class="c-kind">Google</span></td>
+  
+  <td class="c-value r">58.3</td>
+  <td class="c-delta r flat">＝</td>
+  <td class="c-spark" data-label="近 9 日名次"><svg viewBox="0 0 100 26" preserveAspectRatio="none" role="img" aria-label="名次走勢">
+<path class="axis" d="M0 25.0 H100" vector-effect="non-scaling-stroke"/>
+<path class="axis-top" d="M0 1 H100" vector-effect="non-scaling-stroke"/>
+<path class="line" d="M0.0 6.6 L12.5 14.3 L25.0 14.3 L37.5 14.3 L50.0 14.3 L62.5 14.3 L75.0 14.3 L87.5 14.3 L100.0 14.3" vector-effect="non-scaling-stroke"/>
+<circle class="dot first" cx="0.0" cy="6.6" r="1.6"/><circle class="dot now" cx="100.0" cy="14.3" r="1.6"/>
+</svg><span class="form"><i class="top">3</i><i class="">6</i><i class="">6</i><i class="">6</i><i class="">6</i><i class="">6</i><i class="">6</i><i class="">6</i><i class="">6</i></span></td>
+  <td class="c-note"><span class="clamp2" title="$2 / $10 每百萬 token · 58 tok/s">$2 / $10 每百萬 token · 58 tok/s</span></td>
+</tr>
+<tr>
+  <td class="c-rank">07</td>
+  <td class="c-name"><a href="https://artificialanalysis.ai/models/claude-opus-5-5" target="_blank" rel="noopener noreferrer">Claude Opus 5.5 (Xhigh, Default Fallback)</a><span class="c-kind">Anthropic</span></td>
+  
+  <td class="c-value r">57.4</td>
+  <td class="c-delta r flat">＝</td>
+  <td class="c-spark" data-label="近 9 日名次"><svg viewBox="0 0 100 26" preserveAspectRatio="none" role="img" aria-label="名次走勢">
+<path class="axis" d="M0 25.0 H100" vector-effect="non-scaling-stroke"/>
+<path class="axis-top" d="M0 1 H100" vector-effect="non-scaling-stroke"/>
+<path class="line" d="M0.0 9.2 L12.5 16.8 L25.0 16.8 L37.5 16.8 L50.0 16.8 L62.5 16.8 L75.0 16.8 L87.5 16.8 L100.0 16.8" vector-effect="non-scaling-stroke"/>
+<circle class="dot first" cx="0.0" cy="9.2" r="1.6"/><circle class="dot now" cx="100.0" cy="16.8" r="1.6"/>
+</svg><span class="form"><i class="">4</i><i class="">7</i><i class="">7</i><i class="">7</i><i class="">7</i><i class="">7</i><i class="">7</i><i class="">7</i><i class="">7</i></span></td>
+  <td class="c-note"><span class="clamp2" title="$4 / $20 每百萬 token · 109 tok/s">$4 / $20 每百萬 token · 109 tok/s</span></td>
+</tr>
+<tr>
+  <td class="c-rank">08</td>
+  <td class="c-name"><a href="https://artificialanalysis.ai/models/gpt-6-astra" target="_blank" rel="noopener noreferrer">GPT-6 Astra (Max)</a><span class="c-kind">OpenAI</span></td>
+  
+  <td class="c-value r">56.9</td>
+  <td class="c-delta r flat">＝</td>
+  <td class="c-spark" data-label="近 9 日名次"><svg viewBox="0 0 100 26" preserveAspectRatio="none" role="img" aria-label="名次走勢">
+<path class="axis" d="M0 25.0 H100" vector-effect="non-scaling-stroke"/>
+<path class="axis-top" d="M0 1 H100" vector-effect="non-scaling-stroke"/>
+<path class="line" d="M0.0 11.7 L12.5 19.4 L25.0 19.4 L37.5 19.4 L50.0 19.4 L62.5 19.4 L75.0 19.4 L87.5 19.4 L100.0 19.4" vector-effect="non-scaling-stroke"/>
+<circle class="dot first" cx="0.0" cy="11.7" r="1.6"/><circle class="dot now" cx="100.0" cy="19.4" r="1.6"/>
+</svg><span class="form"><i class="">5</i><i class="">8</i><i class="">8</i><i class="">8</i><i class="">8</i><i class="">8</i><i class="">8</i><i class="">8</i><i class="">8</i></span></td>
+  <td class="c-note"><span class="clamp2" title="$10 / $50 每百萬 token · 41 tok/s">$10 / $50 每百萬 token · 41 tok/s</span></td>
+</tr>
+<tr>
+  <td class="c-rank">09</td>
+  <td class="c-name"><a href="https://artificialanalysis.ai/models/claude-fable-5-2" target="_blank" rel="noopener noreferrer">Claude Fable 5.2 (Medium, Default Fallback)</a><span class="c-kind">Anthropic</span></td>
+  
+  <td class="c-value r">56.4</td>
+  <td class="c-delta r flat">＝</td>
+  <td class="c-spark" data-label="近 9 日名次"><svg viewBox="0 0 100 26" preserveAspectRatio="none" role="img" aria-label="名次走勢">
+<path class="axis" d="M0 25.0 H100" vector-effect="non-scaling-stroke"/>
+<path class="axis-top" d="M0 1 H100" vector-effect="non-scaling-stroke"/>
+<path class="line" d="M12.5 21.9 L25.0 21.9 L37.5 21.9 L50.0 21.9 L62.5 21.9 L75.0 21.9 L87.5 21.9 L100.0 21.9" vector-effect="non-scaling-stroke"/>
+<circle class="dot first" cx="12.5" cy="21.9" r="1.6"/><circle class="dot now" cx="100.0" cy="21.9" r="1.6"/>
+</svg><span class="form"><i class="miss">·</i><i class="">9</i><i class="">9</i><i class="">9</i><i class="">9</i><i class="">9</i><i class="">9</i><i class="">9</i><i class="">9</i></span></td>
+  <td class="c-note"><span class="clamp2" title="$8 / $40 每百萬 token · 104 tok/s">$8 / $40 每百萬 token · 104 tok/s</span></td>
+</tr>
+<tr>
+  <td class="c-rank">10</td>
+  <td class="c-name"><a href="https://artificialanalysis.ai/models/gpt-6-astra" target="_blank" rel="noopener noreferrer">GPT-6 Astra (Xhigh)</a><span class="c-kind">OpenAI</span></td>
+  
+  <td class="c-value r">55.3</td>
+  <td class="c-delta r flat">＝</td>
+  <td class="c-spark" data-label="近 9 日名次"><svg viewBox="0 0 100 26" preserveAspectRatio="none" role="img" aria-label="名次走勢">
+<path class="axis" d="M0 25.0 H100" vector-effect="non-scaling-stroke"/>
+<path class="axis-top" d="M0 1 H100" vector-effect="non-scaling-stroke"/>
+<path class="line" d="M0.0 14.3 L12.5 24.5 L25.0 24.5 L37.5 24.5 L50.0 24.5 L62.5 24.5 L75.0 24.5 L87.5 24.5 L100.0 24.5" vector-effect="non-scaling-stroke"/>
+<circle class="dot first" cx="0.0" cy="14.3" r="1.6"/><circle class="dot now" cx="100.0" cy="24.5" r="1.6"/>
+</svg><span class="form"><i class="">6</i><i class="">10</i><i class="">10</i><i class="">10</i><i class="">10</i><i class="">10</i><i class="">10</i><i class="">10</i><i class="">10</i></span></td>
+  <td class="c-note"><span class="clamp2" title="$10 / $50 每百萬 token · 39 tok/s">$10 / $50 每百萬 token · 39 tok/s</span></td>
+</tr>
+  </tbody>
+</table>
+<p class="legend">走勢：近 9 個紀錄日的名次，虛線為第 1 名、實線為第 10 名；只有一天紀錄的項目以單點表示。</p>
+<p class="caveat">Artificial Analysis Intelligence Index v5.0.1 於 2026-11-03 上線：285 筆條目中僅 109 筆已評分，榜單仍在遷移，名次會劇烈變動。</p>
+<div class="events"><h3>今日異動</h3><ul><li><span class="k">新模型</span><span><a href="https://artificialanalysis.ai/models/qwen4-max" target="_blank" rel="noopener noreferrer">Qwen4 Max（Alibaba） · II 42.9</a></span></li><li><span class="k">供應商</span><span>Nebius 新增 1 個模型上架</span></li><li><span class="k">供應商</span><span>DeepInfra 新增 1 個模型上架</span></li><li><span class="k">供應商</span><span>Together AI 新增 1 個模型上架</span></li><li><span class="k">供應商</span><span>Alibaba Cloud 新增 1 個模型上架</span></li></ul></div>
+</section>
+<section class="board" id="growth"><header class="board-head">
+  <span class="b-numeral">04</span>
+  <h2 class="b-name">增速</h2>
+  <p class="b-question">哪些專案真的在長，而不只是被看見</p>
+  <div class="b-meta"><span class="src">本站自行量測</span><a href="../board/growth.html">時序 →</a></div>
+</header>
+<h3 class="sub-head">穩定增速<span>實際經過 ≥2 日，用兩次量測的總星數差 ÷ 經過天數（本次 12 筆）</span></h3>
+<table class="quotes quotes-growth">
+  <colgroup><col class="col-rank"><col class="col-name"><col class="col-value"><col class="col-delta"><col class="col-value"><col class="col-spark"><col class="col-flag"></colgroup>
+  <thead><tr><th>名次</th><th>名稱</th><th class="r">總星數</th><th class="r">增量</th><th class="r">每日</th><th class="th-spark">總星數走勢</th><th>Trending</th></tr></thead>
+  <tbody><tr>
+  <td class="c-rank">01</td>
+  <td class="c-name"><a href="https://github.com/morluto/rea" target="_blank" rel="noopener noreferrer">morluto/rea</a><span class="c-kind">實測 7 日 · 8 次 · 建立 217 日</span></td>
+  <td class="c-value c-stars r">464,094</td>
+  <td class="c-delta r"><span class="up">+17,205</span></td>
+  <td class="c-value c-rate r">2,458</td>
+  <td class="c-spark" data-label="總星數"><svg viewBox="0 0 96 24" preserveAspectRatio="none" aria-hidden="true"><path class="axis" d="M0 23.0 H96" vector-effect="non-scaling-stroke"/><path class="line growth-l" d="M0.0 22.0 L13.7 18.7 L27.4 15.6 L41.1 12.8 L54.9 10.1 L68.6 7.7 L82.3 5.4 L96.0 3.0" vector-effect="non-scaling-stroke"/><circle class="dot now" cx="96.0" cy="3.0" r="1.6"/></svg></td>
+  <td class="c-flag"><span class="badge-off">未上榜</span></td>
+</tr><tr>
+  <td class="c-rank">02</td>
+  <td class="c-name"><a href="https://github.com/dream-num/univer" target="_blank" rel="noopener noreferrer">dream-num/univer</a><span class="c-kind">實測 2 日 · 3 次 · 建立 1510 日</span></td>
+  <td class="c-value c-stars r">27,761</td>
+  <td class="c-delta r"><span class="up">+3,284</span></td>
+  <td class="c-value c-rate r">1,642</td>
+  <td class="c-spark" data-label="總星數"><svg viewBox="0 0 96 24" preserveAspectRatio="none" aria-hidden="true"><path class="axis" d="M0 23.0 H96" vector-effect="non-scaling-stroke"/><path class="line growth-l" d="M0.0 22.0 L48.0 15.5 L96.0 3.0" vector-effect="non-scaling-stroke"/><circle class="dot now" cx="96.0" cy="3.0" r="1.6"/></svg></td>
+  <td class="c-flag"><span class="badge-on">在榜</span></td>
+</tr><tr>
+  <td class="c-rank">03</td>
+  <td class="c-name"><a href="https://github.com/storytold/craft-anything" target="_blank" rel="noopener noreferrer">storytold/craft-anything</a><span class="c-kind">實測 7 日 · 8 次 · 建立 17 日</span></td>
+  <td class="c-value c-stars r">34,763</td>
+  <td class="c-delta r"><span class="up">+10,348</span></td>
+  <td class="c-value c-rate r">1,478</td>
+  <td class="c-spark" data-label="總星數"><svg viewBox="0 0 96 24" preserveAspectRatio="none" aria-hidden="true"><path class="axis" d="M0 23.0 H96" vector-effect="non-scaling-stroke"/><path class="line growth-l" d="M0.0 22.0 L13.7 18.7 L27.4 14.8 L41.1 12.1 L54.9 9.2 L68.6 6.7 L82.3 4.9 L96.0 3.0" vector-effect="non-scaling-stroke"/><circle class="dot now" cx="96.0" cy="3.0" r="1.6"/></svg></td>
+  <td class="c-flag"><span class="badge-off">未上榜</span></td>
+</tr><tr>
+  <td class="c-rank">04</td>
+  <td class="c-name"><a href="https://github.com/meta/astryx" target="_blank" rel="noopener noreferrer">meta/astryx</a><span class="c-kind">實測 7 日 · 8 次 · 建立 312 日</span></td>
+  <td class="c-value c-stars r">29,565</td>
+  <td class="c-delta r"><span class="up">+9,609</span></td>
+  <td class="c-value c-rate r">1,373</td>
+  <td class="c-spark" data-label="總星數"><svg viewBox="0 0 96 24" preserveAspectRatio="none" aria-hidden="true"><path class="axis" d="M0 23.0 H96" vector-effect="non-scaling-stroke"/><path class="line growth-l" d="M0.0 22.0 L13.7 16.5 L27.4 12.2 L41.1 9.1 L54.9 7.3 L68.6 5.8 L82.3 4.4 L96.0 3.0" vector-effect="non-scaling-stroke"/><circle class="dot now" cx="96.0" cy="3.0" r="1.6"/></svg></td>
+  <td class="c-flag"><span class="badge-off">未上榜</span></td>
+</tr><tr>
+  <td class="c-rank">05</td>
+  <td class="c-name"><a href="https://github.com/GoogleChrome/modern-web-guidance-src" target="_blank" rel="noopener noreferrer">GoogleChrome/modern-web-guidance-src</a><span class="c-kind">實測 5 日 · 6 次 · 建立 294 日</span></td>
+  <td class="c-value c-stars r">7,970</td>
+  <td class="c-delta r"><span class="up">+6,245</span></td>
+  <td class="c-value c-rate r">1,249</td>
+  <td class="c-spark" data-label="總星數"><svg viewBox="0 0 96 24" preserveAspectRatio="none" aria-hidden="true"><path class="axis" d="M0 23.0 H96" vector-effect="non-scaling-stroke"/><path class="line growth-l" d="M0.0 22.0 L19.2 18.5 L38.4 12.6 L57.6 9.0 L76.8 5.5 L96.0 3.0" vector-effect="non-scaling-stroke"/><circle class="dot now" cx="96.0" cy="3.0" r="1.6"/></svg></td>
+  <td class="c-flag"><span class="badge-off">未上榜</span></td>
+</tr><tr>
+  <td class="c-rank">06</td>
+  <td class="c-name"><a href="https://github.com/pingdotgg/t3code" target="_blank" rel="noopener noreferrer">pingdotgg/t3code</a><span class="c-kind">實測 7 日 · 8 次 · 建立 282 日</span></td>
+  <td class="c-value c-stars r">62,772</td>
+  <td class="c-delta r"><span class="up">+8,677</span></td>
+  <td class="c-value c-rate r">1,239</td>
+  <td class="c-spark" data-label="總星數"><svg viewBox="0 0 96 24" preserveAspectRatio="none" aria-hidden="true"><path class="axis" d="M0 23.0 H96" vector-effect="non-scaling-stroke"/><path class="line growth-l" d="M0.0 22.0 L13.7 18.5 L27.4 15.6 L41.1 12.7 L54.9 10.0 L68.6 7.8 L82.3 5.8 L96.0 3.0" vector-effect="non-scaling-stroke"/><circle class="dot now" cx="96.0" cy="3.0" r="1.6"/></svg></td>
+  <td class="c-flag"><span class="badge-off">未上榜</span></td>
+</tr><tr>
+  <td class="c-rank">07</td>
+  <td class="c-name"><a href="https://github.com/deepseek-ai/chat-demo" target="_blank" rel="noopener noreferrer">deepseek-ai/chat-demo</a><span class="c-kind">實測 3 日 · 4 次 · 建立 5 日</span></td>
+  <td class="c-value c-stars r">4,053</td>
+  <td class="c-delta r"><span class="up">+3,395</span></td>
+  <td class="c-value c-rate r">1,132</td>
+  <td class="c-spark" data-label="總星數"><svg viewBox="0 0 96 24" preserveAspectRatio="none" aria-hidden="true"><path class="axis" d="M0 23.0 H96" vector-effect="non-scaling-stroke"/><path class="line growth-l" d="M0.0 22.0 L32.0 16.0 L64.0 9.2 L96.0 3.0" vector-effect="non-scaling-stroke"/><circle class="dot now" cx="96.0" cy="3.0" r="1.6"/></svg></td>
+  <td class="c-flag"><span class="badge-off">未上榜</span></td>
+</tr><tr>
+  <td class="c-rank">08</td>
+  <td class="c-name"><a href="https://github.com/libracoder/kiri" target="_blank" rel="noopener noreferrer">libracoder/kiri</a><span class="c-kind">實測 7 日 · 8 次 · 建立 15 日</span></td>
+  <td class="c-value c-stars r">8,877</td>
+  <td class="c-delta r"><span class="up">+7,505</span></td>
+  <td class="c-value c-rate r">1,072</td>
+  <td class="c-spark" data-label="總星數"><svg viewBox="0 0 96 24" preserveAspectRatio="none" aria-hidden="true"><path class="axis" d="M0 23.0 H96" vector-effect="non-scaling-stroke"/><path class="line growth-l" d="M0.0 22.0 L13.7 21.8 L27.4 21.4 L41.1 21.1 L54.9 20.0 L68.6 16.1 L82.3 9.5 L96.0 3.0" vector-effect="non-scaling-stroke"/><circle class="dot now" cx="96.0" cy="3.0" r="1.6"/></svg></td>
+  <td class="c-flag"><span class="badge-off">未上榜</span></td>
+</tr><tr>
+  <td class="c-rank">09</td>
+  <td class="c-name"><a href="https://github.com/hitkeeen/blender-ai-mcp-addon" target="_blank" rel="noopener noreferrer">hitkeeen/blender-ai-mcp-addon</a><span class="c-kind">實測 2 日 · 3 次 · 建立 5 日</span></td>
+  <td class="c-value c-stars r">2,181</td>
+  <td class="c-delta r"><span class="up">+1,864</span></td>
+  <td class="c-value c-rate r">932</td>
+  <td class="c-spark" data-label="總星數"><svg viewBox="0 0 96 24" preserveAspectRatio="none" aria-hidden="true"><path class="axis" d="M0 23.0 H96" vector-effect="non-scaling-stroke"/><path class="line growth-l" d="M0.0 22.0 L48.0 14.5 L96.0 3.0" vector-effect="non-scaling-stroke"/><circle class="dot now" cx="96.0" cy="3.0" r="1.6"/></svg></td>
+  <td class="c-flag"><span class="badge-off">未上榜</span></td>
+</tr><tr>
+  <td class="c-rank">10</td>
+  <td class="c-name"><a href="https://github.com/stablyai/orca" target="_blank" rel="noopener noreferrer">stablyai/orca</a><span class="c-kind">實測 7 日 · 8 次 · 建立 245 日</span></td>
+  <td class="c-value c-stars r">126,761</td>
+  <td class="c-delta r"><span class="up">+6,370</span></td>
+  <td class="c-value c-rate r">910</td>
+  <td class="c-spark" data-label="總星數"><svg viewBox="0 0 96 24" preserveAspectRatio="none" aria-hidden="true"><path class="axis" d="M0 23.0 H96" vector-effect="non-scaling-stroke"/><path class="line growth-l" d="M0.0 22.0 L13.7 18.9 L27.4 16.1 L41.1 12.8 L54.9 10.1 L68.6 8.1 L82.3 6.0 L96.0 3.0" vector-effect="non-scaling-stroke"/><circle class="dot now" cx="96.0" cy="3.0" r="1.6"/></svg></td>
+  <td class="c-flag"><span class="badge-off">未上榜</span></td>
+</tr><tr>
+  <td class="c-rank">11</td>
+  <td class="c-name"><a href="https://github.com/huamidev/GestaltX" target="_blank" rel="noopener noreferrer">huamidev/GestaltX</a><span class="c-kind">實測 7 日 · 8 次 · 建立 8 日</span></td>
+  <td class="c-value c-stars r">7,878</td>
+  <td class="c-delta r"><span class="up">+6,366</span></td>
+  <td class="c-value c-rate r">909</td>
+  <td class="c-spark" data-label="總星數"><svg viewBox="0 0 96 24" preserveAspectRatio="none" aria-hidden="true"><path class="axis" d="M0 23.0 H96" vector-effect="non-scaling-stroke"/><path class="line growth-l" d="M0.0 22.0 L13.7 12.5 L27.4 8.0 L41.1 5.8 L54.9 4.7 L68.6 4.0 L82.3 3.4 L96.0 3.0" vector-effect="non-scaling-stroke"/><circle class="dot now" cx="96.0" cy="3.0" r="1.6"/></svg></td>
+  <td class="c-flag"><span class="badge-off">未上榜</span></td>
+</tr><tr>
+  <td class="c-rank">12</td>
+  <td class="c-name"><a href="https://github.com/mattpocock/skills" target="_blank" rel="noopener noreferrer">mattpocock/skills</a><span class="c-kind">實測 7 日 · 8 次 · 建立 287 日</span></td>
+  <td class="c-value c-stars r">325,945</td>
+  <td class="c-delta r"><span class="up">+6,233</span></td>
+  <td class="c-value c-rate r">890</td>
+  <td class="c-spark" data-label="總星數"><svg viewBox="0 0 96 24" preserveAspectRatio="none" aria-hidden="true"><path class="axis" d="M0 23.0 H96" vector-effect="non-scaling-stroke"/><path class="line growth-l" d="M0.0 22.0 L13.7 18.4 L27.4 15.0 L41.1 12.0 L54.9 9.5 L68.6 7.5 L82.3 5.4 L96.0 3.0" vector-effect="non-scaling-stroke"/><circle class="dot now" cx="96.0" cy="3.0" r="1.6"/></svg></td>
+  <td class="c-flag"><span class="badge-off">未上榜</span></td>
+</tr></tbody>
+</table>
+<p class="legend">這是唯一可以互相比較的一區：每筆都至少隔了兩天才再量一次，日均不會被單日爆量放大。</p>
+<h3 class="sub-head">短期樣本<span>實測未滿 2 日，只能看趨勢，不要和上表比</span></h3><table class="quotes quotes-growth">
+  <colgroup><col class="col-rank"><col class="col-name"><col class="col-value"><col class="col-delta"><col class="col-value"><col class="col-spark"><col class="col-flag"></colgroup>
+  <thead><tr><th>名次</th><th>名稱</th><th class="r">總星數</th><th class="r">增量</th><th class="r">每日</th><th class="th-spark">總星數走勢</th><th>Trending</th></tr></thead>
+  <tbody><tr>
+  <td class="c-rank">01</td>
+  <td class="c-name"><a href="https://github.com/elementalsouls/Claude-BugHunter" target="_blank" rel="noopener noreferrer">elementalsouls/Claude-BugHunter</a><span class="c-kind">實測 1 日 · 2 次 · 建立 196 日</span></td>
+  <td class="c-value c-stars r">7,435</td>
+  <td class="c-delta r"><span class="up">+1,022</span></td>
+  <td class="c-value c-rate r">1,022</td>
+  <td class="c-spark" data-label="總星數"><svg viewBox="0 0 96 24" preserveAspectRatio="none" aria-hidden="true"><path class="axis" d="M0 23.0 H96" vector-effect="non-scaling-stroke"/><path class="line growth-l" d="M0.0 22.0 L96.0 3.0" vector-effect="non-scaling-stroke"/><circle class="dot now" cx="96.0" cy="3.0" r="1.6"/></svg></td>
+  <td class="c-flag"><span class="badge-off">未上榜</span></td>
+</tr><tr>
+  <td class="c-rank">02</td>
+  <td class="c-name"><a href="https://github.com/NVIDIA/SkillEvaluator" target="_blank" rel="noopener noreferrer">NVIDIA/SkillEvaluator</a><span class="c-kind">實測 1 日 · 2 次 · 建立 146 日</span></td>
+  <td class="c-value c-stars r">2,670</td>
+  <td class="c-delta r"><span class="up">+1,016</span></td>
+  <td class="c-value c-rate r">1,016</td>
+  <td class="c-spark" data-label="總星數"><svg viewBox="0 0 96 24" preserveAspectRatio="none" aria-hidden="true"><path class="axis" d="M0 23.0 H96" vector-effect="non-scaling-stroke"/><path class="line growth-l" d="M0.0 22.0 L96.0 3.0" vector-effect="non-scaling-stroke"/><circle class="dot now" cx="96.0" cy="3.0" r="1.6"/></svg></td>
+  <td class="c-flag"><span class="badge-on">在榜</span></td>
+</tr><tr>
+  <td class="c-rank">03</td>
+  <td class="c-name"><a href="https://github.com/google-labs-code/stitch-skills" target="_blank" rel="noopener noreferrer">google-labs-code/stitch-skills</a><span class="c-kind">實測 1 日 · 2 次 · 建立 305 日</span></td>
+  <td class="c-value c-stars r">9,729</td>
+  <td class="c-delta r"><span class="up">+451</span></td>
+  <td class="c-value c-rate r">451</td>
+  <td class="c-spark" data-label="總星數"><svg viewBox="0 0 96 24" preserveAspectRatio="none" aria-hidden="true"><path class="axis" d="M0 23.0 H96" vector-effect="non-scaling-stroke"/><path class="line growth-l" d="M0.0 22.0 L96.0 3.0" vector-effect="non-scaling-stroke"/><circle class="dot now" cx="96.0" cy="3.0" r="1.6"/></svg></td>
+  <td class="c-flag"><span class="badge-on">在榜</span></td>
+</tr><tr>
+  <td class="c-rank">04</td>
+  <td class="c-name"><a href="https://github.com/n4ze3m/tiny-voca" target="_blank" rel="noopener noreferrer">n4ze3m/tiny-voca</a><span class="c-kind">實測 1 日 · 2 次 · 建立 3 日</span></td>
+  <td class="c-value c-stars r">609</td>
+  <td class="c-delta r"><span class="up">+285</span></td>
+  <td class="c-value c-rate r">285</td>
+  <td class="c-spark" data-label="總星數"><svg viewBox="0 0 96 24" preserveAspectRatio="none" aria-hidden="true"><path class="axis" d="M0 23.0 H96" vector-effect="non-scaling-stroke"/><path class="line growth-l" d="M0.0 22.0 L96.0 3.0" vector-effect="non-scaling-stroke"/><circle class="dot now" cx="96.0" cy="3.0" r="1.6"/></svg></td>
+  <td class="c-flag"><span class="badge-off">未上榜</span></td>
+</tr><tr>
+  <td class="c-rank">05</td>
+  <td class="c-name"><a href="https://github.com/haziqahmedqasmi/PeakCut" target="_blank" rel="noopener noreferrer">haziqahmedqasmi/PeakCut</a><span class="c-kind">實測 1 日 · 2 次 · 建立 3 日</span></td>
+  <td class="c-value c-stars r">655</td>
+  <td class="c-delta r"><span class="up">+212</span></td>
+  <td class="c-value c-rate r">212</td>
+  <td class="c-spark" data-label="總星數"><svg viewBox="0 0 96 24" preserveAspectRatio="none" aria-hidden="true"><path class="axis" d="M0 23.0 H96" vector-effect="non-scaling-stroke"/><path class="line growth-l" d="M0.0 22.0 L96.0 3.0" vector-effect="non-scaling-stroke"/><circle class="dot now" cx="96.0" cy="3.0" r="1.6"/></svg></td>
+  <td class="c-flag"><span class="badge-off">未上榜</span></td>
+</tr><tr>
+  <td class="c-rank">06</td>
+  <td class="c-name"><a href="https://github.com/ggml-org/ggml" target="_blank" rel="noopener noreferrer">ggml-org/ggml</a><span class="c-kind">實測 1 日 · 2 次 · 建立 1521 日</span></td>
+  <td class="c-value c-stars r">16,084</td>
+  <td class="c-delta r"><span class="up">+185</span></td>
+  <td class="c-value c-rate r">185</td>
+  <td class="c-spark" data-label="總星數"><svg viewBox="0 0 96 24" preserveAspectRatio="none" aria-hidden="true"><path class="axis" d="M0 23.0 H96" vector-effect="non-scaling-stroke"/><path class="line growth-l" d="M0.0 22.0 L96.0 3.0" vector-effect="non-scaling-stroke"/><circle class="dot now" cx="96.0" cy="3.0" r="1.6"/></svg></td>
+  <td class="c-flag"><span class="badge-off">未上榜</span></td>
+</tr><tr>
+  <td class="c-rank">07</td>
+  <td class="c-name"><a href="https://github.com/TensaikunYT/Videohub" target="_blank" rel="noopener noreferrer">TensaikunYT/Videohub</a><span class="c-kind">實測 1 日 · 2 次 · 建立 6 日</span></td>
+  <td class="c-value c-stars r">444</td>
+  <td class="c-delta r"><span class="up">+63</span></td>
+  <td class="c-value c-rate r">63</td>
+  <td class="c-spark" data-label="總星數"><svg viewBox="0 0 96 24" preserveAspectRatio="none" aria-hidden="true"><path class="axis" d="M0 23.0 H96" vector-effect="non-scaling-stroke"/><path class="line growth-l" d="M0.0 22.0 L96.0 3.0" vector-effect="non-scaling-stroke"/><circle class="dot now" cx="96.0" cy="3.0" r="1.6"/></svg></td>
+  <td class="c-flag"><span class="badge-off">未上榜</span></td>
+</tr><tr>
+  <td class="c-rank">08</td>
+  <td class="c-name"><a href="https://github.com/simplexai-labs/linger" target="_blank" rel="noopener noreferrer">simplexai-labs/linger</a><span class="c-kind">實測 1 日 · 2 次 · 建立 7 日</span></td>
+  <td class="c-value c-stars r">397</td>
+  <td class="c-delta r"><span class="up">+54</span></td>
+  <td class="c-value c-rate r">54</td>
+  <td class="c-spark" data-label="總星數"><svg viewBox="0 0 96 24" preserveAspectRatio="none" aria-hidden="true"><path class="axis" d="M0 23.0 H96" vector-effect="non-scaling-stroke"/><path class="line growth-l" d="M0.0 22.0 L96.0 3.0" vector-effect="non-scaling-stroke"/><circle class="dot now" cx="96.0" cy="3.0" r="1.6"/></svg></td>
+  <td class="c-flag"><span class="badge-off">未上榜</span></td>
+</tr><tr>
+  <td class="c-rank">09</td>
+  <td class="c-name"><a href="https://github.com/fengyiqicoder/awesome-fable-5.2" target="_blank" rel="noopener noreferrer">fengyiqicoder/awesome-fable-5.2</a><span class="c-kind">實測 1 日 · 2 次 · 建立 7 日</span></td>
+  <td class="c-value c-stars r">349</td>
+  <td class="c-delta r"><span class="up">+41</span></td>
+  <td class="c-value c-rate r">41</td>
+  <td class="c-spark" data-label="總星數"><svg viewBox="0 0 96 24" preserveAspectRatio="none" aria-hidden="true"><path class="axis" d="M0 23.0 H96" vector-effect="non-scaling-stroke"/><path class="line growth-l" d="M0.0 22.0 L96.0 3.0" vector-effect="non-scaling-stroke"/><circle class="dot now" cx="96.0" cy="3.0" r="1.6"/></svg></td>
+  <td class="c-flag"><span class="badge-off">未上榜</span></td>
+</tr><tr>
+  <td class="c-rank">10</td>
+  <td class="c-name"><a href="https://github.com/huawei-csl/MACaQ" target="_blank" rel="noopener noreferrer">huawei-csl/MACaQ</a><span class="c-kind">實測 1 日 · 2 次 · 建立 7 日</span></td>
+  <td class="c-value c-stars r">339</td>
+  <td class="c-delta r"><span class="up">+28</span></td>
+  <td class="c-value c-rate r">28</td>
+  <td class="c-spark" data-label="總星數"><svg viewBox="0 0 96 24" preserveAspectRatio="none" aria-hidden="true"><path class="axis" d="M0 23.0 H96" vector-effect="non-scaling-stroke"/><path class="line growth-l" d="M0.0 22.0 L96.0 3.0" vector-effect="non-scaling-stroke"/><circle class="dot now" cx="96.0" cy="3.0" r="1.6"/></svg></td>
+  <td class="c-flag"><span class="badge-off">未上榜</span></td>
+</tr><tr>
+  <td class="c-rank">11</td>
+  <td class="c-name"><a href="https://github.com/kociden/sakurai-skill" target="_blank" rel="noopener noreferrer">kociden/sakurai-skill</a><span class="c-kind">實測 1 日 · 2 次 · 建立 5 日</span></td>
+  <td class="c-value c-stars r">374</td>
+  <td class="c-delta r"><span class="up">+24</span></td>
+  <td class="c-value c-rate r">24</td>
+  <td class="c-spark" data-label="總星數"><svg viewBox="0 0 96 24" preserveAspectRatio="none" aria-hidden="true"><path class="axis" d="M0 23.0 H96" vector-effect="non-scaling-stroke"/><path class="line growth-l" d="M0.0 22.0 L96.0 3.0" vector-effect="non-scaling-stroke"/><circle class="dot now" cx="96.0" cy="3.0" r="1.6"/></svg></td>
+  <td class="c-flag"><span class="badge-off">未上榜</span></td>
+</tr><tr>
+  <td class="c-rank">12</td>
+  <td class="c-name"><a href="https://github.com/StormBrawlerSack/legwork-osint-ai-investigator" target="_blank" rel="noopener noreferrer">StormBrawlerSack/legwork-osint-ai-investigator</a><span class="c-kind">實測 1 日 · 2 次 · 建立 4 日</span></td>
+  <td class="c-value c-stars r">355</td>
+  <td class="c-delta r"><span class="up">+20</span></td>
+  <td class="c-value c-rate r">20</td>
+  <td class="c-spark" data-label="總星數"><svg viewBox="0 0 96 24" preserveAspectRatio="none" aria-hidden="true"><path class="axis" d="M0 23.0 H96" vector-effect="non-scaling-stroke"/><path class="line growth-l" d="M0.0 22.0 L96.0 3.0" vector-effect="non-scaling-stroke"/><circle class="dot now" cx="96.0" cy="3.0" r="1.6"/></svg></td>
+  <td class="c-flag"><span class="badge-off">未上榜</span></td>
+</tr></tbody>
+</table>
+<p class="legend">這裡取短期樣本的前 12 名；樣本太短時，一天的爆量會直接變成「每日」（例如剛加入追蹤、只跨了一次夜的專案）。</p>
+
+<div class="growth-alert"><b>今日點名：10 個專案在長，但不在 GitHub Trending。</b><span><a href="https://github.com/morluto/rea" target="_blank" rel="noopener noreferrer">morluto/rea</a>（近 7 日 +17,205，2,458★/日）、<a href="https://github.com/storytold/craft-anything" target="_blank" rel="noopener noreferrer">storytold/craft-anything</a>（近 7 日 +10,348，1,478★/日）、<a href="https://github.com/meta/astryx" target="_blank" rel="noopener noreferrer">meta/astryx</a>（近 7 日 +9,609，1,373★/日）、<a href="https://github.com/GoogleChrome/modern-web-guidance-src" target="_blank" rel="noopener noreferrer">GoogleChrome/modern-web-guidance-src</a>（近 5 日 +6,245，1,249★/日）、<a href="https://github.com/pingdotgg/t3code" target="_blank" rel="noopener noreferrer">pingdotgg/t3code</a>（近 7 日 +8,677，1,239★/日）、<a href="https://github.com/deepseek-ai/chat-demo" target="_blank" rel="noopener noreferrer">deepseek-ai/chat-demo</a>（近 3 日 +3,395，1,132★/日）、<a href="https://github.com/libracoder/kiri" target="_blank" rel="noopener noreferrer">libracoder/kiri</a>（近 7 日 +7,505，1,072★/日）、<a href="https://github.com/hitkeeen/blender-ai-mcp-addon" target="_blank" rel="noopener noreferrer">hitkeeen/blender-ai-mcp-addon</a>（近 2 日 +1,864，932★/日）、<a href="https://github.com/stablyai/orca" target="_blank" rel="noopener noreferrer">stablyai/orca</a>（近 7 日 +6,370，910★/日）、<a href="https://github.com/elementalsouls/Claude-BugHunter" target="_blank" rel="noopener noreferrer">elementalsouls/Claude-BugHunter</a>（跨夜 +1,022，1,022★/日）　Trending 每天只收 11–17 席，沒上榜不代表沒在長。</span></div>
+<p class="caveat">本站自己量：對 watchlist 內每個專案每天抓一次總星數，以「實際經過時間」的存量差算增量，不採用 GitHub Trending 顯示的 stars today。<br>今日追蹤 1133 個；613 個有 2 日以上實測（穩定增速）、14 個只有 1 次跨夜樣本、0 個尚無歷史（以總星數 ÷ 建立天數估）。三個分區的數字不能互相比大小。<br>Trending 每天只收 11–17 席，且名次與 stars today 無關（實測 Spearman −0.07 ~ −0.68）；「不在 trending」不代表沒在長。</p>
+</section>
+<footer class="foot wrap">
+  <div>
+    <h4>資料來源</h4>
+    <ul>
+      <li><a href="https://huggingface.co/models?sort=trending" target="_blank" rel="noopener noreferrer">HuggingFace</a> · 官方 trendingScore</li>
+      <li><a href="https://github.com/trending" target="_blank" rel="noopener noreferrer">GitHub Trending</a> · HTML 解析，非官方 API</li>
+      <li><a href="https://artificialanalysis.ai/leaderboards/models" target="_blank" rel="noopener noreferrer">Artificial Analysis</a> · Intelligence Index</li>
+      <li><a href="https://docs.github.com/en/rest/repos/repos" target="_blank" rel="noopener noreferrer">GitHub REST API</a> · 本站自行每日量測總星數（增速榜）</li>
+    </ul>
+  </div>
+  <div>
+    <h4>怎麼讀</h4>
+    <p>名次為各榜單原始排序。漲跌比較前一個有紀錄的日期；走勢為近九日名次，線在上方代表名次較好。「新」表示本站紀錄中首次出現，不代表該項目當天才發布。</p>
+    <p>增速榜比較不一樣：那是本站每天自己抓 GitHub 總星數算出來的增量，不用 GitHub Trending 顯示的「stars today」（那是滾動窗估計值，同一天抓兩次會不一樣，也和榜單排序無關）。</p>
+  </div>
+  <div>
+    <h4>存檔</h4>
+    <p><a href="../d/2026-11-17.html">本期永久連結</a>　<a href="../archive.html">全部期數</a></p>
+    <p>每日台北時間自動更新；同一天的網址永遠代表同一天的紀錄。</p>
+  </div>
+</footer>
+</div>
+<script>(function(){var S=['','lg','xl'],N=['標準','大','特大'],sb=document.querySelector('.size-btn');if(sb){var lab=sb.querySelector('b');function cur(){var v=document.documentElement.dataset.size||'';var i=S.indexOf(v);return i<0?0:i}function draw(){var i=cur();lab.textContent=N[i];sb.setAttribute('aria-label','目前字級：'+N[i]+'，點一下切換')}draw();sb.addEventListener('click',function(){var i=(cur()+1)%3,n=S[i];if(n){document.documentElement.dataset.size=n}else{delete document.documentElement.dataset.size}try{if(n){localStorage.setItem('dt-size',n)}else{localStorage.removeItem('dt-size')}}catch(e){}draw()})}})();(function(){var b=document.querySelector('.theme-btn');if(!b)return;b.addEventListener('click',function(){var d=document.documentElement,n=d.dataset.theme==='dark'?'light':'dark';d.dataset.theme=n;try{localStorage.setItem('dt-theme',n)}catch(e){}});var m=window.matchMedia('(prefers-color-scheme: dark)');m.addEventListener('change',function(e){try{if(localStorage.getItem('dt-theme'))return}catch(x){}document.documentElement.dataset.theme=e.matches?'dark':'light'})})()</script>
+</body>
+</html>
